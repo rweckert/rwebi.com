@@ -1,5 +1,7 @@
 # <img src="../_ico/scratchpad.png" width="28" height="28"> [rwebiModule-ScratchPad.html](rwebi.com/Modules/rwebiModule-ScratchPad)
 
+<img src="rwebi-preview-scratchpad.png" width="70%">
+
 A versatile digital piece of paper and text utility that allows users to instantly draft, format, and execute text-based documents directly from within the browser.
 
 * 📦 [**Module-ScratchPad**](Modules/rwebiModule-ScratchPad.html)<br>
