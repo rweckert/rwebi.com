@@ -1,1 +1,238 @@
+/* rwebiStyle-Light-Test-c61.css Created:12/22/2021  Updated:02/18/2026 */
+/* rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61 */
 
+/* Document Body: ------------------ */
+body {height:100vh;width:100vw;font-family:Tahoma, Verdana, sans-serif;font-size:0.80em;font-style:normal;font-variant:normal;color:#2e2e2e;background-color:#ffffff;}
+
+/* Links Light Mode: ---------------- */
+a:link, a:visited {color:#2e2e2e;text-decoration:none;}
+a:hover, a:active {color:#FF8C00;text-decoration:none;}
+
+/* .tfnp Table Format Plain Light */
+.tfnp {width:100%;border-collapse:collapse;border:#F8F8F8 1px solid;background-color:#ffffff;color:#2e2e2e;margin-top:3px;margin-bottom:3px;}
+.tfnp td{padding:7px;text-align:left;border:#E0E0E0 1px solid;}
+/* odd row highlight */
+.tfnp tr:nth-of-type(even) {background-color:#F8F8F8;}
+/* row background */
+.tfnp tr{font-size:0.90em;color:#2e2e2e;}
+/* row highlight */
+.tfnp tr:hover {background-color:#cce6ff;}
+/* table header */
+.tfnp thead tr th, table.tablesorter tfoot tr th {
+text-align:left;font-size:0.90em;
+color:#2e2e2e; /* header text color */
+border: 0px solid #505050;  /* header border color */
+padding:2px;}
+
+/* Module Select Light Option: ------ */
+.mso {font-size:1.13em;text-decoration:none;background:#ffffff;color:#2e2e2e;padding:8px;display:block;cursor:pointer;}
+.mso:hover {font-size:1.13em;text-decoration:none;background:#00BFFF;color:#ffffff;padding:8px;cursor:pointer;}
+.oView {background-color:#ffffff;}
+
+/* ---------------------------------- */
+
+/* Generic Text Size: --------------- */
+.em08 {font-size:0.8em;}
+.em8 {font-size:0.83em;}
+.em9 {font-size:0.93em;}
+.em10 {font-size:1.0em;}
+.em11 {font-size:1.1em;}
+.em12 {font-size:1.2em;}
+.em13 {font-size:1.3em;}
+.em14 {font-size:1.4em;}
+.em15 {font-size:1.5em;}
+.em16 {font-size:1.6em;}
+.em17 {font-size:1.7em;}
+.em18 {font-size:1.8em;}
+.em19 {font-size:1.9em;}
+.em20 {font-size:2.0em;}
+.em22 {font-size:2.2em;}
+.em24 {font-size:2.4em;}
+.em30 {font-size:3.0em;}
+.em36 {font-size:3.6em;}
+
+/* General Color: ------------------- */
+.nc {color:#000000;} /* black */
+.wc {color:#ffffff;} /* white */
+.tc {color:#D1B771;} /* tan */
+.sc {color:#d9d9d9;} /* silver */
+.ac {color:#808080;} /* ash */
+.dg {color:#2e2e2e;} /* dark grey */
+.cg {color:#505050;} /* charcoal grey */
+.yc {color:#FFFF00;} /* yellow */
+.oc {color:#FF8C00;} /* orange */
+.bo {color:#FF4501;} /* blood orange */
+.bc {color:#03A0FF;} /* blue */
+.sb {color:#5ACBEF;} /* sky blue */
+.cy {color:#00bfff;} /* cyan */
+.as {color:#61C381;} /* algae sea */
+.gc {color:#6AA121;} /* green */
+.lg {color:#76D15C;} /* leafy green */
+.ga {color:#4BDE00;} /* green apple */
+.bg {color:#7DFF95;} /* baby green */
+.vg {color:#66FF01;} /* vibrant green */
+.br {color:#CD853F;} /* brown */
+.mc {color:#AC80FF;} /* magenta */
+.pc {color:#f64a8a;} /* pink */
+.lr {color:#FFCCCB;} /* light red */
+.rc {color:#ff0000;} /* red */
+.rp {color:#EC2551;} /* red pink */
+
+/* Text Labels: --------------------- */
+.lb { display: inline-block;}
+.lb25 {display: inline-block; width: 25px;}
+.lb30 {display: inline-block; width: 30px;}
+.lb35 {display: inline-block; width: 35px;}
+.lb40 {display: inline-block; width: 40px;}
+.lb45 {display: inline-block; width: 45px;}
+.lb50 {display: inline-block; width: 50px;}
+.lb55 {display: inline-block; width: 55px;}
+.lb60 {display: inline-block; width: 60px;}
+.lb65 {display: inline-block; width: 65px;}
+.lb70 {display: inline-block; width: 70px;}
+.lb75 {display: inline-block; width: 75px;}
+.lb80 {display: inline-block; width: 80px;}
+.lb85 {display: inline-block; width: 85px;}
+.lb90 {display: inline-block; width: 90px;}
+.lb100 {display: inline-block; width: 100px;}
+.lb105 {display: inline-block; width: 105px;}
+.lb125 {display: inline-block; width: 125px;}
+.lb145 {display: inline-block; width: 145px;} 
+.lb190 {display: inline-block; width: 190px;}
+.lb10p {display: inline-block; width: 10%}
+.lb90p {display: inline-block; width: 90%}
+.lb100p {display: inline-block; width: 100%}
+
+/* Module Headers: ------------------ */
+.mHeader {width:100%;height:35px;min-width:320px;}
+.mTitle {display:inline;font-weight:bolder;font-size:2.0em;letter-spacing:-0.5px;line-height:1.7em;}
+.lTitle {display:inline;font-weight:bolder;font-size:2.0em;letter-spacing:-0.5px;line-height:1.7em;margin-right:12px;}
+.sTitle {display:inline;font-weight:bolder;font-size:1.3em;letter-spacing:-0.5px;line-height:1.2em;margin-right:12px;}
+.mFooter {float:left;font-size:0.88em;}
+
+/* Section Headers: ----------------- */
+.sh0 {margin-top:0px;min-width:330px;}
+.sh3 {margin-top:3px;min-width:330px;}
+.sh6 {margin-top:6px;min-width:320px;}
+.sh9 {margin-top:9px;min-width:320px;}
+
+/* Block Formating: ----------------- */
+.ibtn, .hbtn, .xbtn, .vibtn, .nibtn, .yopt, .oopt, .wopt, .bopt, .gopt, .gbtn, .rbtn, .abtn, .bbtn, .ybtn, .obtn {
+box-sizing: border-box;
+height: 34px;
+vertical-align: top;
+margin-top: 3px;
+display: inline-block;}
+
+/* Color Icon Buttons --------------- */
+.ibtn {width:34px;background-color:#ffffff;border:1px solid #d9d9d9;border-radius:3px;cursor:pointer;object-fit:contain;padding:5px;margin-left:1px;}
+.ibtn:hover {background-color:#f2f2f2;border:1px solid #2e2e2e;}
+
+.hbtn {width:34px;background-color:#ffffff;border:1px solid #d9d9d9;border-radius:3px;cursor:pointer;object-fit:contain;padding:5px;margin-left:3px;float:right;}
+.hbtn:hover {background-color:#b3ccff;border:1px solid #2e2e2e;}
+
+.xbtn {width:34px;background-color:#ffffff;border:1px solid #d9d9d9;border-radius:3px;cursor:pointer;object-fit:contain;padding:5px;margin-left:3px;float:right;}
+.xbtn:hover {background-color:#ffe6e6;border:1px solid #2e2e2e;}
+
+.vibtn {width:34px;background-color:#ffffff;border:1px solid #d9d9d9;border-radius:3px;cursor:pointer;object-fit:contain;padding:5px;margin-left:1px;}
+.vibtn:hover {background-color:#f2f2f2;border:1px solid #2e2e2e;}
+
+.nibtn {width:34px;background-color:#000000;border:1px solid #d9d9d9;border-radius:3px;cursor:pointer;object-fit:contain;padding:5px;margin-left:1px;}
+.nibtn:hover {background-color:#2e2e2e;border:1px solid #2e2e2e;}
+
+.rsbtn{width:22px;background-color:#ffffff;border:1px solid #d9d9d9;border-radius:3px;vertical-align:top;padding:5px;margin-top:3px;margin-bottom:3px;cursor:pointer;}
+.rsbtn:hover{background-color:#f2f2f2;border:1px solid #2e2e2e;border-radius:3px;padding:5px;margin-top:3px;margin-bottom:3px;cursor:pointer;}
+
+.bbtn {background:#00bfff;color:#2e2e2e;border:1px solid #99cc66;border-radius:3px;padding:5px;font-size:1.11em;margin-top:3px;cursor:pointer;}
+.bbtn:hover {background:#f2f2f2;color:#ffffff;border:1px solid #ffffff;border-radius:3px;padding:5px;font-size:1.11em;margin-top:3px;}
+
+.ybtn {background:#f2f251;color:#2e2e2e;border:1px solid #99cc66;border-radius:3px;padding:5px;font-size:1.11em;margin-top:3px;cursor:pointer;}
+.ybtn:hover {background:#f2f2f2;color:#ffffff;border:1px solid #ffffff;border-radius:3px;padding:5px;font-size:1.11em;margin-top:3px;}
+
+.obtn {background:#ff8c00;color:#2e2e2e;border:1px solid #99cc66;border-radius:3px;padding:5px;font-size:1.11em;margin-top:3px;cursor:pointer;}
+.obtn:hover {background:#f2f2f2;color:#ffffff;border:1px solid #ffffff;border-radius:3px;padding:5px;font-size:1.11em;margin-top:3px;}
+
+/* Color Text Buttons: -------------- */
+.gbtn {background:#00e64d;color:#2e2e2e;border:1px solid #99cc66;border-radius:3px;font-size:1.11em;line-height:32px;cursor:pointer;padding:0 12px;margin-left:1px;}
+.gbtn:hover {background:#009933;color:#ffffff;border:1px solid #ffffff;}
+
+.rbtn {background:#ffad99;color:#2e2e2e;border:1px solid #99cc66;border-radius:3px;padding:8px;font-size:1.11em;margin-top:3px;cursor:pointer;}
+.rbtn:hover {background:#ff8566;color:#ffffff;border:1px solid #ffffff;border-radius:3px;padding:8px;font-size:1.11em;margin-top:3px;}
+
+.wbtn {background:#ffffff;color:#2e2e2e;border:1px solid #99cc66;border-radius:3px;padding:8px;font-size:1.11em;margin-top:3px;cursor:pointer;}
+.wbtn:hover {background:#d9d9d9;color:#2e2e2e;border:1px solid #ffffff;border-radius:3px;padding:8px;font-size:1.11em;margin-top:3px;}
+
+.abtn {background:#d9d9d9;color:#2e2e2e;border:1px solid #99cc66;border-radius:3px;padding:8px;font-size:1.11em;margin-top:3px;cursor:pointer;}
+.abtn:hover {background:#ffffff;color:#2e2e2e;border:1px solid #d9d9d9;border-radius:3px;padding:8px;font-size:1.11em;margin-top:3px;}
+
+/* Select Options: ------------------ */
+.wopt {height:34px;background:#ffffff;color:#2e2e2e;border:1px solid #d9d9d9;border-radius:3px;font-size:1.11em;cursor:pointer;margin-top:3px;padding: 0 1px;}
+.wopt:hover {background:#f2f2f2;border:1px solid #ffffff;}
+
+.yopt {height:34px;background:#f2f251;color:#2e2e2e;border:1px solid #d9d9d9;border-radius:3px;font-size:1.11em;cursor:pointer;margin-top:3px;padding: 0 1px;}
+.yopt:hover {background:#eadd61;border:1px solid #ffffff;}
+
+.oopt {height:34px;background:#ffc266;color:#2e2e2e;border:1px solid #d9d9d9;border-radius:3px;font-size:1.11em;cursor:pointer;margin-top:3px;padding: 0 1px;}
+.oopt:hover {background:#ffad33;border:1px solid #ffffff;}
+
+.bopt {height:34px;background:#cce0ff;color:#2e2e2e;border:1px solid #d9d9d9;border-radius:3px;font-size:1.11em;cursor:pointer;margin-top:3px;padding: 0 1px;}
+.bopt:hover {background:#99c2ff;border:1px solid #2e2e2e;}
+
+.gopt {height:34px;background:#9fdfbf;color:#2e2e2e;border:1px solid #d9d9d9;border-radius:3px;font-size:1.11em;cursor:pointer;margin-top:3px;padding: 0 1px;}
+.gopt:hover {background:#79d2a6;border:1px solid #2e2e2e;}
+
+.snopt {background:#2e2e2e;color:#d9d9d9;border:1px solid #2e2e2e;border-radius:3px;padding:1px;font-size:1.0em;margin-top:3px;cursor:pointer;}
+.snopt:hover {background:#2e2e2e;color:#d9d9d9;border:1px solid #2e2e2e;border-radius:3px;padding:1px;font-size:1.0em;margin-top:3px;cursor:pointer;}
+
+/* Option Highlights: --------------- */
+.bsh {font-size:11px;text-decoration:none;background:#CCEBFF;color:#000000;padding:8px;display:block;cursor:pointer;}
+.bsh:hover {font-size:11px;text-decoration:none;background:#00BFFF;color:#ffffff;padding:8px;cursor:pointer;}
+
+.osh {font-size:11px;text-decoration:none;background:#FFDDB3;color:#000000;padding:8px;display:block;cursor:pointer;}
+.osh:hover {font-size:11px;text-decoration:none;background:#FF8C00;color:#ffffff;padding:8px;cursor:pointer;}
+
+/* Section Hover: ------------------- */
+.dlbr {font-size:11px;text-decoration:none;background:#D5D1CB;color:#000000;padding:8px;display:block;cursor:pointer;}
+.dlbr:hover {font-size:11px;text-decoration:none;background:#00BFFF;color:#2e2e2e;padding:8px;cursor:pointer;}
+
+.mos {display:block;width:100%;padding: 5px 10px;text-decoration:none;color:inherit;}
+.mos:hover {display:block;width:100%;padding: 5px 10px;text-decoration:none;color:inherit;background:#00BFFF;color:#2e2e2e;}
+
+/* Text Input: ---------------------- */
+.itxt {height:33px;background:#ffffff;padding: 0 8px;margin-top: 3px;vertical-align: top;border:1px solid #2e2e2e;border-radius:3px;font-size:1.11em;}
+
+/* Content View -------------------- */
+.cv {width:98.9%;height:100%;background-color:#F3EFC6;border-width:1px;border-style:solid;border-color:#FF8C00;border-radius:3px;resize:none;min-width:280px}
+.cvy {width:98.9%;height:100%;background-color:#ffffe0;border-width:1px;border-style:solid;border-color:#FF8C00;border-radius:3px;resize:none;}
+
+/* Application Placement Icon: ------ */
+.api {width:70px;text-align:center;display:inline-block;margin:auto;padding:9px;cursor:pointer;}
+.apn {text-decoration:none;width:70px;font-size:1.11em;margin-bottom:3px;cursor:pointer;}
+.apn:hover {text-decoration:underline;width:70px;font-size:1.11em;margin-bottom:3px;cursor:pointer;}
+
+/* Application Button Standard */
+.abs {display:inline-block;font-size:0.89em;text-decoration: none;background:#cccccc;border:solid 1px #FFFFFF;border-radius:9px;cursor:pointer;}
+.abs:hover {display:inline-block;font-size:0.89em;text-decoration: none;background:#ffc40c;border:solid 1px #FFFFFF;border-radius:9px;cursor:pointer;}
+
+/* Module Help View */
+.hView {position:absolute;z-index:99;border:1px solid #505050;border-radius:9px;background-color:#2e2e2e;padding:6px;visibility:hidden;}
+.hvTitle {font-size:1.7em;font-weight:bolder;margin-left:3px;}
+.hvLeft {float:left;width:auto;padding:3px;}
+.hvRight {float:right;width:auto;padding:3px;}
+.hvDisplay {height:90%;margin-top:6px;}
+.hvObject {height:85%;width:100%;border:0px;}
+
+/* Tree Branch: --------------------- */
+.branch {vertical-align:bottom;font-size:1.8em;cursor:pointer;}
+.cbranch {vertical-align:top;font-size:1.8em;margin-right:3px;cursor:pointer;}
+/* Tree Branch: Color Links: -------- */
+.tboy {display:inline-block;width:200px;height:auto;text-decoration:none;color:#2e2e2e;background-color:#FFFFE0;margin-left:2px;margin-top:2px;padding-top:6px;padding-left:3px;cursor:pointer;}
+.tboy:hover {display:inline-block;width:200px;height:auto;text-decoration:none;color:#ffffff;background-color:#FF8C00;margin-left:2px;margin-top:2px;padding-left:3px;cursor:pointer;}
+
+/* Clear Formatting: ---------------- */
+.clearBoth {clear:both;}
+.clearFix {overflow:auto;}
+.clearArea:after {content:".";visibility:hidden;display:block;height:0;clear:both;}
+
+/* Hidden Field: */
+.hf {display:none;visisble:hidden;}

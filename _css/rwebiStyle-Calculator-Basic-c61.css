@@ -1,0 +1,56 @@
+/* rwebiStyle-Calculator-Basic-c61.css  Created:12/22/2021  Updated:01/22/2026 */
+/* rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61 */
+
+.calc {font-size:3.5em;font-family: 'Orbitron', sans-serif;letter-spacing:1px;text-align:left;padding:3px;border: 0px solid #2e2e2e;}
+
+.cba {display:inline-block;height:15%;width:14%;min-height:20px;color:#ffffff;background:#95957f;border:solid 1px #ffffff;padding:3px;margin:2px;text-align:center;border-radius:6px;font-size:clamp(1.5rem,8vw,2rem);}
+.cba:hover {display:inline-block;color:#FFFFFF;background:#636350;border:solid 1px #cccccc;border-radius:6px;font-size:clamp(1.5rem,8vw,2rem);}
+
+.cbt {display:inline-block;height:15%;width:14%;min-height:20px;color:#ffffff;background:#00a2c3;border:solid 1px #ffffff;padding:3px;margin:2px;text-align:center;border-radius:6px;font-size:clamp(1.5rem,8vw,2rem);}
+.cbt:hover {display:inline-block;color:#FFFFFF;background:#006479;border:solid 1px #cccccc;border-radius:6px;font-size:clamp(1.5rem,8vw,2rem);}
+
+.cby {display:inline-block;height:15%;width:14%;min-height:20px;color:#ffffff;background:#b3b300;border:solid 1px #ffffff;padding:3px;margin:2px;text-align:center;border-radius:6px;font-size:clamp(1.5rem,8vw,2rem);}
+.cby:hover {display:inline-block;color:#FFFFFF;background:#808000;border:solid 1px #cccccc;border-radius:6px;font-size:clamp(1.5rem,8vw,2rem);}
+
+.cbo {display:inline-block;height:15%;width:14%;min-height:20px;color:#ffffff;background:#ffb833;border:solid 1px #ffffff;padding:3px;margin:2px;text-align:center;border-radius:6px;font-size:clamp(1.5rem,8vw,2rem);}
+.cbo:hover {display:inline-block;color:#FFFFFF;background:#e69500;border:solid 1px #cccccc;border-radius:6px;font-size:clamp(1.5rem,8vw,2rem);}
+
+.cbg {display:inline-block;height:15%;width:14%;min-height:20px;color:#ffffff;background:#00ac2b;border:solid 1px #ffffff;padding:3px;margin:2px;text-align:center;border-radius:6px;font-size:clamp(1.5rem,8vw,2rem);}
+.cbg:hover {display:inline-block;color:#FFFFFF;background:#008321;border:solid 1px #cccccc;border-radius:6px;font-size:clamp(1.5rem,8vw,2rem);}
+
+.cbbr {display:inline-block;height:15%;width:14%;min-height:20px;color:#ffffff;background:#c68c53;border:solid 1px #ffffff;padding:3px;margin:2px;text-align:center;border-radius:6px;font-size:clamp(1.5rem,8vw,2rem);}
+.cbbr:hover {display:inline-block;color:#FFFFFF;background:#86592d;border:solid 1px #cccccc;border-radius:6px;font-size:clamp(1.5rem,8vw,2rem);}
+
+.cbm {display:inline-block;height:15%;width:14%;min-height:20px;color:#ffffff;background:#737373;border:solid 1px #ffffff;padding:3px;margin:2px;text-align:center;border-radius:6px;font-size:clamp(1.1rem,8vw,2rem);}
+.cbm:hover {display:inline-block;color:#FFFFFF;background:#4d4d4d;border:solid 1px #cccccc;border-radius:6px;font-size:clamp(1.1rem,8vw,2rem);}
+
+.cbb {display:inline-block;height:15%;width:14%;min-height:20px;color:#ffffff;background:#75925f;border:solid 1px #ffffff;padding:3px;margin:2px;text-align:center;border-radius:6px;font-size:clamp(1.5rem,8vw,2rem);}
+.cbb:hover {display:inline-block;color:#FFFFFF;background:#63804d;border:solid 1px #cccccc;border-radius:6px;font-size:clamp(1.5rem,8vw,2rem);}
+
+.cbc {display:inline-block;height:15%;width:14%;min-height:20px;color:#ffffff;background:#00a166;border:solid 1px #ffffff;padding:3px;margin:2px;text-align:center;border-radius:6px;font-size:clamp(1.5rem,8vw,2rem);}
+.cbc:hover {display:inline-block;color:#FFFFFF;background:#007c5b;border:solid 1px #cccccc;border-radius:6px;font-size:clamp(1.5rem,8vw,2rem);}
+
+.cbp {display:inline-block;height:15%;width:14%;min-height:20px;color:#ffffff;background:#666699;border:solid 1px #ffffff;padding:3px;margin:2px;text-align:center;border-radius:6px;font-size:clamp(1.5rem,8vw,2rem);}
+.cbp:hover {display:inline-block;color:#FFFFFF;background:#47476b;border:solid 1px #cccccc;border-radius:6px;font-size:clamp(1.5rem,8vw,2rem);}
+
+
+.cbr {display:inline-block;height:15%;width:14%;min-height:20px;color:#ffffff;background:#ff4d4d;border:solid 1px #ffffff;padding:3px;margin:2px;text-align:center;border-radius:6px;font-size:clamp(1.5rem,8vw,2rem);}
+.cbr:hover {display:inline-block;color:#FFFFFF;background:#b30000;border:solid 1px #cccccc;border-radius:6px;font-size:clamp(1.5rem,8vw,2rem);}
+
+
+
+
+
+
+
+
+
+.cbau {display:inline-block;height:13%;width:14%;min-width:20px;min-height:20px;color:#ffffff;background:#008060;border:solid 1px #ffffff;padding:3px;margin:2px;text-align:center;border-radius:6px;line-height:30px;font-size:clamp(1.5rem,10vw,2rem);}
+.cbau:hover {display:inline-block;color:#FFFFFF;background:#004d39;border:solid 1px #FFFFFF;border-radius:6px;line-height:30px;font-size:clamp(1.5rem,10vw,2rem);}
+
+
+
+
+
+.cbi {display:inline-block;height:13%;width:14%;min-width:20px;min-height:20px;color:#ffffff;background:#999966;border:solid 1px #ffffff;padding:3px;margin:2px;text-align:center;border-radius:6px;line-height:30px;font-size:clamp(1.5rem,10vw,2rem);}
+.cbi:hover {display:inline-block;color:#FFFFFF;background:#5c5c3d;border:solid 1px #FFFFFF;border-radius:6px;line-height:30px;font-size:clamp(1.5rem,10vw,2rem);}

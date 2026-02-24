@@ -1,0 +1,273 @@
+/* rwebiStyle-Tables-cs61.css  Created:12/22/2021  Updated:01/08/2026 */
+/* rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61 */
+
+/* Contents ------------------------ */
+
+/* Table Color Designations: /*
+/* tfnb		no background /*
+/* tflf		light format /*
+/* tftf		text format /*
+/* tfrt		reference table /*
+/* tfdt		detailed table /*
+/* tfyp		yellow pad /*
+/* tfgl		green ledger /*
+/* tfw		white /*
+/* tfn		black /*
+/* tfa		ash /*
+/* tfg		green /*
+/* tft		tan /*
+/* tfc		cyan /*
+
+/* .tfnb No Background ------------- */
+.tfnb {width:100%;border-collapse:collapse;}
+.tfnb td{padding:7px; border:#E0E0E0 1px solid;text-align:left;}
+/* odd row highlight */
+.tfnb tr:nth-of-type(odd) {color:#ffffff;}
+/* row background */
+.tfnb tr{font-size:0.90em;color:#ffffff;}
+/* row highlight */
+.tfnb tr:hover {font-size:0.90em;color:#ffffff;}
+/* table header */
+.tfnb thead tr th, table.tablesorter tfoot tr th {
+font-size:1.1em;text-align:left;
+color:#ffffff; /* header text color */
+border: 0px solid #DCDCDC;  /* header border color */
+padding:2px;}
+
+/* .tflf Light Format -------------- */
+.tflf {width:100%;border-collapse:collapse;}
+.tflf td{padding:7px; border:#2e2e2e 1px solid;text-align:left;}
+/* odd row highlight */
+.tflf tr:nth-of-type(odd) {background-color:#e1e1de;color:#2e2e2e;}
+/* row background */
+.tflf tr{background-color:#ffffff;font-size:0.90em;color:#2e2e2e;}
+/* row highlight */
+.tflf tr:hover {background-color:#9bddff;font-size:0.90em;color:#2e2e2e;}
+/* table header */
+.tflf thead tr th, table.tablesorter tfoot tr th {
+font-size:1.1em;text-align:left;
+background-color:#ffffff; /* header background */
+color:#2e2e2e; /* header text color */
+border: 0px solid #DCDCDC;  /* header border color */
+padding:2px;}
+
+/* .tftx Text Format -------------- */
+.tftx {width:100%;border-collapse:collapse;}
+.tftx td{padding:7px; border:#ffffff 1px solid;text-align:left;}
+/* odd row highlight */
+.tftx tr:nth-of-type(odd) {background-color:#2e2e2e;color:#ffffff;font-family:"courier"}
+/* row background */
+.tftx tr{background-color:#2e2e2e;font-size:0.90em;color:#ffffff;font-family:"courier"}
+/* row highlight */
+.tftx tr:hover {background-color:#3c3c32;font-size:0.90em;color:#ffffff;font-family:"courier"}
+/* table header */
+.tftx thead tr th, table.tablesorter tfoot tr th {
+font-size:1.1em;text-align:left;
+background-color:#2e2e2e; /* header background */
+color:#ffffff; /* header text color */
+border: 0px solid #DCDCDC;  /* header border color */
+padding:2px;font-family:"courier";}
+
+/* .tfw White ---------------------- */
+.tfw {width:100%;border-collapse:collapse;}
+.tfw td{padding:7px; border:#E0E0E0 0px solid;text-align:left;}
+/* odd row highlight */
+.tfw tr:nth-of-type(odd) {background-color:#d6d4cb;color:#2e2e2e;}
+/* row background */
+.tfw tr{background:#ffffff;font-size:0.90em;color:#2e2e2e;}
+/* row highlight */
+.tfw tr:hover {background-color:#c6c6c4;font-size:0.90em;color:#2e2e2e;}
+/* table header */
+.tfw thead tr th, table.tablesorter tfoot tr th {
+font-size:1.1em;text-align:left;
+background-color:#ffffff; /* header background */
+color:#000000; /* header text color */
+border: 0px solid #DCDCDC;  /* header border color */
+padding:2px;}
+
+/* .tfn Black ---------------------- */
+.tfn {width:100%;border-collapse:collapse;}
+.tfn td{padding:7px; border:#E0E0E0 0px solid;text-align:left;}
+/* odd row highlight */
+.tfn tr:nth-of-type(odd) {background-color:#343434;color:#ffffff;}
+/* row background */
+.tfn tr{background:#1a1a1a;font-size:0.90em;color:#ffffff;}
+/* row highlight */
+.tfn tr:hover {background-color:#4e4c45;font-size:0.90em;color:#ffffff;}
+/* table header */
+.tfn thead tr th, table.tablesorter tfoot tr th {
+font-size:1.1em;text-align:left;
+background-color:#000000; /* header background */
+color:#ffffff; /* header text color */
+border: 0px solid #DCDCDC;  /* header border color */
+padding:2px;}
+
+/* .tfc Cyan ----------------------- */
+.tfc {width:100%;border-collapse:collapse;}
+.tfc td{padding:7px; border:#E0E0E0 0px solid;text-align:left;}
+/* odd row highlight */
+.tfc tr:nth-of-type(odd) {background-color:#b5e0f2;color:#2e2e2e;}
+/* row background */
+.tfc tr{background:#8eb9cb;font-size:0.90em;color:#2e2e2e;}
+/* row highlight */
+.tfc tr:hover {background-color:#5a8597;font-size:0.90em;color:#ffffff;}
+/* table header */
+.tfc thead tr th, table.tablesorter tfoot tr th {
+font-size:1.1em;text-align:left;
+background-color:#38485e; /* header background */
+color:#ffffff; /* header text color */
+border: 0px solid #DCDCDC;  /* header border color */
+padding:2px;}
+
+/* .tfb Blue ----------------------- */
+.tfb {width:100%;border-collapse:collapse;}
+.tfb td{padding:7px; border:#E0E0E0 0px solid;text-align:left;}
+/* odd row highlight */
+.tfb tr:nth-of-type(odd) {background-color:#9cacc2;color:#2e2e2e;}
+/* row background */
+.tfb tr{background:#cedef4;font-size:0.90em;color:#2e2e2e;}
+/* row highlight */
+.tfb tr:hover {background-color:#6a7a90;font-size:0.90em;color:#ffffff;}
+/* table header */
+.tfb thead tr th, table.tablesorter tfoot tr th {
+font-size:1.1em;text-align:left;
+background-color:#38485e; /* header background */
+color:#ffffff; /* header text color */
+border: 0px solid #DCDCDC;  /* header border color */
+padding:2px;}
+
+/* .tft Tan ------------------------ */
+.tft {width:100%;border-collapse:collapse;}
+.tft td{padding:7px; border:#E0E0E0 0px solid;text-align:left;}
+/* odd row highlight */
+.tft tr:nth-of-type(odd) {background-color:#d3c599;color:#2e2e2e;}
+/* row background */
+.tft tr{background:#fff1c6;font-size:0.90em;color:#2e2e2e;}
+/* row highlight */
+.tft tr:hover {background-color:#918357;font-size:0.90em;color:#ffffff;}
+/* table header */
+.tft thead tr th, table.tablesorter tfoot tr th {
+font-size:1.1em;text-align:left;
+background-color:#65572b; /* header background */
+color:#ffffff; /* header text color */
+border: 0px solid #DCDCDC;  /* header border color */
+padding:2px;}
+
+/* .tfg Green ---------------------- */
+.tfg {width:100%;border-collapse:collapse;}
+.tfg td{padding:7px; border:#E0E0E0 0px solid;text-align:left;}
+/* odd row highlight */
+.tfg tr:nth-of-type(odd) {background-color:#5b6330;color:#ffffff;}
+/* row background */
+.tfg tr{background:#4b5320;font-size:0.90em;color:#ffffff;}
+/* row highlight */
+.tfg tr:hover {background-color:#2d3502;font-size:0.90em;color:#cccccc;}
+/* table header */
+.tfg thead tr th, table.tablesorter tfoot tr th {
+font-size:1.1em;text-align:left;
+background-color:#373f0c; /* header background */
+color:#ffffff; /* header text color */
+border: 0px solid #DCDCDC;  /* header border color */
+padding:2px;}
+
+/* .tfyp Yellow Pad ---------------- */
+.tfyp {width:100%;border-collapse:collapse;}
+.tfyp td{padding:7px; border:#E0E0E0 0px solid;text-align:left;}
+/* odd row highlight */
+.tfyp tr:nth-of-type(odd) {background-color:#e9e982;color:#2e2e2e;}
+/* row background */
+.tfyp tr{background:#fdfd96;font-size:0.90em;color:#2e2e2e;}
+/* row highlight */
+.tfyp tr:hover {background-color:#fffd39;font-size:0.90em;color:#2e2e2e;}
+/* table header */
+.tfyp thead tr th, table.tablesorter tfoot tr th {
+font-size:1.1em;text-align:left;
+background-color:#d5d56e; /* header background */
+color:#2e2e2e; /* header text color */
+border: 0px solid #DCDCDC;  /* header border color */
+padding:2px;}
+
+/* .tfgl Green Ledger -------------- */
+.tfgl {width:100%;border-collapse:collapse;}
+.tfgl td{padding:7px; border:#E0E0E0 0px solid;text-align:left;}
+/* odd row highlight */
+.tfgl tr:nth-of-type(odd) {background-color:#c7e6c3;color:#2e2e2e;}
+/* row background */
+.tfgl tr{background:#d7f6d3;font-size:0.90em;color:#2e2e2e;}
+/* row highlight */
+.tfgl tr:hover {background-color:#a7c6a3;font-size:0.90em;color:#2e2e2e;}
+/* table header */
+.tfgl thead tr th, table.tablesorter tfoot tr th {
+font-size:1.1em;text-align:left;
+background-color:#6f8e6b; /* header background */
+color:#ffffff; /* header text color */
+border: 0px solid #DCDCDC;  /* header border color */
+padding:2px;}
+
+/* .tfa Ash ------------------------ */
+.tfa {width:100%;border-collapse:collapse;}
+.tfa td{padding:7px; border:#E0E0E0 0px solid;text-align:left;}
+/* odd row highlight */
+.tfa tr:nth-of-type(odd) {background-color:#424242;color:#ffffff;}
+/* row background */
+.tfa tr{background:#626262;font-size:0.90em;color:#ffffff;}
+/* row highlight */
+.tfa tr:hover {background-color:#292929;font-size:0.90em;color:#cccccc;}
+/* table header */
+.tfa thead tr th, table.tablesorter tfoot tr th {
+font-size:1.1em;text-align:left;
+background-color:#202020; /* header background */
+color:#ffffff; /* header text color */
+border: 0px solid #DCDCDC;  /* header border color */
+padding:2px;}
+
+/* tfrt Reference Table ------------ */
+.tfrt {width:100%;border-collapse:collapse;}
+.tfrt td{padding:7px; border:#282828 1px solid;text-align:left;}
+/* odd row highlight */
+.tfrt tr:nth-of-type(odd) {background-color:#202020;color:#cccccc;}
+/* row background */
+.tfrt tr{background:#2e2e2e;font-size:0.90em;color:#cccccc;}
+/* row highlight */
+.tfrt tr:hover {background-color:#404040;font-size:0.90em;color:#FF8C00;}
+/* table header */
+.tfrt thead tr th, table.tablesorter tfoot tr th {
+font-size:12px;text-align:left;
+background-color:#000000; /* header background */
+color:#ffffff; /* header text color */
+border: 1px solid #282828;  /* header border color */
+padding:2px;}
+
+/* tfmt Map Table ------------------ */
+.tfmt {width:100%;border-collapse:collapse;}
+.tfmt td{padding:0px; border:#282828 1px solid;text-align:left;}
+/* odd row highlight */
+.tfmt tr:nth-of-type(odd) {background-color:#202020;color:#cccccc;}
+/* row background */
+.tfmt tr{background:#2e2e2e;font-size:0.90em;color:#cccccc;}
+/* row highlight */
+.tfmt tr:hover {background-color:#404040;font-size:0.90em;color:#FF8C00;}
+/* table header */
+.tfmt thead tr th, table.tablesorter tfoot tr th {
+font-size:0.90em;text-align:left;
+background-color:#000000; /* header background */
+color:#ffffff; /* header text color */
+border: 0px solid #282828;  /* header border color */
+padding:0px;}
+
+/* tfdt Detailed Table  ------- */
+.tfdt {width:100%;border-collapse:collapse;}
+.tfdt td{padding:0px; border:#282828 1px solid;;text-align:left;}
+/* odd row highlight */
+.tfdt tr:nth-of-type(odd) {background-color:#202020;color:#cccccc;}
+/* row background */
+.tfdt tr{background:#2e2e2e;font-size:.90em;color:#cccccc;}
+/* row highlight */
+.tfdt tr:hover {background-color:#cccccc;font-size:0.90em;color:#2e2e2e;}
+/* table header */
+.tfdt thead tr th, table.tablesorter tfoot tr th {
+font-size:0.90em;text-align:left;
+background-color:#000000; /* header background */
+color:#ffffff; /* header text color */
+border: 1px solid #282828;  /* header border color */
+padding:2px;}
