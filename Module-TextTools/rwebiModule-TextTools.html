@@ -1,1 +1,307 @@
+<!--            _   _  
+  ___ _ _ _ ___| |_|_| Aplha Preview: rwebiModule-TextTools.html
+ |  _| | | | -_| . | | rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61
+ |_| |_____|___|___|_| -->
+<!doctype html><html lang="en"><head><meta charSet="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rwebiModule-TextTools</title>
+<link rel="icon" type="image/x-icon" href="../_ico/favicon.png">
+<link id="csl" rel="stylesheet" href="../_css/rwebiStyle-Light-c61.css" media="(prefers-color-scheme: light)">
+<link id="csd" rel="stylesheet" href="../_css/rwebiStyle-Dark-c61.css" media="(prefers-color-scheme: dark)">
+<style type="text/css" media="screen">#editor {position:relative;top:3px;right:0;bottom:0;width:97%;min-width:150px;height:200px;}</style>
+<script src="../_jss/rwebiEngine-AceEditor-c61.js"></script>
+<script src="../_jss/rwebiEngine-AceStringTools-c61.js"></script>
+<script src="../_jss/rwebiEngine-LightCore-c61.js"></script>
+<script src="../_jss/rwebiModule-TextTools.js"></script>
+</head><body onload="mStart();" onresize="mResize();" style="overflow:hidden;">
 
+<!-- Module Header: -->
+<div id="mHeader" class="sho" style="width:100%;height:35px;min-width:320px;white-space:nowrap;">
+<div style="position:absolute;z-Index:999;top:3px;left:5px;"><span onclick="dToggle('oView');eHid('hView');" title="Module Options"><img src="../_ico/texttools.png" class="nibtn">&nbsp;</span><div class="mTitle" onclick="dHid('oView');">Text Tools</div></div><div style="position:absolute;top:3px;right:6px;"><img onclick="dToggle('oView');eHid('hView');" src="../_ico/mselect.png" style="cursor:pointer;"></div></div>
+
+<!-- Module Bar: -->
+<div id="mBar" class="sh0" style="height:35px;min-width:320px;white-space:nowrap;">
+<select id="soFile" onChange="FileOpt();" class="yopt" title="File Menu" style="width:50px;height:33px;margin-top:3px;">
+<option value="default">File</option>
+<option value="open">Open File</option>
+<option value="new">New File</option>
+<option value="copy">Copy All Text</option>
+<option value="clear">Clear All Text</option>
+<option value="save">Local Save</option>
+<option value="restore">Local Restore</option>
+<option value="saveas">Save Download&nbsp;&nbsp;</option>
+<option value="export">Export to Tab</option>
+<option value="set">Settings</option>
+<option value="info">Information</option>
+<option value="exit">Exit Module</option></select>
+<span onclick="document.getElementById('fb').click();" title=""><img src="../_ico/open.png" class="ibtn"></span>
+<span onclick="aceSave('rwebi-TextTools-');" title="Save Download"><img src="../_ico/save-as.png" class="ibtn"></span>
+<span onclick="mToggle('eMenu');" title="Toggle Edit Menu"><img src="../_ico/edit.png" class="ibtn"></span>
+<span onclick="mToggle('pMenu');" title=""><img src="../_ico/nav.png" class="ibtn"></span>
+<span onclick="mToggle('aSearch');" title=""><img src="../_ico/search.png" class="ibtn"></span>
+<span onclick="FullViewOpen();" ><img class="ibtn" src="../_ico/fullscreen.png" title="Full Screen Mode"></span>
+<span onclick="mToggle('vTools');" title=""><img src="../_ico/tools.png" class="ibtn"></span></div>
+
+<!-- View Stats: -->
+<div id="vStats" class="sh3">
+<span class="em08">Words:&nbsp;</span><span id="acw" class="oc"></span>
+<span class="em08">Characters:&nbsp;</span><span id="aca" class="bc"></span>
+<span class="em08">Text:&nbsp;</span><span id="act" class="mc"></span>
+<span class="em08">Lines:&nbsp;</span><span id="acr" class="gc"></span></div>
+
+<!-- Content Containor / Editor View: -->
+<div id="editor" style="min-height:150px;min-width:150px;resize:vertical;overflow:hidden;font-size:1.3em;margin-bottom:3px;border-radius:3px;" onkeyup="aceCount('editor');" onclick="dHid('oView');aceCount('editor');" onmouseover="aceCount('editor');"></div>
+
+<!-- Input View: -->
+<div id="vInput" style="position:absolute;top:123px;left:25px;width:60%;height:auto;z-index:999;background-color:#d9d9d9;color:#2e2e2e;float:left;border:1px solid #505050;border-radius:3px;padding:3px;overflow-y:none;visibility:hidden;"><div id="InputViewer"></div></div>
+
+<!-- Input: Add Start of Line -->
+<div id="InputStartLine" class="hf">
+<b>Text Utility:</b><br>
+Add the following text to the begining of each line:
+<textarea id="iStart" style="width:97%;height:60px;resize:none;"></textarea>
+<p><span class="gbtn" onclick="GlobalAddStart('editor');" title="Add">Add</span>
+<span class="rbtn" onclick="eHid('vInput');" title="Cancel">Cancel</span></p></div>
+
+<!-- Input: Add End of Line -->
+<div id="InputEndLine" class="hf">
+<b>Text Utility:</b><br>
+Add the following text to the ending of each line:
+<textarea id="iEnd" style="width:97%;height:60px;resize:none;"></textarea>
+<p><span class="gbtn" onclick="GlobalAddEnd('editor');" title="Add">Add</span>
+<span class="rbtn" onclick="eHid('vInput');" title="Cancel">Cancel</span></p></div>
+
+<!-- Input: Add Wrapping -->
+<div id="InputWrapping" class="hf">
+<b>Text Utility:</b><br>
+Add the following text to the begining of each line:
+<textarea id="iSWrap" style="width:97%;height:60px;resize:none;"></textarea><br>
+Add the following text to the end of each line:
+<textarea id="iEWrap" style="width:97%;height:60px;resize:none;"></textarea>
+<p><span class="gbtn" onclick="GlobalAddWrap('editor');eHid('vInput');" title="Add">Add</span>
+<span class="rbtn" onclick="eHid('vInput');" title="Cancel">Cancel</span></p></div>
+
+<!-- Tools View: -->
+<div id="vTools" style="position:absolute;top:45px;right:6px;width:230px;height:60%;background-color:#2e2e2e;color:#ffffff;float:right;border:1px solid #505050;border-radius:3px;padding:3px;overflow-y:none;z-index:99;visibility:hidden;">
+<span onclick="eHid('vTools')"><img src="../_ico/mclose.png" class="ibtn" style="float:right;margin-left:3px;" title="Close Tools Menu"></span>
+<span onclick="aceTabView('editor')"><img src="../_ico/globe.png" class="ibtn" style="float:right;margin-left:3px;" title="Export to view Tab"></span>
+<span onclick="aceTabExport('editor')"><img src="../_ico/export-2.png" class="ibtn" style="float:right;margin-left:3px;" title="Export to text Tab"></span>
+<span onclick="aceSessionUndo('editor');"><img src="../_ico/undo-session.png" class="ibtn" style="float:right;margin-left:3px;" title="Undo Last (1) Session Change"></span>
+<span onclick="tToggle();pSwap('etl','arrow-','');"><img id="etl" src="../_ico/arrow-on.png" class="nibtn" style="float:right;margin-left:3px;" title=""></span><div class="clearArea"></div>
+
+<!-- Tools Menu: -->
+<div id="tmenu" style="height:85%;overflow-y:scroll;margin-top:6px;">
+<div id="tf1" style="font-size:1.2em;margin-left:4px;margin-top:3px;">
+<img src="../_ico/arrow-off.png" id="ti1" class="branch"><span class="em12 wc" onclick="dToggle('tm1');pSwap('ti1','arrow-','');"><b> File & Storage</b></span>
+<div id="tm1" style="position:relative;display:none;height:auto;font-size:1.11em;">
+<span class="tboy" onclick="document.getElementById('fb').click();">Open File</span><br>
+<span class="tboy" onclick="aceNew('editor');">New Document</span><br>
+<span class="tboy" onclick="aceSave('rwebi-AceEditor-');">Save / Download</span><br>
+<span class="tboy" onclick="aceLocalSave('editor');">Local Stogage Save</span><br>
+<span class="tboy" onclick="aceLocalRestore('editor');">Local Storage Restore</span><br>
+<span class="tboy" onclick="aceTabText('editor');">Export to Tab</span><br>
+<span class="tboy" onclick="acePrint('editor');">Print Document</span></div></div>
+<!-- Tools Menu: Alpha & Text -->
+<div id="tf2" style="font-size:1.2em;margin-left:4px;margin-top:3px;">
+<img src="../_ico/arrow-off.png" id="ti2" class="branch"><span class="twc" onclick="dToggle('tm2');pSwap('ti2','arrow-','');"><span class="em12"><b> Alpha & Text</b></span></span>
+<div id="tm2" style="position:relative;display:none;height:auto;font-size:1.11em;">
+<span class="tboy" onclick="AlphaSort('editor');">Alpha Sort</span><br>
+<span class="tboy" onclick="AlphaReverse('editor');">Alpha Reverse</span><br>
+<span class="tboy" onclick="AlphaExtract('editor');">Extract Alpha</span><br>
+<span class="tboy" onclick="NumericSort('editor');">Numeric Sort</span><br>
+<span class="tboy" onclick="NumericReverse('editor');">Numeric Reverse</span><br>
+<span class="tboy" onclick="NumericExtract('editor');">Extract Numbers</span><br>
+<span class="tboy" onclick="CaseLower('editor');">Lower Case</span><br>
+<span class="tboy" onclick="CaseUpper('editor');">Upper Case</span><br>
+<span class="tboy" onclick="CaseTitle('editor');">Title Case</span><br>
+<span class="tboy" onclick="CaseInvert('editor');">Case Invert</span><br>
+<span class="tboy" onclick="RemoveTrimAll('editor');">Trim Space Left & Right</span><br>
+<span class="tboy" onclick="RemoveTrimStart('editor');">Trim Spaces Start</span><br>
+<span class="tboy" onclick="RemoveTrimEnd('editor');">Trim Spaces End</span><br>
+<span class="tboy" onclick="AddDoubleSpaces('editor');">Add Double Space</span><br>
+<span class="tboy" onclick="DeleteDoubleSpace('editor');">Delete Double Space</span></div></div>
+
+<!-- Tools Menu: Remove Options -->
+<div id="tf3" style="font-size:1.2em;margin-left:4px;margin-top:3px;">
+<img src="../_ico/arrow-off.png" id="ti3" class="branch"><span class="twc" onclick="dToggle('tm3');pSwap('ti3','arrow-','');"><span class="em12"><b> Remove Options</b></span></span>
+<div id="tm3" style="position:relative;display:none;height:auto;font-size:1.11em;">
+<span class="tboy" onclick="RemoveFirstCharacter('editor');">Remove First Character</span><br>
+<span class="tboy" onclick="RemoveLastCharacter('editor');"> Remove Last Character</span><br>
+<span class="tboy" onclick="RemoveFirstLine('editor');">Remove First Line</span><br>
+<span class="tboy" onclick="RemoveLastLine('editor');">Remove Last Line</span><br>
+<span class="tboy" onclick="GlobalRemove('editor','%20');">Remove Spaces</span><br>
+<span class="tboy" onclick="RemoveBlankLines('editor');">Remove Blank Lines</span><br>
+<span class="tboy" onclick="GlobalRemove('editor','\n');">Remove All Line Breaks</span><br>
+<span class="tboy" onclick="GlobalRemove('editor','%2C');">Remove Commas</span><br>
+<span class="tboy" onclick="RemoveTabs('editor');"> Remove Tabs</span><br>
+<span class="tboy" onclick="GlobalRemove('editor','%20%20%20%20');">Remove Tabs as 4 Spaces</span><br>
+<span class="tboy" onclick="GlobalRemove('editor','%27');">Remove Single Quotes</span><br>
+<span class="tboy" onclick="GlobalRemove('editor','%22');">Remove Double Quotes</span><br>
+<span class="tboy" onclick="GlobalRemove('editor','%5C%7C');">Remove Pipes</span><br>
+<span class="tboy" onclick="GlobalRemove('editor','%5C%5C');">Remove Backslashes</span><br>
+<span class="tboy" onclick="GlobalRemove('editor','%3A');">Remove Colons</span><br>
+<span class="tboy" onclick="GlobalRemove('editor','%3B');">Remove Semi-Colons</span><br>
+<span class="tboy" onclick="GlobalRemove('editor','%5C%28');GlobalRemove('editor','%5C%29');">Remove Parentheses</span><br>
+<span class="tboy" onclick="GlobalRemove('editor','%5C%7B');GlobalRemove('editor','%5C%7D');">Remove Curly Brackets</span><br>
+<span class="tboy" onclick="GlobalRemove('editor','%5C%5B');GlobalRemove('editor','%5C%5D');">Remove Hard Brackets</span></div></div>
+<!-- Tools Menu: Replace Text -->
+<div id="tf4" style="font-size:1.2em;margin-left:4px;margin-top:3px;">
+<img src="../_ico/arrow-off.png" id="ti4" class="branch"><span class="twc" onclick="dToggle('tm4');pSwap('ti4','arrow-','');"><span class="em12"><b> Replace Text</b></span></span>
+<div id="tm4" style="position:relative;display:none;height:auto;font-size:1.11em;">
+<span class="tboy" onclick="ReplaceBlankLinesCommas('editor');">Replace Blank Lines with Commas</span><br>
+<span class="tboy" onclick="GlobalReplace('editor','%2C','\n');">Replace Commas with Breaks</span><br>
+<span class="tboy" onclick="GlobalReplace('editor','\n','%2C');">Replace Breaks with Commas</span><br>
+<span class="tboy" onclick="GlobalReplace('editor','\n','%20');">Replace Breaks with Spaces</span><br>
+<span class="tboy" onclick="GlobalReplace('editor','%20','\n');">Replace Space with Breaks</span><br>
+<span class="tboy" onclick="GlobalReplace('editor','%20','%2C');">Replace Space with Commas</span><br>
+<span class="tboy" onclick="GlobalReplace('editor','%20','%2d');">Replace Space with Dashes</span><br>
+<span class="tboy" onclick="ReplaceTabswCommas('editor');">Replace Tabs with Commas</span><br>
+<span class="tboy" onclick="ReplaceTabswBreaks('editor');">Replace Tabs with Breaks</span><br>
+<span class="tboy" onclick="GlobalReplace('editor','%3B','\n');">Replace Semi-Colons with Breaks</span><br>
+<span class="tboy" onclick="GlobalReplace('editor','%3A','\n');">Replace Colons with Breaks</span><br>
+<span class="tboy" onclick="GlobalReplace('editor','%5C%7B','\n');">Replace Left Curlys with Breaks</span><br>
+<span class="tboy" onclick="GlobalReplace('editor','%5C%7D','\n');">Replace Right Curlys with Breaks</span><br>
+<span class="tboy" onclick="GlobalReplace('editor','%5C%5B','\n');">Replace Left Brackets with Breaks</span><br>
+<span class="tboy" onclick="GlobalReplace('editor','%5C%5D','\n');">Replace Right Brackets with Breaks</span><br>
+<span class="tboy" onclick="GlobalReplace('editor','%5C%28','\n');">Replace Left Parenthesess with Breaks</span><br>
+<span class="tboy" onclick="GlobalReplace('editor','%5C%29','\n');">Replace Right Parenthesess with Breaks</span></div></div>
+<!-- Tools Menu: Utility Choices -->
+<div id="tf5" style="font-size:1.2em;margin-left:4px;margin-top:3px;">
+<img src="../_ico/arrow-off.png" id="ti5" class="branch"><span class="twc" onclick="dToggle('tm5');pSwap('ti5','arrow-','');"><span class="em12"><b> Utility Choices</b></span></span>
+<div id="tm5" style="position:relative;display:none;height:auto;font-size:1.11em;">
+<span class="tboy" onclick="RemoveSmallWords('editor');">Delete Small Words</span><br>
+<span class="tboy" onclick="LineNumbering('editor');">Line Numbering</span><br>
+<span class="tboy" onclick="FixCommas('editor');">Fix Commas</span><br>
+<span class="tboy" onclick="ListDuplicates('editor');">View Duplicates</span><br>
+<span class="tboy" onclick="RemoveDuplicates('editor');">Remove Duplicates</span></div></div>
+<!-- Tools Menu: Wrapping Functions -->
+<div id="tf6" style="font-size:1.2em;margin-left:4px;margin-top:3px;">
+<img src="../_ico/arrow-off.png" id="ti6" class="branch"><span class="twc" onclick="dToggle('tm6');pSwap('ti6','arrow-','');"><span class="em12"><b> Wrapping Functions</b></span></span>
+<div id="tm6" style="position:relative;display:none;height:auto;font-size:1.11em;">
+<span class="tboy" onclick="ViewInput('InputStartLine','InputViewer');">Add Text to Start</span><br>
+<span class="tboy" onclick="ViewInput('InputEndLine','InputViewer');">Add Text to End</span><br>
+<span class="tboy" onclick="ViewInput('InputWrapping','InputViewer');">Add Text to Wrap</span><br>
+<span class="tboy" onclick="AddCommasStart('editor');">Add Commas at Start</span><br>
+<span class="tboy" onclick="AddCommasEnd('editor');">Add Commas at End</span>
+<span class="tboy" onclick="GlobalWrapping('editor','%27');">Wrap Single Quotes</span><br>
+<span class="tboy" onclick="GlobalWrapping('editor','%22');">Wrap Double Quotes</span><br>
+<span class="tboy" onclick="GlobalStartEnd('editor','%3C','%3E');">Wrap Angle Brackets</span><br>
+<span class="tboy" onclick="GlobalStartEnd('editor','%7B','%7D');">Wrap Curly Brackets</span><br>
+<span class="tboy" onclick="GlobalStartEnd('editor','%5B','%5D');">Wrap Hard Brackets</span><br>
+<span class="tboy" onclick="GlobalStartEnd('editor','%28','%29');">Wrap Parentheses</span><br>
+<span class="tboy" onclick="GlobalWrapping('editor','%3A');">Wrap Colons</span><br>
+<span class="tboy" onclick="GlobalWrapping('editor','%3B');">Wrap Semi-Colons</span></div></div>
+</div></div>
+<!-- Tools Menu End: -->
+</div>
+
+<!-- Full View Button: -->
+<div id="fvButton" onmouseover="sFlex('f','editor','0','0','0');" style="position:absolute;top:6px;left:2px;width:auto;height:45px;z-index:99;visibility:hidden;padding-top:0px;">
+<span onclick="eToggle('fvBar');eHid('eMenu');eHid('pMenu');" title=""><img src="../_ico/mmmenu.png" class="vibtn"></span></div>
+
+<!-- Full View Bar: -->
+<div id="fvBar" style="position:absolute;top:43px;left:2px;width:auto;height:auto;z-index:99;visibility:hidden;">
+<span onclick="document.getElementById('fb').click();" title=""><img src="../_ico/open.png" class="vibtn"></span><br>
+<span onclick="mToggle('eMenu');eHid('fvBar');" title="Toggle Edit Menu"><img src="../_ico/edit.png" class="vibtn"></span><br>
+<span onclick="mToggle('pMenu');eHid('fvBar');" title=""><img src="../_ico/nav.png" class="vibtn"></span><br>
+<span onclick="aceTabView('editor')"><img src="../_ico/globe.png" class="vibtn" title="Export to view Tab"></span><br>
+<span onclick="mToggle('aSearch');" title=""><img src="../_ico/search.png" class="vibtn"></span><br>
+<span onclick="mToggle('vTools');" title=""><img src="../_ico/tools.png" class="vibtn"></span><br>
+<span onclick="FullViewClose();"><img class="vibtn" src="../_ico/fullscreen-off.png" title="Close Full Screen"></span></div>
+
+<!-- Edit Menu: -->
+<div id="eMenu" style="position:absolute;top:106px;left:11px;width:45px;height:auto;z-index:97;visibility:hidden;padding-top:0px;padding-bottom:3px;">
+<span onclick="aceCut('editor');" title="Cut Selected"><img src="../_ico/cut.png" class="vibtn"></span><br>
+<span onclick="aceCopySelected('editor');" title="Copy Selected"><img src="../_ico/copy.png" class="vibtn"></span><br>
+<span onclick="aceCopyAll('editor');" title="Copy All"><img src="../_ico/select.png" class="vibtn"></span><br>
+<span onclick="acePaste('editor');" title="Paste"><img src="../_ico/paste.png" class="vibtn"></span><br>
+<span onclick="aceUndo();" title="Undo"><img src="../_ico/undo.png" class="vibtn"></span></div>
+
+<!-- Page Menu: -->
+<div id="pMenu" style="position:absolute;top:106px;left:11px;width:45px;height:auto;z-index:97;visibility:hidden;padding-top:0px;padding-bottom:3px;">
+<span onclick="pgFirst();" title="First Page"><img src="../_ico/nav-top.png" class="vibtn"></span>
+<span onclick="pgUp('editor');" title="Up Page"><img src="../_ico/nav-up.png" class="vibtn"></span>
+<span onclick="pgDown('editor');" title="Down Page"><img src="../_ico/nav-down.png" class="vibtn"></span>
+<span onclick="pgLast();" title="Last Page"><img src="../_ico/nav-bottom.png" class="vibtn"></span></div>
+
+<!-- Save View: -->
+<div id="sView" class="hView" style="top:60px;left:20px;width:60%;min-width:260px;max-width:500px;height:auto;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Save Download</span></div><div class="hvRight"><span onclick="eHid('sView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div class="p6"><label for="sf" class="wc em12">Filename</label><input type='text' id='sf' class='wb' style="width:90%;font-size:1.15em;height:27px;" value="" onfocus="this.select();"><p><span class="gbtn" onclick="aceDownload('editor');eHid('sView');" title="Download / Save">Save</span>&nbsp;&nbsp;<span class="rbtn" onclick="eHid('sView');" title="Cancel Download">Cancel</span></p></div></div>
+
+<!-- Options View: -->
+<div id="oView" class="oView" style="position:absolute;z-Index:999;top:43px;width:140px;height:auto;padding:6px;border-radius:3px;display:none;font-weight:bold;">
+<span class="mso" onclick="dHid('oView');LinkModule();"><img src="../_ico/link.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Share Link</span>
+<span class="mso" onclick="selTheme('l');"><img src="../_ico/ltheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Light Theme</span>
+<span class="mso" onclick="selTheme('d');"><img src="../_ico/dtheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Dark Theme</span>
+<span class="mso" onclick="eToggle('hView');dHid('oView');obLoad('hDisplay','../Help/rwebiAbout-TextTools.html');"><img src="../_ico/mhelp.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Information</span>
+<span class="mso" onclick="modRefresh();"><img src="../_ico/refresh.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Refresh</span>
+<span class="mso" onclick="pLoad('rwebiMenu-Modules.html');"><img src="../_ico/mclose.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Close</span></div>
+
+<!-- View Settings: -->
+<div id="vSettings" style="position:absolute;top:50px;right:6px;width:230px;height:60%;background-color:#2e2e2e;color:#ffffff;float:right;border:1px solid #505050;border-radius:3px;padding:3px;overflow-y:none;z-index:99;visibility:hidden;">
+<span class="lTitle">Settings</span>
+<span onclick="eHid('vSettings')"><img src="../_ico/mclose.png" class="ibtn" style="float:right;margin-right:3px;margin-bottom:3px;"></span><div class="clearArea"></div>
+<!-- Settings Menu: -->
+<div id="sMenu" style="height:85%;overflow-y:scroll;margin-top:0px;">
+<table id="sData" class="tfnp" border="1" cellpadding="3" cellspacing="0" style="width:98%;margin-left:3px;border:1px solid #505050;">
+<tr><td>Font Size</td><td>Value</td></tr>
+<tr><td>Wrap</td><td><span class="" onclick="aceWrap('editor');pSwap('wo','swb-','');"><img id="wo" src="../_ico/swb-off.png" title=""></span></td></tr>
+<tr><td>Lock</td><td><span class="" onclick="aceLock('editor');pSwap('lo','swb-','');"><img id="lo" src="../_ico/swb-off.png" title=""></span></td></tr>
+<tr><td>Numbering</td><td><span class="" onclick="aceNumbering('editor');pSwap('no','swb-','');"><img id="no" src="../_ico/swo-on.png" title=""></span></td></tr>
+<tr><td>Scanning</td><td><span class="" onclick="aceScanning('editor');pSwap('so','swb-','');"><img id="so" src="../_ico/swb-off.png" title=""></span></td></tr>
+<tr><td>Cursor Type</td><td>
+<select id="soCursor" onChange="aceCursor('editor');" class="wopt" title="Cursor Options" style="width:93px;height:24px;">
+<option value="ace">Ace</option>
+<option value="slim">Slim</option>
+<option value="smooth">Smooth</option>
+<option value="wide">Wide</option></select></td></tr>
+<tr><td>Syntax Type</td><td>
+<select id="soSyntax" onChange="aceSetLanguage('editor');" class="wopt" title="Syntax Options" style="width:93px;height:24px;">
+<option value="text">Text</option>
+<option value="javascript">JavaScript</option>
+<option value="python">Python</option>
+<option value="html">HTML</option>
+<option value="ini">INI</option>
+<option value="php">PHP</option>
+<option value="sql">SQL</option>
+<option value="mysql">MySql</option>
+<option value="css">CSS</option>
+<option value="json">JSON</option>
+<option value="csv">CSV</option></select></td></tr>
+<tr><td>Ace Theme</td><td>
+<select id="soAceTheme" onChange="aceSetTheme('editor');" class="wopt" title="Theme Options" style="width:93px;height:24px;">
+<option value="chrome">Chrome</option>
+<option value="cloud_editor">Clouds</option>
+<option value="cobalt">Cobalt</option>
+<option value="crimson_editor">Crimson Editor</option>
+<option value="dreamweaver">Dreamweaver</option>
+<option value="eclipse">Eclipse</option>
+<option value="monokai">Monokai</option>
+<option value="sqlserver">SQL Server</option>
+<option value="terminal">Terminal</option>
+<option value="twilight">Twilight</option>
+<option value="vibrant_ink">Vibrant Ink</option></select></td></tr>
+</tbody></table></div></div>
+
+<!-- Help View: -->
+<div id="hView" class="hView" style="position:absolute;top:65px;left:15px;width:80%;height:80%;min-width:260px;min-height:200px;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Information</span></div><div class="hvRight"><span onclick="eHid('hView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div style="height:90%;margin-top:6px;"><object type="text/html" id="hDisplay" data="../Help/rwebiHelp-TextTools.html" style="height:85%;width:100%;border:0px;"></object><input type="file" id="fb" style="visibility:hidden;" onchange="aceOpen('editor');"></div></div>
+
+<!-- Ace Editor: -->
+<script src="../Library/Ace/ace.js" charset="utf-8"></script><script>
+editor=ace.edit("editor");editor.setTheme("ace/theme/chrome");
+editor.session.setMode("ace/mode/text");editor.setOption("wrap",true);</script>
+
+<!-- Variables: -->
+<textarea id="tt" class="hf"></textarea>
+<div id="ut" class="hf"></div>
+<span id="ow" class="hf">25</span>
+<span id="oh" class="hf">121</span>
+<span id="mt" class="hf">0</span>
+<span id="st" class="hf">false</span>
+<span id="ln" class="hf">true</span>
+<span id="sc" class="hf">false</span>
+<span id="tm" class="hf">false</span>
+
+<!-- Module Footer: -->
+<div id="mFooter" class="mFooter" style="float:left;margin-top:0px;min-width:320px;">
+<img src="../_ico/favicon.png" style="height:12px;margin-right:3px;margin-top:2px;vertical-align:bottom;"><b>TextTools</b> </span>w:<span id="miw" class="oc"></span>&nbsp;h:<span id="mih" class="bc"></span></div></body></html>
+<!-- rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61 -->
