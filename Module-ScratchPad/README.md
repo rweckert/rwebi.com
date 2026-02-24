@@ -11,7 +11,7 @@ A versatile digital piece of paper and text utility that allows users to instant
 
 | GitHub Folder | GitHub Source |
 | :--- | :--- |
-| 📁 [**../_css/**](../_css) | [`rwebiStyle-Light-c61.css`](./_css/rwebiStyle-Dark-c61.css)<br>
+| 📁 [**../_css/**](../_css) | [`/rwebiStyle-Dark-c61.css`](./_css/rwebiStyle-Dark-c61.css)<br>
 
 | Description | Document Link |
 | :--- | :--- |
