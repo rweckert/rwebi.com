@@ -1,1 +1,166 @@
+<!--            _   _  
+  ___ _ _ _ ___| |_|_| Aplha Preview: rwebiApp-ToolPanel-c61.html
+ |  _| | | | -_| . | | rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61
+ |_| |_____|___|___|_| -->
+<!doctype html><html lang="en"><head><meta charSet="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rwebiApp-ToolPanel-c61</title>
+<link rel="icon" type="image/x-icon" href="../_ico/favicon.png">
+<link id="csl" rel="stylesheet" href="../_css/rwebiStyle-Light-c61.css" media="(prefers-color-scheme: light)">
+<link id="csd" rel="stylesheet" href="../_css/rwebiStyle-Dark-c61.css" media="(prefers-color-scheme: dark)">
+<script src="../_jss/rwebiEngine-LightCore-c61.js"></script>
+<script src="../_jss/rwebiApp-ToolPanel-c61.js"></script>
+</head><body id="body" onload="pStart();" onresize="pResize();">
+<style>
+body, html {height:100dvh;width:100vw;margin:0;padding:0;overflow:hidden;}
+/* Panel Shell */
+.panel-shell {height:100dvh;width:100vw;display:flex;flex-direction:column;}
+/* Panel Bar */
+.panel-bar {height:40px;display:flex;align-items:center;gap:10px;margin-top:3px;}
+/* Panel Container */
+.container {display:flex;flex:1;padding-left:3px;padding-right:3px;box-sizing:border-box;gap:6px;margin-top:3px;overflow:hidden;}
+/* Panel */
+.panel {background:#fff;flex: 1 1 auto;display:flex;flex-direction:column;}
+/* Panel Content */
+.panel-content {flex:1;width:100%;}
+/* Panel Header */
+.panel-header {height:30px;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:6px 2px;}
+/* Panel Status */
+.horizontal {flex-direction:row;}
+.vertical {flex-direction:column;}
+.hidden {display:none !important;}
+.ibtn-s { width: 16px; cursor: pointer; opacity: 0.7; }
+.ibtn-s:hover { opacity: 1; }
+</style></head><body>
 
+<!-- Panel Shell -->
+<div id="PanelShell" class="panel-shell">
+
+<!-- Panel Bar -->
+<div id="PanelBar" class="panel-bar" style="display:inline-block;">
+<span onclick="appRefresh();" title="Refresh Application"><img src="../_ico/favicon.png" class="nibtn" style="margin-left:6px;"></span>
+<span onclick="pLoad('../index.html');" title="Close Application"><img src="../_ico/mclose.png" class="xbtn" style="float:right;margin-right:3px;"></span>
+<span onclick="eToggle('oView');" title="Help / About / Settings"><img src="../_ico/mopt.png" class="hbtn" style="float:right;margin-right:3px;"></span><div class="mTitle" onclick="eHid('mMenu');">Tool Panel</div></div>
+
+<!-- Panel Container -->
+<div id="PanelContainer" class="container horizontal">
+
+<!-- Panel 1 -------------------------->
+<div id="pc1" class="panel vertical" style="border: 1px solid #03A0FF;border-radius:4px;" onclick="PanelSelect('1');dHid('po2');">
+<!-- Panel 1: Header -->
+<div id="ph1" class="panel-header" style="background-color:#00BFFF;">
+<div style="display:inline-block;">
+&nbsp;<span id="p1mx" onclick="PanelFull(1);" style="float:left;margin-right:3px;display:block;margin-bottom:3px;" title="Maximize Panel 1"><img class="ibtn" src="../_ico/pmax-off.png"></span>
+<span id="p1mn" onclick="PanelFull(2);" style="float:left;margin-right:3px;display:none;" title="Minimize Panel 1"><img class="ibtn" src="../_ico/pmax-on.png">
+</span>
+<span id="p1v" onclick="PanelLayout('vertical');" style="float:left;margin-right:3px;display:block;" title="Horizontal Split"><img class="ibtn" src="../_ico/psplit-h.png"></span>
+<span id="p1h" onclick="PanelLayout('horizontal');" style="float:left;margin-right:3px;display:none;" title="Vertical Split"><img class="ibtn" src="../_ico/psplit-v.png"></span></div><div>
+<span onclick="Panel1Opt();" style="float:right;margin-right:3px;margin-left:3px;" title="Panel Options"><img class="bbtn" src="../_ico/tcog.png"></span></div></div>
+<!-- Panel 1: Frame -->
+<div class="panel-content">
+<iframe id="pf1" name="pf1" src="../Modules/rwebiMenu-Modules.html" scrolling="yes" style="width:100%;height:100%;border:none;"></iframe></div></div>
+<!-- Panel 1: Options -->
+<div id="po1" style="position:absolute;width:155px;height:auto;padding:6px;background-color:#CCEBFF;border-radius:9px;display:none;" class="fb" onclick="PanelSelect('1');dHid('po1');">
+<span onclick="PanelFull(1)" style="margin-left:0px;" title="Maximize Panel"><img class="ibtn" src="../_ico/pmax-off.png"></span>
+<span onclick="PanelLayout('horizontal');" title="Vertical Split"><img class="ibtn" src="../_ico/psplit-v.png"></span>
+<span onclick="PanelLayout('vertical');" title="Horizontal Split"><img class="ibtn" src="../_ico/psplit-h.png"></span>
+<span onclick="LoadFrame('p1','../Modules/rwebiMenu-Modules.html');" title="Module Icons"><img class="ibtn" src="../_ico/module-listing.png"></span><br>
+<span onclick="dToggle('PanelBar');"><img id="ifv" src="../_ico/fullscreen-on.png" class="ibtn" title="Toggle Full View"></span>
+<span onclick="PanelFull(1);" title="Maximize Panel 1"><img src="../_ico/p1.png" class="ibtn"></span>
+<span onclick="PanelFull(2);" title="Maximize Panel 2"><img src="../_ico/p2.png" class="ibtn"></span>
+<span onclick="eToggle('PanelStats');ElementDetails('pc1');eHid('oView');"><img src="../_ico/stats-panel.png" class="vibtn" title="Panel Details"></span></div>
+
+<!-- Panel 2 -------------------------->
+<div id="pc2" class="panel" style="border: 1px solid #FF8C00;border-radius:4px;" onclick="PanelSelect('2');dHid('po1');">
+<!-- Panel 2: Header -->
+<div id="ph2" class="panel-header" style="background-color:#ffddb3;">
+<div style="display:inline-block;">
+&nbsp;<span id="p2mx" onclick="PanelFull(2);" style="float:left;margin-right:3px;display:block;margin-bottom:3px;" title="Maximize Panel 2"><img class="ibtn" src="../_ico/pmax-off.png"></span>
+<span id="p2mn" onclick="PanelFull(1);" style="float:left;margin-right:3px;display:none;" title="Minimize Panel 2"><img class="ibtn" src="../_ico/pmax-on.png">
+</span>
+<span id="p2v" onclick="PanelLayout('vertical');" style="float:left;margin-right:3px;display:block;" title="Vertical Split"><img class="ibtn" src="../_ico/psplit-h.png"></span>
+<span id="p2h" onclick="PanelLayout('horizontal');" style="float:left;margin-right:3px;display:none;" title="Horizontal Split"><img class="ibtn" src="../_ico/psplit-v.png"></span></div><div>
+<span onclick="Panel2Opt();" style="float:right;margin-right:3px;margin-left:3px;" title="Panel Options"><img class="obtn" src="../_ico/tcog.png"></span>
+</div></div>
+<!-- Panel 2: Frame -->
+<div class="panel-content">
+<iframe id="pf2" name="pf2" src="../Modules/rwebiMenu-Modules-Listing.html" scrolling="yes" style="width:100%;height:100%;border:none;"></iframe></div></div>
+<!-- Panel 2: Options -->
+<div id="po2" style="position:absolute;width:155px;height:auto;padding:6px;background-color:#ffddb3;border-radius:9px;display:none;" class="fb" onclick="PanelSelect('2');dHid('po2');">
+<span onclick="PanelFull(2)" style="margin-left:0px;" title="Maximize Panel"><img class="ibtn" src="../_ico/pmax-off.png"></span>
+<span onclick="PanelLayout('horizontal');" title="Vertical Split"><img class="ibtn" src="../_ico/psplit-v.png"></span>
+<span onclick="PanelLayout('vertical');" title="Horizontal Split"><img class="ibtn" src="../_ico/psplit-h.png"></span>
+<span onclick="LoadFrame('p2','../Modules/rwebiMenu-Modules-Listing.html');" title="Module List"><img class="ibtn" src="../_ico/modules-list.png"></span><br>
+<span onclick="dToggle('PanelBar');"><img id="ifv" src="../_ico/fullscreen-on.png" class="ibtn" title="Toggle Full View"></span>
+<span onclick="PanelFull(1);" title="Maximize Panel 1"><img src="../_ico/p1.png" class="ibtn"></span>
+<span onclick="PanelFull(2);" title="Maximize Panel 2"><img src="../_ico/p2.png" class="ibtn"></span>
+<span onclick="eToggle('PanelStats');ElementDetails('pc2');eHid('oView');"><img src="../_ico/stats-panel.png" class="vibtn" title="Panel Details"></span></div>
+
+<!-- Panel Container End -->
+</div>
+<!-- Panel Shell End -->
+</div>
+
+<!-- Panel Stats: -->
+<div id="PanelStats" style="z-index:11;position:absolute;top:48px;left:6px;width:260px;height:250px;padding-bottom:3px;background-color:#2e2e2e;color:#ffffff;border-radius:4px;visibility:hidden;overflow:hidden;"><div class="wc fb" style="display:inline-block;color:#ffffff;padding-top:9px;margin-left:3px;font-size:1.3rem;">Panel Details</div><span onclick="eHid('PanelStats');" title="Close Details"><img src="../_ico/mclose.png" class="ibtn" style="float:right;margin-right:3px;"></span>
+<div style="width:100%;height:93%;overflow-y:scroll;margin-top:9px;">
+<span class="lwcb lb90" style="margin-left:3px;">Screen Width:</span><span id="isw" class="oc"></span><br>
+<span class="lwcb lb90" style="margin-left:3px;">Screen Height:</span><span id="ish" class="vg"></span><br>
+<span class="lwcb lb90" style="margin-left:3px;">Panel 1 Width:</span><span id="p1w" class="mc"></span><br>
+<span class="lwcb lb90" style="margin-left:3px;">Panel 1 Height:</span><span id="p1h" class="yc"></span><br>
+<span class="lwcb lb90" style="margin-left:3px;">Panel 2 Width:</span><span id="p2w" class="cc"></span><br>
+<span class="lwcb lb90" style="margin-left:3px;">Panel 2 Height:</span><span id="p2h" class="lg"></span><br>
+<span class="lwcb lb90" style="margin-left:3px;">Curent Panel:</span><span id="cp" class="yc"></span><br>
+<span class="lwcb lb90" style="margin-left:3px;">Orientation:</span><span id="po" class="cc"></span><br>
+<span class="lwcb lb90" style="margin-left:3px;">Status:</span><span id="ps" class="sb"></span><br>
+<select id="soElement" onchange="ElementDetails();" class="snopt" title="Element Details" style="width:90%  ;height:28px;margin-left:1px;">
+<option value="do">Elements:</option>
+<option value="body">body</option>
+<option value="PanelShell">Panel Shell</option>
+<option value="PanelContainer">Panel Container</option>
+<option value="PanelBar">Panel Bar</option>
+<option value="pc1">Panel 1</option>
+<option value="pc2">Panel 2</option>
+<option value="pm1">Panel 1 Menu</option>
+<option value="pm2">Panel 2 Menu</option>
+<option value="pc1">Container 1</option>
+<option value="pc2">Container 2</option>
+<option value="ph1">Header 1</option>
+<option value="ph2">Header 2</option>
+<option value="pr1">Result 1</option>
+<option value="pf1">Frame 1</option>
+<option value="pr2">Result 2</option>
+<option value="pf2">Frame 2</option>
+<option value="oView">Options</option>
+<option value="pStats">Stats</option>
+<option value="hView">Help</option>
+<option value="copy">- Copy Details</option>
+<option value="left">- View Left</option>
+<option value="right">- View Right</option></select>
+<span class="wc lb80" style="margin-left:3px;">Element</span><span id="eid"></span><br>
+<span class="wc lb80" style="margin-left:3px;">Width</span><span id="ew"></span><br>
+<span class="wc lb80" style="margin-left:3px;">Height</span><span id="eh"></span><br>
+<span class="wc lb80" style="margin-left:3px;">Top</span><span id="et"></span><br>
+<span class="wc lb80" style="margin-left:3px;">Left</span><span id="el"></span><br>
+<span class="wc lb80" style="margin-left:3px;">Index</span><span id="wzi"></span><br>
+<div id="ElementList" style="font-size:1.0em;background-color:#2e2e2e;margin-bottom:3px;"></div>
+<!-- Panel Stats End: -->
+</div></div>
+
+<!-- Options View: -->
+<div id="oView" style="position:absolute;top:44px;right:6px;width:auto;height:40px;background-color:#cccccc;visibility:hidden;float:right;border:1px solid #505050;border-radius:3px;padding:3px;visibility:hidden;"><span onclick="eToggle('hView');obLoad('hDisplay','../Help/rwebiHelp-ToolPanel.html');eHid('oView');"><img class="ibtn" src="../_ico/mhelp.png" title="Documentation"></span>
+<span onclick="eToggle('hView');obLoad('hDisplay','../Help/rwebiAbout-ToolPanel.html');eHid('oView');"><img class="ibtn" src="../_ico/mabout.png" title="About Module"></span>
+<span onclick="eHid('oView');LinkModule();"><img class="ibtn" src="../_ico/link.png" title="Copy & Share Module Link"></span>&nbsp;<select id="osTheme" onChange="optTheme();" class="bopt" title="Theme Mode" style="width:65px;height:33px;">
+<option value="m">Mode</option>
+<option value="l">Light Mode&nbsp;&nbsp;</option>
+<option value="d">Dark Mode</option></select></div>
+
+<!-- Help View: -->
+<div id="hView" class="hView" style="position:absolute;top:65px;left:3px;width:80%;height:80%;min-width:260px;min-height:200px;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Information</span></div><div class="hvRight"><span onclick="eHid('hView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div style="height:90%;margin-top:6px;"><object type="text/html" id="hDisplay" data="../Help/rwebiHelp-ToolPanel.html" style="height:85%;width:100%;border:0px;"></object><input type="file" id="fb" style="visibility:hidden;" onchange="oFile('v','cv','fb');"></div></div>
+
+<script>
+const container=document.getElementById('PanelContainer');
+const p1=document.getElementById('pc1');
+const p2=document.getElementById('pc2');
+</script></body></html>
+<!-- rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61 -->
