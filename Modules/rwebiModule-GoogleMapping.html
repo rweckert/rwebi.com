@@ -1,0 +1,179 @@
+<!--            _   _  
+  ___ _ _ _ ___| |_|_| Aplha Preview: rwebiModule-GoogleMapping.html
+ |  _| | | | -_| . | | rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61
+ |_| |_____|___|___|_| -->
+<!doctype html><html lang="en"><head><meta charSet="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rwebiModule-GoogleMapping</title>
+<link rel="icon" type="image/x-icon" href="../_ico/favicon.png">
+<link id="csl" rel="stylesheet" href="../_css/rwebiStyle-Light-c61.css" media="(prefers-color-scheme: light)">
+<link id="csd" rel="stylesheet" href="../_css/rwebiStyle-Dark-c61.css" media="(prefers-color-scheme: dark)">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="../_jss/rwebiEngine-LightCore-c61.js"></script>
+<script src="../_jss/rwebiModule-GoogleMapping.js"></script>
+</head><body onload="mStart();" onresize="mResize();" style="overflow:hidden;"><form name="forminput">
+
+<!-- Module Header: -->
+<div id="mHeader" class="sho" style="width:100%;height:35px;min-width:320px;white-space:nowrap;cursor:pointer;" onclick="dToggle('oView');eHid('hView');"><div style="position:absolute;z-Index:999;top:3px;left:5px;"><span title="Module Options"><img src="../_ico/googlemapping.png" class="nibtn">&nbsp;</span><div class="mTitle">Google Mapping</div></div><div style="position:absolute;top:3px;right:6px;"><img src="../_ico/mselect.png"></div></div>
+
+<!-- Module Bar: -->
+<div id="mBar" class="sh0" style="height:35px;min-width:320px;white-space:nowrap;">
+<span onclick="eToggle('mMenu');" title="Toggle Menu Options"><img src="../_ico/mmenu.png" class="ibtn"></span>
+<select id="soFile" onchange="FileOpt();" onclick="eHid('mMenu');" class="yopt" title="File Menu" style="width:50px;height:33px;">
+<option value="default">File</option>
+<option value="new">New Map</option>
+<option value="copy">Copy Details</option>
+<option value="details">Mapping Details</option>
+<option value="default">Default Map</option>
+<option value="google">Open Google Maps&nbsp;&nbsp;</option>
+<option value="info">Information</option>
+<option value="exit">Exit Module</option></select>
+
+<select id="o2" onchange="mOpt();" class="gopt" title="Map By" style="width:75px;height:33px;">
+<option value="default">Map By</option>
+<option value="mAddress">Address</option>
+<option value="mCoordinates">Coordinates&nbsp;&nbsp;</option>
+<option value="mCity">City / Town</option>
+<option value="mCounty">County / Province&nbsp;&nbsp;</option>
+<option value="mPostal">Zip / Postal</option></select>
+
+<select id="o3" class="oopt" title="Map Type" style="width:70px;height:33px;">
+<option value="m">Type</option>
+<option value="m">Road</option>
+<option value="h">Satelite&nbsp;&nbsp;</option></select>
+
+<select id="o4" class="bopt" title="Zoom By" style="width:65px;height:33px;">
+<option value="10" >Zoom</option>
+<option value="1"> 1</option>
+<option value="3"> 3</option>
+<option value="6"> 6</option>
+<option value="9"> 9</option>
+<option value="11">11</option>
+<option value="13">13</option>
+<option value="15">14</option>
+<option value="17">15</option>
+<option value="17">16</option>
+<option value="17">17</option>
+<option value="17">18</option>
+<option value="17">19</option></select></div>
+
+<!-- Map Containor: -->
+<div id="cc" class="cc" style="width:100%;z-index:1;margin-top:6px;">
+<object type="text/html" id="gMap" data="https://maps.google.com/maps?f=q&q=+&t=h&z=2&output=embed" style="height:100%;width:100%;overflow-y:scroll;border:0px;background-color:#d9d9d9"></object></div><div class="clearArea"></div>
+
+<!-- Map Address: -->
+<div id="mAddress" class="hView" style="position:absolute;top:95px;left:12px;width:60%;min-width:250px;height:auto;padding-bottom:9px;visibility:hidden;"><span onclick="eHid('mAddress')"><img src="../_ico/mclose.png" class="ibtn" style="float:right;"></span>
+<span class="wc em9 fb">Address Detail:</span><br>
+<div style="margin-top:3px;display:inline-block;background-color:#2e2e2e;">
+<input type='text' id='aStreetNum' class='iy' placeholder='Street #' style="width:60px;font-size:1.13em;height:28px;" onfocus="this.select();"></div>
+<div style="margin-top:3px;display:inline-block;">
+<input type='text' id='aStreet' class='iy' placeholder='Street Name' style="width:160px;font-size:1.13em;height:28px;" onfocus="this.select();"></div>
+<div style="margin-top:3px;display:inline-block;">
+<input type='text' id='aCity' class='iy' placeholder='City Name' style="width:160px;font-size:1.13em;height:28px;" onfocus="this.select();"></div>
+<div style="margin-top:3px;display:inline-block;">
+<input type='text' id='aState' class='iy' placeholder='State' style="width:120px;font-size:1.13em;height:28px;" onfocus="this.select();"></div>
+
+<div style="margin-top:0px;display:inline-block;">
+<input type='text' id='aPostal' class='iy' placeholder='Postal' style="width:90px;font-size:1.13em;height:28px;margin-top:3px;" onfocus="this.select();">&nbsp;<span onclick="mAddressDetail();eHid('mAddress');" title="Plot Address Detail"><img src="../_ico/googlemapping.png" class="ibtn"></span></div><br>
+
+<div style="margin-top:3px;">
+<span class="wc em9 fb">Location Search:</span><br>
+<input type='text' id='aComplete' class='iy' placeholder='Location Search' style="width:80%;font-size:1.13em;height:28px;margin-right:1px;margin-top:3px;" onfocus="this.select();">&nbsp;<span onclick="mLocationSearch();eHid('mAddress');" title="Location Search"><img src="../_ico/googlemapping.png" class="ibtn"></span></div></div>
+
+<!-- Map County: -->
+<div id="mCounty" class="hView" style="position:absolute;top:95px;left:12px;width:50%;min-width:230px;height:auto;padding-bottom:9px;visibility:hidden;"><span onclick="eHid('mCounty')"><img src="../_ico/mclose.png" class="ibtn" style="float:right;"></span>
+<div style="display:inline-block;margin-left:6px;">
+<label for="pCounty" class="em9 fb wc" style="display:block;">County-Province:</label>
+<input type="text" id="pCounty" style="width:30vw;font-size:1.13em;height:28px;margin-top:3px;min-width:90px;" onfocus="this.select();" title="">&nbsp;<span onclick="mCounty();eHid('mCounty');" title="Plot County - Province"><img src="../_ico/googlemapping.png" class="ibtn"></span></div></div>
+
+<!-- Map Postal: -->
+<div id="mPostal" class="hView" style="position:absolute;top:95px;left:12px;width:50%;min-width:230px;height:auto;padding-bottom:9px;visibility:hidden;"><span onclick="eHid('mPostal')"><img src="../_ico/mclose.png" class="ibtn" style="float:right;"></span>
+<div style="display:inline-block;margin-left:6px;">
+<label for="pPostal" class="em9 fb wc" style="display:block;">Zip-Postal Code:</label>
+<input type="text" id="pPostal" style="width:30vw;font-size:1.13em;height:28px;margin-top:3px;min-width:90px;" onfocus="this.select();" title="">&nbsp;<span onclick="mPostal();eHid('mPostal');" title="Plot Zip-Postal"><img src="../_ico/googlemapping.png" class="ibtn"></span></div></div>
+
+<!-- Map City: -->
+<div id="mCity" class="hView" style="position:absolute;top:95px;left:12px;width:50%;min-width:230px;height:auto;padding-bottom:9px;visibility:hidden;"><span onclick="eHid('mCity')"><img src="../_ico/mclose.png" class="ibtn" style="float:right;"></span>
+<div style="display:inline-block;margin-left:6px;">
+<label for="pCity" class="em9 fb wc" style="display:block;">City-Town:</label>
+<input type="text" id="pCity" style="width:30vw;font-size:1.13em;height:28px;margin-top:3px;min-width:90px;" onfocus="this.select();" title="">&nbsp;<span onclick="mCity();eHid('mCity');" title="Plot City-Town"><img src="../_ico/googlemapping.png" class="ibtn"></span></div></div>
+
+<!-- Map Coordinates: -->
+<div id="mCoordinates" class="hView" style="position:absolute;top:95px;left:12px;width:60%;min-width:250px;height:auto;padding-bottom:9px;visibility:hidden;"><span onclick="eHid('mCoordinates')"><img src="../_ico/mclose.png" class="ibtn" style="float:right;"></span>
+<div style="display:inline-block;margin-left:6px;">
+<label for="clat" class="em9 fb wc" style="display:block;">Latitude:</label>
+<input type="text" id="clat" style="width:60%px;font-size:1.13em;height:28px;margin-top:3px;" onfocus="this.select();" title=""></div>
+<div style="display:inline-block;margin-left:6px;">
+<label for="clon" class="em9 fb wc" style="display:block;margin-top:3px;">Longitude:</label>
+<input type="text" id="clon" style="width:60%;font-size:1.13em;height:28px;margin-top:3px;" onfocus="this.select();" title="">&nbsp;<span onclick="mLatLon();eHid('mCoordinates');" title="Plot Latutude & Longitude"><img src="../_ico/googlemapping.png" class="ibtn"></span></div>
+<div style="display:inline-block;margin-left:6px;">
+<label for="coord" class="em9 fb wc" style="display:block;margin-top:3px;">Coordinates:</label>
+<input type="text" id="coord" style="width:80%;font-size:1.13em;height:28px;margin-top:3px;" onfocus="this.select();" title="">&nbsp;<span onclick="mCoords();eHid('mCoordinates');" title="Plot Coordinates"><img src="../_ico/googlemapping.png" class="ibtn"></span></div></div>
+
+<!-- Map Details: -->
+<div id="mDetails" class="hView" style="position:absolute;top:95px;left:12px;width:60%;min-width:250px;height:auto;padding-bottom:9px;color:#ffffff;visibility:hidden;"><span onclick="eHid('mDetails')"><img src="../_ico/mclose.png" class="ibtn" style="float:right;"></span>
+<div id="details"></div><p><span class="gbtn" title="Copy Details" onclick="eCopy('v','tt');">Copy Details</span>&nbsp;&nbsp;<span class="rbtn" title="Close" onclick="eHid('mDetails');">Close</span></p></div>
+
+<!-- View Screenshot: -->
+<div id="vScreenShot" class="hView" style="position:absolute;top:95px;left:12px;width:60%;min-width:250px;height:300px;padding-bottom:9px;color:#ffffff;visibility:hidden;"><span onclick="eHid('vScreenShot')"><img src="../_ico/mclose.png" class="ibtn" style="float:right;"></span>
+<img id="ssimg"></img><p><span class="gbtn" title="Copy Details" onclick="eCopy('v','tt');">Copy Details</span>&nbsp;&nbsp;<span class="rbtn" title="Close" onclick="eHid('vScreenShot');">Close</span></p></div>
+
+<!-- Module Menu: -->
+<div id="mMenu" style="position:absolute;top:130px;left:12px;width:30px;height:auto;z-index:97;visibility:hidden;margin-bottom:3px;"><span onclick="SaveLink();"><img class="vibtn" src="../_ico/iFont.png" title="Save Map Link"></span>
+<span onclick="eToggle('vLinks');eHid('mMenu');" title="View Saved Links"><img src="../_ico/link.png" class="vibtn"></span>
+<span onclick="FullViewOpen();"><img class="vibtn" src="../_ico/fullscreen-on.png" title="View Full Screen"></span>
+<span onclick="LoadgMap();"><img class="vibtn" src="../_ico/googlemaps.png" title="Open Map in Google Maps"></span>
+
+</div>
+
+<!-- Full View Button: -->
+<div id="fvButton" onmouseover="sFlex('f','cc','0','0','0');" style="z-index:1000;position:absolute;top:105px;left:6px;width:auto;height:45px;z-index:99;visibility:hidden;padding-top:0px;">
+<span onclick="eToggle('fvBar');"><img src="../_ico/mmenu.png" class="vibtn" title="View Menu"></span></div>
+
+<!-- Full View Bar: -->
+<div id="fvBar" style="position:absolute;top:143px;left:6px;width:auto;height:auto;z-index:99;visibility:hidden;">
+<span onclick="eToggle('vLinks');" title="View Saved Links"><img src="../_ico/link.png" class="vibtn"></span><br>
+<span onclick="FullViewClose();"><img class="vibtn" src="../_ico/fullscreen-off.png" title="Close Full View"></span></div>
+
+<!-- Links View: -->
+<div id="vLinks" class="hView" style="top:95px;left:12px;width:90%;height:auto;visibility:hidden;">
+<div class="hvLeft"><span class="em13 wc fb">Saved Links</span></div><div class="hvRight"><span onclick="eHid('vLinks')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div>
+<span onclick="LinkDownload();" title="Download Saved Map Links"><img src="../_ico/save-as.png" class="ibtn"></span>
+<span onclick="LinkExport();" title="Export Saved Links to New Tab"><img src="../_ico/export-2.png" class="ibtn"></span>
+<span onclick="LinkClear();" title="Clear Saved Links"><img src="../_ico/clear.png" class="ibtn"></span>
+<table id="sLinks" class="tfnp" border="1" cellpadding="3" cellspacing="0" style="width:100%;font-size:0.90em;margin-top:6px;">
+<tr><td>Saved Map Link</td><td>Time-Stamp</td></tr>
+</tbody></table></div>
+
+<!-- Tools View: -->
+<div id="vTools" style="position:absolute;top:104px;right:6px;width:auto;height:auto;background-color:#cccccc;visibility:hidden;float:right;border:1px solid #505050;border-radius:3px;padding:3px;z-index:99;">Tools</div>
+
+<!-- Save View: -->
+<div id="sView" class="hView" style="top:60px;left:20px;width:60%;min-width:260px;max-width:500px;height:auto;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Save/Download</span></div><div class="hvRight"><span onclick="eHid('sView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div class="p6"><label for="sf" class="wc em12">Filename</label><input type='text' id='sf' class='wb' style="width:90%;font-size:1.15em;height:27px;" value="rwebi-GoogleMapping.txt" onfocus="this.select();"><p><br><span class="gbtn" onclick="sFile('v','lc','sf');eHid('sView');" title="Download / Save">Save</span>&nbsp;&nbsp;<span class="abtn" onclick="eHid('sView');" title="Cancel Download">Cancel</span></p></div></div>
+
+<!-- Options View: -->
+<div id="oView" class="oView" style="position:absolute;z-Index:999;top:43px;width:140px;height:auto;padding:6px;border-radius:3px;display:none;font-weight:bold;">
+<span class="mso" onclick="dHid('oView');LinkModule();"><img src="../_ico/link.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Share Link</span>
+<span class="mso" onclick="selTheme('l');"><img src="../_ico/ltheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Light Theme</span>
+<span class="mso" onclick="selTheme('d');"><img src="../_ico/dtheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Dark Theme</span>
+<span class="mso" onclick="eToggle('hView');dHid('oView');obLoad('hDisplay','../Help/rwebiAbout-GoogleMapping.html');"><img src="../_ico/mhelp.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Information</span>
+<span class="mso" onclick="modRefresh();"><img src="../_ico/refresh.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Refresh</span>
+<span class="mso" onclick="pLoad('rwebiMenu-Modules.html');"><img src="../_ico/mclose.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Close</span></div>
+
+<!-- Help View: -->
+<div id="hView" class="hView" style="position:absolute;top:65px;left:15px;width:80%;height:80%;min-width:260px;min-height:200px;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Information</span></div><div class="hvRight"><span onclick="eHid('hView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div style="height:90%;margin-top:6px;"><object type="text/html" id="hDisplay" data="../Help/rwebiHelp-GoogleMapping.html" style="height:85%;width:100%;border:0px;"></object><input type="file" id="fb" style="visibility:hidden;" onchange="oFile('v','cv','fb');"></div></div>
+
+<!-- Variables: -->
+<textarea id="tt" class="hf"></textarea>
+<textarea id="lc" class="hf"></textarea>
+<div id="ut" class="hf"></div>
+<span id="ow" class="hf">18</span>
+<span id="oh" class="hf">108</span>
+<span id="ob" class="hf">0</span>
+<span id="mt" class="hf">0</span>
+<span id="gl" class="hf"></span>
+
+<!-- Module Footer: -->
+<div id="mFooter" class="mFooter" style="float:left;margin-top:0px;min-width:320px;">
+<img src="../_ico/favicon.png" style="height:12px;margin-right:3px;margin-top:2px;vertical-align:bottom;"><b>GoogleMapping</b> </span>w:<span id="miw" class="oc"></span>&nbsp;h:<span id="mih" class="bc"></span></div></body></html>
+<!-- rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61 -->

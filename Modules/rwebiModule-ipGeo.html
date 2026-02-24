@@ -1,0 +1,109 @@
+<!--            _   _  
+  ___ _ _ _ ___| |_|_| Aplha Preview: rwebiModule-ipGeo.html
+ |  _| | | | -_| . | | rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61
+ |_| |_____|___|___|_| -->
+<!doctype html><html lang="en"><head><meta charSet="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rwebiModule-ipGeo</title>
+<link rel="icon" type="image/x-icon" href="../_ico/favicon.png">
+<link id="csl" rel="stylesheet" href="../_css/rwebiStyle-Light-c61.css" media="(prefers-color-scheme: light)">
+<link id="csd" rel="stylesheet" href="../_css/rwebiStyle-Dark-c61.css" media="(prefers-color-scheme: dark)">
+<script src="../_jss/rwebiEngine-LightCore-c61.js"></script>
+<script src="../Library/jQuery/jquery.min.js"></script>
+<link rel = "stylesheet" href = "../Library/Leaflet/leaflet.css" />
+<script src = "../Library/Leaflet/leaflet.js"></script>
+<script src="../_jss/rwebiModule-ipGeo.js"></script>
+</head><body onload="mStart();" onresize="mResize();" style="overflow-x:hidden;overflow-y:scroll;">
+
+<!-- Module Header: -->
+<div id="mHeader" class="sho" style="width:100%;height:35px;min-width:320px;white-space:nowrap;cursor:pointer;" onclick="dToggle('oView');eHid('hView');"><div style="position:absolute;z-Index:999;top:3px;left:5px;"><span title="Module Options"><img src="../_ico/ipgeo.png" class="nibtn">&nbsp;</span><div class="mTitle">ipGeo</div></div><div style="position:absolute;top:3px;right:6px;"><img src="../_ico/mselect.png"></div></div>
+
+<!-- Module Bar: -->
+<div id="mBar" class="sh0" style="height:35px;min-width:320px;white-space:nowrap;">
+<select id="soFile" onchange="FileOpt();" class="yopt" title="File Menu" style="width:50px;height:33px;">
+<option value="default">File</option>
+<option value="csave">Local CSV Save</option>
+<option value="cdload">Download as CSV</option>
+<option value="tdload">Download as Table&nbsp;&nbsp;</option>
+<option value="texport">Export as Table</option>
+<option value="reset">Reset Module</option>
+<option value="tclear">Clear Table</option>
+<option value="info">Information</option>
+<option value="exit">Exit Module</option></select>
+<input type="text" id="ipa" name="ipa" class="itxt" style="width:120px;" onfocus="this.select();" placeholder="IP Address">
+<span onclick="iAPI();" title='Load API'><img src='../_ico/go-orange.png' class='ibtn'></span>
+<span onclick="" title='Copy IP'><img src='../_ico/copy.png' class='ibtn'></span>
+<span onclick="" title='Export Data'><img src='../_ico/export-2.png' class='ibtn'></span></div>
+
+<!-- Result View: -->
+<div id="rView" class="sh6" style="width:99%;min-width:320px;">
+<span class="fb lb85">System ID: </span><span class="gc lb60" id="sysid"></span>
+<span class="fb lb80">IP Address: </span><span class="tpl" id="ip"></span><br>
+<span class="fb lb85">Latitude: </span><span class="br lb60" id="lat"></span>
+<span class="fb lb80">Longitude: </span><span class="tc" id="lon"></span><br>
+<span class="fb lb85">Organization: </span><span class="br" id="org"></span><br>
+<span class="fb lb85">City: </span><span class="tc" id="city"></span><br>
+<span class="fb lb85">State: </span><span class="br lb80" id="state"></span>
+<span class="fb lb60">Postal: </span><span class="tc" id="postal"></span><br>
+<span class="fb lb85">Date: </span><span class="br lb80" id="dstamp"></span>
+<span class="fb lb60">Time: </span><span class="tc" id="tstamp"></span><br>
+<span class="fb lb85">Timezone: </span><span class="tc" id="tzone"></span>
+<div style="height:40px"><span class="fb">Host: </span><span class='oc' id='host'></span>
+<input type="number" id="tm" name="tm" class="hf"></div>
+
+<!-- Map Containor -->
+<div id='mc' name='mc' class="cc" style="padding-top:0px;height:250px;">
+<div id="mv" name="mv" style="position:relative;top:3px;display:inline-block;float:left;width:99.5%;height:250px;"><div id="map" name="map" style='width:100%;height:250px;'></div></div></div><div class='clearArea'></div>
+
+<!-- Result Menu: -->
+<div id="mResult" class="sh6">
+<select name="soResult" onchange="ResultOpt();" class="bopt" title="Options" style="width:88px;height:33px;">
+<option value="default">Raw Data</option>
+<option value="save">Local Save Data</option>
+<option value="export">Export Raw Data</option>
+<option value="csvsave">Local Save CSV</option>
+<option value="csvsaveas">Download Save CSV&nbsp;&nbsp;</option>
+<option value="tdload">Download Table</option>
+<option value="clear">Clear Raw Data</option></select>
+<span onclick="" title="Download Results"><img src="../_ico/save-as.png" class="ibtn"></span>
+<span onclick="eTab('v','cv');" title="Export Raw Results"><img src="../_ico/export-2.png" class="ibtn"></span>
+<span onclick="dSampleA();" title="Test Data Set 1"><img src="../_ico/t1.png" class="ibtn"></span>
+<span onclick="dSampleB();" title="Test Data Set 2"><img src="../_ico/t2.png" class="ibtn"></span>
+<span onclick="dSampleC();" title="Test Data Set 3"><img src="../_ico/t3.png" class="ibtn"></span></div>
+
+<!-- View Stats: -->
+<div id="vStats" class="sh3" style="min-width:320px;">
+<span class="em08">Words:&nbsp;</span><span id="rwc1" class="oc"></span>
+<span class="em08">Characters:&nbsp;</span><span id="rcc1" class="bc"></span>
+<span class="em08">Text:&nbsp;</span><span id="rtc1" class="mc"></span>
+<span class="em08">Lines:&nbsp;</span><span id="rlc1" class="gc"></span></div>
+
+<!-- Content Container / Content View: -->
+<div id="cc" class="cc" style="z-index:10;margin-top:3px;min-width:320px;min-height:100px;"><textarea id="cv" class="cvy" onkeyup="tStat('cv','1');" onclick="tStat('cv','1');eHid('oView');" onmouseover="tStat('cv','1');" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="on"></textarea></div><div class="clearArea"></div>
+
+<!-- Save View: -->
+<div id="sView" class="hView" style="top:60px;left:50px;width:60%;min-width:260px;max-width:500px;height:auto;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Save/Download</span></div><div class="hvRight"><span onclick="eHid('sView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div class="p6"><label for="sf" class="wc em12">Filename</label><input type='text' id='sf' class='wb' style="width:90%;font-size:1.15em;height:27px;" value="rwebi-infoTrace.txt" onfocus="this.select();"><p><br><span class="gbtn" onclick="sFile('v','cv','sf');eHid('sView');" title="Download / Save">Save</span>&nbsp;&nbsp;<span class="abtn" onclick="eHid('sView');" title="Cancel Download">Cancel</span></p></div></div>
+
+<!-- Options View: -->
+<div id="oView" class="oView" style="position:absolute;z-Index:9999;top:43px;width:140px;height:auto;padding:6px;border-radius:3px;display:none;font-weight:bold;">
+<span class="mso" onclick="dHid('oView');LinkModule();"><img src="../_ico/link.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Share Link</span>
+<span class="mso" onclick="selTheme('l');"><img src="../_ico/ltheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Light Theme</span>
+<span class="mso" onclick="selTheme('d');"><img src="../_ico/dtheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Dark Theme</span>
+<span class="mso" onclick="eToggle('hView');dHid('oView');obLoad('hDisplay','../Help/rwebiAbout-ipGeo.html');"><img src="../_ico/mhelp.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Information</span>
+<span class="mso" onclick="modRefresh();"><img src="../_ico/refresh.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Refresh</span>
+<span class="mso" onclick="pLoad('rwebiMenu-Modules.html');"><img src="../_ico/mclose.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Close</span></div>
+
+<!-- Help View: -->
+<div id="hView" class="hView" style="position:absolute;top:65px;left:50px;width:80%;height:80%;min-width:260px;min-height:200px;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Information</span></div><div class="hvRight"><span onclick="eHid('hView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div style="height:90%;margin-top:6px;"><object type="text/html" id="hDisplay" data="../Help/rwebiHelp-ipGeo.html" style="height:85%;width:100%;border:0px;"></object><input type="file" id="fb" style="visibility:hidden;" onchange="oFile('v','cv','fb');"></div></div>
+
+<!-- Variables: -->
+<textarea id="tt" class="hf"></textarea>
+<textarea id="ut" class="hf"></textarea>
+<div id="json" class="hf"></div>
+<span id="ow" class="hf">35</span>
+<span id="oh" class="hf">348</span>
+
+<!-- Module Footer: -->
+<div id="mFooter" class="mFooter" style="float:left;margin-top:6px;min-width:320px;">
+<img src="../_ico/favicon.png" style="height:12px;margin-right:3px;margin-top:2px;vertical-align:bottom;"><b>ipGeo</b> </span>w:<span id="miw" class="oc"></span>&nbsp;h:<span id="mih" class="bc"></span></div></body></html>
+<!-- rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61 -->

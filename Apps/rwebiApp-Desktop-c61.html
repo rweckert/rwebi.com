@@ -1,0 +1,393 @@
+<!--            _   _
+  ___ _ _ _ ___| |_|_| Aplha Preview: rwebiApp-Desktop-c61.html
+ |  _| | | | -_| . | | rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61
+ |_| |_____|___|___|_| -->
+<!doctype html><html lang="en"><head><meta charSet="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rwebiApp-Desktop</title>
+<link rel="icon" type="image/x-icon" href="../_ico/favicon.png">
+<link rel="stylesheet" type="text/css" id="theme" href="../_css/rwebiStyle-Original-Dark-c61.css">
+<script src="../_jss/rwebiEngine-LightCore-c61.js"></script>
+<script src="../_jss/rwebiApp-Desktop-c61.js"></script>
+</head><body id="body" onload="dStart();" onmousemove="mPosition();" onresize="dStart();"style="overflow:hidden;"><form name="forminput">
+
+<!-- Engine: Desktop Container Start ------------>
+<div id="dContainer" style="height:98%;z-index:1;border-width:1px;border-style:solid;color:#d9d9d9;opacity:1.0;">
+
+<!-- Interface: Desktop Start Menus -->
+<div id="dStart" style="position:absolute;height:auto;z-index:99;">
+<span onclick="eToggle('dMenu');eToggle('dNew');eHid('SessionPanel');eHid('SessionMenu');" style="padding:3px;"><img src="../_ico/rwebi-desktop.png" class="nibtn" title="Desktop Menu" onclick="eDetails('dStart');"></span>
+
+<!-- Interface: Desktop Menu -->
+<div id="dMenu" style="position:absolute;visibility:hidden;z-index:98;width:30px;margin-left:3px;overflow:none;" onmouseover="eDetails('dMenu');">
+<span onclick="lToggle('h','dMenu,dNew');ToggleManager();dFront('wmt');"><img src="../_ico/desktop-manager.png" class="vibtn" style="margin-top:0px;" title="Window Manager"></span>
+<span onclick="eToggle('dIcons');lToggle('h','dMenu,dNew');eHid('SessionMenu');"><img src="../_ico/icons.png" class="vibtn" title="Toggle Desktop Icons"></span>
+<span onclick="eToggle('dProperties');dFront('dProperties');lToggle('h','dMenu,dNew,wProperties');"><img src="../_ico/desktop-properties.png" class="vibtn" title="Desktop Properties"></span>
+<span onclick="eToggle('eDetails');"><img src="../_ico/session-details.png" class="vibtn" title="Desktop Stats"></span>
+<span onclick="SessionExit();"><img src="../_ico/desktop-logout.png" class="vibtn" title="Close Session"></span></div></div>
+
+<!-- Interface: Desktop New Menus -->
+<div id="dNew" style="position:absolute;left:41px;width:auto;visibility:hidden;z-index:97;height:30px;margin-left:3px;padding-bottom:3px;overflow:none;" onmouseover="eDetails('dNew');">
+<span onclick="eToggle('SessionMenu');dFront('SessionMenu');"><img src="../_ico/session-btn.png" class="ibtn" title="Session Menu" style="margin-left:6px;"></span>
+<span onclick="wNew('Modules','%2e%2e%2f%4d%6fd%75%6ce%73%2f%72%77eb%69%4de%6e%75%2d%4d%6fd%75%6ce%73%2e%68%74%6d%6c','470px','410px','50px','50px');lToggle('h','dMenu,dNew,SessionMenu');"><img src="../_ico/toolpanel.png" class="ibtn" title="Tools Menu"></span>
+<span onclick="lToggle('h','dMenu,dNew,dStart,SessionMenu');"><img src="../_ico/checkbox-on.png" class="ibtn" title="Disable Session Bar"></span></div>
+
+<!-- Interface: Desktop Icons -->
+<div id="dIcons" style="z-index:30;position:absolute;top:60px;left:50px;width:300px;height:200px;border:0px;visibility:hidden;">
+<div onclick="wNew('Resources','../Modules/rwebiMenu-Resources.html','400px','450px','70px','45px');" style="display:inline-block;width:48px;height:48px;z-index:31;background-color:#2e2e2e;border:1px solid #505050;margin:6px;"><img src="../_ica/module-resources.png" width="48px" height="48px" title="Resources"></div>
+<div onclick="wNew('Text Tools','../Modules/rwebiModule-TextTools.html','550px','350px','50px','80px');" style="display:inline-block;width:48px;height:48px;z-index:31;background-color:#2e2e2e;border:1px solid #505050;margin:6px;"><img src="../_ica/module-texttools.png" width="48px" height="48px" title="Text Tools"></div>
+<div onclick="document.getElementById('itxt').click();" style="display:inline-block;width:48px;height:48px;z-index:31;background-color:#2e2e2e;border:1px solid #505050;margin:6px;"><img src="../_ica/open-text.png" width="48px" height="48px" title="Open Text File"></div>
+<div onclick="document.getElementById('ihtm').click();" style="display:inline-block;width:48px;height:48px;z-index:31;background-color:#2e2e2e;border:1px solid #505050;margin:6px;"><img src="../_ica/open-html.png" width="48px" height="48px" title="Open HTML File"></div>
+<div onclick="document.getElementById('ipdf').click();" style="display:inline-block;width:48px;height:48px;z-index:31;background-color:#2e2e2e;border:1px solid #505050;margin:6px;"><img src="../_ica/open-pdf.png" width="48px" height="48px" title="Open PDF File"></div>
+<div onclick="wNew('Help Index','../Modules/rwebiMenu-Help-Listing.html','50%','350px','55px','55px');" style="display:inline-block;width:48px;height:48px;z-index:31;background-color:#2e2e2e;border:1px solid #505050;margin:6px;"><img src="../_ica/help-index.png" width="48px" height="48px" title="Help Index"></div>
+<div onclick="urlViewer('p');" style="display:inline-block;block;width:48px;height:48px;z-index:31;background-color:#2e2e2e;border:1px solid #505050;margin:6px;"><img src="../_ica/view-url.png" width="48px" height="48px" title="View URL Address"></div>
+<div onclick="imgViewer('p');" style="display:inline-block;width:48px;height:48px;z-index:31;background-color:#2e2e2e;border:1px solid #505050;margin:6px;"><img src="../_ica/view-image.png" width="48px" height="48px" title="View Image"></div>
+<div onclick="pdfViewer('p');" style="display:inline-block;width:48px;height:48px;z-index:31;background-color:#2e2e2e;border:1px solid #505050;margin:6px;"><img src="../_ica/view-pdf.png" width="48px" height="48px" title="View PDF"></div>
+<div onclick="wNew('Table of Elements','https://ptable.com/print/periodic-table.pdf','550px','350px','50px','80px');" style="display:inline-block;width:48px;height:48px;z-index:31;background-color:#2e2e2e;border:1px solid #505050;margin:6px;"><img src="../_ica/res-elements.png" width="48px" height="48px" title="Table of Elements"></div></div>
+
+<!-- Interface: Session Panel -->
+<div id="SessionPanel" style="position:absolute;top:350px;left:12px;width:220px;height:200px;padding:6px;background-color:#D5D1CB;border-radius:9px;visibility:hidden;" class="fb"></div>
+
+<!-- Interface: Session Start -->
+<div id="SessionStart" style="visibility:hidden;">
+<span class="dlbr" onclick="eToggle('dStart');eHid('SessionPanel');"><img src="../_ico/rwebi-desktop.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Session Bar</span>
+<span class="dlbr" onclick="SessionStart('manage');"><img src="../_ico/element.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Manage Session</span>
+<span class="dlbr" onclick="SessionStart('options');"><img src="../_ico/desktop-properties.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Session Options</span>
+<span class="dlbr" onclick="SessionStart('listing');"><img src="../_ico/toolbox.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Session Tools</span>
+<span class="dlbr" onclick="wNew('Documentation','../Help/rwebiHelp-Desktop.html','400px','320px','50px','50px');eHid('SessionPanel');"><img src="../_ico/mhelp.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Documentation</span>
+<span class="dlbr" onclick="wNew('About','../Help/rwebiAbout-Desktop.html','400px','320px','80px','90px');eHid('SessionPanel');"><img src="../_ico/mabout.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Information & About</span></div>
+
+<!-- Interface: Session Manage -->
+<div id="SessionManage" style="visibility:hidden;">
+<span class="dlbr" onclick="eHid('SessionPanel');ShellLogOut();"><img src="../_ico/session-screenlock.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Lock Screen</span>
+<span class="dlbr" onclick="SessionLock();"><img id="islock" src="../_ico/session-lock-off.png" style="width:18px;vertical-align:bottom;margin-right:3px;"><span id="oslock">Lock Session</span></span>
+<span class="dlbr" onclick="SessionReset();"><img src="../_ico/sum-add.png" style="width:18px;vertical-align:bottom;margin-right:3px;">New Session</span>
+<span class="dlbr" onclick="SessionDestroy();"><img src="../_ico/session-destroy.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Destroy Session</span>
+<span class="dlbr" onclick="SessionStart('start');"><img src="../_ico/back-right.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Back to Session Menu</span></div>
+
+<!-- Interface: Session Options -->
+<div id="SessionOptions" style="visibility:hidden;">
+<span class="dlbr" onclick="ToggleManager();dFront('wmt');eHid('SessionPanel');"><img src="../_ico/windowmanager.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Window Manager</span>
+<span class="dlbr" onclick="eToggle('dIcons');eHid('SessionPanel');"><img src="../_ico/icons.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Toggle Icons</span>
+<span class="dlbr" onclick="eVis('dProperties');dFront('dProperties');eHid('SessionPanel');"><img src="../_ico/desktop-properties.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Desktop Preferences</span>
+<span class="dlbr" onclick="eToggle('eDetails');eHid('SessionPanel');"><img src="../_ico/session-details.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Desktop Details</span>
+<span class="dlbr" onclick="eHid('SessionPanel');zIndex();alert('Session index has been reset to zero.');"><img src="../_ico/desktop-index-reset.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Reset Session Index</span>
+<span class="dlbr" onclick="SessionStart('start');"><img src="../_ico/back-right.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Back to Session Menu</span></div>
+
+<!-- Interface: Session Listing -->
+<div id="SessionListing" style="visibility:hidden;">
+<span class="dlbr" onclick="wNew('ScratchPad','../Modules/rwebiModule-ScratchPad.html','350px','430px','50px','50px');eHid('SessionPanel');"><img src="../_ico/scratchpad.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Scratch Pad</span>
+<span class="dlbr" onclick="wNew('Tool&nbsp;Panel;','../Modules/rwebiMenu-Modules.html','350px','430px','50px','50px');eHid('SessionPanel');"><img src="../_ico/toolpanel.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Tool Panel</span>
+<span class="dlbr" onclick="wNew('TextTools','../Modules/rwebiModule-TextTools.html','540px','450px','280px','120px');eHid('SessionPanel');"><img src="../_ico/texttools.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Text Tools</span>
+<span class="dlbr" onclick="wNew('TMCEdit','../Modules/rwebiModule-TMCEdit.html','540px','450px','280px','120px');eHid('SessionPanel');"><img src="../_ico/tmcedit.png" style="width:18px;vertical-align:bottom;margin-right:3px;">TMC Edit</span>
+<span class="dlbr" onclick=""><img src="../_ico/panelquery.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Quick Search</span>
+<span class="dlbr" onclick="wNew('Browser','../Modules/rwebiModule-Browser.html','530px','450px','180px','60px');eHid('SessionPanel');"><img src="../_ico/globe.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Browser</span>
+<span class="dlbr" onclick="wNew('Google&nbsp;Mapping','../Modules/rwebiModule-GoogleMapping.html','600px','400px','80px','90px');eHid('SessionPanel');"><img src="../_ico/googlemapping.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Google Mapping</span>
+<span class="dlbr" onclick="wNew('Map&nbsp;Plotting','../Modules/rwebiModule-MapPlotting.html','530px','350px','360px','70px');eHid('SessionPanel');"><img src="../_ico/mapplotting.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Map Plotting</span>
+<span class="dlbr" onclick="wNew('infoTrace','../Modules/rwebiModule-infoTrace.html','350px','400px','90px','45px');eHid('SessionPanel');"><img src="../_ico/infotrace.png" style="width:18px;vertical-align:bottom;margin-right:3px;">infoTrace</span>
+<span class="dlbr" onclick="wNew('ipGeo','../Modules/rwebiModule-ipGeo.html','500px','400px','70px','25px');eHid('SessionPanel');"><img src="../_ico/ipgeo.png" style="width:18px;vertical-align:bottom;margin-right:3px;">ipGeo</span>
+<span class="dlbr" onclick="wNew('Sting&nbsp;Escape','../Modules/rwebiModule-StringEscape.html','auto','500px','60px','60px');eHid('SessionPanel');"><img src="../_ico/stringescape.png" style="width:18px;vertical-align:bottom;margin-right:3px;">String Escape</span>
+<span class="dlbr" onclick="wNew('Clock&nbsp;Analog','../Modules/rwebiModule-Clock-Analog.html','300px','300px','60px','60px');eHid('SessionPanel');"><img src="../_ico/clock-analog.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Clock Analog</span>
+<span class="dlbr" onclick="SessionStart('start');"><img src="../_ico/back-right.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Back to Session Menu</span></div>
+
+<!-- Interface: Session Menu -->
+<div id="SessionMenu" style="position:absolute;top:55px;left:55px;width:220px;height:50%;padding:6px;background-color:#D5D1CB;border-radius:9px;overflow:hidden;visibility:hidden;" class="fb">
+<div style="overflow-y:scroll;overflow-x:none;height:98%;">
+
+<span class="dlbr" onclick="wNew('ScratchPad','../Modules/rwebiModule-ScratchPad.html','350px','430px','50px','50px');eHid('SessionMenu');"><img src="../_ico/scratchpad.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Scratch Pad</span>
+
+<span class="dlbr" onclick="wNew('Split & Copy','../Modules/rwebiModule-SplitnCopy.html','450px','370px','80px','80px');eHid('SessionMenu');"><img src="../_ico/splitncopy.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Split & Copy</span>
+
+<span class="dlbr" onclick="wNew('TextTools','../Modules/rwebiModule-TextTools.html','540px','450px','180px','20px');eHid('SessionMenu');"><img src="../_ico/texttools.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Text Tools</span>
+
+<span class="dlbr" onclick="wNew('TMCEdit','../Modules/rwebiModule-TMCEdit.html','540px','450px','230px','65px');eHid('SessionMenu');"><img src="../_ico/tmcedit.png" style="width:18px;vertical-align:bottom;margin-right:3px;">TMC Edit</span>
+
+<span class="dlbr" onclick="wNew('Quick Search','../Modules/rwebiModule-QuickSearch.html','540px','450px','130px','65px');eHid('SessionMenu');"><img src="../_ico/quicksearch.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Quick Search</span>
+
+
+
+
+<span class="dlbr" onclick="wNew('Basic Calculator','../Modules/rwebiModule-CalculatorBasic.html','360px','370px','65px','65px');eHid('SessionMenu');"><img src="../_ico/calc-basic.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Basic Calculator</span>
+
+<span class="dlbr" onclick="wNew('Basic Calculator','../Modules/rwebiModule-CalculatorScientific.html','450px','360px','95px','100px');eHid('SessionMenu');"><img src="../_ico/calc-scientific.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Scientific Calculator</span>
+
+<span class="dlbr" onclick="wNew('Browser','../Modules/rwebiModule-Browser.html','530px','450px','180px','60px');eHid('SessionMenu');"><img src="../_ico/globe.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Browser</span>
+<span class="dlbr" onclick="wNew('Google&nbsp;Mapping','../Modules/rwebiModule-GoogleMapping.html','600px','400px','80px','90px');eHid('SessionMenu');"><img src="../_ico/googlemapping.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Google Mapping</span>
+<span class="dlbr" onclick="wNew('Map&nbsp;Plotting','../Modules/rwebiModule-MapPlotting.html','530px','350px','360px','70px');eHid('SessionMenu');"><img src="../_ico/mapplotting.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Map Plotting</span>
+<span class="dlbr" onclick="wNew('infoTrace','../Modules/rwebiModule-infoTrace.html','350px','400px','90px','45px');eHid('SessionMenu');"><img src="../_ico/infotrace.png" style="width:18px;vertical-align:bottom;margin-right:3px;">infoTrace</span>
+<span class="dlbr" onclick="wNew('ipGeo','../Modules/rwebiModule-ipGeo.html','500px','400px','70px','25px');eHid('SessionMenu');"><img src="../_ico/ipgeo.png" style="width:18px;vertical-align:bottom;margin-right:3px;">ipGeo</span>
+<span class="dlbr" onclick="wNew('Sting&nbsp;Escape','../Modules/rwebiModule-StringEscape.html','auto','500px','60px','60px');eHid('SessionMenu');"><img src="../_ico/stringescape.png" style="width:18px;vertical-align:bottom;margin-right:3px;">String Escape</span>
+<span class="dlbr" onclick="wNew('Clock&nbsp;Analog','../Modules/rwebiModule-Clock-Analog.html','300px','300px','60px','60px');eHid('SessionMenu');"><img src="../_ico/clock-analog.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Clock Analog</span></div></div>
+
+<!-- Interface: Task Bar ------------------------>
+<div id="TaskBar" style="position:absolute;top:9px;left:6px;width:100%;height:35px;z-index:60;opacity: 0.8;background-color:#000000;font-size:1.1em;text-align:right;visibility:visible;transition-duration:1s;" class="dctrl">
+<!-- Viewing Bar -->
+<div id="ViewingBar" onclick="lToggle('h','mBar,oBar,uBar');">
+<!-- Time Bar -->
+<span id="ViewTime" style="float:right;font-size:1.05em;color:#dedad1;padding-left:6px;padding-right:6px;margin-top:10px;"></span>
+<!-- Date Bar -->
+<span id="ViewDate" style="font-size:1.05em;color:#dedad1;float:right;padding-left:6px;margin-top:10px;"></span></div>
+<!-- Interface: Task View -->
+<div id="TaskView" onclick="lToggle('h','mBar,oBar,uBar');"></div>
+<!-- Interface: Task Start Button -->
+<span id="btnStart" onclick="eToggle('SessionPanel');SessionStart('start');dFront('SessionPanel');lToggle('h','dMenu,dNew,SessionMenu');"><img src="../_ico/session-btn.png" class="nibtn" style="width:18px;height:18px;float:left;padding-left:6px;margin-left:3px;margin-bottom:3px;" title="Session Desktop Menu"></span></div>
+
+<!-- Manager Table ------------------------------>
+<div id="wmt" class="hView" onclick="dFront('wmt');" onmouseover="eDetails('wmt');" style="position:absolute;top:60px;left:-9999px;width:auto;height:auto;min-width:320px;min-height:300px;overflow:hidden;visibility:visible;"><div class="hvLeft"><span><img src="../_ico/desktop-manager.png" class="nibtn"></span><span class="lTitle wc">&nbsp;Manager</span></div><div class="hvRight"><span onclick="ToggleManager()"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div>
+Number of Windows: <span id="mwc" class="oc"></span>
+<table id="dt4" name="dt4" class="tfnp" border="1" cellpadding="3" cellspacing="0" style="width:98%;border:1px solid #505050;font-size:0.90em;">
+<tr style="text-align:center;vertical-align:middle;"><td>Manage&nbsp;Task</td><td>wUID</td><td>Name</td><td>Background</td><td>Border</td><td>Corners</td><td>Opacity</td></tr>
+</tbody></table></div>
+
+<!-- Desktop Properties: ------------------------>
+<div id="dProperties" class="hView" onclick="dFront('dProperties');" onmouseover="eDetails('dProperties');" style="position:absolute;top:50px;left:12px;width:50%;height:60%;min-height:250px;min-width:300px;overflow:hidden;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Desktop Properties</span></div><div class="hvRight"><span onclick="eHid('dProperties')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div style="width:99%;height:80%;overflow-y:scroll;">
+
+<!-- Desktop Properties: Background Option -->
+<div style="margin-left:6px;margin-top:9px;"><label for="bgOpt" class="em10 fb" style="display:block;">Image or Color</label>
+<select id="bgOpt" onChange="bkgOption();" onclick="" class="bopt" title="Image or Color" style="width:230px;height:33px;">
+<option value="image" selected="selected">Background Image Only</option>
+<option value="color">Background Color Only</option>
+<option value="both">Both Background and Color</option></select></div>
+
+<!-- Desktop Properties: Background Color -->
+<div style="display:inline-block;margin-left:6px;margin-top:9px;"><label for="bgColor" class="em10 fb" style="display:block;">Background Color</label><input type="color" id="bgColor" onchange="bkgColor();" value="#505050" style="width:150px;height:40px;margin-top:3px;" onchange="bkgColor();"></div>
+
+<!-- Desktop Properties: Background Image -->
+<div style="margin-left:6px;margin-top:9px;">
+<span class="em10 fb">Background Image</span>	
+<div style="width:95%;height:150px;margin-top:4px;margin-left:6px;overflow-y:scroll;">
+<div style="width:90px;height:65px;border:1px solid #ffffff;display:inline-block;" onclick="bkgSelect('dbkg_GrassField.jpg');"><img src="../_bkg/Desktop/dbkg_GrassField_Select.jpg" width="90px" height="65px" title="Grass Field"></div>
+<div style="width:90px;height:65px;border:1px solid #ffffff;display:inline-block;" onclick="bkgSelect('dbkg_DesertSunrise.jpg');"><img src="../_bkg/Desktop/dbkg_DesertSunrise_Select.jpg" width="90px" height="65px" title="Desert Sunrise"></div>
+<div style="width:90px;height:65px;border:1px solid #ffffff;display:inline-block;" onclick="bkgSelect('dbkg_YellowCanvas.jpg');"><img src="../_bkg/Desktop/dbkg_YellowCanvas_Select.jpg" width="90px" height="65px" title="Yellow Teso Canvas"></div>
+<div style="width:90px;height:65px;border:1px solid #ffffff;display:inline-block;" onclick="bkgSelect('dbkg_BlueMissoula.jpg');"><img src="../_bkg/Desktop/dbkg_BlueMissoula_Select.jpg" width="90px" height="65px" title="Blue Missoula"></div>
+<div style="width:90px;height:65px;border:1px solid #ffffff;display:inline-block;" onclick="bkgSelect('dbkg_RainbowGrain.jpg');"><img src="../_bkg/Desktop/dbkg_RainbowGrain_Select.jpg" width="90px" height="65px" title="Rainbow Grain"></div>
+<div style="width:90px;height:65px;border:1px solid #ffffff;display:inline-block;" onclick="bkgSelect('dbkg_ReflectiveNature.jpg');"><img src="../_bkg/Desktop/dbkg_ReflectiveNature_Select.jpg" width="90px" height="65px" title="Reflective Nature"></div>
+<div style="width:90px;height:65px;border:1px solid #ffffff;display:inline-block;" onclick="bkgSelect('dbkg_PaintingDowntown.jpg');"><img src="../_bkg/Desktop/dbkg_PaintingDowntown_Select.jpg" width="90px" height="65px" title="Painting Downtown"></div>
+<div style="width:90px;height:65px;border:1px solid #ffffff;display:inline-block;" onclick="bkgSelect('dbkg_WorldZoneMap.jpg');"><img src="../_bkg/Desktop/dbkg_WorldZoneMap_Select.jpg" width="90px" height="65px" title="WorldZone Map"></div>
+<div style="width:90px;height:65px;border:1px solid #ffffff;display:inline-block;" onclick="bkgSelect('dbkg_AnitStore.jpg');"><img src="../_bkg/Desktop/dbkg_AnitStore_Select.jpg" width="90px" height="65px" title="Anit Store"></div>
+<div style="width:90px;height:65px;border:1px solid #ffffff;display:inline-block;" onclick="bkgSelect('dbkg_WindowSunset.png');"><img src="../_bkg/Desktop/dbkg_WindowSunset_Select.png" width="90px" height="65px" title="Window Sunset"></div>
+<div style="width:90px;height:65px;border:1px solid #ffffff;display:inline-block;" onclick="bkgSelect('dbkg_CloudCliff.jpg');"><img src="../_bkg/Desktop/dbkg_CloudCliff_Select.jpg" width="90px" height="65px" title="Window Sunset"></div>
+<div style="width:90px;height:65px;border:1px solid #ffffff;display:inline-block;" onclick="bkgSelect('dbkg_LightTech.jpg');"><img src="../_bkg/Desktop/dbkg_LightTech_Select.jpg" width="90px" height="65px" title="Light Tech"></div>
+<div style="width:90px;height:65px;border:1px solid #ffffff;display:inline-block;" onclick="bkgSelect('dbkg_DarkTech.jpg');"><img src="../_bkg/Desktop/dbkg_DarkTech_Select.jpg" width="90px" height="65px" title="Dark Tech"></div>
+<div style="width:90px;height:65px;border:1px solid #ffffff;display:inline-block;" onclick="bkgSelect('dbkg_GraphPaper.png');"><img src="../_bkg/Desktop/dbkg_GraphPaper_Select.png" width="90px" height="65px" title="Graph Paper"></div></div></div>
+
+<!-- Desktop Properties: Background Url -->
+<div style="margin-left:6px;margin-top:9px;"><label for="bgUrl" class="em10 fb" style="display:block;">Background Image url</label><input type="text" id="bgUrl" style="width:50%;height:28px;font-size:1.13em;margin-top:3px;" onfocus="this.select()" value="../_bkg/Desktop/dbkg_DesertSunrise.jpg">
+<span onclick="bkgImage();"><img src="../_ico/go-orange.png" class="ibtn" title=""></span>
+<span onclick="document.getElementById('fb').click();"><img src="../_ico/open.png" class="ibtn" title=""></span></div>
+
+<!-- Desktop Properties: Background Position -->
+<div style="margin-left:6px;margin-top:6px;"><label for="bgPosition" class="em10 fb" style="display:block;">Background Position</label>
+<select id="bgPosition" onChange="bkgPosition();" onclick="" class="bopt" title="Background Position" style="width:230px;height:33px;">
+<option value="default" selected="selected">Select Position</option>
+<option value="stretch">Stretch Background</option>
+<option value="fill">Fill Background</option>
+<option value="fillh">Fill Height</option>
+<option value="center">Center Background</option>
+<option value="repeat">Repeat Background</option>
+<option value="original">Original Image Size&nbsp;&nbsp;</option></select></div>
+
+<!-- Desktop Properties: Background Size Ratio -->
+<div style="display:inline-block;margin-left:6px;margin-top:9px;"><label for="bgRatio" class="em10 fb" style="display:block;">Background Size</label><input type="range" id="bgRatio" min="1" orient="horizontal" max="400" value="0" step="10" style="width:230px;color:#87e601;padding-top:6px;" onchange="bkgRatio();"></div>
+<hr style="width:96%;margin-top:18px;margin-bottom:18px;">
+
+<div style="margin-left:6px;margin-top:0px;" class="em10 fb">Window Colors</div>
+<!-- Desktop Properties: Inactive Background Color -->
+<div style="display:inline-block;margin-left:6px;margin-top:9px;"><label for="iwColor" class="em10 fb" style="display:block;">Inactive Background</label><input type="color" id="iwColor" onchange="InactiveWindowColor();" value="#346687" style="width:150px;height:40px;margin-top:2px;"></div>
+
+<!-- Desktop Properties: Active Background Color -->
+<div style="display:inline-block;margin-left:6px;margin-top:9px;"><label for="awColor" class="em10 fb" style="display:block;">Active Background</label><input type="color" id="awColor" onchange="ActiveWindowColor();" value="#16364f" style="width:150px;height:40px;margin-top:2px;"></div><hr style="width:96%;margin-top:18px;margin-bottom:18px;">
+
+<!-- Desktop Properties: Border Toggle -->
+<div style="margin-left:6px;margin-top:9px;"><label for="vDesktopBorder" class="em10 fb" style="display:block;">View Desktop Border</label>
+<select id="vDesktopBorder" onChange="DesktopBorderView();" class="bopt" title="Toggle Desktop Border" style="width:230px;height:33px;">
+<option value="on" selected="selected">Border On</option>
+<option value="off">Border Off</option></select></div>
+
+<!-- Desktop Properties: Border Color -->
+<div style="display:inline-block;margin-left:6px;margin-top:9px;"><label for="dbColor" class="em10 fb" style="display:block;">Border Color</label><input type="color" id="dbColor" onchange="DesktopBorderColor();" value="#d9d9d9" style="width:150px;height:40px;margin-top:2px;"></div><hr style="width:96%;margin-top:18px;margin-bottom:18px;">
+
+<!-- Desktop Properties: Taskbar Toggle -->
+<div style="margin-left:6px;margin-top:9px;"><label for="vTaskBar" class="em10 fb" style="display:block;">View Taskbar</label>
+<select id="vTaskBar" onChange="TaskBarView();" class="bopt" title="Toggle Taskbar" style="width:230px;height:33px;">
+<option value="on" selected="selected">Taskbar On</option>
+<option value="off">Taskbar Off</option></select></div>
+
+<!-- Desktop Properties: Taskbar Color -->
+<div style="display:inline-block;margin-left:6px;margin-top:9px;"><label for="cTaskBar" class="em10 fb" style="display:block;">Taskbar Color</label><input type="color" id="cTaskBar" onChange="TaskBarColor();" value="#776969" style="width:150px;height:40px;margin-top:2px;"></div>
+
+<!-- Desktop Properties: Taskbar Opacity -->
+<div style="margin-left:6px;margin-top:9px;">
+<label for="oTaskBar" class="em10 fb" style="display:block;">Taskbar Opacity</label>
+<img src='../_ico/sum-minus.png' class='ibtn' onclick="tboSum('oTaskBar','d');"><input type="number" id="oTaskBar" style="width:40px;font-size:1.13em;height:28px;margin-top:3px;" onfocus="this.select();" onchange="TaskBarOpacity();" step=".1" min=".1" max="1" value="0.9" title="Adjust Taskbar Opacity."><img src='../_ico/sum-add.png' class='ibtn' onclick="tboSum('oTaskBar','i');"></div><hr style="width:96%;margin-top:18px;margin-bottom:18px;">
+
+<!-- Desktop Properties: Taskbar Clock Options -->
+<div style="margin-left:6px;margin-top:9px;"><label for="optClock" class="em10 fb" style="display:block;">Clock Options</label>
+<select id="optClock" onchange="ClockOptions();" class="bopt" title="Clock Viewing Options" style="width:230px;height:33px;">
+<option value="on" selected="selected">View Clock</option>
+<option value="off">Disable Clock</option>
+<option value="st">Standard Display</option>
+<option value="ns">Standard No Seconds</option>
+<option value="mt">Military Display</option>
+<option value="ts">Time Date Stamp</option></select></div>
+
+<!-- Desktop Properties: Taskbar Clock Color -->
+<div style="display:inline-block;margin-left:6px;margin-top:9px;"><label for="cColor" class="em10 fb" style="display:block;">Clock Color</label><input type="color" id="cColor" onchange="ClockColor();" value="#776969" style="width:150px;height:40px;margin-top:2px;"></div>
+
+<!-- Desktop Properties: Taskbar Date Options -->
+<div style="margin-left:6px;margin-top:9px;"><label for="optDate" class="em10 fb" style="display:block;">Date Options</label>
+<select id="optDate" onchange="DateOptions();" class="bopt" title="Date Viewing Options" style="width:230px;height:33px;">
+<option value="on" selected="selected">View Date</option>
+<option value="off">Disable Date</option>
+<option value="sd">Standard Date</option>
+<option value="nz">Standard Date No Zeros</option>
+<option value="ad">Abbreviated Date</option>
+<option value="ff">Full Formated Date</option></select></div>
+
+<!-- Desktop Properties: Taskbar Date Color -->
+<div style="display:inline-block;margin-left:6px;margin-top:9px;"><label for="dColor" class="em10 fb" style="display:block;">Date Color</label><input type="color" onchange="DateColor();" id="dColor" value="#776969" style="width:150px;height:40px;margin-top:2px;"></div>
+
+<!-- Desktop Properties: End -------------------->
+</div></div>
+
+
+<!-- Window Properties: ------------------------->
+<div id="wProperties" class="hView" onclick="dFront('wProperties');" onmouseover="eDetails('wProperties');" style="position:absolute;top:50px;left:12px;width:250px;height:300px;min-width:320px;min-height:300px;overflow:hidden;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Window Properties</span></div><div class="hvRight"><span onclick="eHid('wProperties')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div style="width:99%;height:80%;overflow-y:scroll;">
+
+<div style="margin-left:6px;margin-top:9px;">
+<span class="em10 fb">Window Adjustment</span><br>
+<span class="lb60">Width:</span>
+<input type="range" id="wpw" min="320" value="0" orient="horizontal" max="600" step="1" style="width:60%;height:12px;color:#ffb900;margin-top:3px;" onchange="wPosWidth();">
+<span class="lb60">Height:</span>
+<input type="range" id="wph" min="320" value="0" orient="horizontal" max="600" step="1" style="width:60%;height:12px;color:#00bfff;margin-top:12px;" onchange="wPosHeight();"></div>
+
+<div style="margin-left:6px;margin-top:9px;">
+<span class="em10 fb">Window Position</span><br>
+<span onclick="wPosTL();"><img src='../_ico/wpostl.png' class='ibtn' title='Position Top Left'></span>
+<span onclick="wPosTR();"><img src='../_ico/wpostr.png' class='ibtn' title='Position Top Right'></span>
+<span onclick="wPosBL();"><img src='../_ico/wposbl.png' class='ibtn' title='Position Bottom Left'></span>
+<span onclick="wPosBR();"><img src='../_ico/wposbr.png' class='ibtn' title='Position Bottom Right'></span><br>
+<span onclick="wPosTVL();"><img src='../_ico/wposvl.png' class='ibtn' title='Position Vertical Left'></span>
+<span onclick="wPosTVR();"><img src='../_ico/wposvr.png' class='ibtn' title='Position Vertical Right'></span>
+<span onclick="wPosTH();"><img src='../_ico/wposth.png' class='ibtn' title='Position Top Horizontal'></span>
+<span onclick="wPosBH();"><img src='../_ico/wposbh.png' class='ibtn' title='Position Top Horizontal'></span></div>
+
+<div style="display:inline-block;margin-left:6px;margin-top:0px;">
+<label for="wTitle" class="em10 fb" style="display:block;">Window Title</label><input type="text" id="wTitle" style="width:70%;height:28px;font-size:1.13em;margin-top:3px;" onfocus="this.select()" value="">
+<span onclick="WindowTitle();"><img src="../_ico/go-orange.png" class="ibtn" title="Apply New Window Title"></span></div>
+
+<!-- Window Properties: Window Opacity -->
+<div style="margin-left:6px;margin-top:9px;">
+<label for="oWindow" class="em10 fb" style="display:block;">Window Opacity</label>
+<img src='../_ico/sum-minus.png' class='ibtn' onclick="woSum('oWindow','d');"><input type="number" id="oWindow" style="width:40px;font-size:1.13em;height:28px;margin-top:3px;" onfocus="this.select();" onchange="WindowOpacity();" step=".1" min=".1" max="1" value="0.9" title="Adjust Taskbar Opacity."><img src='../_ico/sum-add.png' class='ibtn' onclick="woSum('oWindow','i');"></div>
+
+<!-- Window Properties: End --------------------->
+</div></div>
+
+<!-- Interface: Login Screen -->
+<div id="LoginScreen" style="position:absolute;top:0px;left:0px;width:100%;height:100%; color:#000000;background-color:#ffffff;border:0px solid #ffffff;z-index:1000;visibility:hidden;overflow:none;" onClick="eHid('LoginScreen');eVis('dStart');"><p>&nbsp;Simply "Click" or "Tap" anywhere on the screen to log back in.</p></div>
+
+<!-- Interface: Test Window -->
+<div id="w100" name="w100" style="position:absolute;z-index:9;top:50px;left:50px;width:auto;height:280px;min-width:300px;min-height:280px;background-color:#f1f1f1;border:1px solid #d3d3d3;border-radius:9px;opacity:0.9;resize:both;overflow-x:none;overflow-y:hidden;visibility:hidden" onclick="setDrag('w100');wFront('w100');" onmouseout="wBack('w100');">
+<div id="hw100" style="cursor:move;z-index:10;color:#ffffff;">	
+<div id="tbw100" style="height:30px;background-color:#404040;">
+<span><img src="../_ico/element.png" class="ibtn" title="Window Properties" style="width:12px;height:12px;float:left;margin-left:4px;cursor:default;" onclick="wProperties('w100');"></span>
+<span id="tw100" style="font-size:1.3em;font-weight:bold;padding-left:3px;line-height:30px;vertical-align:bottom;">Window Test</span>
+<span><img src="../_ico/mclose.png" class="ibtn" title="Close" style="width:12px;height:12px;float:right;margin-right:4px;cursor:default;" onclick="wClose('w100');"></span>
+<span><img src="../_ico/wposh.png" class="ibtn" title="Maximize" style="width:12px;height:12px;float:right;margin-right:4px;cursor:default;" onclick="wMax('w100');"></span>
+<span><img src="../_ico/wposm.png" class="ibtn" title="Medium" style="width:12px;height:12px;float:right;margin-right:4px;cursor:default;" onclick="wMed('w100');"></span>
+<span><img src="../_ico/wposbh.png" class="ibtn" title="Minimize" style="width:12px;height:12px;float:right;margin-right:4px;cursor:default;" onclick="wMin('w100');"></span>
+</div></div><div id="wb100" style="overflow-y:none;height:100%;width:100%;background-color:#ffffff;border:none;"><object type="text/html" id="wf100" data="../Modules/rwebiModule-ScratchPad.html" style="height:95%;width:99%;overflow:hidden;border:0px;"></object></div></div>
+
+<!-- Interface: View Url -->
+<div id="ViewURL" class="hView" style="position:absolute;top:65px;left:15px;width:50%;height:auto;min-width:260px;visibility:hidden;" onclick="dFront('ViewURL');" onmouseover="eDetails('ViewURL');"><div class="hvLeft"><span class="wc em11 fb" style="color:#ffffff;">View url Address</span></div><div class="clearArea"></div><div style="height:90%;margin-top:3px;">
+<input type="text" id="urlLink" style="width:95%;min-width:200px;height:28px;font-size:1.13em;" onfocus="this.select()" placeholder="url Address">
+<span onclick="urlViewer();"><img src="../_ico/go-orange.png" class="ibtn" title=""></span>
+<span onclick=""><img src="../_ico/copy.png" class="ibtn" title=""></span>
+<span onclick=""><img src="../_ico/paste.png" class="ibtn" title=""></span>
+<span onclick=""><img src="../_ico/clear.png" class="ibtn" title=""></span>
+<span onclick="eHid('ViewURL');"><img src="../_ico/mclose.png" class="ibtn" title=""></span></div></div>
+
+<!-- Interface: View Image -->
+<div id="ViewIMG" class="hView" style="position:absolute;top:65px;left:15px;width:50%;height:auto;min-width:260px;visibility:hidden;" onclick="dFront('ViewIMG');" onmouseover="eDetails('ViewIMG');"><div class="hvLeft"><span class="wc em11 fb" style="color:#ffffff;">View Image Source</span></div><div class="clearArea"></div><div style="height:90%;margin-top:3px;">
+<input type="text" id="imgLink" style="width:80%;min-width:200px;height:28px;font-size:1.13em;" onfocus="this.select()" placeholder="Image Source Address"><br>
+<span onclick="imgViewer();"><img src="../_ico/go-orange.png" class="ibtn" title=""></span>
+<span onclick=""><img src="../_ico/copy.png" class="ibtn" title=""></span>
+<span onclick=""><img src="../_ico/paste.png" class="ibtn" title=""></span>
+<span onclick=""><img src="../_ico/clear.png" class="ibtn" title=""></span>
+<span onclick="eHid('ViewIMG');"><img src="../_ico/mclose.png" class="ibtn" title=""></span></div></div>
+
+<!-- Interface: View PDF -->
+<div id="ViewPDF" class="hView" style="position:absolute;top:65px;left:15px;width:50%;height:auto;min-width:260px;visibility:hidden;" onclick="dFront('ViewPDF');" onmouseover="eDetails('ViewPDF');"><div class="hvLeft"><span class="wc em11 fb" style="color:#ffffff;">View PDF Source</span></div><div class="clearArea"></div><div style="height:90%;margin-top:3px;">
+<input type="text" id="pdfLink" style="width:80%;min-width:200px;height:28px;font-size:1.13em;" onfocus="this.select()" placeholder="PDF Source Address"><br>
+<span onclick="pdfViewer();"><img src="../_ico/go-orange.png" class="ibtn" title=""></span>
+<span onclick=""><img src="../_ico/copy.png" class="ibtn" title=""></span>
+<span onclick=""><img src="../_ico/paste.png" class="ibtn" title=""></span>
+<span onclick=""><img src="../_ico/clear.png" class="ibtn" title=""></span>
+<span onclick="eHid('ViewPDF');"><img src="../_ico/mclose.png" class="ibtn" title=""></span></div></div>
+
+<!-- Engine: Element Details -->
+<div id="eDetails" style="position:absolute;top:30px;right:30px;width:230px;height:auto;z-index:96;padding:3px;background-color:#2e2e2e;visibility:hidden;" onmouseover="dFront('eDetails');" onclick="dFront('eDetails');">
+<select id="soDetails" onChange="eDetails();" class="snopt" title="Element Details" style="width:229px;height:28px;margin-left:1px;">
+<option value="def">Detail Options:</option>
+<option value="body">body</option>
+<option value="dContainor">Desktop Container</option>
+<option value="eDetails">Element Details</option>
+<option value="dStart">Desktop Start Menu</option>
+<option value="dMenu">Desktop Menu Bar</option>
+<option value="dNew">Desktop New Menu</option>
+<option value="dIcons">Desktop Icons</option>
+<option value="TaskBar">Desktop Taskbar</option>
+<option value="ViewingBar">Taskbar Viewing Area</option>
+<option value="ViewTime">Taskbar Time View</option>
+<option value="ViewDate">Taskbar Date View</option>
+<option value="TaskView">Taskbar Task View</option>
+<option value="btnStart">Taskbar Start Button</option>
+<option value="btnManage">Taskbar Manage Button</option>
+<option value="LoginScreen">Login Screen</option>
+<option value="copy">- Copy Details</option>
+<option value="left">- View Left</option>
+<option value="right">- View Right</option>
+<option value="close">- Close Details</option></select>
+<span class="wc em9 lb80">Elements: </span><span id="ne"></span><br>
+<span class="wc em9 lb80">Windows: </span><span id="nw"></span><br>
+<span class="wc em9 lb80">Mouse X: </span><span id="cmx"></span><br>
+<span class="wc em9 lb80">Mouse Y: </span><span id="cmy"></span><br>
+<span class="wc em9 lb80">Current EID: </span><span id="deid"></span><br>
+<span class="wc em9 lb80">Index: </span><span id="dwi"></span><br>
+<span class="wc em9 lb80">Top: </span><span id="et"></span><br>
+<span class="wc em9 lb80">Left: </span><span id="el"></span><br>
+<span class="wc em9 lb80">Width: </span><span id="ew"></span><br>
+<span class="wc em9 lb80">Height: </span><span id="eh"></span>
+<div id="eList" style="width:auto;height:auto;font-size:0.98em;background-color:#2e2e2e;"></div>
+<span onclick="eToggle('winCode');"><img src="../_ico/settings.png" class="nibtn" title="Window Code"></span>
+<span onclick="setTest();"><img src="../_ico/t1.png" class="nibtn" title="Test Window"></span>
+<span onclick=""><img src="../_ico/copy.png" class="nibtn" title="Copy Details"></span>
+<span onclick="eHid('eDetails');"><img src="../_ico/mclose.png" class="nibtn" title="Close Details"></span>
+</div><div class="clearArea"></div>
+
+<!-- Engine: Window Code View -->
+<div id="winCode" style="position:absolute;z-index:11;top:50px;left:50px;width:400px;height:350px; color:#FFFFFF;background-color:#2e2e2e;border:0px solid #cccccc;visibility:hidden;overflow-y:scroll;"></div>
+
+<!-- Engine: Desktop Container End -------------->
+</div>
+
+<!-- Variables: -->
+<textarea id="tt" class="hf"></textarea>
+<input type="file" id="fb" style="visibility:hidden;" onchange="bkgOpen();">
+<input type="file" id="itxt" style="visibility:hidden;" onchange="openText();">
+<input type="file" id="ihtm" style="visibility:hidden;" onchange="openHTML(event)">
+<span id="ow" class="hf">18</span>
+<span id="oh" class="hf">6</span>
+<span id="zi" class="hf">100</span>
+<span id="mi" class="hf"></span>
+<span id="wi" class="hf">001</span>
+<span id="vs" class="hf">0</span>
+<span id="td" class="hf">false</span>
+<span id="tm" class="hf">false</span>
+<span id="sl" class="hf">false</span>
+<span id="eid" class="hf"></span>
+<span id="wzi" class="hf"></span>
+
+</form></body></html>
+<!-- rwebiDesk | rwebi.com | rwebi.org | rwebi.net | (d) 2025 v:2.7 -->

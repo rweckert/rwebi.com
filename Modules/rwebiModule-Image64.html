@@ -1,0 +1,106 @@
+<!--            _   _  
+  ___ _ _ _ ___| |_|_| Aplha Preview: rwebiModule-Image64.html
+ |  _| | | | -_| . | | rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61
+ |_| |_____|___|___|_| -->
+<!doctype html><html lang="en"><head><meta charSet="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rwebiModule-Image64</title>
+<link rel="icon" type="image/x-icon" href="../_ico/favicon.png">
+<link id="csl" rel="stylesheet" href="../_css/rwebiStyle-Light-c61.css" media="(prefers-color-scheme: light)">
+<link id="csd" rel="stylesheet" href="../_css/rwebiStyle-Dark-c61.css" media="(prefers-color-scheme: dark)">
+<style type="text/ini" media="screen">#editor {position:relative;top:3px;right:0;bottom:0;left:3px;width:98%;min-width:120px;height:120px;}</style>
+<script src="../_jss/rwebiEngine-LightCore-c61.js"></script>
+<script src="../_jss/rwebiEngine-AceEditor-c61.js"></script>
+<script src="../_jss/rwebiEngine-AceStringTools-c61.js"></script>
+<script src="../_jss/rwebiModule-Image64.js"></script>
+</head><body onload="mStart();" onresize="mResize();" style="overflow:hidden;">
+
+<!-- Module Header: -->
+<div id="mHeader" class="sh0" style="min-width:320px;">
+<div class="hbtn"><img src="../_ico/mclose.png" onclick="pLoad('rwebiMenu-Modules.html');" title="Close Module"></div><div class="hbtn"><img src="../_ico/mopt.png" onclick="eToggle('oView');" title="Help / About / Settings"></div><span onclick="mReset();" title="Reload Module"><img src="../_ico/image64.png" class="mico"></span>&nbsp;<div class="mTitle">Image64</div></div>
+
+<!-- Module Bar: -->
+<div id="mBar" class="sh0" style="width:97vw;min-width:320px;">
+<select id="soFile" onchange="FileOpt();" onclick="eHid('mMenu');" class="yopt" title="File Menu" style="width:50px;height:33px;">
+<option value="default">File</option>
+<option value="open">Open File</option>
+<option value="copy">Copy Raw Text</option>
+<option value="save">Local Save</option>
+<option value="restore">Local Restore</option>
+<option value="saveas">Save Download&nbsp;&nbsp;</option>
+<option value="export">Raw Text to Tab</option>
+<option value="clear">Clear Raw Text</option>
+<option value="info">Information</option>
+<option value="exit">Exit Module</option></select>
+<span onclick="document.getElementById('fb').click();" title="Open Image File"><img src="../_ico/open.png" class="ibtn"></span>
+<span onclick="eCopy('v','cv');" title="Copy Text"><img src="../_ico/copy.png" class="ibtn"></span>
+<span onclick="ePaste('cv');tStat('cv','1');" title="Paste Text"><img src="../_ico/paste.png" class="ibtn"></span>
+<span onclick="aceClear('editor');aceCount('editor');" title="Clear"><img src="../_ico/clear.png" class="ibtn"></span></div>
+
+<!-- View Stats: -->
+<div id="vStats" class="sh0" style="min-width:320px;">
+<span class="em08">Words:&nbsp;</span><span id="acw" class="ob"></span>
+<span class="em08">Characters:&nbsp;</span><span id="aca" class="bc"></span>
+<span class="em08">Text:&nbsp;</span><span id="act" class="mc"></span>
+<span class="em08">Lines:&nbsp;</span><span id="acr" class="gc"></span></div>
+
+<div id="editor" style="width:100%;min-width:295px;height:120px;min-height:120px;font-size:1.13em;margin-top:3px;margin-bottom:3px;border-radius:3px;" onclick="aceCount('editor');" onkeyup="aceCount('editor');"></div>
+
+<div id="mBar" class="sh0" style="width:93vw;min-width:320px;">
+<span onclick="imgEncode();" title="Convert to Image"><img src="../_ico/upd-down.png" class="ibtn"></span>
+<span onclick="imgDecode();" title="Convert to Base64"><img src="../_ico/upd-up.png" class="ibtn"></span>
+<select id="soImage" onchange="ImageOpt();" onclick="eHid('mMenu');" class="gopt" title="File Menu" style="width:75px;height:33px;">
+<option value="do">Options</option>
+<option value="si">Stretch Image&nbsp;&nbsp;</option>
+<option value="zi">Zoom-In</option>
+<option value="fs">Full Size</option>
+<option value="ti">Tile Image</option>
+<option value="ac">Align Center</option>
+<option value="al">Align Left</option>
+<option value="ar">Align Right</option>
+<option value="rv">Reset View</option>
+<option value="ic">Clear Image</option>
+<option value="it">Test Image</option></select>
+<span onclick="eTab('v','sr');" title="Export Text"><img src="../_ico/export-2.png" class="ibtn"></span>
+<span onclick="" title="Download Text"><img src="../_ico/save-as.png" class="ibtn"></span>
+<span onclick="imgTest();" title=""><img src="../_ico/t1.png" class="ibtn"></span>
+<span onclick="imgClear();" title="Clear Image"><img src="../_ico/clear.png" class="ibtn"></span></div>
+<!-- Image Stats: -->
+<div id="iStats" class="sh0" style="min-width:320px;">
+<span class="em08 oc">Width:&nbsp;</span><span id="viw" class="tpl"></span>
+<span class="em08 bc">Height:&nbsp;</span><span id="vih" class="tpl"></span>
+</div>
+
+<!-- Image View: -->
+<div id="iView" style="width:auto;height:120px;min-height:50px;min-width:220px;padding-top:3px;margin-top:3px;overflow-y:scroll;border:1px solid #71c3ff"></div>
+
+<!-- Save View: -->
+<div id="sView" class="hView" style="top:60px;left:20px;width:60%;min-width:260px;max-width:500px;height:auto;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Save/Download</span></div><div class="hvRight"><span onclick="eHid('sView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div class="p6"><label for="sf" class="wc em12">Filename</label><input type='text' id='sf' class='wb' style="width:90%;font-size:1.15em;height:27px;" value="rwebi-SplitnCopy.txt" onfocus="this.select();"><p><br><span class="gbtn" onclick="sFile('v','cv','sf');eHid('sView');" title="Download / Save">Save</span>&nbsp;&nbsp;<span class="abtn" onclick="eHid('sView');" title="Cancel Download">Cancel</span></p></div></div>
+
+<!-- Options View: -->
+<div id="oView" style="position:absolute;top:48px;right:6px;width:auto;height:40px;background-color:#cccccc;visibility:hidden;float:right;border:1px solid #505050;border-radius:3px;padding:3px;visibility:hidden;"><span onclick="eToggle('hView');obLoad('hDisplay','../Help/rwebiHelp-Image64.html');eHid('oView');"><img class="ibtn" src="../_ico/mhelp.png" title="Documentation"></span>
+<span onclick="eToggle('hView');obLoad('hDisplay','../Help/rwebiAbout-Image64.html');eHid('oView');"><img class="ibtn" src="../_ico/mabout.png" title="About Module"></span>
+<span onclick="eHid('oView');LinkModule();"><img class="ibtn" src="../_ico/link.png" title="Copy & Share Module Link"></span>&nbsp;<select id="osTheme" onchange="optTheme();" class="bopt" title="Theme Mode" style="width:65px;height:33px;">
+<option value="m">Mode</option>
+<option value="l">Light Mode&nbsp;&nbsp;</option>
+<option value="d">Dark Mode</option></select></div>
+
+<!-- Help View: -->
+<div id="hView" class="hView" style="position:absolute;top:65px;left:15px;width:80%;height:80%;min-width:260px;min-height:200px;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Information</span></div><div class="hvRight"><span onclick="eHid('hView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div style="height:90%;margin-top:6px;"><object type="text/html" id="hDisplay" data="../Help/rwebiHelp-Image64.html" style="height:85%;width:100%;border:0px;"></object><input type="file" id="fb" style="visibility:hidden;" onchange="OpenEncode();"></div></div>
+
+<!-- Ace Editor: -->
+<script src="../Library/Ace/ace.js" type="text/javascript" charset="utf-8"></script><script>
+var editor = ace.edit("editor");editor.setTheme("ace/theme/chrome");
+editor.session.setMode("ace/mode/ini");editor.setOption("wrap", true);editor.getSession().setUseWorker(false);</script>
+
+<!-- Variables: -->
+<textarea id="tt" class="hf"></textarea>
+<textarea id="sr" class="hf"></textarea>
+<div id="ut" class="hf"></div>
+<span id="ow" class="hf">22</span>
+<span id="oh" class="hf">307</span>
+
+<!-- Module Footer: -->
+<div id="mFooter" class="mFooter" style="float:left;margin-top:0px;">
+<span onclick="eVis('aView')" title="About"><img src="../_ico/favicon.png" height="12" style="margin-right:3px;margin-top:2px;vertical-align:bottom;"></span>w:<span id="miw" class="oc"></span>&nbsp;h:<span id="mih" class="bc"></span></div></body></html>
+<!-- rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61 -->

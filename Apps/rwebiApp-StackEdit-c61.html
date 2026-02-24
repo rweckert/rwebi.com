@@ -1,0 +1,202 @@
+<!--            _   _  
+  ___ _ _ _ ___| |_|_| Aplha Preview: rwebiApp-StackEdit.html
+ |  _| | | | -_| . | | rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61
+ |_| |_____|___|___|_| -->
+<!doctype html><html lang="en"><head><meta charSet="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rwebiApp-StackEdit-c61</title>
+<link rel="icon" type="image/x-icon" href="../_ico/favicon.png">
+<link id="csl" rel="stylesheet" href="../_css/rwebiStyle-Light-c61.css" media="(prefers-color-scheme: light)">
+<link id="csd" rel="stylesheet" href="../_css/rwebiStyle-Dark-c61.css" media="(prefers-color-scheme: dark)">
+<style>body, html {height:100vh;width:100vw;margin:0;padding:0;overflow:hidden;}</style>
+<script src="../_jss/rwebiEngine-LightCore-c61.js"></script>
+<script src="../_jss/rwebiEngine-AceEditor-c61.js"></script>
+<script src="../_jss/rwebiApp-StackEdit-c61.js"></script>
+</head><body id="body" onload="mStart();" onresize="mResize();">
+
+<!-- Module Header: -->
+<div id="mHeader" class="" style="position:abosulute;padding-top:3px;left:0px;width:100%;">
+<span onclick="appRefresh();" title="Refresh Application"><img src="../_ico/favicon.png" class="nibtn" style="margin-left:6px;"></span>
+<span onclick="pLoad('../index.html');" title="Help / About / Settings"><img src="../_ico/mclose.png" class="ibtn" style="float:right;margin-right:3px;"></span>
+<span onclick="eToggle('oView');" title="Close Application"><img src="../_ico/mopt.png" class="ibtn" style="float:right;margin-right:5px;"></span><div class="mTitle" onclick="eHid('mMenu');">StackEdit</div>
+
+<!-- Source Menu: -->
+<div id="sMenu" class="sh3" style="min-width:360px;margin-left:3px;">
+<!-- Source Menu: Main -->
+<select id="soFile" onchange="FileOpt();" onclick="eHid('mMenu');" class="yopt" title="File Menu" style="width:50px;">
+<option value="default">File</option>
+<option value="new">New Stack</option>
+<option value="copy">Copy Stack</option>
+<option value="clear">Clear Stack</option>
+<option value="save">Local Save</option>
+<option value="restore">Local Restore</option>
+<option value="saveas">Save Download&nbsp;&nbsp;</option>
+<option value="export">Export to Tab</option>
+<option value="info">Information</option>
+<option value="exit">Exit</option></select>
+<span onclick="ViewGrid('gv');" title="Grid the Stack"><img src="../_ico/go-orange.png" class="ibtn"></span>
+<span onclick="ViewStack('sv');eToggle('ViewStack');" title="View Stack"><img src="../_ico/globe.png" class="ibtn"></span>
+<span onclick="cCode('mMenu','mSwap');vSplit();" title="Stack Menu"><img src="../_ico/sstack.png" class="ibtn"></span>
+<div id="mSwap" style="display:inline;display:inline;">
+<span onclick="hWide();cCode('mHTML','mSwap');" title="HTML Wide View"><img src="../_ico/bht.png" class="ibtn"></span>
+<span onclick="cWide();cCode('mCSS','mSwap');" title="CSS Wide View"><img src="../_ico/bcs.png" class="ibtn"></span>
+<span onclick="jWide();cCode('mJSS','mSwap');" title="JS Wide View"><img src="../_ico/bjs.png" class="ibtn"></span>
+</div></div>
+<!-- Source Menu: HTML -->
+<div id="mHTML" style="visibility:hidden;display:none;">
+<span onclick="hFull();" title="HTML Full View"><img src="../_ico/ymax.png" class="ibtn"></span>
+<span onclick="aceWrap('editor1');pSwap('ww1','wrap-','');"><img id="ww1" class="ybtn" src="../_ico/wrap-off.png" title="HTML Word Wrapping"></span>
+<span onclick="document.getElementById('fb1').click();" title="HTML Open File"><img src="../_ico/open.png" class="ybtn"></span>
+<span onclick="aceTargetSave('hSave','hf','.html','filename-');" title="HTML Save Download"><img src="../_ico/save-as.png" class="ybtn"></span>
+<span onclick="aceCopyAll('editor1');" title="Copy HTML Section"><img src="../_ico/copy.png" class="ybtn"></span>
+</div>
+<!-- Source Menu: CSS -->
+<div id="mCSS" style="visibility:hidden;display:none;">
+<span onclick="cFull();" title="CSS Full View"><img src="../_ico/bmax.png" class="ibtn"></span>
+<span onclick="aceWrap('editor2');pSwap('ww2','wrap-','');"><img id="ww2" class="bbtn" src="../_ico/wrap-off.png" title="CSS Word Wrapping"></span>
+<span onclick="document.getElementById('fb2').click();" title="CSS Open File"><img src="../_ico/open.png" class="bbtn"></span>
+<span onclick="aceTargetSave('cSave','cf','.css','filename-');" title="CSS Save Download"><img src="../_ico/save-as.png" class="bbtn"></span>
+<span onclick="aceCopyAll('editor2');" title="Copy CSS Section"><img src="../_ico/copy.png" class="bbtn"></span>
+</div>
+<!-- Source Menu: JS -->
+<div id="mJSS" style="visibility:hidden;display:none;">
+<span onclick="jFull();" title="JS Full View"><img src="../_ico/omax.png" class="ibtn"></span>
+<span onclick="aceWrap('editor3');pSwap('ww3','wrap-','');"><img id="ww3" class="obtn" src="../_ico/wrap-off.png" title="JS Word Wrapping"></span>
+<span onclick="document.getElementById('fb3').click();" title=""><img src="../_ico/open.png" class="obtn"></span>
+<span onclick="aceTargetSave('jSave','jf','.js','filename-');" title="JS Save Download"><img src="../_ico/save-as.png" class="obtn"></span>
+<span onclick="aceCopyAll('editor3');" title="Copy JS Section"><img src="../_ico/copy.png" class="obtn"></span>
+</div>
+<!-- Source Menu: Wide -->
+<div id="mMenu" style="visibility:hidden;display:none;">
+<span onclick="hWide();cCode('mHTML','mSwap');" title="HTML Main Menu"><img src="../_ico/bht.png" class="ibtn"></span>
+<span onclick="cWide();cCode('mCSS','mSwap');" title="CSS Main Menu"><img src="../_ico/bcs.png" class="ibtn"></span>
+<span onclick="jWide();cCode('mJSS','mSwap');" title="JS Main Menu"><img src="../_ico/bjs.png" class="ibtn"></span>
+</div>
+
+<!-- Source Menu End: -->
+
+<!-- Source Containor: -->
+<div style="width:100%;max-height:170px;max-width:360px;margin-left:3px;margin-top:6px;">
+
+<!-- hbox: Source -->
+<div id="hbox" style="display:inline;float:left;width:31.8%;min-width:90px;border-radius:3px;background-color:#ffffb3;">
+<!-- hbox: Header -->
+<div id="hheader" style="" onclick="cCode('mHTML','mSwap');sSelect('h');">
+<select id="hFile" onchange="htmlFile();" class="yopt" title="HTML Options" style="width:68px;margin:1px;">
+<option value="do">HTML</option>
+<option value="of">Open File</option>
+<option value="ch">Copy HTML</option>
+<option value="et">Export to Tab</option>
+<option value="ls">Local Save</option>
+<option value="lr">Local Restore</option>
+<option value="sd">Save Download&nbsp;&nbsp;</option>
+<option value="xs">Clear HTML</option></select>
+<select id="hco" onchange="hcOpt();" class="yopt" title="HTML Panel Options" style="width:20px;float:right;margin:1px;">
+<option value="oo">Option</option>
+<option value="oo">Option&nbsp;&nbsp;</option>
+<option value="oo">Option</option>
+<option value="oo">Option</option></select></div>
+<!-- hbox: Editor -->
+<div id="editor1" onclick="cCode('mHTML','mSwap');sSelect('h');" style="height:170px;"></div>
+<div style='font-size:.83em;'>
+<span class='tnc'>C:&nbsp;</span><span id="hcc"></span>
+<span class='tnc'>L:&nbsp;</span><span id="hlc"></span></div></div></div>
+
+<!-- cbox: -->
+<div id="cbox" style="display: inline;float:left;width:31.8%;min-width:90px;border-radius:3px;background-color:#66d9ff;margin-left:6px;">
+<!-- cbox: Header -->
+<div id="cheader" onclick="cCode('mCSS','mSwap');sSelect('c');">
+<select id="cFile" onchange="cssFile();" class="bopt" title="CSS Options" style="width:65px;margin:1px;">
+<option value="do">CSS</option>
+<option value="of">Open File</option>
+<option value="ch">Copy CSS</option>
+<option value="et">Export to Tab</option>
+<option value="ls">Local Save</option>
+<option value="lr">Local Restore</option>
+<option value="sd">Save Download&nbsp;&nbsp;</option>
+<option value="xs">Clear CSS</option></select>
+<select id="cco" onchange="ccOpt();" class="bopt" title="CSS Panel Options" style="width:20px;float:right;margin:1px;">
+<option value="oo">Option</option>
+<option value="oo">Option&nbsp;&nbsp;</option>
+<option value="oo">Option</option>
+<option value="oo">Option</option></select></div>
+<!-- cbox: Editor -->
+<div id="editor2" onclick="cCode('mCSS','mSwap');sSelect('c');" style="height:170px;"></div>
+<div style='font-size:.83em;'>
+<span class='tnc'>C:&nbsp;</span><span id="ccc"></span>
+<span class='tnc'>L:&nbsp;</span><span id="clc"></span></div></div></div>
+
+<!-- jbox: Source -->
+<div id="jbox" style="display: inline;float:left;width:31.8%;min-width:90px;border-radius:3px;background-color:#ffb900;margin-left:6px;">
+<!-- jbox: Header -->
+<div id="jheader" onclick="cCode('mJSS','mSwap');sSelect('j');">
+<select id="jFile" onchange="jsFile();" class="obtn" title="JS Options" style="width:65px;margin:1px;">
+<option value="do">JS</option>
+<option value="of">Open File</option>
+<option value="ch">Copy JS</option>
+<option value="et">Export to Tab</option>
+<option value="ls">Local Save</option>
+<option value="lr">Local Restore</option>
+<option value="sd">Save Download&nbsp;&nbsp;</option>
+<option value="xs">Clear JS</option></select>
+<select id="jco" onchange="jcOpt();" class="obtn" title="JS Panel Options" style="width:20px;float:right;margin:1px;">
+<option value="oo">Option</option>
+<option value="oo">Option&nbsp;&nbsp;</option>
+<option value="oo">Option</option>
+<option value="oo">Option</option></select></div>
+<!-- jbox: Editor -->
+<div id="editor3" onclick="cCode('mJSS','mSwap');sSelect('j');" style="height:170px;"></div>
+<div style='font-size:.83em;'>
+<span class='tnc'>C:&nbsp;</span><span id="jcc"></span>
+<span class='tnc'>L:&nbsp;</span><span id="jlc"></span></div></div></div>
+
+<!-- Source Containor End: -->
+</div>
+
+<!-- Stack Viewer: -->
+<div id="ViewStack" style="position:absolute;z-Index:9999;top:87px;left:4px;width:98%;height:90%;background-color:#ffffff;margin-left:auto;margin-right:auto;visibility:hidden;"><div id="sv"></div>
+</div>
+
+<!-- Save View: -->
+<div id="sView" class="hView" style="top:60px;left:20px;width:60%;min-width:260px;max-width:500px;height:auto;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Save/Download</span></div><div class="hvRight"><span onclick="eHid('sView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div class="p6"><label for="sf" class="wc em12">Filename</label><input type='text' id='sf' class='wb' style="width:90%;font-size:1.15em;height:27px;" value="rwebi-General.txt" onfocus="this.select();"><p><br><span class="gbtn" onclick="sFile('v','cv','sf');eHid('sView');" title="Download / Save">Save</span>&nbsp;&nbsp;<span class="abtn" onclick="eHid('sView');" title="Cancel Download">Cancel</span></p></div></div>
+
+<!-- Options View: -->
+<div id="oView" style="position:absolute;top:46px;right:3px;width:auto;height:40px;background-color:#cccccc;visibility:hidden;float:right;border:1px solid #505050;border-radius:3px;padding:3px;visibility:hidden;"><span onclick="eToggle('hView');obLoad('hDisplay','../Help/rwebiHelp-General.html');eHid('oView');"><img class="ibtn" src="../_ico/mhelp.png" title="Documentation"></span>
+<span onclick="eToggle('hView');obLoad('hDisplay','../Help/rwebiAbout-General.html');eHid('oView');"><img class="ibtn" src="../_ico/mabout.png" title="About Module"></span>
+<span onclick="eHid('oView');LinkModule();"><img class="ibtn" src="../_ico/link.png" title="Copy & Share Module Link"></span>&nbsp;<select id="osTheme" onChange="optTheme();" class="bopt" title="Theme Mode" style="width:65px;height:33px;">
+<option value="m">Mode</option>
+<option value="l">Light Mode&nbsp;&nbsp;</option>
+<option value="d">Dark Mode</option></select></div>
+
+<!-- Help View: -->
+<div id="hView" class="hView" style="position:absolute;top:65px;left:15px;width:80%;height:80%;min-width:260px;min-height:200px;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Information</span></div><div class="hvRight"><span onclick="eHid('hView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div style="height:90%;margin-top:6px;"><object type="text/html" id="hDisplay" data="../Help/rwebiHelp-General.html" style="height:85%;width:100%;border:0px;"></object>
+<input type="file" id="fb1" style="visibility:hidden;" onchange="aceOpen('editor1','fb1');">
+<input type="file" id="fb2" style="visibility:hidden;" onchange="aceOpen('editor2','fb2');">
+<input type="file" id="fb3" style="visibility:hidden;" onchange="aceOpen('editor3','fb3');">
+</div></div>
+
+<!-- Variables: -->
+<textarea id="tt" class="hf"></textarea>
+<textarea id="vt" class="hf"></textarea>
+<span id="ow" class="hf"></span>
+<span id="oh" class="hf"></span>
+
+<script src="../Library/Ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+  var editor1=ace.edit("editor1");
+  editor1.setTheme("ace/theme/chrome");
+  editor1.session.setMode("ace/mode/html");
+
+  var editor2=ace.edit("editor2");
+  editor2.setTheme("ace/theme/chrome");
+  editor2.session.setMode("ace/mode/css");
+ 
+  var editor3=ace.edit("editor3");
+  editor3.setTheme("ace/theme/chrome");
+  editor3.session.setMode("ace/mode/javascript");
+</script>
+
+<!-- Module Footer: -->
+<div id="mFooter" class="mFooter" style="float:left;margin-top:6px;">
+<img src="../_ico/favicon.png" style="height:12px;margin-right:3px;margin-top:2px;vertical-align:bottom;"></span>w:<span id="miw" class="oc"></span>&nbsp;h:<span id="mih" class="bc"></span></div></body></html>
+<!-- rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61 -->

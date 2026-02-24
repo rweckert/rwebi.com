@@ -1,0 +1,260 @@
+<!--            _   _  
+  ___ _ _ _ ___| |_|_| Aplha Preview: rwebiMenu-Help-Listing.html
+ |  _| | | | -_| . | | rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61
+ |_| |_____|___|___|_| -->
+<!doctype html><html lang="en"><head><meta charSet="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rwebiMenu-Help-Listing</title>
+<link rel="icon" type="image/x-icon" href="../_ico/favicon.png">
+<link id="csl" rel="stylesheet" href="../_css/rwebiStyle-Light-c61.css" media="(prefers-color-scheme: light)">
+<link id="csd" rel="stylesheet" href="../_css/rwebiStyle-Dark-c61.css" media="(prefers-color-scheme: dark)">
+<script src="../_jss/rwebiEngine-LightCore-c61.js"></script>
+<script src="../_jss/rwebiMenu-Help-Listing.js"></script>
+</head><body onload="mStart();" onresize="mResize();" style="overflow:hidden;">
+
+<!-- Module Header: -->
+<div id="mHeader" class="sho" style="width:100%;height:35px;min-width:320px;white-space:nowrap;">
+<div style="position:absolute;z-Index:999;top:3px;left:5px;"><span onclick="dToggle('oView');eHid('hView');" title="Module Options"><img src="../_ico/resources.png" class="nibtn">&nbsp;</span><div class="mTitle" onclick="dHid('oView');">Help Listing</div></div><div style="position:absolute;top:3px;right:6px;">
+<select id="navSite" onchange="SiteNav();" class="wopt" title="Navigate" style="width:60px;float:right;margin-left:3px;">
+<option value="d">View</option>
+<option value="s">rwebi Search</option>
+<option value="p">Tool Panel</option>
+<option value="h">Help Search</option>
+<option value="l">Source Listings</option>
+<option value="q">Privacy Statement&nbsp;&nbsp;</option>
+<option value="c">rwebi Contact</option>
+<option value="i">Report Issue</option></select></div></div>
+
+<!-- Module Bar: -->
+<div id="mBar" class="sh0" style="height:35px;min-width:320px;white-space:nowrap;">
+<input id="qs" type="text" class="itxt" style="width:70%;margin-right:-2px;" placeholder="Search Help Listing" onfocus="this.select();" onkeydown="onEnter();">
+<span onclick="Query();" title="Search Table"><img src="../_ico/search.png" class="ibtn"></span>
+<span onclick="ClearQuery();" title="Clear Search"><img src="../_ico/clear.png" class="ibtn"></span></div>
+
+<!-- Menu Bar: -->
+<div id="m1" class="sh6" style="min-width:320px;">
+<select id="soColumn" class="yopt" title="Select Search Column" style="width:104px;">
+<option value="et">Entire Table</option>
+<option value="0">Name</option>
+<option value="1">Type</option>
+<option value="2">Description</option></select>
+<select id="soOptions" class="gopt" onchange="OptionsOpt();" title="Options" style="width:80px;height:33px;">
+<option value="default">Options</option>
+<option value="clear">Clear Query</option>
+<option value="copy">Copy Data</option>
+<option value="download">Download Data&nbsp;&nbsp;</option>
+<option value="esource">Export Source</option>
+<option value="edata">Export Data</option>
+<option value="lsave">Local Save</option></select>
+<span onclick="sCopy('v','cc');"><img class="ibtn" src="../_ico/copy.png" title="Copy Results"></span>
+<span onclick="eTab('i','cc');"><img class="ibtn" src="../_ico/export-2.png" title="Export Results"></span>
+<span onclick="eVis('sView');cFocus('sf');"><img class="ibtn" src="../_ico/save-as.png" title="Download Results"></span></div>
+
+<!-- View Stats: -->
+<div id="vStats" class="hf" style="min-width:320px;">
+Modules: <span id="rc"></span></div>	
+
+<!-- Content Container / Content View: -->
+<div id="cc" class="cc" contenteditable="false" style="overflow-y:scroll;margin-top:3px;font-size:1.1em;">
+<!-- Table Data: Start -->
+<table id="tData" class="tfnp" border="1" cellpadding="3" cellspacing="0" style="width:100%;margin-left:0px;">
+<tr><th>Name</th><th>Type</th><th>Help</th><th>About</th><th>Description</th></tr>
+<!-- App: ToolPanel: -->
+<tr><td style="width:25%;text-align:center;cursor:pointer;" onclick="pLoad('../Apps/rwebiApp-ToolPanel-c61.html');" title="Load Application"><span><img src="../_ica/app-tool-panel.png" class="" style="width:40px;height:40px;vertical-align:middle;margin-right:3px;"><br>Tool Panel</span></td>
+<td style="width:80px;">Application</td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiHelp-ToolPanel.html');" title="Review Documentation">
+<span><img src="../_ico/mhelp.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiAbout-ToolPanel.html');"title="About Module"><span><img src="../_ico/mabout.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td>A toolset panel utility of rwebi modules and resources.</td></tr>
+<!-- App: SearchPanel: -->
+<tr><td style="width:25%;text-align:center;cursor:pointer;" onclick="pLoad('../Apps/rwebiApp-SearchPanel-c61.html');" title="Load Application"><span><img src="../_ica/app-search-panel.png" class="" style="width:40px;height:40px;vertical-align:middle;margin-right:3px;"><br>Search Panel</span></td>
+<td style="width:80px;">Application</td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiHelp-SearchPanel.html');" title="Review Documentation">
+<span><img src="../_ico/mhelp.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiAbout-SearchPanel.html');"title="About Module"><span><img src="../_ico/mabout.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td>Search panel tool utility combining search and tools.</td></tr>
+<!-- App: Desktop: -->
+<tr><td style="width:25%;text-align:center;cursor:pointer;" onclick="pLoad('../Apps/rwebiApp-Desktop-c61.html');" title="Load Application"><span><img src="../_ica/app-desktop.png" class="" style="width:40px;height:40px;vertical-align:middle;margin-right:3px;"><br>Desktop</span></td>
+<td style="width:80px;">Application</td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiHelp-Desktop.html');" title="Review Documentation">
+<span><img src="../_ico/mhelp.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiAbout-Desktop.html');"title="About Module"><span><img src="../_ico/mabout.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td>The rwebi Desktop collection of apps and modules.</td></tr>
+<!-- App: GridStack: -->
+<tr><td style="width:25%;text-align:center;cursor:pointer;" onclick="pLoad('../Apps/rwebiApp-GridStack-c61.html');" title="Load Application"><span><img src="../_ica/app-grid-stack.png" class="" style="width:40px;height:40px;vertical-align:middle;margin-right:3px;"><br>Grid Stack</span></td>
+<td style="width:80px;">Application</td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiHelp-GridStack.html');" title="Review Documentation">
+<span><img src="../_ico/mhelp.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiAbout-GridStack.html');"title="About Module"><span><img src="../_ico/mabout.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td>Hypertext stack editing utility and visual grid.</td></tr>
+<!-- ScratchPad: -->
+<tr><td style="width:25%;text-align:center;cursor:pointer;" onclick="pLoad('rwebiModule-ScratchPad.html');" title="Load Module"><span><img src="../_ico/scratchpad.png" class="" style="width:40px;height:40px;vertical-align:middle;margin-right:3px;"><br>Scratch Pad</span></td>
+<td style="width:80px;">Module</td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiHelp-ScratchPad.html');" title="Review Documentation">
+<span><img src="../_ico/mhelp.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiAbout-ScratchPad.html');"title="About Module"><span><img src="../_ico/mabout.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td>Versatile digital scratch of paper and text utility.</td></tr>
+<!-- TextTools: -->
+<tr><td style="width:25%;text-align:center;cursor:pointer;" onclick="pLoad('rwebiModule-TextTools.html');" title="Load Module"><span><img src="../_ico/texttools.png" class="" style="width:40px;height:40px;vertical-align:middle;margin-right:3px;"><br>Text Tools</span></td>
+<td style="width:80px;">Module</td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiHelp-TextTools.html');" title="Review Documentation">
+<span><img src="../_ico/mhelp.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiAbout-TextTools.html');"title="About Module"><span><img src="../_ico/mabout.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td>Text editor utility of remove, replace and common tools.</td></tr>
+<!-- SplitnCopy: -->
+<tr><td style="width:25%;text-align:center;cursor:pointer;" onclick="pLoad('rwebiModule-SplitnCopy.html');" title="Load Module"><span><img src="../_ico/splitncopy.png" class="" style="width:40px;height:40px;vertical-align:middle;margin-right:3px;"><br>Split & Copy</span></td>
+<td style="width:80px;">Module</td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiHelp-SplitnCopy.html');" title="Review Documentation">
+<span><img src="../_ico/mhelp.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiAbout-SplitnCopy.html');"title="About Module"><span><img src="../_ico/mabout.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td>Text splitting and copying tool.</td></tr>
+<!-- TMCEdit: -->
+<tr><td style="width:25%;text-align:center;cursor:pointer;" onclick="pLoad('rwebiModule-TMCEdit.html');" title="Load Module"><span><img src="../_ico/tmcedit.png" class="" style="width:40px;height:40px;vertical-align:middle;margin-right:3px;"><br>TMC Edit</span></td>
+<td style="width:80px;">Module</td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiHelp-TMCEdit.html');" title="Review Documentation">
+<span><img src="../_ico/mhelp.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiAbout-TMCEdit.html');"title="About Module"><span><img src="../_ico/mabout.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td>HTML visual editor utility with syntax generation.</td></tr>
+<!-- QuickSearch: -->
+<tr><td style="width:25%;text-align:center;cursor:pointer;" onclick="pLoad('rwebiModule-QuickSearch.html');" title="Load Module"><span><img src="../_ico/quicksearch.png" class="" style="width:40px;height:40px;vertical-align:middle;margin-right:3px;"><br>Quick Search</span></td>
+<td style="width:80px;">Module</td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiHelp-QuickSearch.html');" title="Review Documentation">
+<span><img src="../_ico/mhelp.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiAbout-QuickSearch.html');"title="About Module"><span><img src="../_ico/mabout.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td>Stripped down rwebi web search application.</td></tr>
+<!-- Speculus: -->
+<tr><td style="width:25%;text-align:center;cursor:pointer;" onclick="pLoad('rwebiModule-Speculus.html');" title="Load Module"><span><img src="../_ico/speculus.png" class="" style="width:40px;height:40px;vertical-align:middle;margin-right:3px;"><br>Speculus</span></td>
+<td style="width:80px;">Module</td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiHelp-Speculus.html');" title="Review Documentation">
+<span><img src="../_ico/mhelp.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiAbout-Speculus.html');"title="About Module"><span><img src="../_ico/mabout.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td>Speculus (Latin 'to look at') is a rwebi search entry rid# lookup utility.</td></tr>
+<!-- GeminiModel: -->
+<tr><td style="width:25%;text-align:center;cursor:pointer;" onclick="pLoad('rwebiModule-Gemini-Model.html');" title="Load Module"><span><img src="../_ico/gemini-model.png" class="" style="width:40px;height:40px;vertical-align:middle;margin-right:3px;"><br>Gemini Model</span></td>
+<td style="width:80px;">Module</td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiHelp-Gemini-Model.html');" title="Review Documentation">
+<span><img src="../_ico/mhelp.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiAbout-Gemini-Model.html');"title="About Module"><span><img src="../_ico/mabout.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td>A rwebi Gemini AI interface prompt model.</td></tr>
+<!-- Browser: -->
+<tr><td style="width:25%;text-align:center;cursor:pointer;" onclick="pLoad('rwebiModule-Browser.html');" title="Load Module"><span><img src="../_ico/browser.png" class="" style="width:40px;height:40px;vertical-align:middle;margin-right:3px;"><br>Browser</span></td>
+<td style="width:80px;">Module</td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiHelp-Browser.html');" title="Review Documentation">
+<span><img src="../_ico/mhelp.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiAbout-Browser.html');"title="About Module"><span><img src="../_ico/mabout.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td>Browser information and rwebi storage utility.</td></tr>
+<!-- BasicCalculator: -->
+<tr><td style="width:25%;text-align:center;cursor:pointer;" onclick="pLoad('rwebiModule-CalculatorBasic.html');" title="Load Module"><span><img src="../_ico/calc-basic.png" class="" style="width:40px;height:40px;vertical-align:middle;margin-right:3px;"><br>Calculator</span></td>
+<td style="width:80px;">Module</td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiHelp-CalculatorBasic.html');" title="Review Documentation">
+<span><img src="../_ico/mhelp.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiAbout-CalculatorBasic.html');"title="About Module"><span><img src="../_ico/mabout.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td>Basic calculator utility with text output.</td></tr>
+<!-- CalculatorScientific: -->
+<tr><td style="width:25%;text-align:center;cursor:pointer;" onclick="pLoad('rwebiModule-CalculatorScientific.html');" title="Load Module"><span><img src="../_ico/calc-scientific.png" class="" style="width:40px;height:40px;vertical-align:middle;margin-right:3px;"><br>Sci. Calculator</span></td>
+<td style="width:80px;">Module</td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiHelp-CalculatorScientific.html');" title="Review Documentation">
+<span><img src="../_ico/mhelp.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiAbout-CalculatorScientific.html');"title="About Module"><span><img src="../_ico/mabout.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td>Scientific calculator utility with formula text output.</td></tr>
+<!-- ipGeo: -->
+<tr><td style="width:25%;text-align:center;cursor:pointer;" onclick="pLoad('rwebiModule-ipGeo.html');" title="Load Module"><span><img src="../_ico/ipgeo.png" class="" style="width:40px;height:40px;vertical-align:middle;margin-right:3px;"><br>ipGeo</span></td>
+<td style="width:80px;">Module</td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiHelp-ipGeo.html');" title="Review Documentation">
+<span><img src="../_ico/mhelp.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiAbout-ipGeo.html');"title="About Module"><span><img src="../_ico/mabout.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td>Simple IP address geo location mapping utility.</td></tr>
+<!-- InfoTrace: -->
+<tr><td style="width:25%;text-align:center;cursor:pointer;" onclick="pLoad('rwebiModule-InfoTrace.html');" title="Load Module"><span><img src="../_ico/infotrace.png" class="" style="width:40px;height:40px;vertical-align:middle;margin-right:3px;"><br>Info Trace</span></td>
+<td style="width:80px;">Module</td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiHelp-InfoTrace.html');" title="Review Documentation">
+<span><img src="../_ico/mhelp.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiAbout-InfoTrace.html');"title="About Module"><span><img src="../_ico/mabout.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td>Trace back utility for connection specifics and location.td></tr>
+<!-- BrowserInfo: -->
+<tr><td style="width:25%;text-align:center;cursor:pointer;" onclick="pLoad('rwebiModule-BrowserInfo.html');" title="Load Module"><span><img src="../_ico/browserinfo.png" class="" style="width:40px;height:40px;vertical-align:middle;margin-right:3px;"><br>Browser Info</span></td>
+<td style="width:80px;">Module</td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiHelp-BrowserInfo.html');" title="Review Documentation">
+<span><img src="../_ico/mhelp.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiAbout-BrowserInfo.html');"title="About Module"><span><img src="../_ico/mabout.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td>Browser information and rwebi storage utility.</td></tr>
+<!-- GoogleMapping: -->
+<tr><td style="width:25%;text-align:center;cursor:pointer;" onclick="pLoad('rwebiModule-GoogleMapping.html');" title="Load Module"><span><img src="../_ico/googlemapping.png" class="" style="width:40px;height:40px;vertical-align:middle;margin-right:3px;"><br>Google Mapping</span></td>
+<td style="width:80px;">Module</td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiHelp-GoogleMapping.html');" title="Review Documentation">
+<span><img src="../_ico/mhelp.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiAbout-GoogleMapping.html');"title="About Module"><span><img src="../_ico/mabout.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td>Google Mapping assistant and utility.</td></tr>
+<!-- MapPlotting: -->
+<tr><td style="width:25%;text-align:center;cursor:pointer;" onclick="pLoad('rwebiModule-MapPlotting.html');" title="Load Module"><span><img src="../_ico/mapplotting.png" class="" style="width:40px;height:40px;vertical-align:middle;margin-right:3px;"><br>Map Plotting</span></td>
+<td style="width:80px;">Module</td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiHelp-MapPlotting.html');" title="Review Documentation">
+<span><img src="../_ico/mhelp.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiAbout-MapPlotting.html');"title="About Module"><span><img src="../_ico/mabout.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td>Mapping and plotting utility of locations and group imports.</td></tr>
+<!-- Resources: -->
+<tr><td style="width:25%;text-align:center;cursor:pointer;" onclick="pLoad('rwebiMenu-Resources.html');" title="Load Module"><span><img src="../_ico/resources.png" class="" style="width:40px;height:40px;vertical-align:middle;margin-right:3px;"><br>Resources</span></td>
+<td style="width:80px;">Module</td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiHelp-Resources.html');" title="Review Documentation">
+<span><img src="../_ico/mhelp.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiAbout-Resources.html');"title="About Module"><span><img src="../_ico/mabout.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td>Providing a collection of reference information.</td></tr>
+<!-- Clock-Analog: -->
+<tr><td style="width:25%;text-align:center;cursor:pointer;" onclick="pLoad('rwebiModule-Clock-Analog.html');" title="Load Module"><span><img src="../_ica/module-clock-analog.png" class="" style="width:40px;height:40px;vertical-align:middle;margin-right:3px;"><br>Clock Analog</span></td>
+<td style="width:80px;">Module</td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiHelp-Clock-Analog.html');" title="Review Documentation">
+<span><img src="../_ico/mhelp.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiAbout-Clock-Analog.html');"title="About Module"><span><img src="../_ico/mabout.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td>Clean minimalist analog clock web application.</td></tr>
+<!-- StringEscape: -->
+<tr><td style="width:25%;text-align:center;cursor:pointer;" onclick="pLoad('rwebiModule-StringEscape.html');" title="Load Module"><span><img src="../_ica/module-stringescape.png" class="" style="width:40px;height:40px;vertical-align:middle;margin-right:3px;"><br>String Escape</span></td>
+<td style="width:80px;">Module</td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiHelp-StringEscape.html');" title="Review Documentation">
+<span><img src="../_ico/mhelp.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiAbout-StringEscape.html');"title="About Module"><span><img src="../_ico/mabout.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td>HTML string escape editor and utility.</td></tr>
+<!-- Lab: -->
+<tr><td style="width:25%;text-align:center;cursor:pointer;" onclick="pLoad('rwebiMenu-Lab.html');" title="Load Module"><span><img src="../_ica/module-lab.png" class="" style="width:40px;height:40px;vertical-align:middle;margin-right:3px;"><br>Lab</span></td>
+<td style="width:80px;">Module</td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiHelp-Lab.html');" title="Review Documentation">
+<span><img src="../_ico/mhelp.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiAbout-Lab.html');"title="About Module"><span><img src="../_ico/mabout.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td>Module and application testing.</td></tr>
+<!-- HelpSearch: -->
+<tr><td style="width:25%;text-align:center;cursor:pointer;" onclick="pLoad('rwebiMenu-Help-Listing.html');" title="Load Module"><span><img src="../_ica/help-index.png" class="" style="width:40px;height:40px;vertical-align:middle;margin-right:3px;"><br>Help Search</span></td>
+<td style="width:80px;">Module</td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiHelp-General.html');" title="Review Documentation">
+<span><img src="../_ico/mhelp.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td style="width:45px;text-align:center;cursor:pointer;" onclick="eToggle('dViewer');obLoad('dDisplay','../Help/rwebiAbout-Help-Listing.html');"title="About Module"><span><img src="../_ico/mabout.png" class="ibtn" style="width:28px;height:28px;vertical-align:middle;margin-right:3px;"></span></td>
+<td>Documentation and searchable help content.</td></tr>
+<!-- Table Data: End -->
+</table></div>
+
+<!-- Document Viewwe: -->
+<div id="dViewer" class="hView" style="position:absolute;top:45px;left:3px;right:3px;width:97%;height:98%;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Information</span></div><div class="hvRight"><span onclick="eHid('dViewer')"><img src="../_ico/mclose.png" class="ibtn"></span>&nbsp;</div><div class="clearArea"></div><div style="height:99%;margin-top:6px;"><object type="text/html" id="dDisplay" data="../Help/rwebiHelp-General.html" style="height:85%;width:100%;border:0px;"></object></div></div>
+
+<!-- Save View: -->
+<div id="sView" class="hView" style="top:60px;left:20px;width:60%;min-width:260px;max-width:500px;height:auto;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Save/Download</span></div><div class="hvRight"><span onclick="eHid('sView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div class="p6"><label for="sf" class="wc em12">Filename</label><input type='text' id='sf' class='wb' style="width:90%;font-size:1.15em;height:27px;" value="rwebiResource-Colors865.txt" onfocus="this.select();"><p><br><span class="gbtn" onclick="sFile('i','cc','sf');eHid('sView');" title="Download / Save">Save</span>&nbsp;&nbsp;<span class="abtn" onclick="eHid('sView');" title="Cancel Download">Cancel</span></p></div></div>
+
+<!-- Options View: -->
+<div id="oView" class="oView" style="position:absolute;z-Index:999;top:43px;width:140px;height:auto;padding:6px;border-radius:3px;display:none;font-weight:bold;">
+<span class="mso" onclick="dHid('oView');LinkModule();"><img src="../_ico/link.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Share Link</span>
+<span class="mso" onclick="selTheme('l');"><img src="../_ico/ltheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Light Theme</span>
+<span class="mso" onclick="selTheme('d');"><img src="../_ico/dtheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Dark Theme</span>
+<span class="mso" onclick="eToggle('hView');dHid('oView');obLoad('hDisplay','../Help/rwebiAbout-General.html');"><img src="../_ico/mhelp.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Information</span>
+<span class="mso" onclick="modRefresh();"><img src="../_ico/refresh.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Refresh</span>
+<span class="mso" onclick="pLoad('rwebiMenu-Modules.html');"><img src="../_ico/mclose.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Close</span></div>
+
+<!-- Help View: -->
+<div id="hView" class="hView" style="position:absolute;top:50px;left:15px;width:80%;height:80%;min-width:260px;min-height:200px;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Information</span></div><div class="hvRight"><span onclick="eHid('hView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div style="height:90%;margin-top:6px;"><object type="text/html" id="hDisplay" data="../Help/rwebiHelp-Browser.html" style="height:85%;width:100%;border:0px;"></object><input type="file" id="fb" style="visibility:hidden;" onchange="oFile('v','cv','fb');"></div></div>
+
+<!-- Variables: -->
+<textarea id="tt" class="hf"></textarea>
+<div id="ut" class="hf"></div>
+<span id="ow" class="hf">25</span>
+<span id="oh" class="hf">145</span>
+
+<!-- Module Footer: -->
+<div id="mFooter" class="mFooter" style="float:left;margin-top:0px;min-width:320px;">
+<img src="../_ico/favicon.png" style="height:12px;margin-right:3px;margin-top:2px;vertical-align:bottom;"><b>Help-Listing</b> </span>w:<span id="miw" class="oc"></span>&nbsp;h:<span id="mih" class="bc"></span></div></body></html>
+<!-- rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61 -->

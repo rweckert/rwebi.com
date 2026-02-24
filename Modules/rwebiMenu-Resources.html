@@ -1,0 +1,92 @@
+<!--            _   _  
+  ___ _ _ _ ___| |_|_| Aplha Preview: rwebiMenu-Resources.html
+ |  _| | | | -_| . | | rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61
+ |_| |_____|___|___|_| -->
+<!doctype html><html lang="en"><head><meta charSet="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rwebiMenu-Resources</title>
+<link rel="icon" type="image/x-icon" href="../_ico/favicon.png">
+<link id="csl" rel="stylesheet" href="../_css/rwebiStyle-Light-c61.css" media="(prefers-color-scheme: light)">
+<link id="csd" rel="stylesheet" href="../_css/rwebiStyle-Dark-c61.css" media="(prefers-color-scheme: dark)">
+<script src="../_jss/rwebiEngine-LightCore-c61.js"></script>
+<script src="../_jss/rwebiEngine-Resources-c61.js"></script>
+</head><body onload="mStart();" onresize="mResize();" style="overflow:hidden;">
+
+<!-- Module Header: -->
+<div id="mHeader" class="sho" style="width:100%;height:35px;min-width:320px;white-space:nowrap;cursor:pointer;" onclick="dToggle('oView');eHid('hView');"><div style="position:absolute;z-Index:999;top:3px;left:5px;"><span title="Module Options"><img src="../_ico/resources.png" class="nibtn">&nbsp;</span><div class="mTitle">Resources</div></div><div style="position:absolute;top:3px;right:6px;"><img src="../_ico/mselect.png"></div></div>
+
+<!-- Module Bar: -->
+<div id="mBar" class="sh0" style="height:35px;min-width:320px;white-space:nowrap;">
+<input id="qs" type="text" class="itxt"  style="width:70%;margin-right:-2px;" placeholder="Search Resources" onfocus="this.select();" onkeydown="onEnter();">
+<span onclick="Query();" title="Search Table"><img src="../_ico/search.png" class="ibtn"></span>
+<span onclick="ClearQuery();" title="Clear Search"><img src="../_ico/clear.png" class="ibtn"></span></div>
+
+<!-- Menu Bar: -->
+<div id="mBar" class="sh6">
+<select id="soColumn" class="yopt" title="Select Search Column" style="width:115px;">
+<option value="et">Entire Table</option>
+<option value="0">Resource</option>
+<option value="1">Description</option></select>
+<select id="soOptions" class="gopt" onchange="OptionsOpt();" title="Options" style="width:85px;">
+<option value="default">Options</option>
+<option value="clear">Clear Query</option>
+<option value="copy">Copy Data</option>
+<option value="download">Download Data&nbsp;&nbsp;</option>
+<option value="esource">Export Source</option>
+<option value="edata">Export Data</option>
+<option value="lsave">Local Save</option></select>
+<span onclick="sCopy('v','cc');"><img class="ibtn" src="../_ico/copy.png" title="Copy Results"></span>
+<span onclick="eTab('i','cc');"><img class="ibtn" src="../_ico/export-2.png" title="Export Results"></span>
+<span onclick="eVis('sView');cFocus('sf');"><img class="ibtn" src="../_ico/save-as.png" title="Download Results"></span></div>
+
+<!-- View Stats: -->
+<div id="vStats" class="sh3">
+Resource Documents: <span id="rc"></span></div>	
+
+<!-- Content Container / Content View: -->
+<div id="cc" class="cc" contenteditable="false" style="overflow-y:scroll;margin-top:3px;font-size:1.1em;">
+
+<!-- Table Start: -->
+<table id="tData" class="tfnp" border="1" cellpadding="3" cellspacing="0">
+<!-- Table Header: -->
+<tr><th>Resource</th><th>Description</th></tr>
+<!-- Data Start: -->
+<tr onclick="pLoad('../Resources/rwebiResources-World-TimeZones.html');"><td>World TimeZones</td><td>Resource Description</td></tr>
+<tr onclick="pLoad('../Resources/rwebiResources-Country-ISO.html');"><td>Country ISO</td><td>Resource Description</td></tr>
+<tr onclick="pLoad('../Resources/rwebiResources-Country-Capitals.html');"><td>Country Capitals</td><td>Resource Description</td></tr>
+<tr onclick="pLoad('../Resources/rwebiResources-US-Cities.html');"><td>US Cities</td><td>Resource Description</td></tr>
+<tr onclick="pLoad('../Resources/rwebiResources-Colors-865.html');"><td>Colors 865</td><td>Resource Description</td></tr>
+<tr onclick="pLoad('../Resources/rwebiResources-Colors-Primary.html');"><td>Colors Primary</td><td>Resource Description</td></tr>
+<tr onclick="pLoad('../Resources/rwebiResources-Colors-Browser.html');"><td>Colors Browser</td><td>Resource Description</td></tr>
+<tr onclick="pLoad('../Resources/rwebiResources-Colors-W3C577.html');"><td>Colors W3C577</td><td>Resource Description</td></tr>
+<tr onclick="pLoad('../Resources/rwebiResources-Colors-X11.html');"><td>Colors X11</td><td>Resource Description</td></tr>
+<tr onclick="pLoad('../Resources/rwebiResources-Colors-BlackShades.html');"><td>Color Black Shades</td><td>Resource Description</td></tr>
+
+<!-- Data End: -->
+</tbody></table></div>
+
+<!-- Save View: -->
+<div id="sView" class="hView" style="top:60px;left:20px;width:60%;min-width:260px;max-width:500px;height:auto;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Save Download</span></div><div class="hvRight"><span onclick="eHid('sView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div class="p6"><label for="sf" class="wc em12">Filename</label><input type='text' id='sf' class='wb' style="width:90%;font-size:1.15em;height:27px;" value="rwebiResources-ResourceList.txt" onfocus="this.select();"><p><br><span class="gbtn" onclick="sFile('i','cc','sf');eHid('sView');" title="Download / Save">Save</span>&nbsp;&nbsp;<span class="abtn" onclick="eHid('sView');" title="Cancel Download">Cancel</span></p></div></div>
+
+<!-- Options View: -->
+<div id="oView" class="oView" style="position:absolute;z-Index:999;top:43px;width:140px;height:auto;padding:6px;border-radius:3px;display:none;font-weight:bold;">
+<span class="mso" onclick="dHid('oView');LinkModule();"><img src="../_ico/link.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Share Link</span>
+<span class="mso" onclick="selTheme('l');"><img src="../_ico/ltheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Light Theme</span>
+<span class="mso" onclick="selTheme('d');"><img src="../_ico/dtheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Dark Theme</span>
+<span class="mso" onclick="eToggle('hView');dHid('oView');obLoad('hDisplay','../Help/rwebiAbout-Resources.html');"><img src="../_ico/mhelp.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Information</span>
+<span class="mso" onclick="modRefresh();"><img src="../_ico/refresh.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Refresh</span>
+<span class="mso" onclick="pLoad('rwebiMenu-Modules.html');"><img src="../_ico/mclose.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Close</span></div>
+
+<!-- Help View: -->
+<div id="hView" class="hView" style="position:absolute;top:65px;left:15px;width:80%;height:80%;min-width:260px;min-height:200px;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Information</span></div><div class="hvRight"><span onclick="eHid('hView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div style="height:90%;margin-top:6px;"><object type="text/html" id="hDisplay" data="../Help/rwebiHelp-Resources.html" style="height:85%;width:100%;border:0px;"></object><input type="file" id="fb" style="visibility:hidden;" onchange="oFile('v','cv','fb');"></div></div>
+
+<!-- Variables: -->
+<textarea id="tt" class="hf"></textarea>
+<div id="ut" class="hf"></div>
+<span id="ow" class="hf">25</span>
+<span id="oh" class="hf">164</span>
+
+<!-- Module Footer: -->
+<div id="mFooter" class="mFooter" style="float:left;margin-top:0px;min-width:320px;">
+<img src="../_ico/favicon.png" style="height:12px;margin-right:3px;margin-top:2px;vertical-align:bottom;"><b>Resources</b> </span>w:<span id="miw" class="oc"></span>&nbsp;h:<span id="mih" class="bc"></span></div></body></html>
+<!-- rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61 -->

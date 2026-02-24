@@ -1,0 +1,183 @@
+<!--            _   _  
+  ___ _ _ _ ___| |_|_| Aplha Preview: rwebiModule-TMCEdit-II.html
+ |  _| | | | -_| . | | rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61
+ |_| |_____|___|___|_| -->
+<!doctype html><html lang="en"><head><meta charSet="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rwebiModule-TMCEdit</title>
+<link rel="icon" type="image/x-icon" href="../_ico/favicon.png">
+<link id="csl" rel="stylesheet" href="../_css/rwebiStyle-Light-c61.css" media="(prefers-color-scheme: light)">
+<link id="csd" rel="stylesheet" href="../_css/rwebiStyle-Dark-c61.css" media="(prefers-color-scheme: dark)">
+<script src="../_jss/rwebiEngine-AceEditor-c61.js"></script>
+<script src="../_jss/rwebiEngine-AceStringTools-c61.js"></script>
+<script src="../_jss/rwebiEngine-LightCore-c61.js"></script>
+<script src="../_jss/rwebiModule-TMCEdit.js"></script>
+<script src='../Library/tmce/tinymce.dev.js'></script>
+<script src='../Library/tmce/plugins/table/plugin.dev.js'></script>
+<script src='../Library/tmce/plugins/paste/plugin.dev.js'></script>
+<script src='../Library/tmce/plugins/spellchecker/plugin.dev.js'></script>
+<script src='../Library/tmce/plugins/codesample/plugin.dev.js'></script>
+<script>
+tinymce.init({
+selector:"textarea#tv",
+setup:function(editor){
+editor.on('change keyup',function(){
+editor.save();SourceUpdate();});},
+theme:"modern",
+plugins:[
+"advlist autolink link image lists print preview hr anchor pagebreak spellchecker",
+"searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime nonbreaking",
+"save table contextmenu directionality template textcolor paste fullpage textcolor colorpicker codesample"
+],
+content_css:"css/development.css",
+add_unload_trigger:true,
+autosave_ask_before_unload:false,
+toolbar1:"fontselect fontsizeselect | bold italic underline | forecolor | backcolor | alignleft aligncenter alignright alignjustify | outdent indent | bullist numlist | link unlink anchor | visualchars visualblocks blockquote | table hr removeformat | nonbreaking | pagebreak insertdatetime image insertfile insertimage codesample pastetext",
+menubar:false,
+toolbar_items_size:'small'
+});</script></head><body onload="mStart();" onresize="mResize();" style="overflow-x:hidden;">
+
+<!-- Module Header: -->
+<div id="mHeader" class="sho" style="width:100%;height:35px;min-width:320px;white-space:nowrap;cursor:pointer;" onclick="dToggle('oView');eHid('hView');"><div style="position:absolute;z-Index:999;top:3px;left:5px;"><span title="Module Options"><img src="../_ico/tmcedit.png" class="nibtn">&nbsp;</span><div class="mTitle">TMC Edit</div></div><div style="position:absolute;top:3px;right:6px;"><img src="../_ico/mselect.png"></div></div>
+
+<!-- Module Bar: -->
+<div id="mBar" class="sh0" style="height:35px;min-width:320px;white-space:nowrap;">
+<select id="soFile" onChange="FileOpt();" class="yopt" title="File Menu" style="width:50px;height:33px;">
+<option value="default">File</option>
+<option value="open">Open File</option>
+<option value="new">New File</option>
+<option value="copy">Copy Source</option>
+<option value="clear">Clear Source</option>
+<option value="save">Local Save</option>
+<option value="restore">Local Restore</option>
+<option value="saveas">Save Download&nbsp;&nbsp;</option>
+<option value="source">Source in Tab</option>
+<option value="view">View in Tab</option>
+<option value="info">Information</option>
+<option value="exit">Exit Module</option></select>
+<span onclick="document.getElementById('fb').click();"><img class="ibtn" src="../_ico/open.png" title="Open File"></span>
+<span onclick="aceSave('rwebi-tmcEdit-');cFocus('sf');" title="Save Source"><img src="../_ico/save-as.png" class="ibtn"></span>
+<span onclick="SourceTab();"><img class="ibtn" src="../_ico/source-html.png" title="Source in Tab"></span>
+<span onclick="ViewTab();" title="View in Tab"><img src="../_ico/globe.png" class="ibtn"></span></div>
+
+<!-- Content Containor / Content View: -->
+<div id="tc" style="height:auto;z-index:10;margin-top:9px;">
+<textarea id="tv" name="tv" onkeyup="SourceUpdate();" style="height:150px;overflow:hidden;"></textarea></div>
+
+<!-- Menu Bar: -->
+<div id="mBar" class="sh3">
+<select id="soSource" onChange="SourceOpt();" class="oopt" title="Source Options" style="width:73px;height:33px;margin-top:3px;">
+<option value="default" selected="selected">Source</option>
+<option value="copy">Copy Source</option>
+<option value="view">View in Tab</option>
+<option value="source">Source in Tab</option>
+<option value="save">Local Save</option>
+<option value="restore">Local Restore</option>
+<option value="saveas">Save Download&nbsp;&nbsp;</option>
+<option value="clear">Clear Source</option></select>
+<span onclick="SourceUpdate();tStat('cv','1');" title="Update Source"><img src="../_ico/view-update.png" class="ibtn"></span>
+<span onclick="EditUpdate();" title=""><img src="../_ico/view-tmce.png" class="ibtn"></span>
+
+<span onclick="" title=""><img src="../_ico/save-as.png" class="ibtn"></span>
+
+
+
+
+<span onclick="" title=""><img src="../_ico/save-local.png" class="ibtn"></span>
+<span onclick="" title=""><img src="../_ico/save-restore.png" class="ibtn"></span>
+
+</div>
+
+</div>
+
+<!-- Menu Bar: -->
+<div id="mBar" class="sh3">
+<span onclick="cCode('mMenu','mSwap');" title=""><img src="../_ico/session-menubar.png" class="ibtn"></span>
+<!-- Menu Swap: -->
+<div id="mSwap" style="display:inline;"></div></div>
+<!-- Menu Swap Edit: -->
+<div id="mEdit" style="visibility:hidden;display:none;">
+<span onclick="aceCutSelected('editor');" title="Cut Selected"><img src="../_ico/cut.png" class="ibtn"></span>
+<span onclick="aceCopySelected('editor');" title="Copy Selected"><img src="../_ico/select.png" class="ibtn"></span>
+<span onclick="aceCopyAll('editor');" title="Copy All"><img src="../_ico/copy.png" class="ibtn"></span>
+<span onclick="acePaste('editor');" title="Paste"><img src="../_ico/paste.png" class="ibtn"></span>
+<span onclick="aceUndo();" title="Undo"><img src="../_ico/undo.png" class="ibtn"></span></div>
+<!-- Menu Swap Page: -->
+<div id="mPage" style="visibility:hidden;display:none;">
+<span onclick="pgFirst();" title="First Page"><img src="../_ico/nav-top.png" class="ibtn"></span>
+<span onclick="pgUp('editor');" title="Up Page"><img src="../_ico/nav-up.png" class="ibtn"></span>
+<span onclick="pgDown('editor');" title="Down Page"><img src="../_ico/nav-down.png" class="ibtn"></span>
+<span onclick="pgLast();" title="Last Page"><img src="../_ico/nav-bottom.png" class="ibtn"></span>
+</div>
+<!-- Menu Swap Main: -->
+<div id="mMenu" style="visibility:hidden;display:none;">
+<span onclick="cCode('mEdit','mSwap');" title="Toggle Edit Menu"><img src="../_ico/edit.png" class="ibtn"></span>
+<span onclick="cCode('mPage','mSwap');" title=""><img src="../_ico/nav.png" class="ibtn"></span>
+<span onclick="aceLock('editor');pSwap('lo','lock-','');" title=""><img id="lo" src="../_ico/lock-off.png" class="ibtn"></span>
+<span onclick="aceFind('editor');" title=""><img src="../_ico/search.png" class="ibtn"></span>
+<span onclick="" title=""><img src="../_ico/export-2.png" class="ibtn"></span>
+<span onclick="FullViewOpen();" ><img class="ibtn" src="../_ico/fullscreen.png" title="Full Screen Mode"></span>
+</div>
+
+<!-- View Stats: -->
+<div id="vStats" class="sh0" style="width:90%;min-width:320px;">
+<span class="em08">Words:&nbsp;</span><span id="acw" class="oc"></span>
+<span class="em08">Characters:&nbsp;</span><span id="aca" class="bc"></span>
+<span class="em08">Text:&nbsp;</span><span id="act" class="mc"></span>
+<span class="em08">Lines:&nbsp;</span><span id="acr" class="gc"></span></div>
+
+<!-- Content Containor 2 / Content View 2: -->
+<div id="editor" style="width:90;min-width:295px;min-height:150px;font-size:1.13em;margin-top:3px;margin-bottom:3px;border-radius:3px;" onclick="aceCount('editor');" onkeyup="aceCount('editor');EditUpdate();"></div>
+
+<!-- Full View Button: -->
+<div id="fvButton" onmouseover="sFlex('f','cc','0','0','0');" style="position:absolute;top:6px;left:2px;width:auto;height:45px;z-index:99;visibility:hidden;padding-top:0px;">
+<span onclick="eToggle('fvBar');" title=""><img src="../_ico/mmmenu.png" class="vibtn"></span></div>
+
+<!-- Full View Bar: -->
+<div id="fvBar" style="position:absolute;top:43px;left:2px;width:auto;height:auto;z-index:99;visibility:hidden;">
+<span onclick="aceCutSelected('editor');" title="Cut Selected"><img src="../_ico/cut.png" class="vibtn"></span><br>
+<span onclick="aceCopyAll('editor');" title="Copy All"><img src="../_ico/copy.png" class="vibtn"></span><br>
+<span onclick="acePaste('editor');" title="Paste"><img src="../_ico/paste.png" class="vibtn"></span><br>
+<span onclick="pgUp('editor');" title="Up Page"><img src="../_ico/nav-up.png" class="vibtn"></span><br>
+<span onclick="pgDown('editor');" title="Down Page"><img src="../_ico/nav-down.png" class="vibtn"></span><br>
+<span onclick="aceUndo();" title="Undo"><img src="../_ico/undo.png" class="vibtn"></span><br>
+<span onclick="aceSearchToggle('editor');" title="Toggle Find / Replace"><img src="../_ico/search.png" class="vibtn"></span><br>
+<span onclick="FullViewClose();"><img class="vibtn" src="../_ico/fullscreen-off.png" title="Close Full Screen"></span></div>
+
+<!-- Save View: -->
+<div id="sView" class="hView" style="top:60px;left:20px;width:60%;min-width:260px;max-width:500px;height:auto;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Save Download</span></div><div class="hvRight"><span onclick="eHid('sView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div class="p6"><label for="sf" class="wc em12">Filename</label><input type='text' id='sf' class='wb' style="width:90%;font-size:1.15em;height:27px;" value="" onfocus="this.select();"><p><br><span class="gbtn" onclick="aceDownload('editor');eHid('sView');" title="Download / Save">Save</span>&nbsp;&nbsp;<span class="abtn" onclick="eHid('sView');" title="Cancel Download">Cancel</span></p></div></div>
+
+<!-- Options View: -->
+<div id="oView" class="oView" style="position:absolute;z-Index:999;top:43px;width:140px;height:auto;padding:6px;border-radius:3px;display:none;font-weight:bold;">
+<span class="mso" onclick="dHid('oView');LinkModule();"><img src="../_ico/link.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Share Link</span>
+<span class="mso" onclick="selTheme('l');"><img src="../_ico/ltheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Light Theme</span>
+<span class="mso" onclick="selTheme('d');"><img src="../_ico/dtheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Dark Theme</span>
+<span class="mso" onclick="eToggle('hView');dHid('oView');obLoad('hDisplay','../Help/rwebiAbout-TMCEdit.html');"><img src="../_ico/mhelp.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Information</span>
+<span class="mso" onclick="modRefresh();"><img src="../_ico/refresh.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Refresh</span>
+<span class="mso" onclick="pLoad('rwebiMenu-Modules.html');"><img src="../_ico/mclose.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Close</span></div>
+
+<!-- Help View: -->
+<div id="hView" class="hView" style="position:absolute;top:65px;left:15px;width:80%;height:80%;min-width:260px;min-height:200px;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Information</span></div><div class="hvRight"><span onclick="eHid('hView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div style="height:90%;margin-top:6px;"><object type="text/html" id="hDisplay" data="../Help/rwebiHelp-TMCEdit.html" style="height:85%;width:100%;border:0px;"></object><input type="file" id="fb" style="visibility:hidden;" onchange="aceOpen('editor');"></div></div>
+
+<!-- Ace Editor: -->
+<script src="../Library/Ace/ace.js" type="text/javascript" charset="utf-8"></script><script>
+var editor = ace.edit("editor");editor.setTheme("ace/theme/chrome");
+editor.session.setMode("ace/mode/html");editor.setOption("wrap", true);editor.getSession().setUseWorker(false);</script>
+
+<!-- Variables: -->
+<textarea id="tt" class="hf"></textarea>
+<textarea id="ct" class="hf"></textarea>
+<div id="ut" class="hf"></div>
+<span id="ow" class="hf">30</span>
+<span id="oh" class="hf">300</span>
+<span id="ob" class="hf">0</span>
+<span id="mt" class="hf">0</span>
+<span id="ww" class="hf">on</span>
+<span id="sc" class="hf">off</span>
+<span id="ld" class="hf">off</span>
+<span id="st" class="hf">false</span>
+
+<!-- Module Footer: -->
+<div id="mFooter" class="mFooter" style="float:left;margin-top:0px;min-width:320px;">
+<img src="../_ico/favicon.png" style="height:12px;margin-right:3px;margin-top:2px;vertical-align:bottom;"><b>TMCEdit</b> </span>w:<span id="miw" class="oc"></span>&nbsp;h:<span id="mih" class="bc"></span></div></body></html>
+<!-- rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61 -->

@@ -1,0 +1,446 @@
+<!--            _   _  
+  ___ _ _ _ ___| |_|_| Aplha Preview: rwebiApp-GridStack.html
+ |  _| | | | -_| . | | rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61
+ |_| |_____|___|___|_| -->
+<!doctype html><html lang="en"><head><meta charSet="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rwebiApp-GridStack</title>
+<link rel="icon" type="image/x-icon" href="../_ico/favicon.png">
+<link id="csl" rel="stylesheet" href="../_css/rwebiStyle-Original-Light-c61.css" media="(prefers-color-scheme: light)">
+<link id="csd" rel="stylesheet" href="../_css/rwebiStyle-Original-Dark-c61.css" media="(prefers-color-scheme: dark)">
+<style>body,html {height:100dvh;width:100vw;margin:0;padding:0;}</style>
+<script src="../_jss/rwebiEngine-LightCore-c61.js"></script>
+<script src="../_jss/rwebiEngine-AceEditor-c61.js"></script>
+<script src="../_jss/rwebiApp-GridStack.js"></script>
+<script>{document.onmousemove=mGraph;}</script>
+</head><body onload="mStart();" onresize="mResize();" style="overflow-x:hidden;overflow-y:scroll;">
+
+<!-- Module Header: -->
+<div id="mHeader" class="sh0" style="width:100%;min-width:320px;">
+<span onclick="appRefresh();" title="Refresh Application"><img src="../_ico/favicon.png" class="nibtn" style="margin-left:6px;"></span>
+<span onclick="pLoad('../index.html');" title="Help / About / Settings"><img src="../_ico/mclose.png" class="ibtn" style="float:right;margin-right:3px;"></span>
+<span onclick="eToggle('oView');" title="Close Application"><img src="../_ico/mopt.png" class="ibtn" style="float:right;margin-right:3px;"></span><div class="mTitle" onclick="eHid('mMenu');">Grid Stack</div>
+
+<!-- Source Menu: -->
+<div id="sMenu" class="sh0" style="min-width:360px;">
+<!-- Source Menu: Main -->
+<select id="soFile" onChange="FileOpt();" onclick="eHid('mMenu');" class="yopt" title="File Menu" style="width:50px;height:33px;">
+<option value="default">File</option>
+<option value="new">New Stack</option>
+<option value="copy">Copy Stack</option>
+<option value="clear">Clear Stack</option>
+<option value="save">Local Save</option>
+<option value="restore">Local Restore</option>
+<option value="saveas">Save Download&nbsp;&nbsp;</option>
+<option value="export">Export to Tab</option>
+<option value="info">Information</option>
+<option value="exit">Exit</option></select>
+<span onclick="ViewGrid('gv');" title="Grid the Stack"><img src="../_ico/go-orange.png" class="ibtn"></span>
+<span onclick="ViewGrid('tv');" title="View Stack in New Tab"><img src="../_ico/globe.png" class="ibtn"></span>
+<span onclick="cCode('mMenu','mSwap');vSplit();" title="Stack Menu"><img src="../_ico/sstack.png" class="ibtn"></span>
+<div id="mSwap" style="display:inline;display:inline;">
+<span onclick="hWide();cCode('mHTML','mSwap');" title="HTML Wide View"><img src="../_ico/bht.png" class="ibtn"></span>
+<span onclick="cWide();cCode('mCSS','mSwap');" title="CSS Wide View"><img src="../_ico/bcs.png" class="ibtn"></span>
+<span onclick="jWide();cCode('mJSS','mSwap');" title="JS Wide View"><img src="../_ico/bjs.png" class="ibtn"></span>
+</div></div>
+<!-- Source Menu: HTML -->
+<div id="mHTML" style="visibility:hidden;display:none;">
+<span onclick="hFull();" title="HTML Full View"><img src="../_ico/ymax.png" class="ibtn"></span>
+<span onclick="aceWrap('editor1');pSwap('ww1','wrap-','');"><img id="ww1" class="ybtn" src="../_ico/wrap-off.png" title="HTML Word Wrapping"></span>
+<span onclick="document.getElementById('fb1').click();" title="HTML Open File"><img src="../_ico/open.png" class="ybtn"></span>
+<span onclick="aceTargetSave('hSave','hf','.html','filename-');" title="HTML Save Download"><img src="../_ico/save-as.png" class="ybtn"></span>
+<span onclick="aceCopyAll('editor1');" title="Copy HTML Section"><img src="../_ico/copy.png" class="ybtn"></span>
+</div>
+<!-- Source Menu: CSS -->
+<div id="mCSS" style="visibility:hidden;display:none;">
+<span onclick="cFull();" title="CSS Full View"><img src="../_ico/bmax.png" class="ibtn"></span>
+<span onclick="aceWrap('editor2');pSwap('ww2','wrap-','');"><img id="ww2" class="bbtn" src="../_ico/wrap-off.png" title="CSS Word Wrapping"></span>
+<span onclick="document.getElementById('fb2').click();" title="CSS Open File"><img src="../_ico/open.png" class="bbtn"></span>
+<span onclick="aceTargetSave('cSave','cf','.css','filename-');" title="CSS Save Download"><img src="../_ico/save-as.png" class="bbtn"></span>
+<span onclick="aceCopyAll('editor2');" title="Copy CSS Section"><img src="../_ico/copy.png" class="bbtn"></span>
+</div>
+<!-- Source Menu: JS -->
+<div id="mJSS" style="visibility:hidden;display:none;">
+<span onclick="jFull();" title="JS Full View"><img src="../_ico/omax.png" class="ibtn"></span>
+<span onclick="aceWrap('editor3');pSwap('ww3','wrap-','');"><img id="ww3" class="obtn" src="../_ico/wrap-off.png" title="JS Word Wrapping"></span>
+<span onclick="document.getElementById('fb3').click();" title=""><img src="../_ico/open.png" class="obtn"></span>
+<span onclick="aceTargetSave('jSave','jf','.js','filename-');" title="JS Save Download"><img src="../_ico/save-as.png" class="obtn"></span>
+<span onclick="aceCopyAll('editor3');" title="Copy JS Section"><img src="../_ico/copy.png" class="obtn"></span>
+</div>
+<!-- Source Menu: Wide -->
+<div id="mMenu" style="visibility:hidden;display:none;">
+<span onclick="hWide();cCode('mHTML','mSwap');" title="HTML Main Menu"><img src="../_ico/bht.png" class="ibtn"></span>
+<span onclick="cWide();cCode('mCSS','mSwap');" title="CSS Main Menu"><img src="../_ico/bcs.png" class="ibtn"></span>
+<span onclick="jWide();cCode('mJSS','mSwap');" title="JS Main Menu"><img src="../_ico/bjs.png" class="ibtn"></span>
+</div>
+<!-- Source Menu End: -->
+
+<!-- Source Containor: -->
+<div style="width:100%;max-height:170px;max-width:360px;margin-top:3px;">
+
+<!-- hbox: Source -->
+<div id="hbox" style="display:inline;float:left;width:31.8%;min-width:90px;border-radius:3px;background-color:#ffffb3;">
+<!-- hbox: Header -->
+<div id="hheader" style="" onclick="cCode('mHTML','mSwap');sSelect('h');">
+<select id="hFile" onchange="htmlFile();" class="styc" title="HTML Options" style="margin-top:0px;width:68px;height:33px;">
+<option value="do">HTML</option>
+<option value="of">Open File</option>
+<option value="ch">Copy HTML</option>
+<option value="et">Export to Tab</option>
+<option value="ls">Local Save</option>
+<option value="lr">Local Restore</option>
+<option value="sd">Save Download&nbsp;&nbsp;</option>
+<option value="xs">Clear HTML</option></select>
+<select id="hco" onchange="hcOpt();" class="styc" title="HTML Panel Options" style="width:20px;height:33px;float:right;">
+<option value="oo">Option</option>
+<option value="oo">Option&nbsp;&nbsp;</option>
+<option value="oo">Option</option>
+<option value="oo">Option</option></select></div>
+<!-- hbox: Editor -->
+<div id="editor1" onclick="cCode('mHTML','mSwap');sSelect('h');" style="height:170px;">&lt;header&gt;
+  &lt;h1&gt;Logo / Site Title&lt;/h1&gt;
+&lt;/header&gt;
+
+&lt;div class=&quot;wrapper&quot;&gt;
+  &lt;main&gt;&lt;section&gt;
+  &lt;h2&gt;Primary Content Area&lt;/h2&gt;
+  &lt;div class=&quot;placeholder&quot;&gt;Feature Content&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+  &lt;p&gt;Detailed description or article text goes here. This area is the focus of the page.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/main&gt;
+
+&lt;aside&gt;
+  &lt;h3&gt;Navigation&lt;/h3&gt;
+  &lt;nav&gt;
+    &lt;div class=&quot;nav-item&quot;&gt;Dashboard&lt;/div&gt;
+    &lt;div class=&quot;nav-item&quot;&gt;Profile Settings&lt;/div&gt;
+    &lt;div class=&quot;nav-item&quot;&gt;Messages&lt;/div&gt;
+    &lt;div class=&quot;nav-item&quot;&gt;Logout&lt;/div&gt;
+  &lt;/nav&gt;
+  &lt;hr&gt;
+  &lt;div class=&quot;placeholder&quot; style=&quot;height: 100px;&quot;&gt;Secondary Widget&lt;/div&gt;
+&lt;/aside&gt;
+&lt;/div&gt;
+
+&lt;footer&gt;
+  &lt;p&gt;© 2026 Right-Menu Wireframe&lt;/p&gt;
+&lt;/footer&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</div>
+<div style='font-size:.83em;'>
+<span class='tnc'>C:&nbsp;</span><span id='hcc' class='tgl'></span>
+<span class='tnc'>L:&nbsp;</span><span id='hlc' class='tpl'></span></div></div></div>
+
+<!-- cbox: -->
+<div id="cbox" style="display: inline;float:left;width:31.8%;min-width:90px;border-radius:3px;background-color:#66d9ff;margin-left:6px;">
+<!-- cbox: Header -->
+<div id="cheader" onclick="cCode('mCSS','mSwap');sSelect('c');">
+<select id="cFile" onchange="cssFile();" class="stbc" title="CSS Options" style="margin-top:0px;width:65px;height:33px;">
+<option value="do">CSS</option>
+<option value="of">Open File</option>
+<option value="ch">Copy CSS</option>
+<option value="et">Export to Tab</option>
+<option value="ls">Local Save</option>
+<option value="lr">Local Restore</option>
+<option value="sd">Save Download&nbsp;&nbsp;</option>
+<option value="xs">Clear CSS</option></select>
+<select id="cco" onchange="ccOpt();" class="stbc" title="CSS Panel Options" style="margin-top:0px;width:20px;height:33px;float:right;">
+<option value="oo">Option</option>
+<option value="oo">Option&nbsp;&nbsp;</option>
+<option value="oo">Option</option>
+<option value="oo">Option</option></select></div>
+<!-- cbox: Editor -->
+<div id="editor2" onclick="cCode('mCSS','mSwap');sSelect('c');" style="height:170px;">/* Common Box Styling */
+header, footer, main, aside, .nav-item {
+border: 2px dashed #999;
+color: #2e2e2e;
+padding: 20px;
+margin: 10px;
+}
+
+/* Layout Structure */
+.wrapper {
+display: flex;
+flex: 1; /* Pushes footer to bottom */
+}
+
+/* Main Content */
+main {
+flex: 3; /* Content takes up 75% */
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+/* Sidebar Section */
+aside {
+flex: 1; /* Sidebar takes up 25% */
+min-width: 200px;
+}
+
+/* Navigation List Styling */
+nav {
+display: flex;
+flex-direction: column;
+gap: 10px;
+margin-top: 20px;
+}
+
+/* Navigation Items */
+.nav-item {
+margin: 0;
+text-align: left;
+background-color: #eee;
+cursor: pointer;
+}
+
+/* Placeholder */
+.placeholder {
+background-color: #ddd;
+height: 200px;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid #bbb;
+}
+
+/* Sidebar Wrapper */
+@media (max-width: 768px) {
+.wrapper {flex-direction: column;}
+aside {order: -1;}} /* Moves menu to top on mobile for UX */</div>
+<div style='font-size:.83em;'>
+<span class='tnc'>C:&nbsp;</span><span id='ccc' class='tgl'></span>
+<span class='tnc'>L:&nbsp;</span><span id='clc' class='tpl'></span></div></div></div>
+
+<!-- jbox: Source -->
+<div id="jbox" style="display: inline;float:left;width:31.8%;min-width:90px;border-radius:3px;background-color:#ffb900;margin-left:6px;">
+<!-- jbox: Header -->
+<div id="jheader" onclick="cCode('mJSS','mSwap');sSelect('j');">
+<select id="jFile" onchange="jsFile();" class="stoc" title="JS Options" style="margin-top:0px;width:65px;height:33px;">
+<option value="do">JS</option>
+<option value="of">Open File</option>
+<option value="ch">Copy JS</option>
+<option value="et">Export to Tab</option>
+<option value="ls">Local Save</option>
+<option value="lr">Local Restore</option>
+<option value="sd">Save Download&nbsp;&nbsp;</option>
+<option value="xs">Clear JS</option></select>
+<select id="jco" onchange="jcOpt();" class="stoc" title="JS Panel Options" style="margin-top:0px;width:20px;height:33px;float:right;">
+<option value="oo">Option</option>
+<option value="oo">Option&nbsp;&nbsp;</option>
+<option value="oo">Option</option>
+<option value="oo">Option</option></select></div>
+<!-- jbox: Editor -->
+<div id="editor3" onclick="cCode('mJSS','mSwap');sSelect('j');" style="height:170px;"></div>
+<div style='font-size:.83em;'>
+<span class='tnc'>C:&nbsp;</span><span id='jcc' class='tgl'></span>
+<span class='tnc'>L:&nbsp;</span><span id='jlc' class='tpl'></span></div></div></div>
+
+<!-- Source Containor End: -->
+</div><div class="clearArea"></div>
+
+<!-- Grid Menu: -->
+<div id="gMenu"><div id="m2" class="sh3" style="min-width:360px;">
+<span onclick="dVis('grList');" title="Grid Display Resolution"><img src="../_ico/res.png" class="ibtn"></span>
+<select id="soGridSize" onchange="GridSize();" class="gopt" title="Grid Size" style="width:65px;height:33px;">
+<option value="50">Size</option>
+<option value="12">12px</option>
+<option value="25">25px</option>
+<option value="50">50px</option>
+<option value="100">100px</option>
+<option value="off">Off</option></select>
+<select id="soGridColor" onchange="GridSize();" class="ropt" title="Grid Color" style="width:75px;height:33px;">
+<option value="gl">Light</option>
+<option value="gd">Dark</option>
+<option value="c">Custom&nbsp;&nbsp;</option>
+<option value="n">None</option></select>
+<select id="soGrid" onchange="GridSize();" class="bopt" title="Grid Options" style="width:55px;height:33px;">
+<option value="Grid">Grid</option>
+<option value="on">On</option>
+<option value="off">Off</option></select>
+<select id="soOpacity" onchange="GridOpacity();" class="wopt" title="Grid Opacity" style="width:45px;height:33px">
+<option value='10'>10</option>
+<option value='2'>1</option>
+<option value='3'>2</option>
+<option value='4'>3</option>
+<option value='5'>4</option>
+<option value='6'>5</option>
+<option value='7'>6</option>
+<option value='8'>7</option>
+<option value='9'>9</option>
+<option value='10'>Off</option></select></div></div>
+
+<!-- View Stats: -->
+<div id="vStats" class="sh0" style="min-width:320px;">
+<span class='em08 twl'>vw:&nbsp;<span id='gw' class="mc"></span></span>
+<span class='em08 twl'>vh:&nbsp;<span id='gh' class="gc"></span></span>
+<span class='em08 twl'>ox:&nbsp;<span id='ox' class="yc">-1</span></span>
+<span class='em08 twl'>oy:&nbsp;<span id='oy' class="bo">-1</span></span>
+<span class='em08 twl'>gy:&nbsp;<span id='my' class="bc"></span></span>
+<span class='em08 twl'>gx:&nbsp;<span id='mx' class="oc"></span></span></div>
+
+<!-- View Grid: -->
+<div id="vGrid" style="width:100%; height:800px; margin-top:3px; overflow:auto; position:relative; border:1px solid #444;">
+<div id="vr" style="position:relative; top:0; left:28px; width:5000px; height:27px; background-color:#2e2e2e; background-image:url('../_img/rhot1200.png'); background-repeat:repeat-x; z-index:10;">
+<div id='rmv' style="position:absolute; left:0px;"><img src="../_img/rmv.png"></div></div>
+<div id="hr" style="position:sticky; left:0; top:27px; width:27px; height:5000px; background-color:#2e2e2e; background-image:url('../_img/rvt1200.png'); z-index:10; float:left;">
+<div id="rmh" style="position:absolute; top:-11px;"><img src="../_img/rmh.png"></div></div>
+<div id="gv" style="position:relative; margin-left:27px; cursor:crosshair; background-image:url('../_img/GraphPaper/gl25.gif'); background-repeat:repeat; border:1px solid #2e2e2e;">
+<div id="oi" style="width:100%; height:100%;overflow:auto;"></div>
+</div></div>
+
+<!-- Grid Resolution List: -->
+<div id="grList" style="position:absolute;z-index:11;top:50px;right:3px;width:auto;height:350px;background-color:#d9d9d9;border-radius:3px;overflow-x:hidden;overflow:hidden;display:none;">
+<!-- Table Menu Header: -->
+<div id="tHeader" style="margin-top:3px;margin-bottom:0px;margin-left:3px;"><input type="text" placeholder="Search" id="ts" onfocus="this.select();" onkeydown="onEnter();" style="width:150px;height:28px;font-size:1.13em;">
+<span onclick="lSearch();" title="Search Listing"><img src="../_ico/search.png" class="hibtn"></span>
+<span onclick="eToggle('aDisplay');" title="Add Display"><img src="../_ico/sum-add.png" class="hibtn"></span>
+<span onclick="ClearQuery();" title="Clear Search"><img src="../_ico/clear.png" class="hibtn"></span>
+<span onclick="dHid('grList');" title="Close Listing"><img src="../_ico/mclose.png" class="hibtn"></span></div>
+<div style="height:85%;overflow-y:scroll;">
+<table id="cData" class="tfnp" border="1" cellpadding="3" cellspacing="0" style="width:98%;margin-left:3px;border: 1px solid #505050;">
+<tr><td width="80" style="text-align:center;"><b>Device</b></td><td style="text-align:center;"><b>Width</b></td><td style="text-align:center;"><b>Height</b></td></tr>
+<tr onclick="DisplaySize('360','640');dHid('grList');">
+<td width="80"><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">Mobile</div></td>
+<td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">360px</div></td><td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">640px</div></td></tr>
+<tr onclick="DisplaySize('375','667');dHid('grList');">
+<td width="80"><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">Mobile</div></td>
+<td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">375px</div></td><td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">667px</div></td></tr>
+<tr onclick="DisplaySize('414','896');dHid('grList');">
+<td width="80"><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">Mobile</div></td>
+<td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">414px</div></td><td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">896px</div></td></tr>
+<tr onclick="DisplaySize('360','780');dHid('grList');">
+<td width="80"><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">Mobile</div></td>
+<td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">360px</div></td><td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">780px</div></td></tr>
+<tr onclick="DisplaySize('375','812');dHid('grList');">
+<td width="80"><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">Mobile</div></td>
+<td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">375px</div></td><td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">812px</div></td></tr>
+<tr onclick="DisplaySize('601','962');dHid('grList');">
+<td width="80"><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">Mobile</div></td>
+<td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">601px</div></td><td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">962px</div></td></tr>
+<tr onclick="DisplaySize('768','1024');dHid('grList');">
+<td width="80"><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">Tablet</div></td>
+<td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">768px</div></td><td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">1024px</div></td></tr>
+<tr onclick="DisplaySize('800','1280');dHid('grList');">
+<td width="80"><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">Tablet</div></td>
+<td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">800px</div></td><td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">1280px</div></td></tr>
+<tr onclick="DisplaySize('963','601');dHid('grList');">
+<td width="80"><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">Tablet</div></td>
+<td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">963px</div></td><td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">601px</div></td></tr>
+<tr onclick="DisplaySize('1200','800');dHid('grList');">
+<td width="80"><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">Tablet</div></td>
+<td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">1200px</div></td><td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">800px</div></td></tr>
+<tr onclick="DisplaySize('1024','768');dHid('grList');">
+<td width="80"><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">Desktop</div></td>
+<td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">1024px</div></td><td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">768px</div></td></tr>
+<tr onclick="DisplaySize('1920','1080');dHid('grList');">
+<td width="80"><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">Desktop</div></td>
+<td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">1920px</div></td><td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">1080px</div></td></tr>
+<tr onclick="DisplaySize('1366','768');dHid('grList');">
+<td width="80"><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">Desktop</div></td>
+<td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">1366px</div></td><td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">768px</div></td></tr>
+<tr onclick="DisplaySize('1440','900');dHid('grList');">
+<td width="80"><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">Desktop</div></td>
+<td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">1440px</div></td><td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">900px</div></td></tr>
+<tr onclick="DisplaySize('1536','864');dHid('grList');">
+<td width="80"><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">Desktop</div></td>
+<td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">1536px</div></td><td><div style="width:100%;height:13px;color:#ffffff;cursor:pointer;">864px</div></td></tr>
+</table></div></div>
+<!-- Grid Resolution List: End -->
+</div>
+
+<!-- Save Stack: -->
+<div id="sSave" class="hView" style="top:60px;left:20px;width:60%;min-width:260px;max-width:500px;height:auto;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Stack Download</span></div><div class="hvRight"><span onclick="eHid('sSave')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div class="p6"><label for="sf" class="wc em12">Filename</label><input type='text' id='sf' class='wb' style="width:90%;font-size:1.15em;height:27px;" value="" onfocus="this.select();"><p><span class="gbtn" onclick="sFile('v','tv','sf');eHid('sView');" title="Download / Save">Save .html</span>&nbsp;<span class="rbtn" onclick="eHid('sSave');" title="Cancel Download">Cancel</span></p></div></div>
+
+<!-- HTML Save View: -->
+<div id="hSave" class="hView" style="top:60px;left:20px;width:60%;min-width:260px;max-width:500px;height:auto;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">.html Download</span></div><div class="hvRight"><span onclick="eHid('hSave')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div class="p6"><label for="hf" class="wc em12">Filename</label><input type='text' id='hf' class='wb' style="width:90%;font-size:1.15em;height:27px;" value="" onfocus="this.select();"><p><span class="gbtn" onclick="aceDownload('editor1','hf');eHid('hSave');" title="Download / Save">Save .html</span>&nbsp;<span class="rbtn" onclick="eHid('hSave');" title="Cancel Download">Cancel</span></p></div></div>
+
+<!-- CSS Save View: -->
+<div id="cSave" class="hView" style="top:60px;left:20px;width:60%;min-width:260px;max-width:500px;height:auto;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">.css Download</span></div><div class="hvRight"><span onclick="eHid('cSave')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div class="p6"><label for="cf" class="wc em12">Filename</label><input type='text' id='cf' class='wb' style="width:90%;font-size:1.15em;height:27px;" value="" onfocus="this.select();"><p><span class="gbtn" onclick="aceDownload('editor2');eHid('cSave');" title="Download / Save">Save .css</span>&nbsp;<span class="rbtn" onclick="eHid('cSave');" title="Cancel Download">Cancel</span></p></div></div>
+
+<!-- JS Save View: -->
+<div id="jSave" class="hView" style="top:60px;left:20px;width:60%;min-width:260px;max-width:500px;height:auto;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">.js Download</span></div><div class="hvRight"><span onclick="eHid('jSave')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div class="p6"><label for="jf" class="wc em12">Filename</label><input type='text' id='jf' class='wb' style="width:90%;font-size:1.15em;height:27px;" value="" onfocus="this.select();"><p><span class="gbtn" onclick="aceDownload('editor3');eHid('jSave');" title="Download / Save">Save .js</span>&nbsp;<span class="abtn" onclick="eHid('jSave');" title="Cancel Download">Cancel</span></p></div></div>
+
+<!-- Options View: -->
+<div id="oView" style="position:absolute;top:44px;right:6px;width:auto;height:40px;background-color:#cccccc;visibility:hidden;float:right;border:1px solid #505050;border-radius:3px;padding:3px;visibility:hidden;"><span onclick="eToggle('hView');obLoad('hDisplay','../Help/rwebiHelp-GridStack.html');eHid('oView');"><img class="ibtn" src="../_ico/mhelp.png" title="Documentation"></span>
+<span onclick="eToggle('hView');obLoad('hDisplay','../Help/rwebiAbout-GridStack.html');eHid('oView');"><img class="ibtn" src="../_ico/mabout.png" title="About Module"></span>
+<span onclick="eHid('oView');LinkModule();"><img class="ibtn" src="../_ico/link.png" title="Copy & Share Module Link"></span>&nbsp;<select id="osTheme" onChange="optTheme();" class="bopt" title="Theme Mode" style="width:65px;height:33px;">
+<option value="m">Mode</option>
+<option value="l">Light Mode&nbsp;&nbsp;</option>
+<option value="d">Dark Mode</option></select></div>
+
+<!-- Grid Settings: -->
+<div id="gSettings" class="hView" style="position:absolute;z-Index:9999;top:60px;left:20px;width:60%;min-width:260px;max-width:500px;height:300px;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Grid Settings</span></div><div class="hvRight"><span onclick="eHid('gSettings')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div>
+
+<!-- Grid Settings: Background Image -->
+<div style="margin-left:6px;margin-top:9px;"><label for="gbUrl" class="em10 fb" style="display:block;">Grid Background url</label><input type="text" id="gbUrl" style="width:50%;height:28px;font-size:1.13em;margin-top:3px;margin-right:-2px;" onfocus="this.select()" value="../_bkg/Desktop/dbkg_DesertSunrise.jpg">
+<span onclick="GridBkgUrl();"><img src="../_ico/go-orange.png" class="ibtn" title=""></span>
+<span onclick="document.getElementById('fbg').click();"><img src="../_ico/open.png" class="ibtn" title=""></span></div>
+
+<!-- Grid Settings: Background Color -->
+<div style="display:inline-block;margin-left:6px;margin-top:9px;"><label for="gbColor" class="em10 fb" style="display:block;">Grid Background Color</label><input type="color" id="gbColor" onchange="GridBkgColor();" value="#ffffff" style="width:150px;height:40px;margin-top:2px;"></div>
+
+<!-- Grid Settings: End -->
+</div>
+
+<!-- Add Display: -->
+<div id="aDisplay" class="hView" style="top:60px;left:20px;width:60%;min-width:260px;max-width:500px;height:auto;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Add Display</span></div><div class="hvRight"><span onclick="eHid('aDisplay')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div>
+<label for="dName" class="em10 fb" style="display:block;">Display Type</label><input type="text" id="dName" style="width:50%;height:29px;font-size:1.13em;margin-top:3px;margin-right:-2px;" onfocus="this.select()" placeholder="Name or Type">
+<select id="dType" class="wopt" title="Type or Name" style="width:120px;height:33px;">
+<option value="Mobile">Mobile</option>
+<option value="Tablet">Tablet</option>
+<option value="Desktop">Desktop&nbsp;&nbsp;</option>
+<option value="o">Other</option></select>
+<label for="dWidth" class="em10 fb" style="display:block;margin-top:3px;">Display Width</label><input type="text" id="dWidth" style="width:80px;height:29px;font-size:1.13em;margin-top:3px;margin-right:-2px;" onfocus="this.select()" value="">
+<select id="dtWidth" class="wopt" title="Width Type" style="width:110px;height:33px;">
+<option value="px">Pixel px</option>
+<option value="%">Percent %</option>
+<option value="vw">Viewport vw&nbsp;&nbsp;</option>
+<option value="o">Other</option></select>
+<label for="dHeight" class="em10 fb" style="display:block;margin-top:3px;">Display Height</label><input type="text" id="dHeight" style="width:80px;height:29px;font-size:1.13em;margin-top:3px;margin-right:-2px;" onfocus="this.select()" value="">
+<select id="dtHeight" class="wopt" title="Height Type" style="width:110px;height:33px;">
+<option value="px">Pixel px</option>
+<option value="%">Percent %</option>
+<option value="vw">Viewport vw&nbsp;&nbsp;</option>
+<option value="o">Other</option></select>
+<p><span class="gbtn" onclick="AddDisplay();" title="Add Display">Add Display</span>&nbsp;<span class="rbtn" onclick="eHid('aDisplay');" title="Cancel">Cancel</span></p></div>
+<!-- Add Display: End -->
+</div>
+
+<!-- Help View: -->
+<div id="hView" class="hView" style="position:absolute;top:65px;left:3px;width:80%;height:80%;min-width:260px;min-height:200px;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Information</span></div><div class="hvRight"><span onclick="eHid('hView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div style="height:90%;margin-top:6px;"><object type="text/html" id="hDisplay" data="../Help/rwebiHelp-GridStack.html" style="height:85%;width:100%;border:0px;"></object><input type="file" id="fb1" style="visibility:hidden;" onchange="aceOpen('editor1','fb1');"><input type="file" id="fb2" style="visibility:hidden;" onchange="aceOpen('editor2','fb2');">
+<input type="file" id="fb3" style="visibility:hidden;" onchange="aceOpen('editor3','fb3');"><input type="file" id="fbg" style="visibility:hidden;" onchange="GridBkgImage();"></div></div>
+
+<!-- Variables: -->
+<textarea id="tt" style="width:0px;height:0px;visibility:hidden;display:none;"></textarea>
+<textarea id="vt" style="width:0px;height:0px;visibility:hidden;display:none;"></textarea>
+<span id="miw" class="hf"></span>
+<span id="mih" class="hf"></span>
+
+<!-- Ace Editor: -->
+<script src="../Library/Ace/ace.js" type="text/javascript" charset="utf-8"></script><script>
+var editor=ace.edit("editor");editor.setTheme("ace/theme/chrome");
+editor.session.setMode("ace/mode/text");editor.renderer.setShowGutter(true);editor.session.setUseWrapMode(true);</script>
+
+<script src="../Library/Ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+  var editor1=ace.edit("editor1");
+  editor1.setTheme("ace/theme/chrome");
+  editor1.session.setMode("ace/mode/html");
+
+  var editor2=ace.edit("editor2");
+  editor2.setTheme("ace/theme/chrome");
+  editor2.session.setMode("ace/mode/css");
+ 
+  var editor3=ace.edit("editor3");
+  editor3.setTheme("ace/theme/chrome");
+  editor3.session.setMode("ace/mode/javascript");
+</script>
+
+<!-- Module Footer: -->
+</div></body></html>
+<!-- rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61 -->

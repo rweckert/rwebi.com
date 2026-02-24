@@ -1,0 +1,113 @@
+<!--            _   _  
+  ___ _ _ _ ___| |_|_| Aplha Preview: rwebiModule-Gemini-Model.html
+ |  _| | | | -_| . | | rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61
+ |_| |_____|___|___|_| -->
+<!doctype html><html lang="en"><head><meta charSet="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rwebiModule-Gemini-Model</title>
+<link rel="icon" type="image/x-icon" href="../_ico/favicon.png">
+<link id="csl" rel="stylesheet" href="../_css/rwebiStyle-Light-c61.css" media="(prefers-color-scheme: light)">
+<link id="csd" rel="stylesheet" href="../_css/rwebiStyle-Dark-c61.css" media="(prefers-color-scheme: dark)">
+<script src="../_jss/rwebiEngine-LightCore-c61.js"></script>
+<script src="../_jss/rwebiModule-Gemini-Model.js"></script>
+</head><body onload="mStart();" onresize="mResize();" style="overflow:hidden;"><form name="forminput">
+
+<!-- Module Header: -->
+<div id="mHeader" class="sho" style="width:100%;height:35px;min-width:320px;white-space:nowrap;cursor:pointer;" onclick="dToggle('oView');eHid('hView');"><div style="position:absolute;z-Index:999;top:3px;left:5px;"><span title="Module Options"><img src="../_ico/gemini-model.png" class="nibtn">&nbsp;</span><div class="mTitle">Gemini Model</div></div><div style="position:absolute;top:3px;right:6px;"><img src="../_ico/mselect.png"></div></div>
+
+<!-- Module Bar: -->
+<div id="mBar" class="sh0" style="height:35px;min-width:320px;white-space:nowrap;">
+<select id="soFile" onChange="FileOpt();" onclick="eHid('mMenu');" class="yopt" title="File Menu" style="width:50px;height:33px;">
+<option value="default">File</option>
+<option value="open">Open File</option>
+<option value="new">New Session</option>
+<option value="copy">Copy Prompt</option>
+<option value="clear">Clear Prompt</option>
+<option value="save">Local Save</option>
+<option value="restore">Local Restore&nbsp;&nbsp;</option>
+<option value="info">Information</option>
+<option value="exit">Exit Module</option></select>
+<span onclick="document.getElementById('fb').click();"><img class="ibtn" src="../_ico/open.png" title="Add Text or Source File to Prompt"></span>
+<span onclick="eToggle('uKey');cFocus('uk');"><img class="ibtn" src="../_ico/key.png" title="Apply Google API Key"></span>
+<span onclick="eCut('uPrompt');"><img class="ibtn" src="../_ico/cut.png" title="Cut Selected"></span>
+<span onclick="sCopy('v','uPrompt');"><img class="ibtn" src="../_ico/copy.png" title="Copy Selected"></span>
+<span onclick="ePaste('v','uPrompt');"><img class="ibtn" src="../_ico/paste.png" title="Paste"></span>
+<span onclick="iClear('v','uPrompt');"><img class="ibtn" src="../_ico/clear.png" title="Clear Prompt"></span></div>
+
+<!-- View Stats: -->
+<div id="vStats" class="sh3">
+<span id="acw" class="bc">Connected</span>
+<span class="em08">PPM:&nbsp;</span><span id="ppm" class="oc">20</span>
+<span class="em08">PPD:&nbsp;</span><span id="ppd" class="mc">1000</span>
+<span class="em08">Prompts:&nbsp;</span><span id="pn" class="rc">0</span>
+<span class="em08">Key:&nbsp;</span><span id="ks" class="as">Not Applied</span></div>
+
+<!-- View Prompt: -->
+<div id="vPrompt" style="position:relative;height:60px;min-width:320px;margin-top:0px">
+<textarea id="uPrompt" name="uPrompt" class="cvy" style="float:left;width:85%;height:45px;margin-top:3px;" placeholder="Type your prompt here..."></textarea>
+<span class="hbtn" style="margin-left:3px;float:left;"><img src="../_ico/go-orange.png" onclick="PromptGemini();" title="Send to AI" style="cursor:pointer;float:right;"></span></div>
+
+<!-- Content Container / Content View: -->
+<div id="cc" class="sh0">
+<div id="hPrompt" style="padding:10px;height:100%;border:1px solid #cccccc;border-radius:3px;overflow-y:scroll;">
+<div class="em12 oc"></span> Welcome to the rwebi AI-Test Model. How can I assist you today?</div>
+<div></div></div>
+
+<!-- Module Bar: -->
+<div id="mBar" class="sh3">
+<select id="soResult" onChange="ResultOpt();" onclick="eHid('mMenu');" class="oopt" title="Results Menu" style="width:75px;height:33px;">
+<option value="default">Results</option>
+<option value="copy">Copy Session</option>
+<option value="clear">Clear Session</option>
+<option value="save">Local Save</option>
+<option value="saveas">Save Download&nbsp;&nbsp;</option>
+<option value="export">Session to Tab</option></select>
+<select id="soFormat" onchange="FormatOpt();" class="bopt" title="Convert Results" style="width:70px;height:33px;">
+<option value="format">Format</option>	
+<option value="txt">Convert to Text&nbsp;&nbsp;</option></select>
+<span onclick="DateSave('rwebi-ai-model-');cFocus('sf');"><img class="ibtn" src="../_ico/save-as.png" title="Save Session"></span>
+<span onclick="eTab('i','hPrompt');"><img class="ibtn" src="../_ico/export-2.png" title="Export Session to Tab"></span>
+<span onclick="eCopy('i','hPrompt');"><img class="ibtn" src="../_ico/copy.png" title="Copy Session"></span></div>
+
+<!-- User Key: -->
+<div id="uKey" class="hView" style="position:absolute;top:65px;left:15px;width:80%;height:auto;min-width:260px;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">API Key</span></div><div class="hvRight"><span onclick="eHid('uKey');"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><span class="wc em9 fb">Personal Google API Key:</span><br>
+<input type="text" id="uk" class="iy" placeholder="API Key" style="width:65%;font-size:1.13em;height:28px;margin-top:3px;margin-bottom:3px;" onfocus="this.select();"><br>
+
+<span class="wc em9 fb" style="margin-top:3px;">Google API Model:</span><br>
+<select id="soModel" class="gopt" title="Select API Model" style="width:70%;height:33px;">
+<option value="g25f">gemini-2.5-flash</option>
+<option value="g25fl">gemini-2.5-flash-lite</option>
+<option value="g3fp">gemini-3-flash-preview</option>
+<option value="g3pp">gemini-3-pro-preview</option></select>
+
+<p><span class="gbtn" onclick="ApplyKey();" title="Apply API Key">Apply</span>
+<span class="abtn" onclick="ClearKey();" title="Clear API Key">Clear</span>
+<span class="rbtn" onclick="eHid('uKey');" title="Cancel API Key">Cancel</span></p></div>
+
+<!-- Save View: -->
+<div id="sView" class="hView" style="top:60px;left:20px;width:60%;min-width:260px;max-width:500px;height:auto;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Save Download</span></div><div class="hvRight"><span onclick="eHid('sView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><span class="wc em9 fb">Filename:</span><br>
+<input type="text" id="sf" placeholder="save download filename" style="width:65%;font-size:1.13em;height:28px;margin-top:3px;" onfocus="this.select();"><br>
+<p><span class="gbtn" onclick="sFile('h','hPrompt','sf');eHid('sView');" title="Save Download">Save</span>&nbsp;&nbsp;<span class="rbtn" onclick="eHid('sView');" title="Cancel Download">Cancel</span></p></div>
+
+<!-- Options View: -->
+<div id="oView" class="oView" style="position:absolute;z-Index:999;top:43px;width:140px;height:auto;padding:6px;border-radius:3px;display:none;font-weight:bold;">
+<span class="mso" onclick="dHid('oView');LinkModule();"><img src="../_ico/link.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Share Link</span>
+<span class="mso" onclick="selTheme('l');"><img src="../_ico/ltheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Light Theme</span>
+<span class="mso" onclick="selTheme('d');"><img src="../_ico/dtheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Dark Theme</span>
+<span class="mso" onclick="eToggle('hView');dHid('oView');obLoad('hDisplay','../Help/rwebiAbout-Gemini-Model.html');"><img src="../_ico/mhelp.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Information</span>
+<span class="mso" onclick="modRefresh();"><img src="../_ico/refresh.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Refresh</span>
+<span class="mso" onclick="pLoad('rwebiMenu-Modules.html');"><img src="../_ico/mclose.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Close</span></div>
+
+<!-- Help View: -->
+<div id="hView" class="hView" style="position:absolute;top:65px;left:15px;width:80%;height:80%;min-width:260px;min-height:200px;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Information</span></div><div class="hvRight"><span onclick="eHid('hView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div style="height:90%;margin-top:6px;"><object type="text/html" id="hDisplay" data="../Help/rwebiHelp-Gemini-Model.html" style="height:85%;width:100%;border:0px;"></object><input type="file" id="fb" style="visibility:hidden;" onchange="PromptFile('t','tt','fb');"></div></div>
+
+<!-- Variables: -->
+<textarea id="tt" class="hf"></textarea>
+<div id="ut" class="hf"></div>
+<span id="ow" class="hf">30</span>
+<span id="oh" class="hf">243</span>
+
+<!-- Module Footer: -->
+<div id="mFooter" class="mFooter" style="float:left;margin-top:0px;min-width:320px;">
+<img src="../_ico/favicon.png" style="height:12px;margin-right:3px;margin-top:2px;vertical-align:bottom;"><b>Gemini-Model</b> </span>w:<span id="miw" class="oc"></span>&nbsp;h:<span id="mih" class="bc"></span></div></body></html>
+<!-- rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61 -->

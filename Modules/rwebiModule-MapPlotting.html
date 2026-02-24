@@ -1,0 +1,181 @@
+<!--            _   _  
+  ___ _ _ _ ___| |_|_| Aplha Preview: rwebiModule-MapPlotting.html
+ |  _| | | | -_| . | | rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61
+ |_| |_____|___|___|_| -->
+<!doctype html><html lang="en"><head><meta charSet="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rwebiModule-MapPlotting</title>
+<link rel="icon" type="image/x-icon" href="../_ico/favicon.png">
+<link id="csl" rel="stylesheet" href="../_css/rwebiStyle-Light-c61.css" media="(prefers-color-scheme: light)">
+<link id="csd" rel="stylesheet" href="../_css/rwebiStyle-Dark-c61.css" media="(prefers-color-scheme: dark)">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="../_jss/rwebiEngine-LightCore-c61.js"></script>
+<link rel = "stylesheet" href = "../Library/Leaflet/leaflet.css" />
+<script src = "../Library/Leaflet/leaflet.js"></script>
+<script src="../_jss/rwebiModule-MapPlotting.js"></script>
+</head><body onload="mStart();" onresize="mResize();" style="overflow:hidden;"><form name="forminput">
+
+<!-- Module Header: -->
+<div id="mHeader" class="sho" style="width:100%;height:35px;min-width:320px;white-space:nowrap;cursor:pointer;" onclick="dToggle('oView');eHid('hView');"><div style="position:absolute;z-Index:999;top:3px;left:5px;"><span title="Module Options"><img src="../_ico/mapplotting.png" class="nibtn">&nbsp;</span><div class="mTitle">Map Plotting</div></div><div style="position:absolute;top:3px;right:6px;"><img src="../_ico/mselect.png"></div></div>
+
+<!-- Module Bar: -->
+<div id="mBar" class="sh0" style="height:35px;min-width:320px;white-space:nowrap;">
+<select id="soOptions" onChange="OptionsOpt();" class="gopt" title="Options Menu" style="width:78px;height:33px;">
+<option value="default">Options</option>
+<option value="new">New Map</option>
+<option value="paste">Paste Coordinates</option>
+<option value="copy">Copy Coordinates</option>
+<option value="import">Import Group Coordinates&nbsp;&nbsp;</option>
+<option value="export">Export Current Group</option>
+<option value="save">Download Current Group&nbsp;&nbsp;</option>
+<option value="cgroup">Clear Current Group&nbsp;&nbsp;</option>
+<option value="search">Capitol City Search</option>
+<option value="info">Information</option>
+<option value="exit">Exit Module</option></select>
+<span onclick="" title="Copy Coordinates" ><img src="../_ico/copy.png" class="ibtn"></span>
+<span onclick="eToggle('vLinks');" title="View Plotted Coordinates"><img src="../_ico/link.png" class="ibtn"></span>
+<span onclick="dToggle('lMenu');" title="World Capitols List"><img src="../_ico/list.png" class="ibtn"></span>
+<span onclick="GeoLocation();" title="Map Your Location"><img src="../_ico/user.png" class="ibtn"></span>
+<span onclick="LinkOSM();" title="Open current map in OpenStreetMap"><img src="../_ico/openstreetmap.png" class="ibtn"></span>
+<span onclick="NewMap();" title="Reset & Center Map"><img src="../_ico/clear.png" class="ibtn"></span></div>
+
+
+<div id='mPoints' name='mc' style="margin-top:3px;min-width:320px;white-space:nowrap;">
+
+<div style="display: inline-block;">
+<label for="clat" class="em11 lb60" style="display:block;margin-top:3px;">Latitude</label>
+<input type="text" id="clat" class="" style="width:70px;font-size:1.15em;height:27px;" onfocus="this.select();" value="0">
+</div>
+
+<div style="display: inline-block;">
+<label for="clon" class="em11 lb60" style="display:block;margin-top:3px;">Longitude</label>
+<input type="text" id="clon" class="" style="width:70px;font-size:1.15em;height:27px;" onfocus="this.select();" value="0">
+</div>
+
+<div style="display: inline-block;">
+<label for="zl" class="em11 lb60" style="display:block;margin-top:3px;">Zoom</label>
+<input type="number" id="zl" class="" style="width:40px;font-size:1.15em;height:27px;" onfocus="this.select();" value="11" min="0" max="19">
+<span onclick="ViewNewLocation();" title="View Coordinates"><img src="../_ico/map-pin.png" class="ibtn" style="margin-top:-1px;"></span>
+<span onclick="PlotNewLocation();" title="Plot Coordinates"><img src="../_ico/map-point.png" class="ibtn" style="margin-top:-1px;"></span>
+<span onclick="" title=""><img src="../_ico/sum-add.png" class="ibtn" style="margin-top:-1px;"></span>
+
+</div></div>
+
+<!-- Content Container / Content View: -->
+<div id='cc' name='cc' class="cc" style="z-index:10;margin-top:3px;">
+<div id="cv" name="cv" style="position:relative;top:3px;display:inline-block;float:left;width:100%;height:100%;"><div id="map" name="map" style='width:100%;height:100%;'></div></div>
+
+<!-- Links View: -->
+<div id="vLinks" class="hView" style="top:220px;left:12px;width:90%;height:auto;">
+<div class="hvLeft"><span class="hvTitle">Saved Links</span></div><div class="hvRight"><span onclick="eHid('vLinks')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div>
+<span onclick="" title=""><img src="../_ico/save-as.png" class="ibtn"></span>
+<span onclick="" title=""><img src="../_ico/export-2.png" class="ibtn"></span>
+<span onclick="" title=""><img src="../_ico/clear.png" class="ibtn"></span>
+<table id="pData" class="tfnb" border="1" cellpadding="3" cellspacing="0" style="width:100%;font-size:0.90em;margin-top:6px;">
+<tr><td>Saved Link:</td><td>Time Stamp:</td></tr>
+</tbody></table></div>
+
+<div id="lMenu" style="z-index:9999;position:absolute;top:45px;right:6px;width:340px;height:350px;background-color:#2e2e2e;overflow-x:hidden;overflow:hidden;display:none;">
+
+<!-- Table Menu Header: -->
+<div id="tHeader" style="margin-top:3px;margin-top:3px;margin-left:3px;">
+<input type="text" placeholder="Search" id="ts" onfocus="this.select();" onkeydown="onEnter();" class="itxt" style="width:150px;">
+<span onclick="lSearch();" title="Search Listing"><img src="../_ico/search.png" class="ibtn"></span>
+<span onclick="ClearQuery();" title="Clear Search"><img src="../_ico/clear.png" class="ibtn"></span>
+<span onclick="dHid('lMenu');" title="Close Listing"><img src="../_ico/mclose.png" class="ibtn" style="float:right;margin-right:6px;"></span></div>
+
+<div style="height:85%;margin-top:3px;overflow-y:scroll;">
+
+<table id="cData" class="tfnp" border="1" cellpadding="3" cellspacing="0" style="width:98%;height:80%;margin-left:3px;border: 1px solid #505050;">
+<tr onclick="AddLink('3.38','-54.43');dHid('lMenu');"><td>Brazil</td><td>Brasília</td><td class="soyc" style="height:10px;">-54.43,3.38</td></tr>
+<tr onclick="AddLink('3.38','-54.43');dHid('lMenu');"><td>British</td><td>Virgin Islands</td><td class="soyc" style="height:10px;">-54.43,3.38</td></tr>
+<tr onclick="AddLink('43.001525','41.023415');dHid('lMenu');"><td>Abkhazia</td><td>Sukhumi</td><td class="soyc" style="height:10px;">43.001525,41.023415</td></tr>
+<tr onclick="AddLink('34.575503','69.240073');dHid('lMenu');"><td>Afghanistan</td><td>Kabul</td><td class="soyc" style="height:10px;">34.575503,69.240073</td></tr>
+<tr onclick="AddLink('60.1','19.933333');dHid('lMenu');"><td>Aland Islands</td><td>Mariehamn</td><td class="soyc" style="height:10px;">60.1,19.933333</td></tr>
+<tr onclick="AddLink('41.327546','19.818698');dHid('lMenu');"><td>Albania</td><td>Tirana</td><td class="soyc" style="height:10px;">41.327546,19.818698</td></tr>
+<tr onclick="AddLink('36.752887','3.042048');dHid('lMenu');"><td>Algeria</td><td>Algiers</td><td class="soyc" style="height:10px;">36.752887,3.042048</td></tr>
+<tr onclick="AddLink('-14.275632','-170.702036');dHid('lMenu');"><td>American Samoa</td><td>Pago Pago</td><td class="soyc" style="height:10px;">-14.275632,-170.702036</td></tr>
+<tr onclick="AddLink('42.506317','1.521835');dHid('lMenu');"><td>Andorra</td><td>Andorra la Vella</td><td class="soyc" style="height:10px;">42.506317,1.521835</td></tr>
+<tr onclick="AddLink('-8.839988','13.289437');dHid('lMenu');"><td>Angola</td><td>Luanda</td><td class="soyc" style="height:10px;">-8.839988,13.289437</td></tr>
+<tr onclick="AddLink('18.214813','-63.057441');dHid('lMenu');"><td>Anguilla</td><td>The Valley</td><td class="soyc" style="height:10px;">18.214813,-63.057441</td></tr>
+<tr onclick="AddLink('-90','0');dHid('lMenu');"><td>Antarctica</td><td>South Pole</td><td class="soyc" style="height:10px;">-90,0</td></tr>
+<tr onclick="AddLink('17.12741','-61.846772');dHid('lMenu');"><td>Antigua and Barbuda</td><td>St. John's</td><td class="soyc" style="height:10px;">17.12741,-61.846772</td></tr>
+<tr onclick="AddLink('-34.603684','-58.381559');dHid('lMenu');"><td>Argentina</td><td>Buenos Aires</td><td class="soyc" style="height:10px;">-34.603684,-58.381559</td></tr>
+<tr onclick="AddLink('40.179186','44.499103');dHid('lMenu');"><td>Armenia</td><td>Yerevan</td><td class="soyc" style="height:10px;">40.179186,44.499103</td></tr>
+<tr onclick="AddLink('12.509204','-70.008631');dHid('lMenu');"><td>Aruba</td><td>Oranjestad</td><td class="soyc" style="height:10px;">12.509204,-70.008631</td></tr>
+<tr onclick="AddLink('-35.282','149.128684');dHid('lMenu');"><td>Australia</td><td>Canberra</td><td class="soyc" style="height:10px;">-35.282,149.128684</td></tr>
+<tr onclick="AddLink('48.208174','16.373819');dHid('lMenu');"><td>Austria</td><td>Vienna</td><td class="soyc" style="height:10px;">48.208174,16.373819</td></tr>
+<tr onclick="AddLink('40.409262','49.867092');dHid('lMenu');"><td>Azerbaijan</td><td>Baku</td><td class="soyc" style="height:10px;">40.409262,49.867092</td></tr>
+<tr onclick="AddLink('25.047984','-77.355413');dHid('lMenu');"><td>Bahamas</td><td>Nassau</td><td class="soyc" style="height:10px;">25.047984,-77.355413</td></tr>
+<tr onclick="AddLink('26.228516','50.58605');dHid('lMenu');"><td>Bahrain</td><td>Manama</td><td class="soyc" style="height:10px;">26.228516,50.58605</td></tr>
+<tr onclick="AddLink('23.810332','90.412518');dHid('lMenu');"><td>Bangladesh</td><td>Dhaka</td><td class="soyc" style="height:10px;">23.810332,90.412518</td></tr>
+</table></div></div>
+
+<!-- View Import: -->
+<div id="vImport" class="hView" style="z-index:9999;position:absolute;top:45px;left:6px;width:80%;height:60%;min-height:320px;;min-width:280px;padding-bottom:9px;overflow:hidden;visibility:hidden;"><span onclick="eHid('vImport')"><img src="../_ico/mclose.png" class="ibtn" style="float:right;"></span>
+<span class="sTitle wc">Import Coordinates</span><br>
+<span class="wc fb em11">Import "Location", Longitude, Latitude:</span><br>
+
+<div style="width:40px;display:inline-block;float:left;margin-top:3px;">
+<span onclick="PlotGroup();" title=""><img src="../_ico/openstreetmap.png" class="ibtn"></span>
+<span onclick="" title=""><img src="../_ico/copy.png" class="ibtn"></span>
+<span onclick="" title=""><img src="../_ico/paste.png" class="ibtn"></span>
+<span onclick="" title=""><img src="../_ico/save-local.png" class="ibtn"></span>
+<span onclick="" title=""><img src="../_ico/save-restore.png" class="ibtn"></span>
+<span onclick="" title=""><img src="../_ico/save-as.png" class="ibtn"></span>
+<span onclick="" title=""><img src="../_ico/clear.png" class="ibtn"></span></div>
+<div style="width:80%;height:90%;display:inline-block;float:left;margin-top:5px;">
+<textarea id='gll' name='gll' style="width:99%;height:90%;margin-left:2px;resize:none;">"Encinitas",33.03699,-117.29198
+"Escondido",33.11921,-117.08642
+"Fallbrook",33.37642,-117.25115
+"Oceanside",33.19587,-117.37948
+"San Marcos",33.14337,-117.16614
+"Vista",33.20004,-117.24254
+"Carlsbad",33.15809,-117.35059</textarea></div></div>
+
+<!-- Paste Coordinates: -->
+<div id="PasteCoords" class="hView" style="position:absolute;top:45px;left:9px;width:70%;min-width:180px;height:auto;padding-bottom:9px;visibility:hidden;"><span onclick="eHid('PasteCoords')"><img src="../_ico/mclose.png" class="ibtn" style="float:right;"></span>
+<label for="pCoord" class="em9 fb wc" style="display:block;">Paste Cordinates:</label>
+<input type="text" id="pCoord" style="width:60%;font-size:1.13em;height:28px;margin-top:3px;" onfocus="this.select();" title=""><br>
+<span onclick="PlotCoord();"><img src="../_ico/openstreetmap.png" class="ibtn" title="Plot Cordinates"></span>
+<span onclick="CoordCleanup();"><img src="../_ico/cleanup.png" class="ibtn" title="Cleanup Coordinates"></span>
+<span onclick=""><img src="../_ico/copy.png" class="ibtn" title="Copy Coordinates"></span>
+<span onclick=""><img src="../_ico/clear.png" class="ibtn" title="Copy Coordinates"></span></div>
+
+<!-- Save View: -->
+<div id="sView" class="hView" style="top:60px;left:20px;width:60%;min-width:320px;max-width:500px;height:auto;">
+<div class="hvLeft"><img src="../_ico/save-as.png" class="rfIcon"><span class="hvTitle">Save Download:</span></div><div class="hvRight"><span onclick="eHid('sView')"><img src="../_ico/mclose.png" class="moxw"></span></div><div class="clearArea"></div>
+<div class="p6"><label for="sf" class="em13 lb75">Filename:</label><input type='text' id='sf' class='wb' style="width:90%;font-size:1.15em;height:27px;" value="rwebi-TextTools.txt" onfocus="this.select();">
+<p><span class="mlng" title="Download / Save" onclick="sFile('v','cv','sf');eHid('sView');">Save</span>&nbsp;&nbsp;<span class="mlnr" title="Cancel Download" onclick="eHid('sView');">Cancel</span></p></div></div>
+
+<!-- Options View: -->
+<div id="oView" class="oView" style="position:absolute;z-Index:9999;top:43px;width:140px;height:auto;padding:6px;border-radius:3px;display:none;font-weight:bold;">
+<span class="mso" onclick="dHid('oView');LinkModule();"><img src="../_ico/link.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Share Link</span>
+<span class="mso" onclick="selTheme('l');"><img src="../_ico/ltheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Light Theme</span>
+<span class="mso" onclick="selTheme('d');"><img src="../_ico/dtheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Dark Theme</span>
+<span class="mso" onclick="eToggle('hView');dHid('oView');obLoad('hDisplay','../Help/rwebiAbout-MapPlotting.html');"><img src="../_ico/mhelp.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Information</span>
+<span class="mso" onclick="modRefresh();"><img src="../_ico/refresh.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Refresh</span>
+<span class="mso" onclick="pLoad('rwebiMenu-Modules.html');"><img src="../_ico/mclose.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Close</span></div>
+
+<!-- Full View Button: -->
+<div id="fvButton" onmouseover="sFlex('f','editor','0','0','0');" style="position:absolute;top:6px;left:6px;width:auto;height:45px;z-index:99;visibility:hidden;padding-top:0px;">
+<span onclick="eToggle('fvBar');" title=""><img src="../_ico/mmmenu.png" class="vibtn"></span></div>
+
+<!-- Full View Bar: -->
+<div id="fvBar" style="position:absolute;top:43px;left:6px;width:auto;height:auto;z-index:99;visibility:hidden;">
+<span onclick="FullViewClose();"><img class="vibtn" src="../_ico/fullscreen-off.png" title="Close Full Screen"></span></div>
+
+<!-- Help View: -->
+<div id="hView" class="hView" style="position:absolute;z-Index:9999;top:65px;left:15px;width:80%;height:80%;min-width:260px;min-height:200px;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Information</span></div><div class="hvRight"><span onclick="eHid('hView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div style="height:90%;margin-top:6px;"><object type="text/html" id="hDisplay" data="../Help/rwebiHelp-MapPlotting.html" style="height:85%;width:100%;border:0px;"></object><input type="file" id="fb" style="visibility:hidden;" onchange="oFile('v','cv','fb');"></div></div>
+
+<!-- Variables: -->
+<div id="ut" style="width:0px;height:0px;visibility:hidden;display:none;"></div>
+<textarea id="tt" style="width:0px;height:0px;visibility:hidden;display:none;"></textarea>
+<span id="ow" class="hf">20</span>
+<span id="oh" class="hf">161</span>
+<span id="dc" class="hf"></span>
+
+<!-- Module Footer: -->
+<div id="mFooter" class="mFooter" style="float:left;margin-top:3px;min-width:320px;">
+<img src="../_ico/favicon.png" style="height:12px;margin-right:3px;margin-top:2px;vertical-align:bottom;"><b>MapPlotting</b> </span>w:<span id="miw" class="oc"></span>&nbsp;h:<span id="mih" class="bc"></span></div></body></html>
+<!-- rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61 -->

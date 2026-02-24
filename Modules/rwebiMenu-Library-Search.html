@@ -1,0 +1,78 @@
+<!--            _   _  
+  ___ _ _ _ ___| |_|_| Aplha Preview: rwebiMenu-Library-Search.html
+ |  _| | | | -_| . | | rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61
+ |_| |_____|___|___|_| -->
+<!doctype html><html lang="en"><head><meta charSet="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rwebiMenu-Library</title>
+<link rel="icon" type="image/x-icon" href="../_ico/favicon.png">
+<link id="csl" rel="stylesheet" href="../_css/rwebiStyle-Light-c61.css" media="(prefers-color-scheme: light)">
+<link id="csd" rel="stylesheet" href="../_css/rwebiStyle-Dark-c61.css" media="(prefers-color-scheme: dark)">
+<script src="../_jss/rwebiEngine-LightCore-c61.js"></script>
+<script src="../_jss/rwebiMenu-Library-Search.js"></script>
+</head><body onload="mStart();" onresize="mResize();" style="overflow:hidden;">
+
+<!-- Module Header: -->
+<div id="mHeader" class="sh0"><div class="xbtn"><img src="../_ico/mclose.png" onclick="pLoad('rwebiMenu-Modules.html');" title="Close Module"></div><div class="hbtn"><img src="../_ico/mopt.png" onclick="eToggle('oView');" title="Help / About / Settings"></div>
+<select id="navModule" onchange="ModuleNav();" class="wopt" title="Navigate" style="width:60px;height:32px;float:right;">
+<option value="d">View</option>
+<option value="i">Module Icons</option>
+<option value="l">Module List</option>
+<option value="s">Module Search&nbsp;&nbsp;</option>
+<option value="a">Applications</option></select>
+<span onclick="modRefresh();" title="Reload Module"><img src="../_ico/file-pdf.png" class="nibtn"></span>&nbsp;<div class="mTitle">Library</div></div>
+
+<!-- Search Bar: -->
+<div id="sBar" class="s3" style="min-width:320px;">
+<input id="ts" type="text" onfocus="this.select();" onkeydown="onEnter();" class="itxt" style="width:40%;margin-right:-2px;" placeholder="Search Library">
+<span onclick="qOpt();" title="Search Modules"><img src="../_ico/search.png" class="ibtn" style="margin-left:0px;"></span>
+<select id="qo" onchange="qOpt();" class="gopt" title="Select Search Area" style="width:100px;margin-right:-1px;">
+<option value="et">Entire Table</option>
+<option value="0">Document</option>
+<option value="1">Description</option></select>
+<span onclick="clearQuery();" title="Clear Search"><img src="../_ico/clear.png" class="ibtn"></span></div>
+
+<!-- Content Containor / Table Data: -->
+<div id="cc" class="cc" onclick="eHid('oView');" contenteditable="false" style="overflow-y:scroll;margin-top:3px;font-size:1.15em;">
+<table id="tData" class="tfnp" border="1" cellpadding="3" cellspacing="0" style="width:100%;margin-left:0px;">
+<tr><th>Document</th><th>Description</th></tr>
+<!-- Data Start: -->
+
+<tr onclick="pLoad('');"><td style="width:40px;text-align:center;"><div class="api">
+<a href="../Resources/Library/Books/" class="abs" title="Document" style="margin-bottom:3px;">
+<img src="../_ica/module-blank.png" width="40px"></a></div></td><td>Document descroption.</td></tr>
+
+<tr onclick="pLoad('');"><td style="width:40px;text-align:center;"><div class="api">
+<a href="../Resources/Library/Books/" class="abs" title="Document" style="margin-bottom:3px;">
+<img src="../_ica/module-blank.png" width="40px"></a></div></td><td>Document descroption.</td></tr>
+
+<tr onclick="pLoad('');"><td style="width:40px;text-align:center;"><div class="api">
+<a href="../Resources/Library/Books/" class="abs" title="Document" style="margin-bottom:3px;">
+<img src="../_ica/module-blank.png" width="40px"></a></div></td><td>Document descroption.</td></tr>
+
+<tr onclick="pLoad('');"><td style="width:40px;text-align:center;"><div class="api">
+<a href="../Resources/Library/Books/" class="abs" title="Document" style="margin-bottom:3px;">
+<img src="../_ica/module-blank.png" width="40px"></a></div></td><td>Document descroption.</td></tr>
+
+<!-- Data End: -->
+</table></div></div><div class="clearArea"></div>
+
+<!-- Options View: -->
+<div id="oView" style="position:absolute;top:48px;right:6px;width:auto;height:40px;background-color:#cccccc;visibility:hidden;float:right;border:1px solid #505050;border-radius:3px;padding:3px;visibility:hidden;"><span onclick="eToggle('hView');obLoad('hDisplay','../Help/rwebiHelp-Modules.html');eHid('oView');"><img class="ibtn" src="../_ico/mhelp.png" title="Documentation"></span>
+<span onclick="eToggle('hView');obLoad('hDisplay','../Help/rwebiAbout-Modules.html');eHid('oView');"><img class="ibtn" src="../_ico/mabout.png" title="About Module"></span>
+<span onclick="eHid('oView');LinkModule();"><img class="ibtn" src="../_ico/link.png" title="Copy & Share Module Link"></span>&nbsp;<select id="osTheme" onchange="optTheme();" class="bopt" title="Theme Mode" style="width:65px;height:33px;">
+<option value="m">Mode</option>
+<option value="l">Light Mode&nbsp;&nbsp;</option>
+<option value="d">Dark Mode</option></select></div>
+
+<!-- Help View: -->
+<div id="hView" class="hView" style="position:absolute;top:65px;left:15px;width:80%;height:80%;min-width:260px;min-height:200px;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Information</span></div><div class="hvRight"><span onclick="eHid('hView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div style="height:90%;margin-top:6px;"><object type="text/html" id="hDisplay" data="../Help/rwebiHelp-Modules.html" style="height:85%;width:100%;border:0px;"></object></div></div>
+
+<!-- Variables: -->
+<span id="ow" class="hf">15</span>
+<span id="oh" class="hf">113</span>
+
+<!-- Module Footer: -->
+<div id="mFooter" class="mFooter" style="float:left;margin-top:6px;">
+<img src="../_ico/favicon.png" style="height:12px;margin-right:3px;margin-top:2px;vertical-align:bottom;"></span>w:<span id="miw" class="oc"></span>&nbsp;h:<span id="mih" class="bc"></span></div></body></html>
+<!-- rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61 -->

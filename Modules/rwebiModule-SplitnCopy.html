@@ -1,0 +1,97 @@
+<!--            _   _  
+  ___ _ _ _ ___| |_|_| Aplha Preview: rwebiModule-SplitnCopy.html
+ |  _| | | | -_| . | | rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61
+ |_| |_____|___|___|_| -->
+<!doctype html><html lang="en"><head><meta charSet="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rwebiModule-SplitnCopy</title>
+<link rel="icon" type="image/x-icon" href="../_ico/favicon.png">
+<link id="csl" rel="stylesheet" href="../_css/rwebiStyle-Light-c61.css" media="(prefers-color-scheme: light)">
+<link id="csd" rel="stylesheet" href="../_css/rwebiStyle-Dark-c61.css" media="(prefers-color-scheme: dark)">
+<script src="../_jss/rwebiEngine-LightCore-c61.js"></script>
+<script src="../_jss/rwebiModule-SplitnCopy.js"></script>
+</head><body onload="mStart();" onresize="mResize();" style="overflow:hidden;">
+
+<!-- Module Header: -->
+<div id="mHeader" class="sho" style="width:100%;height:35px;min-width:320px;white-space:nowrap;cursor:pointer;" onclick="dToggle('oView');eHid('hView');"><div style="position:absolute;z-Index:999;top:3px;left:5px;"><span title="Module Options"><img src="../_ico/splitncopy.png" class="nibtn">&nbsp;</span><div class="mTitle">Split & Copy</div></div><div style="position:absolute;top:3px;right:6px;"><img src="../_ico/mselect.png"></div></div>
+
+<!-- Module Bar: -->
+<div id="mBar" class="sh0" style="height:35px;min-width:320px;white-space:nowrap;">
+<select id="soFile" onchange="FileOpt();" onclick="eHid('mMenu');" class="yopt" title="File Menu" style="width:50px;height:33px;">
+<option value="default">File</option>
+<option value="open">Open File</option>
+<option value="copy">Copy Raw Text</option>
+<option value="save">Local Save</option>
+<option value="restore">Local Restore</option>
+<option value="saveas">Save Download&nbsp;&nbsp;</option>
+<option value="export">Raw Text to Tab</option>
+<option value="clear">Clear Raw Text</option>
+<option value="info">Information</option>
+<option value="exit">Exit Module</option></select>
+<select id="o2" onchange="rOpt();" class="oopt" title="Remove Menu" style="width:80px;height:33px;">
+<option value="default" selected="selected">Remove</option>
+<option value="rfirst">Remove First Line</option>
+<option value="rlast">Remove Last Line</option>
+<option value="rblank">Remove Blank Lines</option>
+<option value="rspecial">Remove Special Characters&nbsp;&nbsp;</option></select>
+<select id="o3" onchange="pOpt();" class="gopt" title="Parse Menu" style="width:55px;height:33px;">
+<option value="default" selected="selected">Split</option>
+<option value="pbreak">Split on Breaks</option>
+<option value="pspace">Split on Space</option>
+<option value="pdashes">Split on Dashes</option>
+<option value="pcomma">Split on Commas&nbsp;&nbsp;</option>
+<option value="ptab">Split on Tab</option>
+<option value="pperiod">Split on Periods</option>
+<option value="example">Example Data</option>
+<option value="clear">Clear Fields</option></select>
+<span onclick="eCopy('v','cv');" title="Copy Text"><img src="../_ico/copy.png" class="ibtn"></span>
+<span onclick="ePaste('cv');tStat('cv','1');" title="Paste Text"><img src="../_ico/paste.png" class="ibtn"></span>
+<span onclick="eClear('v','cv');tStat('cv','1');" title="Clear"><img src="../_ico/clear.png" class="ibtn"></span></div>
+
+<!-- View Stats: -->
+<div id="vStats" class="sh3">
+<span class="em08">Words:&nbsp;</span><span id="rwc1" class="oc"></span>
+<span class="em08">Characters:&nbsp;</span><span id="rcc1" class="bc"></span>
+<span class="em08">Text:&nbsp;</span><span id="rtc1" class="mc"></span>
+<span class="em08">Lines:&nbsp;</span><span id="rlc1" class="gc"></span></div>
+
+<!-- Content Containor / Content View: -->
+<div id="cc" class="cc" style="z-index:10;height:90px;width:93vw;min-width:220px;padding-top:3px;"><textarea id="cv" class="cvy" onkeyup="tStat('cv','1');" onclick="dHid('oView');tStat('cv','1');" onmouseover="tStat('cv','1');"></textarea></div><div class="clearArea"></div>
+
+<!-- Menu Bar: -->
+<div id="mBar" class="sh9" style="width:93vw;min-width:320px;">
+<span onclick="eCopy('v','sr');" title="Copy Text"><img src="../_ico/copy.png" class="ibtn"></span>
+<span onclick="eTab('v','sr');" title="Export Text"><img src="../_ico/export-2.png" class="ibtn"></span>
+<span onclick="" title="Download Text"><img src="../_ico/save-as.png" class="ibtn"></span>
+<span onclick="SplitClear('h','pv');tStat('cv','1');" title="Clear"><img src="../_ico/clear.png" class="ibtn"></span></div>
+
+<!-- Pivot View: -->
+<div id="pv" style="width:auto;height:120px;min-height:50px;min-width:220px;padding-top:3px;margin-top:6px;overflow-y:scroll;border:1px solid #71c3ff"></div><div class="clearArea"></div>
+
+<!-- Save View: -->
+<div id="sView" class="hView" style="top:60px;left:20px;width:60%;min-width:260px;max-width:500px;height:auto;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Save/Download</span></div><div class="hvRight"><span onclick="eHid('sView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div class="p6"><label for="sf" class="wc em12">Filename</label><input type='text' id='sf' class='wb' style="width:90%;font-size:1.15em;height:27px;" value="rwebi-SplitnCopy.txt" onfocus="this.select();"><p><br><span class="gbtn" onclick="sFile('v','cv','sf');eHid('sView');" title="Download / Save">Save</span>&nbsp;&nbsp;<span class="abtn" onclick="eHid('sView');" title="Cancel Download">Cancel</span></p></div></div>
+
+<!-- Options View: -->
+<div id="oView" class="oView" style="position:absolute;top:43px;width:140px;height:auto;padding:6px;border-radius:3px;display:none;font-weight:bold;">
+<span class="mso" onclick="dHid('oView');LinkModule();"><img src="../_ico/link.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Share Link</span>
+<span class="mso" onclick="selTheme('l');"><img src="../_ico/ltheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Light Theme</span>
+<span class="mso" onclick="selTheme('d');"><img src="../_ico/dtheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Dark Theme</span>
+<span class="mso" onclick="eToggle('hView');dHid('oView');obLoad('hDisplay','../Help/rwebiAbout-SplitnCopy.html');"><img src="../_ico/mhelp.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Information</span>
+<span class="mso" onclick="modRefresh();"><img src="../_ico/refresh.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Refresh</span>
+<span class="mso" onclick="pLoad('rwebiMenu-Modules.html');"><img src="../_ico/mclose.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Close</span>
+</div>
+
+<!-- Help View: -->
+<div id="hView" class="hView" style="position:absolute;top:65px;left:15px;width:80%;height:80%;min-width:260px;min-height:200px;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Information</span></div><div class="hvRight"><span onclick="eHid('hView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div style="height:90%;margin-top:6px;"><object type="text/html" id="hDisplay" data="../Help/rwebiHelp-SplitnCopy.html" style="height:85%;width:100%;border:0px;"></object><input type="file" id="fb" style="visibility:hidden;" onchange="oFile('v','cv','fb');"></div></div>
+
+<!-- Variables: -->
+<textarea id="tt" class="hf"></textarea>
+<textarea id="sr" class="hf"></textarea>
+<div id="ut" class="hf"></div>
+<span id="ow" class="hf">22</span>
+<span id="oh" class="hf">268</span>
+
+<!-- Module Footer: -->
+<div id="mFooter" class="mFooter" style="float:left;margin-top:0px;min-width:320px;">
+<img src="../_ico/favicon.png" style="height:12px;margin-right:3px;margin-top:2px;vertical-align:bottom;"><b>SplitnCopy</b> </span>w:<span id="miw" class="oc"></span>&nbsp;h:<span id="mih" class="bc"></span></div></body></html>
+<!-- rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61 -->

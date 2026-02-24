@@ -1,0 +1,128 @@
+<!--            _   _  
+  ___ _ _ _ ___| |_|_| Aplha Preview: rwebiLab-BrowserInfo.html
+ |  _| | | | -_| . | | rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61
+ |_| |_____|___|___|_| -->
+<!doctype html><html lang="en"><head><meta charSet="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rwebiModule-BrowserInfo</title>
+<link rel="icon" type="image/x-icon" href="../_ico/favicon.png">
+<link id="csl" rel="stylesheet" href="../_css/rwebiStyle-Light-c61.css" media="(prefers-color-scheme: light)">
+<link id="csd" rel="stylesheet" href="../_css/rwebiStyle-Dark-c61.css" media="(prefers-color-scheme: dark)">
+<script src="../_jss/rwebiEngine-AceEditor-c61.js"></script>
+<script src="../_jss/rwebiEngine-LightCore-c61.js"></script>
+<script src="../_jss/rwebiModule-BrowserInfo.js"></script>
+</head><body onload="mStart();" onresize="mResize();" style="overflow-x:hidden;overflow-y:scroll;">
+
+<!-- Module Header: -->
+<div id="mHeader" class="sho" style="width:100%;height:35px;min-width:320px;white-space:nowrap;cursor:pointer;" onclick="dToggle('oView');eHid('hView');"><div style="position:absolute;z-Index:999;top:3px;left:5px;"><span title="Module Options"><img src="../_ico/browserinfo.png" class="nibtn">&nbsp;</span><div class="mTitle">Browser Info</div></div><div style="position:absolute;top:3px;right:6px;"><img src="../_ico/mselect.png"></div></div>
+
+<!-- Module Bar: -->
+<div id="mBar" class="sh0" style="height:35px;min-width:320px;white-space:nowrap;">
+<select id="soFile" onChange="FileOpt();" class="yopt" title="File Menu" style="width:50px;height:33px;">
+<option value="default">File</option>
+<option value="refresh">Refresh</option>
+<option value="copy">Copy All Info</option>
+<option value="save">Local Save</option>
+<option value="saveas">Download Info&nbsp;&nbsp;</option>
+<option value="export">Export to Tab</option>
+<option value="storage">View Storage</option>
+<option value="info">Information</option>
+<option value="exit">Exit Module</option></select></select>
+<span onclick="BrowserInfo();" title="Refresh Info"><img src="../_ico/refresh.png" class="ibtn"></span>
+<span onclick="InfoCopy();" title="Copy Info"><img src="../_ico/copy.png" class="ibtn"></span>
+<span onclick="iFont('cc');" title="Increase Font"><img src="../_ico/zoom-in.png" class="ibtn"></span>
+<span onclick="dFont('cc');" title="Decrease Font"><img src="../_ico/zoom-out.png" class="ibtn"></span>
+<span onclick="SaveDownload();" title="Download Info"><img src="../_ico/save-as.png" class="ibtn"></span></div>
+
+<!-- Content Containor / Content View -->
+<div id="cc" class="cc" contenteditable="false" style="z-index:10;height:300px;width:96.5vw;min-height:120px;overflow-y:scroll;margin-top:3px;">
+<table id="tData" class="tfnp" border="1" cellpadding="3" cellspacing="0" style="width:100%;">
+<tr><th>Specification</th><th>Property</th></tr>
+<tr><td>Time Stamp:</td><td><span id="ts" class="twl"></span></td></tr>
+<tr><td>Browser Name:</td><td><span id="bn" class="tgl"></span></td></tr>
+<tr><td>Browser Platform:</td><td><span id="bp" class="tgl"></span></td></tr>
+<tr><td>Version:</td><td><span id="bv" class="tpl"></span></td></tr>
+<tr><td>Application:</td><td><span id="an" class="tpl"></span></td></tr>
+<tr><td>URL:</td><td><span id="ul" class="tol"></span></td></tr>
+<tr><td>Path:</td><td><span id="lp" class="tol"></span></td></tr>
+<tr><td>File:</td><td><span id="fn" class="tbrl"></span></td></tr></tbody>
+<tr><td>Orgin:</td><td><span id="lo" class="tyl"></span></td></tr>
+<tr><td>Protocol:</td><td><span id="pt" class="tyl"></span></td></tr>
+<tr><td>Domain:</td><td><span id="dm" class="tyl"></span></td></tr>
+<tr><td>Pixel Depth:</td><td><span id="pd" class="tcl"></span></td></tr>
+<tr><td>Color Depth:</td><td><span id="cd" class="tcl"></span></td></tr>
+<tr><td>Color Scheme:</td><td><span id="cs" class="tcl"></span></td></tr>
+<tr><td>Browser Width:</td><td><span id="bw" class="tpl"></span></td></tr>
+<tr><td>Browser Height:</td><td><span id="bh" class="tpl"></span></td></tr>
+<tr><td>Inner Width:</td><td><span id="iw" class="tml"></span></td></tr>
+<tr><td>Inner Height:</td><td><span id="ih" class="tml"></span></td></tr>
+<tr><td>Screen X:</td><td><span id="sx" class="twl"></span></td></tr>
+<tr><td>Screen Y:</td><td><span id="sy" class="twl"></span></td></tr>
+<tr><td>Screen Left:</td><td><span id="sl" class="twd"></span></td></tr>
+<tr><td>Screen Top:</td><td><span id="st" class="twd"></span></td></tr>
+<tr><td>Outer Width:</td><td><span id="bow" class="tbl"></span></td></tr>
+<tr><td>Outer Height:</td><td><span id="boh" class="tbl"></span></td></tr>
+<tr><td>Avail Width:</td><td><span id="aw" class="tpl"></span></td></tr>
+<tr><td>Avail Height:</td><td><span id="ah" class="tpl"></span></td></tr>
+<tr><td>Parent Window</td><td><span id="pw" class="twl"></span></td></tr>
+<tr><td>Opener Window</td><td><span id="op" class="twl"></span></td></tr>
+</table></div>
+
+<!-- Local Storage Menu: -->
+<div id="lsMenu" class="sh3" style="min-width:320px;margin-top:6px;">
+<select id="soStorage" onChange="StorageOpt();" class="bopt" title="Storage Options" style="width:75px;height:33px;">
+<option value="default" selected="selected">Storage</option>
+<option value="refresh">Refresh Storage&nbsp;&nbsp;</option>
+<option value="copy">Copy Storage</option>
+<option value="clear">Clear Storage</option>
+<option value="saveas">Download Info&nbsp;&nbsp;</option>
+<option value="export">Export to Tab</option></select>
+<span onclick="StorageRefresh();"><img class="ibtn" src="../_ico/refresh.png" title="Refresh Storage View"></span>
+<span onclick="iFont('editor');"><img class="ibtn" src="../_ico/zoom-in.png" title="Increase Font"></span>
+<span onclick="dFont('editor');"><img class="ibtn" src="../_ico/zoom-out.png"  title="Decrease Font"></span></div>
+
+<!-- Stats View: -->
+<div class="sh3">
+<span class="em08">Words:&nbsp;</span><span id="acw" class="oc"></span>
+<span class="em08">Characters:&nbsp;</span><span id="act" class="bc"></span>
+<span class="em08">Text:&nbsp;</span><span id="aca" class="mc"></span>
+<span class="em08">Lines:&nbsp;</span><span id="acr" class="gc"></span></div>
+
+<!-- Local Storage View: -->
+<div id="editor" style="width:90;min-width:295px;min-height:150px;font-size:1.13em;margin-top:3px;margin-bottom:0px;border-radius:3px;" onkeyup="aceCount('editor');"></div>
+
+<!-- Options View: -->
+<div id="oView" class="oView" style="position:absolute;z-Index:999;top:43px;width:140px;height:auto;padding:6px;border-radius:3px;display:none;font-weight:bold;">
+<span class="mso" onclick="dHid('oView');LinkModule();"><img src="../_ico/link.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Share Link</span>
+<span class="mso" onclick="selTheme('l');"><img src="../_ico/ltheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Light Theme</span>
+<span class="mso" onclick="selTheme('d');"><img src="../_ico/dtheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Dark Theme</span>
+<span class="mso" onclick="eToggle('hView');dHid('oView');obLoad('hDisplay','../Help/rwebiAbout-BrowserInfo.html');"><img src="../_ico/mhelp.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Information</span>
+<span class="mso" onclick="modRefresh();"><img src="../_ico/refresh.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Refresh</span>
+<span class="mso" onclick="pLoad('rwebiMenu-Modules.html');"><img src="../_ico/mclose.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Close</span></div>
+
+<!-- Save View: -->
+<div id="sView" class="hView" style="top:60px;left:20px;width:60%;min-width:260px;max-width:500px;height:auto;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Save/Download</span></div><div class="hvRight"><span onclick="eHid('sView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div class="p6"><label for="sf" class="wc em12">Filename</label><input type='text' id='sf' class='wb' style="width:90%;font-size:1.15em;height:27px;" value="rwebi-BrowserInfo.txt" onfocus="this.select();"><p><br><span class="gbtn" onclick="sFile('v','cv','sf');eHid('sView');" title="Download / Save">Save</span>&nbsp;&nbsp;<span class="abtn" onclick="eHid('sView');" title="Cancel Download">Cancel</span></p></div></div>
+
+<!-- Help View: -->
+<div id="hView" class="hView" style="position:absolute;top:65px;left:15px;width:80%;height:80%;min-width:260px;min-height:200px;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Information</span></div><div class="hvRight"><span onclick="eHid('hView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div style="height:90%;margin-top:6px;"><object type="text/html" id="hDisplay" data="../Help/rwebiHelp-BrowserInfo.html" style="height:85%;width:100%;border:0px;"></object><input type="file" id="fb" style="visibility:hidden;" onchange="oFile('v','cv','fb');"></div></div>
+
+<!-- Variables: -->
+<div id="tt" style="width:0px;height:0px;visibility:hidden;display:none;"></div>
+<div id="ut" style="width:0px;height:0px;visibility:hidden;display:none;"></div>
+<span id="ow" class="hf">38</span>
+<span id="oh" class="hf">230</span>
+<span id="ob" class="hf">0</span>
+<span id="mt" class="hf">0</span>
+<input id="sp1" type="hidden" value="0">
+<input id="ld1" type="hidden" value="0">
+<input id="ww1" type="hidden" value="1">
+
+<!-- Ace Editor: -->
+<script src="../Library/Ace/ace.js" type="text/javascript" charset="utf-8"></script><script>
+var editor = ace.edit("editor");editor.setTheme("ace/theme/chrome");
+editor.session.setMode("ace/mode/csv");editor.setOption("wrap", true);editor.getSession().setUseWorker(false);</script>
+
+<!-- Module Footer: -->
+<div id="mFooter" class="mFooter" style="float:left;margin-top:0px;min-width:320px;">
+<img src="../_ico/favicon.png" style="height:12px;margin-right:3px;margin-top:2px;vertical-align:bottom;"><b>BrowserInfo</b> </span>w:<span id="miw" class="oc"></span>&nbsp;h:<span id="mih" class="bc"></span></div></body></html>
+<!-- rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61 -->

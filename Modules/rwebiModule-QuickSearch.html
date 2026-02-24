@@ -1,0 +1,96 @@
+<!--            _   _  
+  ___ _ _ _ ___| |_|_| Aplha Preview: rwebiModule-QuickSearch.html
+ |  _| | | | -_| . | | rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61
+ |_| |_____|___|___|_| -->
+<!doctype html><html lang="en"><head><meta charSet="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rwebiModule-QuickSearch</title>
+<link rel="icon" type="image/x-icon" href="../_ico/favicon.png">
+<link id="csl" rel="stylesheet" href="../_css/rwebiStyle-Light-c61.css" media="(prefers-color-scheme: light)">
+<link id="csd" rel="stylesheet" href="../_css/rwebiStyle-Dark-c61.css" media="(prefers-color-scheme: dark)">
+<script src="../_jss/rwebiEngine-LightCore-c61.js"></script>
+<script src="../_jss/rwebiModule-QuickSearch.js"></script>
+</head><body onload="mStart();" onresize="mResize();" style="overflow:hidden;"><form name="forminput" action="../_php/rwebiModule-QuickSearch.php" method="post" target="fsr">
+
+<!-- Module Header: -->
+<div id="mHeader" class="sho" style="width:100%;height:35px;min-width:320px;white-space:nowrap;cursor:pointer;" onclick="dToggle('oView');eHid('hView');"><div style="position:absolute;z-Index:999;top:3px;left:5px;"><span title="Module Options"><img src="../_ico/quicksearch.png" class="nibtn">&nbsp;</span><div class="mTitle">Quick Search</div></div><div style="position:absolute;top:3px;right:6px;"><img src="../_ico/mselect.png"></div></div>
+
+<!-- Module Bar: -->
+<div id="mBar" class="sh0" style="height:35px;min-width:320px;white-space:nowrap;">
+<select id="soFile" onChange="FileOpt();" class="yopt" title="File Menu" style="width:55px;height:33px;">
+<option value="default">File</option>
+<option value="copy">Copy Results</option>
+<option value="vtext">View as Text</option>
+<option value="save">Local Save</option>
+<option value="download">Download Results&nbsp;&nbsp;</option>
+<option value="export">Export to Tab</option>
+<option value="refresh">Refresh Search</option>
+<option value="fview">Full View</option>
+<option value="clear">Clear Search</option>
+<option value="info">Information</option>
+<option value="exit">Exit Module</option></select>
+<span onclick="TextView();"><img id="rt" class="ibtn" src="../_ico/text-off.png" title=""></span>
+<span onclick="sCopy();" title="Copy Results"><img src="../_ico/copy.png" class="ibtn"></span>
+<span onclick="eVis('sView');cFocus('sf');" title="Save Download"><img src="../_ico/save-as.png" class="ibtn"></span>
+<span onclick="pSwap('fs','fullscreen-','');FullViewOpen();"><img id="fs" class="ibtn" src="../_ico/fullscreen-on.png" title=""></span>
+<span onclick="aClear();" title=""><img src="../_ico/clear.png" class="ibtn"></span></div>
+
+<!-- Module Menu: -->
+<div id="mMenu" style="position:absolute;top:105px;left:12px;width:30px;height:auto;z-index:97;visibility:hidden;margin-bottom:3px;"><span onclick="eHid('mMenu');eNew('v','cv');tStat('cv','1');"><img class="vibtn" src="../_ico/doc-new.png" title="New File"></span>
+<span onclick="iFont('cv');"><img class="vibtn" src="../_ico/iFont.png" title="Increase Font"></span><br>
+<span onclick="dFont('cv');"><img class="vibtn" src="../_ico/dFont.png" title="Decrease Font"></span>
+<span onclick="togLock('ld','ldi','cv');" ><img class="vibtn" id="ldi" src="../_ico/lock-off.png" title="Toggle Editing Lock"></span><br><span onclick="togSpell('sci','cv');"><img class="vibtn" id="sci" src="../_ico/spellcheck-off.png" title="Toggle Spell Checking"></span><br><span onclick="togWrap('ww','wwi','cv');"><img class="vibtn" src="../_ico/wrap-on.png" id="wwi" title="Toggle Word Wrap"></span></div>
+
+<!-- Search Bar: -->
+<div id="sBar" class="sh3">
+<input type="text" id="qs" name="qs" class="itxt" style="width:75%;margin-left:-1px;" onkeydown="onEnter();" onfocus="this.select()" placeholder="rwebi db beta search">
+<span onclick="sValid();" style="margin-left:-1px;"><img src="../_ico/search.png" class="ibtn" title="Search"></span></div>
+
+<!-- Content Containor / Content View: -->
+<div id="cc" name="cc" style="width:100%;height:200px;margin-top:6px;border-width:1px;border-style:solid;border-color:#d9d9d9;border-radius:3px;">
+<iframe id="vr" name="vr" src="" scrolling="yes" frameborder="0" width="98.9%" height="100%" src="rwebiModule-Blank.html"></iframe></div>
+<!-- Search Results: -->
+<div id="sr" name="sr" class="hf"><iframe id="fsr" name="fsr" frameborder="0" scrolling="no" src=""></iframe></div>
+
+<!-- Full View Button: -->
+<div id="fvButton" onmouseover="sFlex('f','cc','0','0','0');" style="position:absolute;top:6px;left:6px;width:auto;height:45px;z-index:99;visibility:hidden;padding-top:0px;">
+<span onclick="eToggle('fvBar');" title=""><img src="../_ico/mmmenu.png" class="vibtn"></span></div>
+
+<!-- Full View Bar: -->
+<div id="fvBar" style="position:absolute;top:43px;left:6px;width:auto;height:auto;z-index:99;visibility:hidden;">
+<span onclick="FullViewClose();"><img class="vibtn" src="../_ico/fullscreen-off.png" title="Close Full Screen"></span></div>
+
+<!-- Tools View: -->
+<div id="vTools" style="position:absolute;top:104px;right:6px;width:auto;height:auto;background-color:#cccccc;visibility:hidden;float:right;border:1px solid #505050;border-radius:3px;padding:3px;z-index:99;">Tools</div>
+
+<!-- Save View: -->
+<div id="sView" class="hView" style="top:60px;left:20px;width:60%;min-width:260px;max-width:500px;height:auto;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Save/Download</span></div><div class="hvRight"><span onclick="eHid('sView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div class="p6"><label for="sf" class="wc em12">Filename</label><input type='text' id='sf' class='wb' style="width:90%;font-size:1.15em;height:27px;" value="rwebi-PanelQuery.txt" onfocus="this.select();"><p><br><span class="gbtn" onclick="sFile('v','cv','sf');eHid('sView');" title="Download / Save">Save</span>&nbsp;&nbsp;<span class="abtn" onclick="eHid('sView');" title="Cancel Download">Cancel</span></p></div></div>
+
+<!-- Options View: -->
+<div id="oView" class="oView" style="position:absolute;z-Index:999;top:43px;width:140px;height:auto;padding:6px;border-radius:3px;display:none;font-weight:bold;">
+<span class="mso" onclick="dHid('oView');LinkModule();"><img src="../_ico/link.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Share Link</span>
+<span class="mso" onclick="selTheme('l');"><img src="../_ico/ltheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Light Theme</span>
+<span class="mso" onclick="selTheme('d');"><img src="../_ico/dtheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Dark Theme</span>
+<span class="mso" onclick="eToggle('hView');dHid('oView');obLoad('hDisplay','../Help/rwebiAbout-QuickSearch.html');"><img src="../_ico/mhelp.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Information</span>
+<span class="mso" onclick="modRefresh();"><img src="../_ico/refresh.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Refresh</span>
+<span class="mso" onclick="pLoad('rwebiMenu-Modules.html');"><img src="../_ico/mclose.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Close</span></div>
+
+<!-- Help View: -->
+<div id="hView" class="hView" style="position:absolute;top:65px;left:15px;width:80%;height:80%;min-width:260px;min-height:200px;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Information</span></div><div class="hvRight"><span onclick="eHid('hView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div style="height:90%;margin-top:6px;"><object type="text/html" id="hDisplay" data="../Help/rwebiHelp-QuickSearch.html" style="height:85%;width:100%;border:0px;"></object><input type="file" id="fb" style="visibility:hidden;" onchange="oFile('v','cv','fb');"></div></div>
+
+<!-- Variables: -->
+<textarea id="tt" class="hf"></textarea>
+<div id="ut" class="hf"></div>
+<span id="ow" class="hf">20</span>
+<span id="oh" class="hf">150</span>
+<span id="ob" class="hf">0</span>
+<span id="mt" class="hf">0</span>
+<span id="ww" class="hf">on</span>
+<span id="sc" class="hf">off</span>
+<span id="ld" class="hf">off</span>
+<span id="rf" class="hf">off</span>
+
+<!-- Module Footer: -->
+<div id="mFooter" class="mFooter" style="float:left;margin-top:0px;min-width:320px;">
+<img src="../_ico/favicon.png" style="height:12px;margin-right:3px;margin-top:2px;vertical-align:bottom;"><b>Quick Search</b> </span>w:<span id="miw" class="oc"></span>&nbsp;h:<span id="mih" class="bc"></span></div></body></html>
+<!-- rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61 -->

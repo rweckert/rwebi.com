@@ -1,0 +1,160 @@
+<!--            _   _  
+  ___ _ _ _ ___| |_|_| Aplha Preview: rwebiModule-csvTable.html
+ |  _| | | | -_| . | | rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61
+ |_| |_____|___|___|_| -->
+<!doctype html><html lang="en"><head><meta charSet="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rwebiModule-csvTable</title>
+<link rel="icon" type="image/x-icon" href="../_ico/favicon.png">
+<link id="csl" rel="stylesheet" href="../_css/rwebiStyle-Light-c61.css" media="(prefers-color-scheme: light)">
+<link id="csd" rel="stylesheet" href="../_css/rwebiStyle-Dark-c61.css" media="(prefers-color-scheme: dark)">
+<link rel="stylesheet" href="../_css/rwebiStyle-Tables-c61.css">
+<script src="../_jss/rwebiEngine-LightCore-c61.js"></script>
+<script src="../_jss/rwebiEngine-AceEditor-c61.js"></script>
+<script src="../_jss/rwebiEngine-AceStringTools-c61.js"></script>
+<script src="../_jss/rwebiModule-csvTable.js"></script>
+</head><body onload="mStart();" onresize="mResize();" style="overflow-x:hidden;overflow-y:scroll;"><form name="forminput">
+
+<!-- Module Header: -->
+<div id="mHeader" class="sho" style="width:100%;height:35px;min-width:320px;white-space:nowrap;cursor:pointer;" onclick="dToggle('oView');eHid('hView');"><div style="position:absolute;z-Index:999;top:3px;left:5px;"><span title="Module Options"><img src="../_ico/csvtable.png" class="nibtn">&nbsp;</span><div class="mTitle">csvTable</div></div><div style="position:absolute;top:3px;right:6px;"><img src="../_ico/mselect.png"></div></div>
+
+<!-- Module Bar: -->
+<div id="mBar" class="sh0" style="height:35px;min-width:320px;white-space:nowrap;">
+<select id="soFile" onchange="FileOpt();" onclick="eHid('mMenu');" class="yopt" title="File Menu" style="width:50px;">
+<option value="default">File</option>
+<option value="open">Open File</option>
+<option value="new">New File</option>
+<option value="copy">Copy All Text</option>
+<option value="clear">Clear All Text</option>
+<option value="save">Local Save</option>
+<option value="restore">Local Restore</option>
+<option value="saveas">Save Download&nbsp;&nbsp;</option>
+<option value="export">Export to Tab</option>
+<option value="info">Information</option>
+<option value="exit">Exit Module</option></select>
+<span onclick="document.getElementById('fb').click();" title="Open File"><img src="../_ico/open.png" class="ibtn"></span>
+<span onclick="ConvertTable();" title="Convert Data to Table"><img src="../_ico/table-create.png" class="ibtn"></span>
+<span onclick="eToggle('eMenu');eHid('pMenu');" title="Toggle Edit Menu"><img src="../_ico/edit.png" class="ibtn"></span>
+<span onclick="eToggle('pMenu');eHid('eMenu');" title="Toggle Page Menu"><img src="../_ico/nav.png" class="ibtn"></span>
+<span onclick="mToggle('aSearch');" title="Search and Replace"><img src="../_ico/search.png" class="ibtn"></span>
+<select id="soDelim" onchange="DelimOpt();" class="wopt" title="Select Delimiter" style="width:18px;margin-left:0px;">
+<option value=",">Comma (,)&nbsp;&nbsp;</option>
+<option value="\t">Tab</option>
+<option value="\n">New Line</option>
+<option value="|">Pipe (|)</option>
+<option value=" ">Space</option></select>
+<input type="text" id="dc" class="itxt" value="," onfocus="this.select()" style="width:30px;margin-left:-2px;" title="Delimiter Character"></div>
+
+<!-- Data Stats: -->
+<div id="dStats" class="sh3" style="min-width:320px;">
+<span class="em08">Words:&nbsp;</span><span id="acw" class="oc"></span>
+<span class="em08">Characters:&nbsp;</span><span id="aca" class="bc"></span>
+<span class="em08">Text:&nbsp;</span><span id="act" class="mc"></span>
+<span class="em08">Lines:&nbsp;</span><span id="acr" class="gc"></span></div>
+
+<!-- Content Containor / Data View: -->
+<div id="editor" class="sh3" style="width:100%;min-height:200px;min-width:150px;resize:vertical;border-radius:3px;overflow:hidden;font-size:1.3em;margin-bottom:3px;" onkeyup="aceCount('editor');" onclick="eHid('mMenu');eHid('oView');aceCount('editor');" onmouseover="aceCount('editor');"></div>
+
+<!-- Header Menu Bar: -->
+<div id="mBar" class="sh0" style="min-width:320px;">
+<select id="soHeader" onchange="HeaderOpt();" class="bopt" title="Header Options" style="width:80px;margin-left:0px;">
+<option value="do">Header</option>
+<option value="ch">Copy Header</option>
+<option value="xh">Clear Header</option>
+<option value="et">Export Header to Tab&nbsp;&nbsp;</option></select>
+<span onclick="HeaderEdit();"><img src="../_ico/table-header-edit.png" class="ibtn" title="Edit Header"></span>
+<span onclick="HeaderRemove()";><img src="../_ico/table-header-delete.png" class="ibtn" title="Remove Table Header"></span>
+<span onclick="HeaderAdd();" ><img src="../_ico/sum-add.png" class="ibtn" title="Add Header to Table"></span>
+<span onclick="eCopy('v','vHeader');" title=""><img src="../_ico/copy.png" class="ibtn" title="Copy Table Header"></span>
+<span onclick="eTab('v','vHeader');"><img src="../_ico/export-2.png" class="ibtn" title="Export Header to Tab"></span>
+<span onclick="iClear('v','vHeader');"><img src="../_ico/clear.png" class="ibtn" title="Clear Header Data"></span></div>
+
+<!-- Table Header: -->
+<div id="tHeader" class="sh6">
+<textarea id="vHeader" name="hv" style="width:100%;height:60px;background-color:#F3EFC6;border-radius:3px;color:#000000;font-size:1.13em;overflow-wrap:normal;"></textarea></div>
+
+<!-- Table Menu Bar: -->
+<div id="mBar" class="sh0" style="min-width:320px;">
+<select id="soTable" onchange="TableOpt();" class="gopt" title="Table Data Options" style="width:65px;margin-left:0px;">
+<option value="do">Table</option>
+<option value="ct">Copy Table</option>
+<option value="xt">Clear Table</option>
+<option value="dt">Download Table</option>
+<option value="et">Export Table to Tab</option>
+<option value="tt">Export Data to Tab&nbsp;&nbsp;</option></select>
+<select id="soFormat" onchange="FormatOpt();" class="wopt" title="Table Theme" style="width:78px;margin-left:0px;">
+<option value="do">Theme</option>
+<option value="tftf">Text Format</option>
+<option value="tfa">White Ash</option>
+<option value="tfyp">Yellow Pad</option>
+<option value="tfgl">Green Ledger</option>
+<option value="tfn">Dark Themed</option>
+<option value="tfw">Light Themed</option>
+<option value="tfdt">Detailed Table</option>
+<option value="tfrt">Reference Table&nbsp;&nbsp;</option>
+</select>
+<span onclick="ConvertTable();"><img src="../_ico/table-create.png" class="ibtn" title="Convert Data to Table"></span>
+<span onclick="eTab('i','tData');"><img src="../_ico/export-2.png" class="ibtn" title="Export Table to Tab"></span>
+<span onclick=""><img src="../_ico/save-as.png" class="ibtn" title="Download Table"></span>
+<span onclick="FullViewOpen();"><img src="../_ico/fullscreen.png" class="ibtn" title="Full View"></span>
+<span onclick="ClearTable();"><img src="../_ico/clear.png" class="ibtn" title="Clear Table"></span>
+</div>
+
+<!-- Table Stats: -->
+<div id="tStats" class="sh3" style="min-width:320px;border-radius:3px;">
+<span class="em08">Rows:&nbsp;</span><span id="tr" class="oc"></span>
+<span class="em08">Columns:&nbsp;</span><span id="tc" class="bc"></span></div>
+
+<!-- Table View: -->
+<div id='tView' class="sh3" style="width:100%;height:400px;overflow:scroll;">
+<div id="tViewer" contenteditable='false' style="width:100%;height:auto;border-radius:3px;"></div></div>
+
+<!-- Edit Menu: -->
+<div id="eMenu" style="position:absolute;top:106px;left:11px;width:45px;height:auto;z-index:97;visibility:hidden;padding-top:0px;padding-bottom:3px;">
+<span onclick="aceCut('editor');" title="Cut Selected"><img src="../_ico/cut.png" class="vibtn"></span><br>
+<span onclick="aceCopySelected('editor');" title="Copy Selected"><img src="../_ico/copy.png" class="vibtn"></span><br>
+<span onclick="aceCopyAll('editor');" title="Copy All"><img src="../_ico/select.png" class="vibtn"></span><br>
+<span onclick="acePaste('editor');" title="Paste"><img src="../_ico/paste.png" class="vibtn"></span><br>
+<span onclick="aceUndo();" title="Undo"><img src="../_ico/undo.png" class="vibtn"></span></div>
+
+<!-- Page Menu: -->
+<div id="pMenu" style="position:absolute;top:106px;left:11px;width:45px;height:auto;z-index:97;visibility:hidden;padding-top:0px;padding-bottom:3px;">
+<span onclick="pgFirst();" title="First Page"><img src="../_ico/nav-top.png" class="vibtn"></span>
+<span onclick="pgUp('editor');" title="Up Page"><img src="../_ico/nav-up.png" class="vibtn"></span>
+<span onclick="pgDown('editor');" title="Down Page"><img src="../_ico/nav-down.png" class="vibtn"></span>
+<span onclick="pgLast();" title="Last Page"><img src="../_ico/nav-bottom.png" class="vibtn"></span></div>
+
+<!-- Options View: -->
+<div id="oView" class="oView" style="position:absolute;z-Index:999;top:43px;width:140px;height:auto;padding:6px;border-radius:3px;display:none;font-weight:bold;">
+<span class="mso" onclick="dHid('oView');LinkModule();"><img src="../_ico/link.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Share Link</span>
+<span class="mso" onclick="selTheme('l');"><img src="../_ico/ltheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Light Theme</span>
+<span class="mso" onclick="selTheme('d');"><img src="../_ico/dtheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Dark Theme</span>
+<span class="mso" onclick="eToggle('hView');dHid('oView');obLoad('hDisplay','../Help/rwebiAbout-csvTable.html');"><img src="../_ico/mhelp.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Information</span>
+<span class="mso" onclick="modRefresh();"><img src="../_ico/refresh.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Refresh</span>
+<span class="mso" onclick="pLoad('rwebiMenu-Modules.html');"><img src="../_ico/mclose.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Close</span></div>
+
+<!-- Full View Button: -->
+<div id="fvButton" onmouseover="sFlex('f','cc','0','0','0');" style="position:absolute;top:6px;left:6px;width:auto;height:45px;z-index:99;visibility:hidden;padding-top:0px;">
+<span onclick="eToggle('fvBar');" title=""><img src="../_ico/mmmenu.png" class="vibtn"></span></div>
+
+<!-- Full View Bar: -->
+<div id="fvBar" style="position:absolute;top:43px;left:6px;width:auto;height:auto;z-index:99;visibility:hidden;">
+<span onclick="FullViewClose();"><img class="vibtn" src="../_ico/fullscreen-off.png" title="Close Full Screen"></span></div>
+
+<!-- Help View: -->
+<div id="hView" class="hView" style="position:absolute;top:65px;left:15px;width:80%;height:80%;min-width:260px;min-height:200px;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Information</span></div><div class="hvRight"><span onclick="eHid('hView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div style="height:90%;margin-top:6px;"><object type="text/html" id="hDisplay" data="../Help/rwebiHelp-csvTable.html" style="height:85%;width:100%;border:0px;"></object><input type="file" id="fb" style="visibility:hidden;" onchange="aceOpen('editor','fb');"></div></div>
+
+<!-- Ace Editor: -->
+<script src="../Library/Ace/ace.js" charset="utf-8"></script><script>
+editor=ace.edit("editor");editor.setTheme("ace/theme/chrome");
+editor.session.setMode("ace/mode/csv");editor.setOption("wrap",false);</script>
+
+<!-- Variables: -->
+<div id="tt" class="hf"></div>
+<span id="ow" class="hf">35</span>
+<span id="oh" class="hf">113</span>
+
+<!-- Module Footer: -->
+<div id="mFooter" class="mFooter" style="float:left;margin-top:0px;min-width:320px;">
+<img src="../_ico/favicon.png" style="height:12px;margin-right:3px;margin-top:2px;vertical-align:bottom;"><b>csvTable</b> </span>w:<span id="miw" class="oc"></span>&nbsp;h:<span id="mih" class="bc"></span></div></body></html>
+<!-- rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61 -->

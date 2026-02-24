@@ -1,0 +1,65 @@
+<!--            _   _  
+  ___ _ _ _ ___| |_|_| Aplha Preview: rwebiMenu-Applications.html
+ |  _| | | | -_| . | | rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61
+ |_| |_____|___|___|_| -->
+<!doctype html><html lang="en"><head><meta charSet="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rwebiMenu-Applications</title>
+<link rel="icon" type="image/x-icon" href="../_ico/favicon.png">
+<link id="csl" rel="stylesheet" href="../_css/rwebiStyle-Light-c61.css" media="(prefers-color-scheme: light)">
+<link id="csd" rel="stylesheet" href="../_css/rwebiStyle-Dark-c61.css" media="(prefers-color-scheme: dark)">
+<script src="../_jss/rwebiEngine-LightCore-c61.js"></script>
+<script src="../_jss/rwebiEngine-Modules-c61.js"></script>
+</head><body onload="mStart();" onresize="mResize();" style="overflow:hidden;">
+
+<!-- Module Header: -->
+<div id="mHeader" class="sho" style="width:100%;height:35px;min-width:320px;white-space:nowrap;cursor:pointer;" onclick="dToggle('oView');eHid('hView');"><div style="position:absolute;z-Index:999;top:3px;left:5px;"><span title="Module Options"><img src="../_ico/rwebi-app.png" class="nibtn">&nbsp;</span><div class="mTitle">Applications</div></div><div style="position:absolute;top:3px;right:6px;"><img src="../_ico/mselect.png"></div></div>
+
+<!-- Applications List -->
+<div id="mListing" onclick="eHid('oView');" style="width:98%;text-align:center;min-width:240px;">
+
+<div class="api">
+<span onclick="pParent('../Apps/rwebiApp-SearchPanel-c61.html');" class="abs" title="Search Panel" style="margin-bottom:3px;">
+<img src="../_ica/app-search-panel.png" width="70px"></span><br>
+<span onclick="pParent('../Apps/rwebiApp-SearchPanel-c61.html');" class="apn">Search<br>Panel</span></div>
+
+<div class="api">
+<span onclick="pParent('../Apps/rwebiApp-Desktop-c61.html');" class="abs" title="rwebi Desktop" style="margin-bottom:3px;">
+<img src="../_ica/app-desktop.png" width="70px"></span><br>
+<span onclick="pParent('../Apps/rwebiApp-Desktop-c61.html');" class="apn">rwebi<br>Desktop</span></div>
+
+<div class="api">
+<span onclick="pParent('../Apps/rwebiApp-ToolPanel-c61.html');" class="abs" title="Tool Panel" style="margin-bottom:3px;">
+<img src="../_ica/app-tool-panel.png" width="70px"></span><br>
+<span onclick="pParent('../Apps/rwebiApp-ToolPanel-c61.html');" class="apn">Tool<br>Panel</span></div>
+
+<div class="api">
+<span onclick="pParent('../Apps/rwebiApp-GridStack-c61.html');" class="abs" title="Grid Stack" style="margin-bottom:3px;">
+<img src="../_ica/app-grid-stack.png" width="70px"></span><br>
+<span onclick="pParent('../Apps/rwebiApp-GridStack-c61.html');" class="apn">Grid<br>Stack</span></div>
+
+<!-- Applications List End -->
+</div>
+
+<!-- Options View: -->
+<div id="oView" class="oView" style="position:absolute;z-Index:999;top:43px;width:140px;height:auto;padding:6px;border-radius:3px;display:none;font-weight:bold;">
+<span class="mso" onclick="dHid('oView');pLoad('rwebiMenu-Modules.html');"><img src="../_ico/module-listing.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Module Icons</span>
+<span class="mso" onclick="dHid('oView');pLoad('rwebiMenu-Modules-Listing.html');"><img src="../_ico/modules-list.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Module Listing</span>
+<span class="mso" onclick="dHid('oView');pLoad('rwebiMenu-Modules-Search.html');"><img src="../_ico/module-search.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Module Search</span>
+<span class="mso" onclick="selTheme('l');"><img src="../_ico/ltheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Light Theme</span>
+<span class="mso" onclick="selTheme('d');"><img src="../_ico/dtheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Dark Theme</span>
+<span class="mso" onclick="dHid('oView');LinkModule();"><img src="../_ico/link.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Share Link</span>
+<span class="mso" onclick="eToggle('hView');dHid('oView');obLoad('hDisplay','../Help/rwebiAbout-General.html');"><img src="../_ico/mhelp.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Information</span>
+<span class="mso" onclick="modRefresh();"><img src="../_ico/refresh.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Refresh</span></div>
+
+<!-- Help View: -->
+<div id="hView" class="hView" style="position:absolute;top:65px;left:15px;width:80%;height:80%;min-width:260px;min-height:200px;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Information</span></div><div class="hvRight"><span onclick="eHid('hView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div style="height:90%;margin-top:6px;"><object type="text/html" id="hDisplay" data="../Help/rwebiHelp-General.html" style="height:85%;width:100%;border:0px;"></object></div></div>
+
+<!-- Variables: -->
+<span id="ow" class="hf">20</span>
+<span id="oh" class="hf">142</span>
+
+<!-- Module Footer: -->
+<div id="mFooter" class="mFooter" style="float:left;margin-top:0px;min-width:320px;">
+<img src="../_ico/favicon.png" style="height:12px;margin-right:3px;margin-top:2px;vertical-align:bottom;"><b>Applications</b> </span>w:<span id="miw" class="oc"></span>&nbsp;h:<span id="mih" class="bc"></span></div></body></html>
+<!-- rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61 -->

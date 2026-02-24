@@ -1,0 +1,152 @@
+<!--            _   _  
+  ___ _ _ _ ___| |_|_| Aplha Preview: rwebiModule-GraphPaper.html
+ |  _| | | | -_| . | | rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61
+ |_| |_____|___|___|_| -->
+<!doctype html><html lang="en"><head><meta charSet="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rwebiModule-Basic</title>
+<link rel="icon" type="image/x-icon" href="../_ico/favicon.png">
+<link id="csl" rel="stylesheet" href="../_css/rwebiStyle-Light-c61.css" media="(prefers-color-scheme: light)">
+<link id="csd" rel="stylesheet" href="../_css/rwebiStyle-Dark-c61.css" media="(prefers-color-scheme: dark)">
+<style>body, html {height:100dvh;width:100vw;margin:0;padding:0;overflow:hidden;}</style>
+<script src="../_jss/rwebiEngine-LightCore-c61.js"></script>
+<script src="../_jss/rwebiModule-GraphPaper.js"></script>
+<script>{document.onmousemove=mGraph;}</script>
+</head><body onload="mStart();" onresize="mResize();" style="overflow:hidden;">
+
+<!-- Module Header: -->
+<div id="mHeader" class="sh0" style="width:100%;min-width:320px;">
+<span onclick="mReset();" title="Reload Module"><img src="../_ico/graphpaper.png" class="nibtn"></span>&nbsp;<div class="mTitle">Graph Paper</div></div><div style="position:absolute;top:6px;right:3px;">
+<img class="ibtn" src="../_ico/mopt.png" onclick="eToggle('oView');" title="Help / About / Settings">
+<img class="ibtn" src="../_ico/mclose.png" onclick="pLoad('../Modules/rwebiMenu-Modules.html');" title="Close Module"></div>
+
+<!-- Module Bar: -->
+<div id="mBar" class="sh3" style="min-width:320px;">
+<select id="soFile" onchange="FileOpt();" onclick="eHid('mMenu');" class="yopt" title="File Menu" style="width:50px;height:33px;">
+<option value="do">File</option>
+<option value="oi">Open Image</option>
+<option value="np">New Paper</option>
+<option value="et">Export to Tab&nbsp;&nbsp;</option>
+<option value="gs">Grid Settings</option>
+<option value="info">Information</option>
+<option value="exit">Exit Module</option></select>
+<span onclick="document.getElementById('fbg').click();"><img class="ibtn" src="../_ico/open.png" title="Open File"></span>
+
+<select id="soPaper" onchange="PaperOpt();" class="bopt" title="Paper Size" style="width:65px;height:33px;">
+<option value="85x11">Paper</option>
+<option value="85x11">8.5 x 11</option>
+<option value="11x85">11 x 8.5</option>
+<option value="9x16">9 x 16</option>
+<option value="16x9">16 x 9</option>
+<option value="11x14">11 x 14</option>
+<option value="11x16">11 x 16</option>
+<option value="cp">Clear</option>
+<option value="cc">Custom&nbsp;&nbsp;</option></select>
+
+<select id="soSize" onchange="SizeOpt();" class="gopt" title="Graph Size" style="width:55px;height:33px;">
+<option value="12">1/4 "</option>
+<option value="24">3/8 "</option>
+<option value="36">5/8 "</option>
+<option value="48">1/2 "</option>
+<option value="96">1 "</option></select>
+
+<select id="soColor" onchange="ColorOpt();" class="wopt" title="Graph Color" style="width:60px;height:33px;">
+<option value="do">Color</option>
+<option value="lc">Light</option>
+<option value="dc">Dark</option>
+<option value="cc">Custom&nbsp;&nbsp;</option></select>
+
+<select id="soOpacity" onchange="OpacityOpt();" class="mopt" title="Opacity" style="width:72px;height:33px;">
+<option value="10">Opacity</option>
+<option value="2">1</option>
+<option value="3">2</option>
+<option value="4">3</option>
+<option value="5">4</option>
+<option value="6">5</option>
+<option value="7">6</option>
+<option value="8">7</option>
+<option value="9">9</option>
+<option value="10">Off</option></select>
+</div>
+
+<!-- View Stats: -->
+<div id="vStats" class="sh0" style="min-width:320px;">
+<span class='em08 twl'>pw:&nbsp;<span id='pw' class="oc"></span></span>
+<span class='em08 twl'>ph:&nbsp;<span id='ph' class="bc"></span></span>
+<span class='em08 twl'>vw:&nbsp;<span id='gw' class="mc"></span></span>
+<span class='em08 twl'>vh:&nbsp;<span id='gh' class="gc"></span></span>
+<span class='em08 twl'>ox:&nbsp;<span id='ox' class="yc">-1</span></span>
+<span class='em08 twl'>oy:&nbsp;<span id='oy' class="bo">-1</span></span>
+<span class='em08 twl'>gy:&nbsp;<span id='my' class="bc"></span></span>
+<span class='em08 twl'>gx:&nbsp;<span id='mx' class="oc"></span></span></div>
+
+<!-- View Grid: -->
+<div id="vGrid" style="width:100%; height:800px; margin-top:3px; overflow:auto; position:relative; border:1px solid #444;">
+<div id="vr" style="position:relative; top:0; left:28px; width:5000px; height:27px; background-color:#2e2e2e; background-image:url('../_img/rhi.png'); background-repeat:repeat-x; z-index:10;">
+<div id='rmv' style="position:absolute; left:0px;"><img src="../_img/rmv.png"></div></div>
+<div id="hr" style="position:sticky; left:0; top:27px; width:27px; height:5000px; background-color:#2e2e2e; background-image:url('../_img/rvi.png'); z-index:10; float:left;">
+<div id="rmh" style="position:absolute; top:-11px;"><img src="../_img/rmh.png"></div></div>
+<div id="gv" style="position:relative; width: 100%; height:500px; margin-left:27px; cursor:crosshair; background-image:url('../_img/grp/grp12d.png'); background-repeat:repeat; border:1px solid #2e2e2e;">
+<div id="oi" style="width:100%; height:100%;overflow:auto;"></div>
+</div></div>
+
+<!-- Graph Settings: -->
+<div id="gSettings" class="hView" style="position:absolute;z-Index:9999;top:60px;left:20px;width:40%;min-width:260px;max-width:500px;height:300px;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Grid Settings</span></div><div class="hvRight"><span onclick="eHid('gSettings')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div>
+
+<!-- Graph Settings: Background Image -->
+<div style="margin-left:6px;margin-top:9px;"><label for="gbUrl" class="em10 fb" style="display:block;">Grid Background url</label><input type="text" id="gbUrl" style="width:50%;height:28px;font-size:1.13em;margin-top:3px;margin-right:-2px;" onfocus="this.select()" value="../_img/grp/gp-GraphLandscape.gif">
+<span onclick="GraphBkgUrl();"><img src="../_ico/go-orange.png" class="ibtn" title=""></span>
+<span onclick="document.getElementById('fbg').click();"><img src="../_ico/open.png" class="ibtn" title=""></span></div>
+
+<!-- Graph Settings: Background Color -->
+<div style="display:inline-block;margin-left:6px;margin-top:9px;"><label for="gbColor" class="em10 fb" style="display:block;">Grid Background Color</label><input type="color" id="gbColor" onchange="GraphBkgColor();" value="#ffffff" style="width:150px;height:40px;margin-top:2px;"></div>
+
+<div style="margin-left:6px;margin-top:9px;">
+<span class="em10 fb" style="display:block;">Graph Background Offset</span>
+<label for="oleft" class="lb45 em12">Left</label>
+<input type="number" id="oleft" value="0" style="width:40px;height:28px;font-size:1.13em;margin-top:3px;margin-right:-2px;" onchange="GraphOffset();">
+<label for="otop" class="lb45 em12">Top</label>
+<input type="number" id="otop" value="0" style="width:40px;height:28px;font-size:1.13em;margin-top:3px;margin-right:-2px;" onchange="GraphOffset();"></div>
+
+<div style="margin-left:6px;margin-top:9px;">
+<span class="em10 fb" style="display:block;">Graph Background Width</span>
+<label for="bwidth" class="lb45 em12">Width</label>
+<input type="number" id="bwidth" min="0" value="0" style="width:50px;height:28px;font-size:1.13em;margin-top:3px;margin-right:-2px;" onchange="GraphBkgSize();">
+<label for="bheight" class="lb45 em12">Height</label>
+<input type="number" id="bheight" min="0" value="0" style="width:50px;height:28px;font-size:1.13em;margin-top:3px;margin-right:-2px;" onchange="GraphBkgSize();">
+<span onclick="GraphImgSize();"><img src="../_ico/res.png" class="ibtn" title=""></span>
+</div>
+
+</div>
+
+<!-- Image URL: -->
+<div id="urlImage" class="hView" style="top:60px;left:20px;width:60%;min-width:260px;max-width:500px;height:auto;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Image URL</span></div><div class="hvRight"><span onclick="eHid('urlImage')"><img src="../_ico/mclose.png" class="ibtn"></span></div>
+
+
+
+</div>
+
+<!-- Save View: -->
+<div id="sView" class="hView" style="top:60px;left:20px;width:60%;min-width:260px;max-width:500px;height:auto;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Save Download</span></div><div class="hvRight"><span onclick="eHid('sView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div class="p6"><label for="sf" class="wc em12">Filename</label><input type='text' id='sf' class='wb' style="width:90%;font-size:1.15em;height:27px;" value="rwebi-General.txt" onfocus="this.select();"><p><br><span class="gbtn" onclick="sFile('v','cv','sf');eHid('sView');" title="Download / Save">Save</span>&nbsp;&nbsp;<span class="abtn" onclick="eHid('sView');" title="Cancel Download">Cancel</span></p></div></div>
+
+<!-- Options View: -->
+<div id="oView" style="position:absolute;top:46px;right:3px;width:auto;height:40px;background-color:#cccccc;visibility:hidden;float:right;border:1px solid #505050;border-radius:3px;padding:3px;visibility:hidden;"><span onclick="eToggle('hView');obLoad('hDisplay','../Help/rwebiHelp-General.html');eHid('oView');"><img class="ibtn" src="../_ico/mhelp.png" title="Documentation"></span>
+<span onclick="eToggle('hView');obLoad('hDisplay','../Help/rwebiAbout-General.html');eHid('oView');"><img class="ibtn" src="../_ico/mabout.png" title="About Module"></span>
+<span onclick="eHid('oView');LinkModule();"><img class="ibtn" src="../_ico/link.png" title="Copy & Share Module Link"></span>&nbsp;<select id="osTheme" onchange="optTheme();" class="bopt" title="Theme Mode" style="width:65px;height:33px;">
+<option value="m">Mode</option>
+<option value="l">Light Mode&nbsp;&nbsp;</option>
+<option value="d">Dark Mode</option></select></div>
+
+<!-- Help View: -->
+<div id="hView" class="hView" style="position:absolute;top:65px;left:15px;width:80%;height:80%;min-width:260px;min-height:200px;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Information</span></div><div class="hvRight"><span onclick="eHid('hView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div style="height:90%;margin-top:6px;"><object type="text/html" id="hDisplay" data="../Help/rwebiHelp-General.html" style="height:85%;width:100%;border:0px;"></object><input type="file" id="fbg" style="visibility:hidden;" onchange="GraphBkgImage();"></div></div>
+
+<!-- Variables: -->
+<textarea id="tt" class="hf"></textarea>
+<div id="ut" class="hf"></div>
+<span id="ow" class="hf">23</span>
+<span id="oh" class="hf">130</span>
+
+<!-- Module Footer: -->
+<div id="mFooter" class="mFooter" style="float:left;margin-top:6px;">
+<img src="../_ico/favicon.png" style="height:12px;margin-right:3px;margin-top:2px;vertical-align:bottom;"></span>w:<span id="miw" class="oc"></span>&nbsp;h:<span id="mih" class="bc"></span></div></body></html>
+<!-- rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61 -->

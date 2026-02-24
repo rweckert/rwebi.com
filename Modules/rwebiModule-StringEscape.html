@@ -1,0 +1,109 @@
+<!--            _   _  
+  ___ _ _ _ ___| |_|_| Aplha Preview: rwebiModule-StringEscape.html
+ |  _| | | | -_| . | | rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61
+ |_| |_____|___|___|_| -->
+<!doctype html><html lang="en"><head><meta charSet="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rwebiModule-StringEscape</title>
+<link rel="icon" type="image/x-icon" href="../_ico/favicon.png">
+<link id="csl" rel="stylesheet" href="../_css/rwebiStyle-Light-c61.css" media="(prefers-color-scheme: light)">
+<link id="csd" rel="stylesheet" href="../_css/rwebiStyle-Dark-c61.css" media="(prefers-color-scheme: dark)">
+<style type="text/css" media="screen">#editor {position:relative;top:3px;right:0;bottom:0;left:0px;width:99%;min-width:150px;height:200px;}</style>
+<script src="../_jss/rwebiEngine-AceEditor-c61.js"></script>
+<script src="../_jss/rwebiEngine-AceStringTools-c61.js"></script>
+<script src="../_jss/rwebiEngine-LightCore-c61.js"></script>
+<script src="../_jss/rwebiModule-StringEscape.js"></script>
+</head><body onload="mStart();" onresize="mResize();" style="overflow-x:hidden;overflow-y:scroll;">
+
+<!-- Module Header: -->
+<div id="mHeader" class="sho" style="width:100%;height:35px;min-width:320px;white-space:nowrap;cursor:pointer;" onclick="dToggle('oView');eHid('hView');"><div style="position:absolute;z-Index:999;top:3px;left:5px;"><span title="Module Options"><img src="../_ico/stringescape.png" class="nibtn">&nbsp;</span><div class="mTitle">String Escape</div></div><div style="position:absolute;top:3px;right:6px;"><img src="../_ico/mselect.png"></div></div>
+
+<!-- Module Bar: -->
+<div id="mBar" class="sh0" style="height:35px;min-width:320px;white-space:nowrap;">
+<select id="soFile" onchange="FileOpt();" class="yopt" title="File Menu" style="width:55px;height:33px;">
+<option value="default" selected="selected">File</option>
+<option value="open">Open File</option>
+<option value="copy">Copy Raw Text</option>
+<option value="save">Local Save</option>
+<option value="restore">Local Restore&nbsp;&nbsp;</option>
+<option value="export">Export to Tab</option>
+<option value="clear">Clear Raw Text&nbsp;&nbsp;</option>
+<option value="info">Information</option>
+<option value="exit">Exit Module</option></select>
+<span class="gbtn" title="Encode Raw String" onclick="encString();tStat('cv1','1');">Encode</span>
+<span onclick="eCopy('cv1');" title="Select & Copy Raw Text"><img src="../_ico/copy.png" class="ibtn"></span>
+<span onclick="togWrap('ww','wwi','cv1');" title="Toggle Word Wrap"><img src="../_ico/wrap-on.png" id="wwi" class="ibtn"></span>
+<span onclick="togLock('ld','ldi','cv1');" title="Toggle Editing Lock"><img src="../_ico/lock-off.png" id="ldi" class="ibtn"></span>
+<span onclick="eClear('v','cv1');" title="Clear Raw Text"><img src="../_ico/clear.png" class="ibtn"></span></div>
+
+<!-- Stats View 1: -->
+<div id="vStats1" class="sh3">
+<span class="em08">Words:&nbsp;</span><span id="rwc1" class="oc"></span>
+<span class="em08">Characters:&nbsp;</span><span id="rcc1" class="bc"></span>
+<span class="em08">Text:&nbsp;</span><span id="rtc1" class="mc"></span>
+<span class="em08">Lines:&nbsp;</span><span id="rlc1" class="gc"></span></div>
+
+<!-- Content Containor 1 / Content View 1: -->
+<div id="cc1" class="cc" style="width:100%;min-width:300px;height:160px;z-index:10;margin-top:3px;"><textarea id="cv1" class="cvy" onkeyup= "tStat('cv1','1');" onclick="tStat('cv1','1');" onmouseover="tStat('cv1','1');" placeholder="Enter Raw Text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea></div>
+
+<!-- Result Menu: -->
+<div id="mResults" class="sh9" style="min-width:320px;">
+<select id="soResult" onchange="ResultOpt();" class="bopt" title="Converted Options" style="width:75px;height:33px;">
+<option value="default">Results</option>
+<option value="evar">Encode Variable&nbsp;&nbsp;</option>
+<option value="eval">Encode Evaluate&nbsp;&nbsp;</option>
+<option value="copy">Copy Results</option>
+<option value="save">Local Save</option>
+<option value="restore">Local Restore&nbsp;&nbsp;</option>
+<option value="saveas">Download Results&nbsp;&nbsp;</option>
+<option value="export">Export to Tab</option>
+<option value="clear">Clear Results</option></select>
+<span class="rbtn" title="Decode String" onclick="decString();tStat('cv2','2');">Decode</span>
+<span onclick="aceCopyAll('editor');" title="Copy All"><img src="../_ico/copy.png" class="ibtn"></span>
+<span onclick="aceTabText('editor');" title="Export"><img src="../_ico/export-2.png" class="ibtn"></span>
+<span onclick="aceSave('rwebi-StringEscape-');cFocus('sf');" title="Save / Download"><img src="../_ico/save-as.png" class="ibtn"></span></div>
+
+<!-- Stats View 2: -->
+<div id="vStats2" class="sh3">
+<span class="em08">Words:&nbsp;</span><span id="acw" class="oc"></span>
+<span class="em08">Characters:&nbsp;</span><span id="aca" class="bc"></span>
+<span class="em08">Text:&nbsp;</span><span id="act" class="mc"></span>
+<span class="em08">Lines:&nbsp;</span><span id="acr" class="gc"></span></div>
+
+<!-- Content Containor 2 / Content View 2: -->
+<div id="editor" style="width:100%;min-width:295px;height:200px;min-height:200px;font-size:1.13em;margin-top:0px;margin-bottom:3px;border-radius:3px;" onclick="aceCount('editor');" onkeyup="aceCount('editor');"></div>
+
+<!-- Save View: -->
+<div id="sView" class="hView" style="top:60px;left:20px;width:60%;min-width:260px;max-width:500px;height:auto;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Save/Download</span></div><div class="hvRight"><span onclick="eHid('sView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div class="p6"><label for="sf" class="wc em12">Filename</label><input type='text' id='sf' class='wb' style="width:90%;font-size:1.15em;height:27px;" value="rwebi-StringEscape.txt" onfocus="this.select();"><p><br><span class="gbtn" onclick="sFile('v','cv','sf');eHid('sView');" title="Download / Save">Save</span>&nbsp;&nbsp;<span class="abtn" onclick="eHid('sView');" title="Cancel Download">Cancel</span></p></div></div>
+
+<!-- Options View: -->
+<div id="oView" class="oView" style="position:absolute;z-Index:999;top:43px;width:140px;height:auto;padding:6px;border-radius:3px;display:none;font-weight:bold;">
+<span class="mso" onclick="dHid('oView');LinkModule();"><img src="../_ico/link.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Share Link</span>
+<span class="mso" onclick="selTheme('l');"><img src="../_ico/ltheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Light Theme</span>
+<span class="mso" onclick="selTheme('d');"><img src="../_ico/dtheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Dark Theme</span>
+<span class="mso" onclick="eToggle('hView');dHid('oView');obLoad('hDisplay','../Help/rwebiAbout-StringEscape.html');"><img src="../_ico/mhelp.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Information</span>
+<span class="mso" onclick="modRefresh();"><img src="../_ico/refresh.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Refresh</span>
+<span class="mso" onclick="pLoad('rwebiMenu-Modules.html');"><img src="../_ico/mclose.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Close</span></div>
+
+<!-- Help View: -->
+<div id="hView" class="hView" style="position:absolute;top:65px;left:15px;width:80%;height:80%;min-width:260px;min-height:200px;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Information</span></div><div class="hvRight"><span onclick="eHid('hView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div style="height:90%;margin-top:6px;"><object type="text/html" id="hDisplay" data="../Help/rwebiHelp-StringEscape.html" style="height:85%;width:100%;border:0px;"></object><input type="file" id="fb" style="visibility:hidden;" onchange="oFile('v','cv1','fb');"></div></div>
+
+<!-- Ace Editor: -->
+<script src="../Library/Ace/ace.js" type="text/javascript" charset="utf-8"></script><script>
+var editor = ace.edit("editor");editor.setTheme("ace/theme/chrome");
+editor.session.setMode("ace/mode/csv");editor.setOption("wrap", true);editor.getSession().setUseWorker(false);</script>
+
+<!-- Variables: -->
+<div id="tt" class="hf"></div>
+<div id="ut" class="hf"></div>
+<span id="ow" class="hf">35</span>
+<span id="oh" class="hf">345</span>
+<span id="ob" class="hf">0</span>
+<span id="mt" class="hf">0</span>
+<span id="ld" class="hf">off</span>
+<span id="ww" class="hf">on</span>
+
+<!-- Module Footer: -->
+<div id="mFooter" class="mFooter" style="float:left;margin-top:0px;min-width:320px;">
+<img src="../_ico/favicon.png" style="height:12px;margin-right:3px;margin-top:2px;vertical-align:bottom;"><b>StringEscape</b> </span>w:<span id="miw" class="oc"></span>&nbsp;h:<span id="mih" class="bc"></span></div></body></html>
+<!-- rwebi.com | rwebi.org | rwebi.net | 2026 Calyptus-61 -->
