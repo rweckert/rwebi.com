@@ -22,6 +22,36 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 | 📁 **[_/ico](_ico)** | Graphical icon assets for the rwebi visual interface and navigation. |
 | 📁 **[_/ict](_ict)** | Graphical assets and icons represent hierarchical data and folder structures within rwebi ecosystem. |
 | 📁 **[_/img](_img)** | Visual media and static image assets that provide the primary graphical rwebi content. |
+| 📁 **[_/bkg](_bkg)** | Visual media and static image assets that provide the primary graphical rwebi content. |
+| 📁 **[Help](Help)** | Documentation and informational files that provide users with essential guidance and background details for the various rwebi applications and modules. |
+| 📁 **[Applications](Apps)** | Contains all background image options for the rwebi desktop application. |
+| 📁 **[Modules](Modules)** | Modular utility scripts and helper functions that provide common logic and support services across the rwebi ecosystem. |
+
+| rwebi&nbsp;Application | Description |
+| :--- | :--- |
+
+| rwebi&nbsp;Module&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description |
+| :--- | :--- |
+| Scratch Pad | Versatile digital scratch of paper and text utility. |
+| Text Tools | Text editor utility of remove, replace and common tools. |
+| Split & Copy | Text splitting and copying tool. |
+| TMC Edit | HTML visual editor utility with syntax generation. |
+| Speculus | Speculus (Latin 'to look at') is a rwebi search entry rid# lookup utility. |
+| Quick Search | Stripped down rwebi web search application. |
+| Gemini Model | A rwebi Gemini AI interface prompt model. |
+| Browser | Browser information and rwebi storage utility. |
+| Calculator | Basic calculator utility with text output. |
+| Sci. Calculator | Scientific calculator utility with formula text output. |
+| ipGeo | Simple IP address geo location mapping utility. |
+| Info Trace | Trace back utility for connection specifics and location. |
+| Browser Info | Browser information and rwebi storage utility. |
+| csvTable | Delimited data to table conversion utility. |
+| Google Mapping | Google Mapping assistant and utility. |
+| Map Plotting | Mapping and plotting utility of locations and group imports. |
+| Resources | Providing a collection of reference information. |
+| Clock Analog | Clean minimalist analog clock web application. | |
+| String Escape | HTML string escape editor and utility. |
+| Help Search | Documentation and searchable help content. |
 
 
 🗂️ **[Applications:](Apps)** <br>
