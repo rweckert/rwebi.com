@@ -94,24 +94,45 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-GridStack.html](Help/rwebiHelp-GridStack.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-GridStack.html](Help/rwebiAbout-GridStack.html)** <br>
 
-<p align="center"><img src="Assets/hr-orange.png" width="85%"></p>
-<h3> [rwebi.com Module Source:](Modules) </h3>
+<p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
+<h3> rwebi.com Module Source: </h3>
 
-- 📦 **Scratch Pad:**<br>
-      ⚙️ **[rwebiModule-ScratchPad.html](Modules/rwebiModule-ScratchPad.html)** <br>
-      📜 **[rwebiModule-ScratchPad-c61.js](_jss/rwebiModule-ScratchPad-c61.js)** <br>
-      📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
-      📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
-      ℹ️ **[rwebiHelp-GridStack.html](Help/rwebiHelp-ScratchPad.html)** <br>
-      ⭐ **[rwebiAbout-GridStack.html](Help/rwebiAbout-ScratchPad.html)** <br>
+<a name="scratchpad"></a>📦 **Scratch Pad**
+&nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-ScratchPad.html](Modules/rwebiModule-ScratchPad.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-ScratchPad-c61.js](_jss/rwebiModule-ScratchPad-c61.js)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-GridStack.html](Help/rwebiHelp-ScratchPad.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-GridStack.html](Help/rwebiAbout-ScratchPad.html)** <br>
 
-- 📦 **Text Tools:**<br>
-      ⚙️ **[rwebiModule-TextTools.html](Modules/rwebiModule-TextTools.html)** <br>
-      📜 **[rwebiModule-TextTools-c61.js](_jss/rwebiModule-TextTools-c61.js)** <br>
-      📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
-      📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
-      ℹ️ **[rwebiHelp-TextTools.html](Help/rwebiHelp-TextTools.html)** <br>
-      ⭐ **[rwebiAbout-TextTools.html](Help/rwebiAbout-TextTools.html)** <br>
+<a name="texttools"></a>📦 **Text Tools**
+&nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-TextTools.html](Modules/rwebiModule-TextTools.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-TextTools.js](_jss/rwebiModule-TextTools.js)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-TextTools.html](Help/rwebiHelp-TextTools.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-TextTools.html](Help/rwebiAbout-TextTools.html)** <br>
 
+<a name="tmcedit"></a>📦 **TMC Edit**
+&nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-TMCEdit.html](Modules/rwebiModule-TMCEdit.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-TMCEdit.js](_jss/rwebiModule-TMCEdit.js)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-TMCEdit.html](Help/rwebiHelp-TMCEdit.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-TMCEdit.html](Help/rwebiAbout-TMCEdit.html)** <br>
 
+<a name="browser"></a>📦 **Browser**
+&nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-Browser.html](Modules/rwebiModule-Browser.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-Browser.js](_jss/rwebiModule-Browser.js)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-Browser.html](Help/rwebiHelp-Browser.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-Browser.html](Help/rwebiAbout-Browser.html)** <br>
 
+<a name="browserinfo"></a>📦 **Browser Info**
+&nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-BrowserInfo.html](Modules/rwebiModule-BrowserInfo.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-BrowserInfo.js](_jss/rwebiModule-BrowserInfo.js)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-BrowserInfo.html](Help/rwebiHelp-BrowserInfo.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-BrowserInfo.html](Help/rwebiAbout-BrowserInfo.html)** <br>
