@@ -62,14 +62,46 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 <p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
 
 🗂️ **[Applications:](Apps)** <br>
- * 📦 **Search Panel:**<br>
-      * ⚙️ rwebiApp-FileName.html<br>
-      * 📜 rwebiApp-Filename.js<br>
-      * 📑 rwebiApp-Filename.css<br>
-      * ℹ️ rwebiHelp-Name.html<br>
- * 📦 Tool Panel<br>
- * 📦 rwebi Desktop<br>
- * 📦 Grid Stack<br>
+
+* 📦 **Search Panel:**<br>
+      * ⚙️ rwebiApp-SearchPanel-c61.html<br>
+      * 📜 rwebiApp-SearchPanel-c61.js<br>
+      * 📑 rwebiStyle-Light-c61.css<br>
+      * 📑 rwebiStyle-Dark-c61.css<br>
+      * ℹ️ rwebiHelp-SearchPanel.html<br>
+      * ⭐ rwebiAbout-SearchPanel.html<br>
+
+<p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
+
+* 📦 Tool Panel<br>
+      * ⚙️ rwebiApp-ToolPanel-c61.html<br>
+      * 📜 rwebiApp-ToolPanel-c61.js<br>
+      * 📑 rwebiStyle-Light-c61.css<br>
+      * 📑 rwebiStyle-Dark-c61.css<br>
+      * ℹ️ rwebiHelp-ToolPanel.html<br>
+      * ⭐ rwebiAbout-ToolPanel.html<br>
+
+<p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
+
+* 📦 rwebi Desktop<br>
+      * ⚙️ rwebiApp-Desktop-c61.html<br>
+      * 📜 rwebiApp-Desktop-c61.js<br>
+      * 📑 rwebiStyle-Light-c61.css<br>
+      * 📑 rwebiStyle-Dark-c61.css<br>
+      * ℹ️ rwebiHelp-Desktop.html<br>
+      * ⭐ rwebiAbout-Desktop.html<br>
+
+<p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
+
+* 📦 Grid Stack<br>
+      * ⚙️ rwebiApp-GridStack-c61.html<br>
+      * 📜 rwebiApp-GridStack-c61.js<br>
+      * 📑 rwebiStyle-Light-c61.css<br>
+      * 📑 rwebiStyle-Dark-c61.css<br>
+      * ℹ️ rwebiHelp-GridStack.html<br>
+      * ⭐ rwebiAbout-GridStack.html<br>
+
+<p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
 
 🗂️ Modules:<br>
   
