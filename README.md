@@ -10,7 +10,9 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 <h3><p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
 Table of Contents:</h3>
 &nbsp;&nbsp;&nbsp;&nbsp; [Source Structure](#sourcestructure) <br>
+
 &nbsp;&nbsp;&nbsp;&nbsp; [Application List](#applicationlist) <br>
+
 &nbsp;&nbsp;&nbsp;&nbsp; Module List<br>
 &nbsp;&nbsp;&nbsp;&nbsp; Application Source Roster<br>
 &nbsp;&nbsp;&nbsp;&nbsp; Module Source Roster<br>
