@@ -97,7 +97,7 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 <p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
 <h3> rwebi.com Module Source: </h3>
 
-<a name="scratchpad"></a>📦 **Scratch Pad**<br>
+<a name="scratchpad"></a>🔳 **Scratch Pad**<br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-ScratchPad.html](Modules/rwebiModule-ScratchPad.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-ScratchPad-c61.js](_jss/rwebiModule-ScratchPad-c61.js)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
@@ -105,7 +105,7 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-GridStack.html](Help/rwebiHelp-ScratchPad.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-GridStack.html](Help/rwebiAbout-ScratchPad.html)** <br>
 
-<a name="texttools"></a>📦 **Text Tools**<br>
+<a name="texttools"></a>🔳 **Text Tools**<br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-TextTools.html](Modules/rwebiModule-TextTools.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-TextTools.js](_jss/rwebiModule-TextTools.js)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
@@ -113,7 +113,7 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-TextTools.html](Help/rwebiHelp-TextTools.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-TextTools.html](Help/rwebiAbout-TextTools.html)** <br>
 
-<a name="tmcedit"></a>📦 **TMC Edit**<br>
+<a name="tmcedit"></a>🔳 **TMC Edit**<br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-TMCEdit.html](Modules/rwebiModule-TMCEdit.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-TMCEdit.js](_jss/rwebiModule-TMCEdit.js)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
@@ -121,7 +121,7 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-TMCEdit.html](Help/rwebiHelp-TMCEdit.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-TMCEdit.html](Help/rwebiAbout-TMCEdit.html)** <br>
 
-<a name="browser"></a>📦 **Browser**<br>
+<a name="browser"></a>🔳 **Browser**<br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-Browser.html](Modules/rwebiModule-Browser.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-Browser.js](_jss/rwebiModule-Browser.js)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
@@ -129,7 +129,7 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-Browser.html](Help/rwebiHelp-Browser.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-Browser.html](Help/rwebiAbout-Browser.html)** <br>
 
-<a name="browserinfo"></a>📦 **Browser Info**<br>
+<a name="browserinfo"></a>🔳 **Browser Info**<br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-BrowserInfo.html](Modules/rwebiModule-BrowserInfo.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-BrowserInfo.js](_jss/rwebiModule-BrowserInfo.js)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
@@ -137,7 +137,7 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-BrowserInfo.html](Help/rwebiHelp-BrowserInfo.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-BrowserInfo.html](Help/rwebiAbout-BrowserInfo.html)** <br>
 
-<a name="googlemapping"></a>📦 **Google Mapping**<br>
+<a name="googlemapping"></a>🔳 **Google Mapping**<br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-GoogleMapping.html](Modules/rwebiModule-GoogleMapping.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-GoogleMapping.js](_jss/rwebiModule-GoogleMapping.js)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
