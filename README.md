@@ -29,10 +29,10 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 
 | rwebi&nbsp;Application | Description |
 | :--- | :--- |
-| Search Panel | App description. |
-| Tool Panel | App description. |
-| Grid Stack | App description. |
-| rwebi Desktop | App description. |
+| Search Panel | Search panel tool utility combining search and tools. |
+| Tool Panel | A toolset panel utility of rwebi modules and resources. |
+| Grid Stack | Hypertext stack editing utility and visual grid. |
+| rwebi Desktop | The rwebi Desktop collection of apps and modules. |
 
 | rwebi&nbsp;Module&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description |
 | :--- | :--- |
@@ -56,6 +56,9 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 | Clock Analog | Clean minimalist analog clock web application. | |
 | String Escape | HTML string escape editor and utility. |
 | Help Search | Documentation and searchable help content. |
+
+
+
 
 
 🗂️ **[Applications:](Apps)** <br>
