@@ -81,6 +81,7 @@ rwebi.com Application Source Roster:</h3><a id="approster"></a>
 
 <h3> <img src="_ico/favicon.png" width="18px"> Search Panel: </h3><a id="searchpanel"></a>
 Search panel tool utility combining search and tools.<br>
+
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiApp-SearchPanel-c61.html](Apps/rwebiApp-SearchPanel-c61.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiApp-SearchPanel-c61.js](_jss/rwebiApp-SearchPanel-c61.js)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
