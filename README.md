@@ -63,14 +63,14 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 <h3> [rwebi.com Applications Source:](Apps) </h3>
 
 - 📦 **Search Panel:**<br>
-      ⚙️ rwebiApp-SearchPanel-c61.html<br>
-      📜 rwebiApp-SearchPanel-c61.js<br>
+      ⚙️ **[rwebiApp-SearchPanel-c61.html](Apps/rwebiApp-SearchPanel-c61.html)** <br>
+      📜 **[rwebiApp-SearchPanel-c61.js](Apps/rwebiApp-SearchPanel-c61.js)** <br>
       📑 rwebiStyle-Light-c61.css<br>
       📑 rwebiStyle-Dark-c61.css<br>
       ℹ️ rwebiHelp-SearchPanel.html<br>
       ⭐ rwebiAbout-SearchPanel.html<br>
 
-* 📦 Tool Panel<br>
+* 📦 **Tool Panel:**<br>
       ⚙️ rwebiApp-ToolPanel-c61.html<br>
       📜 rwebiApp-ToolPanel-c61.js<br>
       📑 rwebiStyle-Light-c61.css<br>
@@ -78,7 +78,7 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
       ℹ️ rwebiHelp-ToolPanel.html<br>
       ⭐ rwebiAbout-ToolPanel.html<br>
 
-* 📦 rwebi Desktop<br>
+* 📦 **rwebi Desktop:**<br>
       ⚙️ rwebiApp-Desktop-c61.html<br>
       📜 rwebiApp-Desktop-c61.js<br>
       📑 rwebiStyle-Light-c61.css<br>
@@ -86,7 +86,7 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
       ℹ️ rwebiHelp-Desktop.html<br>
       ⭐ rwebiAbout-Desktop.html<br>
 
-* 📦 Grid Stack<br>
+* 📦 **Grid Stack:**<br>
       ⚙️ rwebiApp-GridStack-c61.html<br>
       📜 rwebiApp-GridStack-c61.js<br>
       📑 rwebiStyle-Light-c61.css<br>
