@@ -7,7 +7,7 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 ![Preview of rwebi.com](Assets/rwebi-preview.png)
 <p><sub>Screenshot preview of rwebi.com showing landing search page, Tool Panel with Text Tools example, Search Result example, and the rwebi Desktop</p></sub>
 
-<h3>rwebi.com Project Outline:</h3>
+<h3>rwebi.com Source Structure:</h3>
 
 | Project&nbsp;Structure | Description |
 | :--- | :--- |
