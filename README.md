@@ -60,7 +60,7 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 | Help&nbsp;Search | **[View&nbsp;Help&nbsp;Listing](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-Help-Listing.html)** | Documentation and searchable help content. |
 
 <p align="center"><img src="Assets/hr-orange.png" width="85%"></p>
-<h3> [rwebi.com Applications Source](Apps) </h3>
+<h3> rwebi.com Application Source: </h3>
 
 <a name="searchpanel"></a>📦 **Search Panel:** Search panel tool utility combining search and tools.<br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiApp-SearchPanel-c61.html](Apps/rwebiApp-SearchPanel-c61.html)** <br>
@@ -95,7 +95,7 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-GridStack.html](Help/rwebiAbout-GridStack.html)** <br>
 
 <p align="center"><img src="Assets/hr-orange.png" width="85%"></p>
-<h3> [rwebi.com Modules Source:](Modules) </h3>
+<h3> [rwebi.com Module Source:](Modules) </h3>
 
 - 📦 **Scratch Pad:**<br>
       ⚙️ **[rwebiModule-ScratchPad.html](Modules/rwebiModule-ScratchPad.html)** <br>
