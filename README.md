@@ -9,8 +9,8 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 
 <h3><p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
 Table of Contents:</h3>
-&nbsp;&nbsp;&nbsp;&nbsp; [Source Structure](#sourcestructure)<br>
-&nbsp;&nbsp;&nbsp;&nbsp; Application List<br>
+&nbsp;&nbsp;&nbsp;&nbsp; [Source Structure](#sourcestructure) <br>
+&nbsp;&nbsp;&nbsp;&nbsp; [Application List](#applicationlist) <br>
 &nbsp;&nbsp;&nbsp;&nbsp; Module List<br>
 &nbsp;&nbsp;&nbsp;&nbsp; Application Source Roster<br>
 &nbsp;&nbsp;&nbsp;&nbsp; Module Source Roster<br>
@@ -32,7 +32,7 @@ rwebi.com Source Structure:</h3><a id="sourcestructure"></a>
 | 📁 **[Modules](Modules)** | Modular utility scripts and helper functions that provide common logic and support services across the rwebi ecosystem. |
 
 <h3><p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
-rwebi.com Application List:</h3>
+rwebi.com Application List:</h3><a id="applicationlist"></a>
 
 | rwebi&nbsp;Application | Live Demo | Description |
 | :--- | :--- | :--- |
