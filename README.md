@@ -62,7 +62,7 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 <p align="center"><img src="Assets/hr-orange.png" width="85%"></p>
 <h3> [rwebi.com Applications Source:](Apps) </h3>
 
-<a name="searchpanel"></a>📦 **Search Panel**
+<a name="searchpanel"></a>📦 **Search Panel**<br>
    - ⚙️ **[rwebiApp-SearchPanel-c61.html](Apps/rwebiApp-SearchPanel-c61.html)** <br>
    - 📜 **[rwebiApp-SearchPanel-c61.js](_jss/rwebiApp-SearchPanel-c61.js)** <br>
    - 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
@@ -70,7 +70,7 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
    - ℹ️ **[rwebiHelp-SearchPanel.html](Help/rwebiHelp-SearchPanel.html)** <br>
    - ⭐ **[rwebiAbout-SearchPanel.html](Help/rwebiAbout-SearchPanel.html)** <br>
 
-<a name="toolpanel"></a>📦 **Tool Panel**
+<a name="toolpanel"></a>📦 **Tool Panel**<br>
       ⚙️ **[rwebiApp-ToolPanel-c61.html](Apps/rwebiApp-ToolPanel-c61.html)** <br>
       📜 **[rwebiApp-ToolPanel-c61.js](_jss/rwebiApp-ToolPanel-c61.js)** <br>
       📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
@@ -78,7 +78,7 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
       ℹ️ **[rwebiHelp-ToolPanel.html](Help/rwebiHelp-ToolPanel.html)** <br>
       ⭐ **[rwebiAbout-ToolPanel.html](Help/rwebiAbout-ToolPanel.html)** <br>
 
-<a name="desktop"></a>📦 **rwebi Desktop**
+<a name="desktop"></a>📦 **rwebi Desktop**<br>
       ⚙️ **[rwebiApp-Desktop-c61.html](Apps/rwebiApp-Desktop-c61.html)** <br>
       📜 **[rwebiApp-Desktop-c61.js](_jss/rwebiApp-Desktop-c61.js)** <br>
       📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
@@ -86,7 +86,7 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
       ℹ️ **[rwebiHelp-Desktop.html](Help/rwebiHelp-Desktop.html)** <br>
       ⭐ **[rwebiAbout-Desktop.html](Help/rwebiAbout-Desktop.html)** <br>
 
-<a name="gridstack"></a>📦 **Grid Stack**
+<a name="gridstack"></a>📦 **Grid Stack**<br>
       ⚙️ **[rwebiApp-GridStack-c61.html](Apps/rwebiApp-GridStack-c61.html)** <br>
       📜 **[rwebiApp-GridStack-c61.js](_jss/rwebiApp-GridStack-c61.js)** <br>
       📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
