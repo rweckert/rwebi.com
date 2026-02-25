@@ -34,11 +34,11 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 ## rwebi.com Application List: ##
 
 | rwebi&nbsp;Application | Live Demo | Description |
-| :--- | :--- |
+| :--- | :--- | :--- |
 | [Search Panel](#searchpanel) | **[View Search Panel](https://rwebi.com/Apps/rwebiApp-SearchPanel-c61.html)** | Search panel tool utility combining search and tools. |
-| [Tool Panel](#toolpanel) | | A toolset panel utility of rwebi modules and resources. |
-| [Grid Stack](#gridstack) | | Hypertext stack editing utility and visual grid. |
-| [rwebi Desktop](#desktop) | | The rwebi Desktop collection of apps and modules. |
+| [Tool Panel](#toolpanel) | 1 | A toolset panel utility of rwebi modules and resources. |
+| [Grid Stack](#gridstack) | 1 | Hypertext stack editing utility and visual grid. |
+| [rwebi Desktop](#desktop) | 1 | The rwebi Desktop collection of apps and modules. |
 
 <p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
 ## rwebi.com Module List: ##
