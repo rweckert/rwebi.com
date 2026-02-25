@@ -5,6 +5,24 @@ Reference Web Information. A comprehensive, open-source web ecosystem designed f
 rwebi has officially transitioned out of Alpha. We are currently in the final stages of UI/UX refinement and documentation expansion.
 
 ![Preview of rwebi.com](Assets/rwebi-preview.png)
+<p><sub>Screenshot preview of rwebi.com showing landing search page, Tool Panel with Text Tools example, Search Result example, and the rwebi Desktop</p></sub>
 
-<h3>rwebi.com has the following application and module utilities:</h3>
+<h3>rwebi.com application and module outline:</h3>
 
+| Project&nbsp;Folder | Description |
+| :--- | :--- |
+| 📁 ../_css/ | Cascading style sheets that define the visual design and layout of rwebi |
+| 📁 ../_jss/ | JavaScript source files that manage the website's interactive features and dynamic logic. |
+
+🗂️ **[Applications:](Apps)** <br>
+ * 📦 **Search Panel:**<br>
+      * ⚙️ rwebiApp-FileName.html<br>
+      * 📜 rwebiApp-Filename.js<br>
+      * 📑 rwebiApp-Filename.css<br>
+      * ℹ️ rwebiHelp-Name.html<br>
+ * 📦 Tool Panel<br>
+ * 📦 rwebi Desktop<br>
+ * 📦 Grid Stack<br>
+
+🗂️ Modules:<br>
+  
