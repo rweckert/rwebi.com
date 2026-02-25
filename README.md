@@ -62,7 +62,7 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 <p align="center"><img src="Assets/hr-orange.png" width="85%"></p>
 <h3> [rwebi.com Applications Source](Apps) </h3>
 
-<a name="searchpanel"></a> **📦 Search Panel**<br>
+<a name="searchpanel"></a>📦 **Search Panel**<br>
    - ⚙️ **[rwebiApp-SearchPanel-c61.html](Apps/rwebiApp-SearchPanel-c61.html)** <br>
    - 📜 **[rwebiApp-SearchPanel-c61.js](_jss/rwebiApp-SearchPanel-c61.js)** <br>
    - 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
