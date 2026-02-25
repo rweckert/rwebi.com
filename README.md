@@ -37,7 +37,7 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 
 | rwebi&nbsp;Module&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Live Demo | Description |
 | :--- | :--- | :--- |
-| Scratch Pad Source | **[View ScratchPad]([Apps](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-ScratchPad.html))** | Versatile digital scratch of paper and text utility. |
+| Scratch Pad Source | **[View ScratchPad](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-ScratchPad.html)** | Versatile digital scratch of paper and text utility. |
 | Text Tools | View Text Tools | Text editor utility of remove, replace and common tools. |
 | Split & Copy | | Text splitting and copying tool. |
 | TMC Edit | | HTML visual editor utility with syntax generation. |
