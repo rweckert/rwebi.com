@@ -42,9 +42,9 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 | Split&nbsp;n&nbsp;Copy | **[View Split & Copy](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-SplitnCopy.html)** | Text splitting and copying tool. |
 | TMC&nbsp;Edit | **[View TMC&nbsp;Edit](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-TMCEdit.html)** | HTML visual editor utility with syntax generation. |
 | Speculus | **[View Speculus](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-Speculus.html)** | Speculus (Latin 'to look at') is a rwebi search entry rid# lookup utility. |
-| Quick&nbsp;Search | **[View Quick&nbsp;Search](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-QuickSearch.html)** | Stripped down rwebi web search application. |
-| Gemini&nbsp;Model | | A rwebi Gemini AI interface prompt model. |
-| Browser | | Browser information and rwebi storage utility. |
+| Quick&nbsp;Search | **[View&nbsp;Quick&nbsp;Search](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-QuickSearch.html)** | Stripped down rwebi web search application. |
+| Gemini&nbsp;Model | **[View&nbsp;Gemini&nbsp;Model](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-Gemini-Model.html)** | A rwebi Gemini AI interface prompt model. |
+| Browser | **[View&nbsp;Browser](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-Browser.html)** | Browser information and rwebi storage utility. |
 | Calculator | | Basic calculator utility with text output. |
 | Sci.&nbsp;Calculator | | Scientific calculator utility with formula text output. |
 | ipGeo | | Simple IP address geo location mapping utility. |
