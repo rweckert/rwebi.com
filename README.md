@@ -49,14 +49,14 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 | Sci.&nbsp;Calculator | | Scientific calculator utility with formula text output. |
 | ipGeo | | Simple IP address geo location mapping utility. |
 | Info&nbsp;Trace | | Trace back utility for connection specifics and location. |
-| Browser&nbsp;Info | | Browser information and rwebi storage utility. |
-| csvTable | | Delimited data to table conversion utility. |
-| Google&nbsp;Mapping | | Google Mapping assistant and utility. |
+| Browser&nbsp;Info | **[View&nbsp;Browse&nbsp;Info](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-BrowserInfo.html)** | Browser information and rwebi storage utility. |
+| csvTable | **[View&nbsp;csvTable](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-csvTable.html)** | Delimited data to table conversion utility. |
+| Google&nbsp;Mapping | **[View&nbsp;Google&nbsp;Mapping](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-GoogleMapping.html)** | Google Mapping assistant and utility. |
 | Map&nbsp;Plotting | **[View&nbsp;Map&nbsp;Plotting](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-MapPlotting.html)** | Mapping and plotting utility of locations and group imports. |
 | Resources | **[View&nbsp;Resources](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiMenu-Resources.html)** | Providing a collection of reference information. |
 | Clock&nbsp;Analog | **[View&nbsp;Clock&nbsp;Analog](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-Clock-Analog.html)** | Clean minimalist analog clock web application. | |
 | String&nbsp;Escape | **[View&nbsp;String&nbsp;Escape](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-StringEscape.html)** | HTML string escape editor and utility. |
-| Source&nbsp;Explore | **[View&nbsp;Source&nbsp;Explore](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-Sorce-Explore.html)** | Review rwebi source for open transparency. |
+| Source&nbsp;Explore | **[View&nbsp;Source&nbsp;Explore](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-SourceExplore.html)** | Review rwebi source for open transparency. |
 | Help&nbsp;Search | **[View&nbsp;Help&nbsp;Listing](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-Help-Listing.html)** | Documentation and searchable help content. |
 
 <p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
