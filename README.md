@@ -37,9 +37,9 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 
 | rwebi&nbsp;Module&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Live Demo | Description |
 | :--- | :--- | :--- |
-| Scratch Pad Source | **[View ScratchPad](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-ScratchPad.html)** | Versatile digital scratch of paper and text utility. |
-| Text Tools | **[View Text&nbsp;Tools](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-TextTools.html)** | Text editor utility of remove, replace and common tools. |
-| Split & Copy | **[View Split & Copy](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-SplitnCopy.html)** | Text splitting and copying tool. |
+| Scratch&nbsp;Pad&nbsp;Source | **[View ScratchPad](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-ScratchPad.html)** | Versatile digital scratch of paper and text utility. |
+| Text&nbsp;Tools&nbsp;Source | **[View Text&nbsp;Tools](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-TextTools.html)** | Text editor utility of remove, replace and common tools. |
+| Split&nbsp;&&nbsp;Copy | **[View Split & Copy](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-SplitnCopy.html)** | Text splitting and copying tool. |
 | TMC Edit | | HTML visual editor utility with syntax generation. |
 | Speculus | | Speculus (Latin 'to look at') is a rwebi search entry rid# lookup utility. |
 | Quick Search | | Stripped down rwebi web search application. |
