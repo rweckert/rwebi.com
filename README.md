@@ -52,12 +52,12 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 | Browser&nbsp;Info | | Browser information and rwebi storage utility. |
 | csvTable | | Delimited data to table conversion utility. |
 | Google&nbsp;Mapping | | Google Mapping assistant and utility. |
-| Map&nbsp;Plotting | | Mapping and plotting utility of locations and group imports. |
-| Resources | | Providing a collection of reference information. |
-| Clock&nbsp;Analog | | Clean minimalist analog clock web application. | |
-| String&nbsp;Escape | | HTML string escape editor and utility. |
-| Source&nbsp;Explore | | Review rwebi source for open transparency. |
-| Help&nbsp;Search | | Documentation and searchable help content. |
+| Map&nbsp;Plotting | **[View&nbsp;Map&nbsp;Plotting](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-MapPlotting.html)** | Mapping and plotting utility of locations and group imports. |
+| Resources | **[View&nbsp;Resources](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiMenu-Resources.html)** | Providing a collection of reference information. |
+| Clock&nbsp;Analog | **[View&nbsp;Clock&nbsp;Analog](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-Clock-Analog.html)** | Clean minimalist analog clock web application. | |
+| String&nbsp;Escape | **[View&nbsp;String&nbsp;Escape](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-StringEscape.html)** | HTML string escape editor and utility. |
+| Source&nbsp;Explore | **[View&nbsp;Source&nbsp;Explore](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-Sorce-Explore.html)** | Review rwebi source for open transparency. |
+| Help&nbsp;Search | **[View&nbsp;Help&nbsp;Listing](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-Help-Listing.html)** | Documentation and searchable help content. |
 
 <p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
 
