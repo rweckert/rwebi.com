@@ -11,6 +11,11 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 
 | Project&nbsp;Folder | Description |
 | :--- | :--- |
+| 📁 **[_/css](_css)** | Cascading style sheets that define the visual design and layout of rwebi |
+| 📁 **[_/jss](_jss)** | JavaScript source files that manage the website's interactive features and dynamic logic. |
+
+| Application | Description |
+| :--- | :--- |
 | 📁 ../_css/ | Cascading style sheets that define the visual design and layout of rwebi |
 | 📁 ../_jss/ | JavaScript source files that manage the website's interactive features and dynamic logic. |
 
