@@ -14,10 +14,15 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 | 📁 **[_/css](_css)** | Cascading style sheets that define the visual design and layout of rwebi |
 | 📁 **[_/jss](_jss)** | JavaScript source files that manage the website's interactive features and dynamic logic. |
 
-| Application | Description |
+| Project&nbsp;Structure | Description |
 | :--- | :--- |
-| 📁 ../_css/ | Cascading style sheets that define the visual design and layout of rwebi |
-| 📁 ../_jss/ | JavaScript source files that manage the website's interactive features and dynamic logic. |
+| 📁 **[_/css](_css)** | Cascading style sheets that define the visual design and layout of rwebi |
+| 📁 **[_/jss](_jss)** | JavaScript source files that manage rwebi interactive features and dynamic logic. |
+| 📁 **[_/php](_php)** | PHP server-side scripts that handle rwebi back-end logic, database interactions, and dynamic content generation |
+| 📁 **[_/ico](_ico)** | Graphical icon assets for the rwebi visual interface and navigation. |
+| 📁 **[_/ict](_ict)** | Graphical assets and icons represent hierarchical data and folder structures within rwebi ecosystem. |
+| 📁 **[_/img](_img)** | Visual media and static image assets that provide the primary graphical rwebi content. |
+
 
 🗂️ **[Applications:](Apps)** <br>
  * 📦 **Search Panel:**<br>
