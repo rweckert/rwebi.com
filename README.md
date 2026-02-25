@@ -9,6 +9,7 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 
 <h3><p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
 Table of Contents:</h3><a id="contents"></a>
+
 &nbsp;&nbsp;&nbsp;&nbsp; [Project Status](#status) <br>
 &nbsp;&nbsp;&nbsp;&nbsp; [Source Structure List](#sourcestructure) <br>
 &nbsp;&nbsp;&nbsp;&nbsp; [Application List](#applist) <br>
