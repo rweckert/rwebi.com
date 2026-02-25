@@ -70,6 +70,11 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-SearchPanel.html](Help/rwebiHelp-SearchPanel.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-SearchPanel.html](Help/rwebiAbout-SearchPanel.html)** <br>
 
+🌐 **[View Search Panel](https://rwebi.com/Apps/rwebiApp-SearchPanel-c61.html)**
+
+<p align="center"><img src="Assets/hr-orange.png" width="85%"></p>
+
+
 <a name="toolpanel"></a>📦 **Tool Panel:** A toolset panel utility of rwebi modules and resources.<br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiApp-ToolPanel-c61.html](Apps/rwebiApp-ToolPanel-c61.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiApp-ToolPanel-c61.js](_jss/rwebiApp-ToolPanel-c61.js)** <br>
