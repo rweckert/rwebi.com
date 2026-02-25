@@ -29,6 +29,10 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 
 | rwebi&nbsp;Application | Description |
 | :--- | :--- |
+| Search Panel | App description. |
+| Tool Panel | App description. |
+| Grid Stack | App description. |
+| rwebi Desktop | App description. |
 
 | rwebi&nbsp;Module&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description |
 | :--- | :--- |
