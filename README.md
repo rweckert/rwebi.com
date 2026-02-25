@@ -7,12 +7,7 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 ![Preview of rwebi.com](Assets/rwebi-preview.png)
 <p><sub>Screenshot preview of rwebi.com showing landing search page, Tool Panel with Text Tools example, Search Result example, and the rwebi Desktop</p></sub>
 
-<h3>rwebi.com application and module outline:</h3>
-
-| Project&nbsp;Folder | Description |
-| :--- | :--- |
-| 📁 **[_/css](_css)** | Cascading style sheets that define the visual design and layout of rwebi |
-| 📁 **[_/jss](_jss)** | JavaScript source files that manage the website's interactive features and dynamic logic. |
+<h3>rwebi.com Project Outline:</h3>
 
 | Project&nbsp;Structure | Description |
 | :--- | :--- |
@@ -27,12 +22,26 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 | 📁 **[Applications](Apps)** | Contains all background image options for the rwebi desktop application. |
 | 📁 **[Modules](Modules)** | Modular utility scripts and helper functions that provide common logic and support services across the rwebi ecosystem. |
 
+<p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
+<h3>rwebi.com application and module outline:</h3>
+
+| Project&nbsp;Folder | Description |
+| :--- | :--- |
+| 📁 **[_/css](_css)** | Cascading style sheets that define the visual design and layout of rwebi |
+| 📁 **[_/jss](_jss)** | JavaScript source files that manage the website's interactive features and dynamic logic. |
+
+<p align="center"><img src="Assets/hr-orange.png" width="85%"></p>
+<h3>rwebi.com Application Outline:</h3>
+
 | rwebi&nbsp;Application | Description |
 | :--- | :--- |
 | Search Panel | Search panel tool utility combining search and tools. |
 | Tool Panel | A toolset panel utility of rwebi modules and resources. |
 | Grid Stack | Hypertext stack editing utility and visual grid. |
 | rwebi Desktop | The rwebi Desktop collection of apps and modules. |
+
+<p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
+<h3>rwebi.com Module Outline:</h3>
 
 | rwebi&nbsp;Module&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description |
 | :--- | :--- |
