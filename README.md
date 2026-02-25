@@ -27,8 +27,8 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 
 | rwebi&nbsp;Application | Description |
 | :--- | :--- |
-| [Search Panel](#SearchPanel) | Search panel tool utility combining search and tools. |
-| [Tool Panel](#ToolPanel) | A toolset panel utility of rwebi modules and resources. |
+| [Search Panel](#Search-Panel) | Search panel tool utility combining search and tools. |
+| [Tool Panel](#Tool-Panel) | A toolset panel utility of rwebi modules and resources. |
 | Grid Stack | Hypertext stack editing utility and visual grid. |
 | rwebi Desktop | The rwebi Desktop collection of apps and modules. |
 
@@ -63,16 +63,15 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 <h3> [rwebi.com Applications Source:](Apps) </h3>
 ## SearchPanel
 
-- 📦 **Search Panel:**<br>
+## 📦 Search Panel
       ⚙️ **[rwebiApp-SearchPanel-c61.html](Apps/rwebiApp-SearchPanel-c61.html)** <br>
       📜 **[rwebiApp-SearchPanel-c61.js](_jss/rwebiApp-SearchPanel-c61.js)** <br>
       📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
       📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
       ℹ️ **[rwebiHelp-SearchPanel.html](Help/rwebiHelp-SearchPanel.html)** <br>
       ⭐ **[rwebiAbout-SearchPanel.html](Help/rwebiAbout-SearchPanel.html)** <br>
-## SearchPanel
 
-- 📦 **Tool Panel:**<br>
+## 📦 Tool Panel
       ⚙️ **[rwebiApp-ToolPanel-c61.html](Apps/rwebiApp-ToolPanel-c61.html)** <br>
       📜 **[rwebiApp-ToolPanel-c61.js](_jss/rwebiApp-ToolPanel-c61.js)** <br>
       📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
