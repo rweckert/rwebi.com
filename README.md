@@ -7,15 +7,14 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 ![Preview of rwebi.com](Assets/rwebi-preview.png)
 <p><sub>Screenshot preview of rwebi.com showing landing search page, Tool Panel with Text Tools example, Search Result example, and the rwebi Desktop</p></sub>
 
-<p align="center"><img src="Assets/hr-orange.png" width="85%"></p>
+<h3><p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
+Table of Contents:</h3>
+   Item<br>
+   Item<br>
+   Item<br>
 
-## Table of Contents: ## 
-* Item
-* Item
-* Item
-
-<p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
-## rwebi.com Source Structure: ##
+<h3><p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
+rwebi.com Source Structure:</h3>
 
 | Project&nbsp;Structure | Description |
 | :--- | :--- |
@@ -30,8 +29,8 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 | 📁 **[Apps](Apps)** | Contains all background image options for the rwebi desktop application. |
 | 📁 **[Modules](Modules)** | Modular utility scripts and helper functions that provide common logic and support services across the rwebi ecosystem. |
 
-<p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
-## rwebi.com Application List: ##
+<h3><p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
+rwebi.com Application List:</h3>
 
 | rwebi&nbsp;Application | Live Demo | Description |
 | :--- | :--- | :--- |
@@ -40,11 +39,8 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 | [Grid Stack](#gridstack) | 1 | Hypertext stack editing utility and visual grid. |
 | [rwebi Desktop](#desktop) | 1 | The rwebi Desktop collection of apps and modules. |
 
-<p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
-## rwebi.com Module List: ##
-
-<p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
-<h3>rwebi.com Module Outline:</h3>
+<h3><p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
+rwebi.com Module List:</h3>
 
 | rwebi&nbsp;Module&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Live Demo | Description |
 | :--- | :--- | :--- |
@@ -70,7 +66,8 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 | Source&nbsp;Explore | **[View&nbsp;Source&nbsp;Explore](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-SourceExplore.html)** | Review rwebi source for open transparency. |
 | Help&nbsp;Search | **[View&nbsp;Help&nbsp;Listing](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-Help-Listing.html)** | Documentation and searchable help content. |
 
-<p align="center"><img src="Assets/hr-orange.png" width="85%"></p>
+<h3><p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
+rwebi.com Application Source List:</h3>
 
 ## 📦 Applications
 
@@ -112,8 +109,8 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-GridStack.html](Help/rwebiHelp-GridStack.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-GridStack.html](Help/rwebiAbout-GridStack.html)** <br>
 
-<p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
-<h3> rwebi.com Module Source: </h3>
+<h3><p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
+rwebi.com Module Source List:</h3>
 
 <a name="scratchpad"></a>🔳 **Scratch Pad**<br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-ScratchPad.html](Modules/rwebiModule-ScratchPad.html)** <br>
