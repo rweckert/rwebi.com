@@ -62,13 +62,13 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 <p align="center"><img src="Assets/hr-orange.png" width="85%"></p>
 <h3> [rwebi.com Applications Source](Apps) </h3>
 
-<a name="searchpanel"></a>📦 **Search Panel**<br>
-   - ⚙️ **[rwebiApp-SearchPanel-c61.html](Apps/rwebiApp-SearchPanel-c61.html)** <br>
-   - 📜 **[rwebiApp-SearchPanel-c61.js](_jss/rwebiApp-SearchPanel-c61.js)** <br>
-   - 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
-   - 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
-   - ℹ️ **[rwebiHelp-SearchPanel.html](Help/rwebiHelp-SearchPanel.html)** <br>
-   - ⭐ **[rwebiAbout-SearchPanel.html](Help/rwebiAbout-SearchPanel.html)** <br>
+<a name="searchpanel"></a>📦 **[SearchPanel](Apps/rwebiApp-SearchPanel-c61.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiApp-SearchPanel-c61.html](Apps/rwebiApp-SearchPanel-c61.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiApp-SearchPanel-c61.js](_jss/rwebiApp-SearchPanel-c61.js)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-SearchPanel.html](Help/rwebiHelp-SearchPanel.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-SearchPanel.html](Help/rwebiAbout-SearchPanel.html)** <br>
 
 <a name="toolpanel"></a>📦 **Tool Panel**<br>
       ⚙️ **[rwebiApp-ToolPanel-c61.html](Apps/rwebiApp-ToolPanel-c61.html)** <br>
