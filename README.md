@@ -23,14 +23,6 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 | 📁 **[Modules](Modules)** | Modular utility scripts and helper functions that provide common logic and support services across the rwebi ecosystem. |
 
 <p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
-<h3>rwebi.com application and module outline:</h3>
-
-| Project&nbsp;Folder | Description |
-| :--- | :--- |
-| 📁 **[_/css](_css)** | Cascading style sheets that define the visual design and layout of rwebi |
-| 📁 **[_/jss](_jss)** | JavaScript source files that manage the website's interactive features and dynamic logic. |
-
-<p align="center"><img src="Assets/hr-orange.png" width="85%"></p>
 <h3>rwebi.com Application Outline:</h3>
 
 | rwebi&nbsp;Application | Description |
@@ -43,32 +35,31 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 <p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
 <h3>rwebi.com Module Outline:</h3>
 
-| rwebi&nbsp;Module&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description |
-| :--- | :--- |
-| Scratch Pad | Versatile digital scratch of paper and text utility. |
-| Text Tools | Text editor utility of remove, replace and common tools. |
-| Split & Copy | Text splitting and copying tool. |
-| TMC Edit | HTML visual editor utility with syntax generation. |
-| Speculus | Speculus (Latin 'to look at') is a rwebi search entry rid# lookup utility. |
-| Quick Search | Stripped down rwebi web search application. |
-| Gemini Model | A rwebi Gemini AI interface prompt model. |
-| Browser | Browser information and rwebi storage utility. |
-| Calculator | Basic calculator utility with text output. |
-| Sci. Calculator | Scientific calculator utility with formula text output. |
-| ipGeo | Simple IP address geo location mapping utility. |
-| Info Trace | Trace back utility for connection specifics and location. |
-| Browser Info | Browser information and rwebi storage utility. |
-| csvTable | Delimited data to table conversion utility. |
-| Google Mapping | Google Mapping assistant and utility. |
-| Map Plotting | Mapping and plotting utility of locations and group imports. |
-| Resources | Providing a collection of reference information. |
-| Clock Analog | Clean minimalist analog clock web application. | |
-| String Escape | HTML string escape editor and utility. |
-| Help Search | Documentation and searchable help content. |
-
+| rwebi&nbsp;Module&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Live Demo | Description |
+| :--- | :--- | :--- |
+| Scratch Pad Source | **[View ScratchPad]([Apps](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-ScratchPad.html))** | Versatile digital scratch of paper and text utility. |
+| Text Tools | View Text Tools | Text editor utility of remove, replace and common tools. |
+| Split & Copy | | Text splitting and copying tool. |
+| TMC Edit | | HTML visual editor utility with syntax generation. |
+| Speculus | | Speculus (Latin 'to look at') is a rwebi search entry rid# lookup utility. |
+| Quick Search | | Stripped down rwebi web search application. |
+| Gemini Model | | A rwebi Gemini AI interface prompt model. |
+| Browser | | Browser information and rwebi storage utility. |
+| Calculator | | Basic calculator utility with text output. |
+| Sci. Calculator | | Scientific calculator utility with formula text output. |
+| ipGeo | | Simple IP address geo location mapping utility. |
+| Info Trace | | Trace back utility for connection specifics and location. |
+| Browser Info | | Browser information and rwebi storage utility. |
+| csvTable | | Delimited data to table conversion utility. |
+| Google Mapping | | Google Mapping assistant and utility. |
+| Map Plotting | | Mapping and plotting utility of locations and group imports. |
+| Resources | | Providing a collection of reference information. |
+| Clock Analog | | Clean minimalist analog clock web application. | |
+| String Escape | | HTML string escape editor and utility. |
+| Source Explore | | Review rwebi source for open transparency. |
+| Help Search | | Documentation and searchable help content. |
 
 <p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
-
 
 🗂️ **[Applications:](Apps)** <br>
  * 📦 **Search Panel:**<br>
