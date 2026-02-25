@@ -1,13 +1,21 @@
 # <img src="Assets/favicon.png" width="28" height="28"> [rwebi.com](https://www.rwebi.com)
 Reference Web Information. A comprehensive, open-source web ecosystem designed for high-speed information retrieval and modular utility management. rwebi transitions out of its alpha phase and into the beta as a robust alternative to bloated, ad-heavy environments. Built entirely with JavaScript, rwebi prioritizes performance, privacy, and maximum screen real estate.
 
-<b>🟢 Active Beta Status</b><br>
+<b>🟢 Active Beta Status:</b> Version Eucalyptus c61<br>
 rwebi has officially transitioned out of Alpha. We are currently in the final stages of UI/UX refinement and documentation expansion.
 
 ![Preview of rwebi.com](Assets/rwebi-preview.png)
 <p><sub>Screenshot preview of rwebi.com showing landing search page, Tool Panel with Text Tools example, Search Result example, and the rwebi Desktop</p></sub>
 
-<h3>rwebi.com Source Structure:</h3>
+<p align="center"><img src="Assets/hr-orange.png" width="85%"></p>
+
+## Table of Contents: ## 
+* Item
+* Item
+* Item
+
+<p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
+## rwebi.com Source Structure: ##
 
 | Project&nbsp;Structure | Description |
 | :--- | :--- |
@@ -23,14 +31,17 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 | 📁 **[Modules](Modules)** | Modular utility scripts and helper functions that provide common logic and support services across the rwebi ecosystem. |
 
 <p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
-<h3>rwebi.com Application List:</h3>
+## rwebi.com Application List: ##
 
-| rwebi&nbsp;Application | Description |
+| rwebi&nbsp;Application | Live Demo | Description |
 | :--- | :--- |
-| [Search Panel](#searchpanel) | Search panel tool utility combining search and tools. |
-| [Tool Panel](#toolpanel) | A toolset panel utility of rwebi modules and resources. |
-| [Grid Stack](#gridstack) | Hypertext stack editing utility and visual grid. |
-| [rwebi Desktop](#desktop) | The rwebi Desktop collection of apps and modules. |
+| [Search Panel](#searchpanel) | **[View Search Panel](https://rwebi.com/Apps/rwebiApp-SearchPanel-c61.html)** | Search panel tool utility combining search and tools. |
+| [Tool Panel](#toolpanel) | | A toolset panel utility of rwebi modules and resources. |
+| [Grid Stack](#gridstack) | | Hypertext stack editing utility and visual grid. |
+| [rwebi Desktop](#desktop) | | The rwebi Desktop collection of apps and modules. |
+
+<p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
+## rwebi.com Module List: ##
 
 <p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
 <h3>rwebi.com Module Outline:</h3>
