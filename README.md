@@ -1,7 +1,7 @@
 # <img src="Assets/favicon.png" width="28" height="28"> [rwebi.com](https://www.rwebi.com)
 Reference Web Information. A comprehensive, open-source web ecosystem designed for high-speed information retrieval and modular utility management. rwebi transitions out of its alpha phase and into the beta as a robust alternative to bloated, ad-heavy environments. Built entirely with JavaScript, rwebi prioritizes performance, privacy, and maximum screen real estate.
 
-<b>🟢 Active Beta Status:</b> $${\color{green}Eucalyptus \space c61}$$<br>
+<b>🟢 Active Beta Status:</b> Version Eucalyptus c61<br>
 rwebi has officially transitioned out of Alpha. We are currently in the final stages of UI/UX refinement and documentation expansion.
 
 ![Preview of rwebi.com](Assets/rwebi-preview.png)
@@ -9,14 +9,14 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 
 <h3><p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
 Table of Contents:</h3>
-&nbsp;&nbsp;&nbsp;&nbsp; Source Structure<br>
+&nbsp;&nbsp;&nbsp;&nbsp; [Source Structure](#sourcestructure)<br>
 &nbsp;&nbsp;&nbsp;&nbsp; Application List<br>
 &nbsp;&nbsp;&nbsp;&nbsp; Module List<br>
 &nbsp;&nbsp;&nbsp;&nbsp; Application Source Roster<br>
 &nbsp;&nbsp;&nbsp;&nbsp; Module Source Roster<br>
 
 <h3><p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
-rwebi.com Source Structure:</h3>
+rwebi.com Source Structure:</h3><a id="sourcestructure"></a>
 
 | Project&nbsp;Structure | Description |
 | :--- | :--- |
