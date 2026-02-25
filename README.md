@@ -58,7 +58,7 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 | Help Search | Documentation and searchable help content. |
 
 
-
+<p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
 
 
 🗂️ **[Applications:](Apps)** <br>
