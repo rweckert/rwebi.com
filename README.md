@@ -27,8 +27,8 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 
 | rwebi&nbsp;Application | Description |
 | :--- | :--- |
-| Search Panel | Search panel tool utility combining search and tools. |
-| Tool Panel | A toolset panel utility of rwebi modules and resources. |
+| [Search Panel](#SearchPanel) | Search panel tool utility combining search and tools. |
+| [Tool Panel](#ToolPanel) | A toolset panel utility of rwebi modules and resources. |
 | Grid Stack | Hypertext stack editing utility and visual grid. |
 | rwebi Desktop | The rwebi Desktop collection of apps and modules. |
 
@@ -61,6 +61,7 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 
 <p align="center"><img src="Assets/hr-orange.png" width="85%"></p>
 <h3> [rwebi.com Applications Source:](Apps) </h3>
+## SearchPanel
 
 - 📦 **Search Panel:**<br>
       ⚙️ **[rwebiApp-SearchPanel-c61.html](Apps/rwebiApp-SearchPanel-c61.html)** <br>
@@ -69,6 +70,7 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
       📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
       ℹ️ **[rwebiHelp-SearchPanel.html](Help/rwebiHelp-SearchPanel.html)** <br>
       ⭐ **[rwebiAbout-SearchPanel.html](Help/rwebiAbout-SearchPanel.html)** <br>
+## SearchPanel
 
 - 📦 **Tool Panel:**<br>
       ⚙️ **[rwebiApp-ToolPanel-c61.html](Apps/rwebiApp-ToolPanel-c61.html)** <br>
@@ -96,4 +98,22 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 
 <p align="center"><img src="Assets/hr-orange.png" width="85%"></p>
 <h3> [rwebi.com Modules Source:](Modules) </h3>
+
+- 📦 **Scratch Pad:**<br>
+      ⚙️ **[rwebiModule-ScratchPad.html](Modules/rwebiModule-ScratchPad.html)** <br>
+      📜 **[rwebiModule-ScratchPad-c61.js](_jss/rwebiModule-ScratchPad-c61.js)** <br>
+      📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+      📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+      ℹ️ **[rwebiHelp-GridStack.html](Help/rwebiHelp-ScratchPad.html)** <br>
+      ⭐ **[rwebiAbout-GridStack.html](Help/rwebiAbout-ScratchPad.html)** <br>
+
+- 📦 **Text Tools:**<br>
+      ⚙️ **[rwebiModule-TextTools.html](Modules/rwebiModule-TextTools.html)** <br>
+      📜 **[rwebiModule-TextTools-c61.js](_jss/rwebiModule-TextTools-c61.js)** <br>
+      📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+      📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+      ℹ️ **[rwebiHelp-TextTools.html](Help/rwebiHelp-TextTools.html)** <br>
+      ⭐ **[rwebiAbout-TextTools.html](Help/rwebiAbout-TextTools.html)** <br>
+
+
 
