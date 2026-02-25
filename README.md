@@ -60,9 +60,10 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 | Help&nbsp;Search | **[View&nbsp;Help&nbsp;Listing](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-Help-Listing.html)** | Documentation and searchable help content. |
 
 <p align="center"><img src="Assets/hr-orange.png" width="85%"></p>
-<h3> rwebi.com Application Source: </h3>
 
-<a name="searchpanel"></a>📦 **Search Panel:** Search panel tool utility combining search and tools.<br>
+## 📦 Applications
+
+📦 **##Search Panel:** Search panel tool utility combining search and tools.<br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiApp-SearchPanel-c61.html](Apps/rwebiApp-SearchPanel-c61.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiApp-SearchPanel-c61.js](_jss/rwebiApp-SearchPanel-c61.js)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
@@ -76,8 +77,7 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 
 <p align="center"><img src="Assets/hr-orange.png" width="85%"></p>
 
-
-<a name="toolpanel"></a>📦 **Tool Panel:** A toolset panel utility of rwebi modules and resources.<br>
+📦 **##Tool Panel:** A toolset panel utility of rwebi modules and resources.<br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiApp-ToolPanel-c61.html](Apps/rwebiApp-ToolPanel-c61.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiApp-ToolPanel-c61.js](_jss/rwebiApp-ToolPanel-c61.js)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
@@ -85,7 +85,7 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-ToolPanel.html](Help/rwebiHelp-ToolPanel.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-ToolPanel.html](Help/rwebiAbout-ToolPanel.html)** <br>
 
-<a name="desktop"></a>📦 **rwebi Desktop:** The rwebi Desktop collection of apps and modules.<br>
+📦 **##rwebi Desktop:** The rwebi Desktop collection of apps and modules.<br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiApp-Desktop-c61.html](Apps/rwebiApp-Desktop-c61.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiApp-Desktop-c61.js](_jss/rwebiApp-Desktop-c61.js)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
@@ -93,7 +93,7 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-Desktop.html](Help/rwebiHelp-Desktop.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-Desktop.html](Help/rwebiAbout-Desktop.html)** <br>
 
-<a name="gridstack"></a>📦 **Grid Stack** Hypertext stack editing utility and visual grid.<br>
+📦 **##Grid Stack** Hypertext stack editing utility and visual grid.<br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiApp-GridStack-c61.html](Apps/rwebiApp-GridStack-c61.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiApp-GridStack-c61.js](_jss/rwebiApp-GridStack-c61.js)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
