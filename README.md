@@ -65,34 +65,34 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 - 📦 **Search Panel:**<br>
       ⚙️ **[rwebiApp-SearchPanel-c61.html](Apps/rwebiApp-SearchPanel-c61.html)** <br>
       📜 **[rwebiApp-SearchPanel-c61.js](_jss/rwebiApp-SearchPanel-c61.js)** <br>
-      📑 **[rwebiStyle-Light-c61.css](_jss/rwebiStyle-Light-c61.css)** <br>
-      📑 **[rwebiStyle-Dark-c61.css](_jss/rwebiStyle-Dark-c61.css)** <br>
-      ℹ️ **[rwebiHelp-SearchPanel.html](_jss/rwebiHelp-SearchPanel.html)** <br>
-      ⭐ **[rwebiAbout-SearchPanel.html](_jss/rwebiAbout-SearchPanel.html)** <br>
+      📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+      📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+      ℹ️ **[rwebiHelp-SearchPanel.html](Help/rwebiHelp-SearchPanel.html)** <br>
+      ⭐ **[rwebiAbout-SearchPanel.html](Help/rwebiAbout-SearchPanel.html)** <br>
 
 - 📦 **Tool Panel:**<br>
       ⚙️ **[rwebiApp-ToolPanel-c61.html](Apps/rwebiApp-ToolPanel-c61.html)** <br>
       📜 **[rwebiApp-ToolPanel-c61.js](_jss/rwebiApp-ToolPanel-c61.js)** <br>
-      📑 **[rwebiStyle-Light-c61.css](_jss/rwebiStyle-Light-c61.css)** <br>
-      📑 **[rwebiStyle-Dark-c61.css](_jss/rwebiStyle-Dark-c61.css)** <br>
-      ℹ️ **[rwebiHelp-ToolPanel.html](_jss/rwebiHelp-ToolPanel.html)** <br>
-      ⭐ **[rwebiAbout-ToolPanel.html](_jss/rwebiAbout-ToolPanel.html)** <br>
+      📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+      📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+      ℹ️ **[rwebiHelp-ToolPanel.html](Help/rwebiHelp-ToolPanel.html)** <br>
+      ⭐ **[rwebiAbout-ToolPanel.html](Help/rwebiAbout-ToolPanel.html)** <br>
 
 - 📦 **rwebi Desktop:**<br>
       ⚙️ **[rwebiApp-Desktop-c61.html](Apps/rwebiApp-Desktop-c61.html)** <br>
       📜 **[rwebiApp-Desktop-c61.js](_jss/rwebiApp-Desktop-c61.js)** <br>
-      📑 **[rwebiStyle-Light-c61.css](_jss/rwebiStyle-Light-c61.css)** <br>
-      📑 **[rwebiStyle-Dark-c61.css](_jss/rwebiStyle-Dark-c61.css)** <br>
-      ℹ️ **[rwebiHelp-Desktop.html](_jss/rwebiHelp-Desktop.html)** <br>
-      ⭐ **[rwebiAbout-Desktop.html](_jss/rwebiAbout-Desktop.html)** <br>
+      📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+      📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+      ℹ️ **[rwebiHelp-Desktop.html](Help/rwebiHelp-Desktop.html)** <br>
+      ⭐ **[rwebiAbout-Desktop.html](Help/rwebiAbout-Desktop.html)** <br>
 
 - 📦 **Grid Stack:**<br>
       ⚙️ **[rwebiApp-GridStack-c61.html](Apps/rwebiApp-GridStack-c61.html)** <br>
       📜 **[rwebiApp-GridStack-c61.js](_jss/rwebiApp-GridStack-c61.js)** <br>
-      📑 **[rwebiStyle-Light-c61.css](_jss/rwebiStyle-Light-c61.css)** <br>
-      📑 **[rwebiStyle-Dark-c61.css](_jss/rwebiStyle-Dark-c61.css)** <br>
-      ℹ️ **[rwebiHelp-GridStack.html](_jss/rwebiHelp-GridStack.html)** <br>
-      ⭐ **[rwebiAbout-GridStack.html](_jss/rwebiAbout-GridStack.html)** <br>
+      📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+      📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+      ℹ️ **[rwebiHelp-GridStack.html](Help/rwebiHelp-GridStack.html)** <br>
+      ⭐ **[rwebiAbout-GridStack.html](Help/rwebiAbout-GridStack.html)** <br>
 
 <p align="center"><img src="Assets/hr-orange.png" width="85%"></p>
 <h3> [rwebi.com Modules Source:](Modules) </h3>
