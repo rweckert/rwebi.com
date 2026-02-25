@@ -1,15 +1,15 @@
 # <img src="Assets/favicon.png" width="28" height="28"> [rwebi.com](https://www.rwebi.com)
 Reference Web Information. A comprehensive, open-source web ecosystem designed for high-speed information retrieval and modular utility management. rwebi transitions out of its alpha phase and into the beta as a robust alternative to bloated, ad-heavy environments. Built entirely with JavaScript, rwebi prioritizes performance, privacy, and maximum screen real estate.
 
-<b>🟢 Active Beta Status:</b> Version Eucalyptus c61<br>
+<b>🟢 Active Beta Status:</b> Version Eucalyptus c61<br><a id="status"></a>
 rwebi has officially transitioned out of Alpha. We are currently in the final stages of UI/UX refinement and documentation expansion.
 
 ![Preview of rwebi.com](Assets/rwebi-preview.png)
 <p><sub>Screenshot preview of rwebi.com showing landing search page, Tool Panel with Text Tools example, Search Result example, and the rwebi Desktop</p></sub>
 
 <h3><p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
-Table of Contents:</h3>
-
+Table of Contents:</h3><a id="contents"></a>
+&nbsp;&nbsp;&nbsp;&nbsp; [Project Status](#status) <br>
 &nbsp;&nbsp;&nbsp;&nbsp; [Source Structure List](#sourcestructure) <br>
 &nbsp;&nbsp;&nbsp;&nbsp; [Application List](#applist) <br>
 &nbsp;&nbsp;&nbsp;&nbsp; [Module List](#modulelist) <br>
@@ -32,6 +32,8 @@ rwebi.com Source Structure:</h3><a id="sourcestructure"></a>
 | 📁 **[Apps](Apps)** | Contains all background image options for the rwebi desktop application. |
 | 📁 **[Modules](Modules)** | Modular utility scripts and helper functions that provide common logic and support services across the rwebi ecosystem. |
 
+[↑ Back to Top](#contents)
+
 <h3><p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
 rwebi.com Application List:</h3><a id="applist"></a>
 
@@ -41,6 +43,8 @@ rwebi.com Application List:</h3><a id="applist"></a>
 | [Tool Panel](#toolpanel) | 1 | A toolset panel utility of rwebi modules and resources. |
 | [Grid Stack](#gridstack) | 1 | Hypertext stack editing utility and visual ruler grid. |
 | [rwebi Desktop](#desktop) | 1 | The rwebi Desktop collection of apps and modules. |
+
+[↑ Back to Top](#contents)
 
 <h3><p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
 rwebi.com Module List:</h3><a id="modulelist"></a>
@@ -69,6 +73,8 @@ rwebi.com Module List:</h3><a id="modulelist"></a>
 | Source&nbsp;Explore | **[View&nbsp;Source&nbsp;Explore](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-SourceExplore.html)** | Review rwebi source for open transparency. |
 | Help&nbsp;Search | **[View&nbsp;Help&nbsp;Listing](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-Help-Listing.html)** | Documentation and searchable help content. |
 
+[↑ Back to Top](#contents)
+
 <h3><p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
 rwebi.com Application Source Roster:</h3><a id="approster"></a>
 
@@ -80,7 +86,7 @@ rwebi.com Application Source Roster:</h3><a id="approster"></a>
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-SearchPanel.html](Help/rwebiHelp-SearchPanel.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-SearchPanel.html](Help/rwebiAbout-SearchPanel.html)** <br>
 
-[↑ Back to Top](#table-of-contents)
+[↑ Back to Top](#contents)
 
 <p align="center"><img src="Assets/hr-orange.png" width="85%"></p>
 
