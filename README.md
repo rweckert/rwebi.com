@@ -9,9 +9,11 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 
 <h3><p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
 Table of Contents:</h3>
-   Item<br>
-   Item<br>
-   Item<br>
+&nbsp;&nbsp;&nbsp;&nbsp; Source Structure<br>
+&nbsp;&nbsp;&nbsp;&nbsp; Application List<br>
+&nbsp;&nbsp;&nbsp;&nbsp; Module List<br>
+&nbsp;&nbsp;&nbsp;&nbsp; Application Source Roster<br>
+&nbsp;&nbsp;&nbsp;&nbsp; Module Source Roster<br>
 
 <h3><p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
 rwebi.com Source Structure:</h3>
@@ -36,7 +38,7 @@ rwebi.com Application List:</h3>
 | :--- | :--- | :--- |
 | [Search Panel](#searchpanel) | **[View Search Panel](https://rwebi.com/Apps/rwebiApp-SearchPanel-c61.html)** | Search panel tool utility combining search and tools. |
 | [Tool Panel](#toolpanel) | 1 | A toolset panel utility of rwebi modules and resources. |
-| [Grid Stack](#gridstack) | 1 | Hypertext stack editing utility and visual grid. |
+| [Grid Stack](#gridstack) | 1 | Hypertext stack editing utility and visual ruler grid. |
 | [rwebi Desktop](#desktop) | 1 | The rwebi Desktop collection of apps and modules. |
 
 <h3><p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
@@ -67,7 +69,7 @@ rwebi.com Module List:</h3>
 | Help&nbsp;Search | **[View&nbsp;Help&nbsp;Listing](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-Help-Listing.html)** | Documentation and searchable help content. |
 
 <h3><p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
-rwebi.com Application Source List:</h3>
+rwebi.com Application Source Roster:</h3>
 
 ## 📦 Applications
 
