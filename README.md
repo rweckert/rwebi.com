@@ -19,11 +19,11 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 | 📁 **[_/img](_img)** | Visual media and static image assets that provide the primary graphical rwebi content. |
 | 📁 **[_/bkg](_bkg)** | Visual media and static image assets that provide the primary graphical rwebi content. |
 | 📁 **[Help](Help)** | Documentation and informational files that provide users with essential guidance and background details for the various rwebi applications and modules. |
-| 📁 **[Applications](Apps)** | Contains all background image options for the rwebi desktop application. |
+| 📁 **[Apps](Apps)** | Contains all background image options for the rwebi desktop application. |
 | 📁 **[Modules](Modules)** | Modular utility scripts and helper functions that provide common logic and support services across the rwebi ecosystem. |
 
 <p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
-<h3>rwebi.com Application Outline:</h3>
+<h3>rwebi.com Application List:</h3>
 
 | rwebi&nbsp;Application | Description |
 | :--- | :--- |
@@ -71,6 +71,8 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-SearchPanel.html](Help/rwebiAbout-SearchPanel.html)** <br>
 
 🌐 **[View Search Panel](https://rwebi.com/Apps/rwebiApp-SearchPanel-c61.html)**
+
+([Table of Contents](#table-of-contents))
 
 <p align="center"><img src="Assets/hr-orange.png" width="85%"></p>
 
