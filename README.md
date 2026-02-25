@@ -38,7 +38,7 @@ rwebi.com Source Structure:</h3><a id="sourcestructure"></a>
 <h3><p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
 rwebi.com Application List:</h3><a id="applist"></a>
 
-| rwebi&nbsp;Application | Live Demo | Description |
+| Application&nbsp;Source | rwebi Link | Description |
 | :--- | :--- | :--- |
 | [Search Panel](#searchpanel) | **[View Search Panel](https://rwebi.com/Apps/rwebiApp-SearchPanel-c61.html)** | Search panel tool utility combining search and tools. |
 | [Tool Panel](#toolpanel) | 1 | A toolset panel utility of rwebi modules and resources. |
@@ -50,10 +50,10 @@ rwebi.com Application List:</h3><a id="applist"></a>
 <h3><p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
 rwebi.com Module List:</h3><a id="modulelist"></a>
 
-| rwebi&nbsp;Module&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Live Demo | Description |
+| Module&nbsp;Source&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | rwebi Link | Description |
 | :--- | :--- | :--- |
-| Scratch&nbsp;Pad&nbsp;Source | **[View ScratchPad](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-ScratchPad.html)** | Versatile digital scratch of paper and text utility. |
-| Text&nbsp;Tools&nbsp;Source | **[View Text&nbsp;Tools](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-TextTools.html)** | Text editor utility of remove, replace and common tools. |
+| Scratch&nbsp;Pad | **[View ScratchPad](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-ScratchPad.html)** | Versatile digital scratch of paper and text utility. |
+| Text&nbsp;Tools | **[View Text&nbsp;Tools](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-TextTools.html)** | Text editor utility of remove, replace and common tools. |
 | Split&nbsp;n&nbsp;Copy | **[View Split & Copy](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-SplitnCopy.html)** | Text splitting and copying tool. |
 | TMC&nbsp;Edit | **[View TMC&nbsp;Edit](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-TMCEdit.html)** | HTML visual editor utility with syntax generation. |
 | Speculus | **[View Speculus](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-Speculus.html)** | Speculus (Latin 'to look at') is a rwebi search entry rid# lookup utility. |
@@ -79,9 +79,7 @@ rwebi.com Module List:</h3><a id="modulelist"></a>
 <h3><p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
 rwebi.com Application Source Roster:</h3><a id="approster"></a>
 
-<h4> 📦 Search Panel: </h4>
-Search panel tool utility combining search and tools.<br>
-
+<b> 📦 Search Panel: </b> Search panel tool utility combining search and tools.<br><a id="searchpanel"></a>
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiApp-SearchPanel-c61.html](Apps/rwebiApp-SearchPanel-c61.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiApp-SearchPanel-c61.js](_jss/rwebiApp-SearchPanel-c61.js)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
@@ -89,11 +87,7 @@ Search panel tool utility combining search and tools.<br>
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-SearchPanel.html](Help/rwebiHelp-SearchPanel.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-SearchPanel.html](Help/rwebiAbout-SearchPanel.html)** <br>
 
-[↑ Back to Top](#contents)
-
-<p align="center"><img src="Assets/hr-orange.png" width="85%"></p>
-
-📦 **##Tool Panel:** A toolset panel utility of rwebi modules and resources.<br>
+<b> 📦 Tool Panel: A toolset panel utility of rwebi modules and resources.<br><a id="toolpanel"></a>
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiApp-ToolPanel-c61.html](Apps/rwebiApp-ToolPanel-c61.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiApp-ToolPanel-c61.js](_jss/rwebiApp-ToolPanel-c61.js)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
@@ -101,7 +95,7 @@ Search panel tool utility combining search and tools.<br>
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-ToolPanel.html](Help/rwebiHelp-ToolPanel.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-ToolPanel.html](Help/rwebiAbout-ToolPanel.html)** <br>
 
-📦 **##rwebi Desktop:** The rwebi Desktop collection of apps and modules.<br>
+<b> 📦 rwebi Desktop: The rwebi Desktop collection of apps and modules.<br><a id="desktop"></a>
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiApp-Desktop-c61.html](Apps/rwebiApp-Desktop-c61.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiApp-Desktop-c61.js](_jss/rwebiApp-Desktop-c61.js)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
@@ -109,7 +103,7 @@ Search panel tool utility combining search and tools.<br>
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-Desktop.html](Help/rwebiHelp-Desktop.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-Desktop.html](Help/rwebiAbout-Desktop.html)** <br>
 
-📦 **##Grid Stack** Hypertext stack editing utility and visual grid.<br>
+<b> 📦 Grid Stack: Hypertext stack editing utility and visual grid.<br><a id="gridstack"></a>
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiApp-GridStack-c61.html](Apps/rwebiApp-GridStack-c61.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiApp-GridStack-c61.js](_jss/rwebiApp-GridStack-c61.js)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
