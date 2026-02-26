@@ -243,6 +243,14 @@ alert("New file creation cancelled.");}}
 function pLoad(at){
 location.href=at;}
 
+// Page Tab Confirm: -------------------
+function pConfirm(ta){
+pa=unescape('%2e%2e%2fA%70%70%73%2f%72%77eb%69A%70%70%2d%50a%67e%50a%6ee%6c%2dc61%2e%68%74%6d%6c%3Fda%74a%3D');
+pt=pa+ta;
+if (confirm("Would you like to open this page in a new tab?")){
+window.open(pt,'_blank');
+} else {window.parent.location.href=ta;}}
+
 // Application Refresh: ----------------
 function appRefresh(){
 if (confirm("Are you sure you want to reload this application? All existing information will be lost.")){
@@ -627,6 +635,7 @@ document.body.appendChild(element);
 element.click();
 document.body.removeChild(element);}
 
+// Result Option: ----------------------
 function ResultOpt(rid){
 gse=document.getElementById(rid);
 gmo=gse.value;
@@ -644,33 +653,32 @@ navigator.clipboard.writeText(gdid).then(() => {
 alert("Copied description to clipboard: " + gdid);
 }).catch(err => {alert("Could not copy description: ", err);});}}
 
+// ScreenShot: -------------------------
 function sShotDiv(ei){
 element = document.getElementById(ei);
 html2canvas(element).then(canvas => {
 const base64Image = canvas.toDataURL("image/png");
 document.getElementById('ssimg').src = base64Image;
-//b64=base64Image;
-//alert(b64);
-eVis('ssView');
-});}
+eVis('ssView');});}
 
+// Scroll Bottom of Page: --------------
 function ScrollBottom(ei){
 gei=document.getElementById(ei);
 if (gei) {gei.scrollTop=gei.scrollHeight;}}
 
+// Get File Path: ----------------------
 function getFile(path){
-  // Use a dummy base for relative paths so the URL constructor doesn't throw an error
-  const url = new URL(path, 'https://dummy.com');
-  const pathname = url.pathname; // Returns everything after the domain
-  return pathname.substring(pathname.lastIndexOf('/') + 1);
-}
+const url=new URL(path,'https://dummy.com');
+const pathname=url.pathname;
+return pathname.substring(pathname.lastIndexOf('/') + 1);}
 
 // Target Frame: -------------------------
 function TargetFrame(ta,tf){
-    var target = parent.document.getElementById(ta);
-    if (target) {
-        target.src = tf;
-    } else {
-        console.error("Frame ID " + ta + " not found.");
-    }
-}
+var target = parent.document.getElementById(ta);
+if (target) {target.src = tf;} else {
+console.error("Frame ID " + ta + " not found.");}}
+
+// Page Parameter: ---------------------
+function pParam(tp,ta) {
+const encodedValue=encodeURIComponent(ta);
+window.location.href=`${tp}.html?data=${encodedValue}`;}

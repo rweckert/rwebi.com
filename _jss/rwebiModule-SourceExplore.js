@@ -29,7 +29,7 @@ gfv=document.getElementById('fv').textContent;
 if (gfv==="true"){
 gfi=document.getElementById('psf');
 //gfi.src="../Source/rwebiSource-Modules.html";
-document.getElementsByName('psf')[0].src = "../Source/rwebiSource-Modules.html";
+document.getElementsByName('psf')[0].src = "../Source/rwebiSource-Folders.html";
 document.getElementById('fv').textContent="false";}
 if (gfv==="false"){
 gfi=document.getElementById('psf');

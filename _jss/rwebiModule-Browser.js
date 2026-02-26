@@ -129,7 +129,7 @@ alert("All saved links have been removed.");}
 // Full View Functions: ---------------
 function FullViewOpen(){
 document.getElementById('cc').style.cssText="width:auto;height:auto;min-height:50px;margin-top:3px;overflow-x:none;overflow-y:none;border:1px solid #FF8C00;";
-sFlex('f','cc','0','0','0');
+sFlex('f','cc','0','0','0');dHid('mHeader');
 nqw=window.innerWidth-220;
 document.getElementById('ba').style.width=nqw+"px";
 document.getElementById('ow').innerText="0";
@@ -141,9 +141,9 @@ eVis('fvButton');}
 function FullViewClose(){
 sFlex('d','cc','0','0','3');
 document.getElementById('ow').innerText="20";
-document.getElementById('oh').innerText="153";
+document.getElementById('oh').innerText="148";
 document.getElementById('cc').style.cssText="width:auto;height:auto;min-height:50px;margin-top:6px;overflow-x:none;overflow-y:none;border:1px solid #d9d9d9;border-radius:3px;min-width:320px;";
-mCode('m','fvBar','aBar');
+mCode('m','fvBar','aBar');dVis('mHeader');
 nqw=window.innerWidth-175;
 document.getElementById('ba').style.width=nqw+"px";
 document.getElementById('fv').textContent="false";

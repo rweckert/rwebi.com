@@ -71,7 +71,7 @@ reader.readAsText(file);}
 // New Prompt: -------------------------
 function NewPrompt(){
 gcd=tStamp('r','');
-document.getElementById('hPrompt').innerHTML="<span class='em12'>Please bring your own <span class='lbc'><a href='https://aistudio.google.com/app/api-keys' target='_blank'>Google API key</a></span> in order to use the Gemini Model durring the beta phase. <span class='lbc' onclick='eVis(\"uKey\");'>Apply your Google API key here.</span></span><br><span class='em12 oc'>"+gcd+"</span><span class='em12'> Welcome to the rwebi Gemini Model. How can I assist you today?</span>";}
+document.getElementById('hPrompt').innerHTML=`<span class='em12'>Please bring your own <span style='font-weight:bold;'><a href='https://aistudio.google.com/app/api-keys' target='_blank'>Google API key</a></span> in order to use the Gemini Model durring the beta phase. Apply your Google API key <span style='font-weight:bold;' onclick="eVis('uKey');"> here.</span></span><br><span class='em12 oc'>`+gcd+`</span><span class='em12'> Welcome to the rwebi Gemini Model. How can I assist you today?</span>`;}
 
 // Gemini Prompt: ----------------------
 async function PromptGemini() {
@@ -95,7 +95,7 @@ document.getElementById("pn").innerText=gpn;
 gcd=tStamp('r','');
 gcr=document.getElementById("hPrompt").innerHTML;
 ScrollBottom('hPrompt');
-document.getElementById('hPrompt').innerHTML=gcr+"<br><span class='em12 oc'>"+gcd+"</span><span class='em12'> Gemini is processing this prompt request.</span><img id='i"+gid+"'src='../_img/waiting.gif' style='height:18px;width:80px;vertical-align:bottom;'>";
+document.getElementById('hPrompt').innerHTML=gcr+`<br><span class='em12 oc'>`+gcd+`</span><span class='em12'> Gemini is processing this prompt request.</span><img id="i`+gid+`" src='../_img/waiting.gif' style='height:18px;width:80px;vertical-align:bottom;'>`;
 ScrollBottom('hPrompt');
 try {
 const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${mn}:generateContent?key=${guk}`, {
