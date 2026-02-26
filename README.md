@@ -55,6 +55,47 @@ rwebi Application List:</h3><a id="applist"></a>
 <h3><p align="center"><img src="Assets/hr-orange.png" width="98%"></p>
 rwebi Module List:</h3><a id="modulelist"></a>
 
+| Module&nbsp;Source&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | rwebi Link | Description |
+| :--- | :--- | :--- |
+| **[Browser&nbsp;Info](#browserinfo)** | **[View&nbsp;Browser&nbsp;Info](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-BrowserInfo.html)** | Browser information and rwebi storage utility. |
+| **[ipGeo](#ipGeo)** | **[View&nbsp;ipGeo](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-ipGeo.html)** | Simple IP address geo location mapping utility. |
+| **[infoTrace](#infoTrace)** | **[View&nbsp;infoTrace](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-infoTrace.html)** | Trace back utility for connection specifics and location. |
+| **[csvTable](#csvtable)** | **[View&nbsp;csvTable](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-csvTable.html)** | Delimited data to table conversion utility. |
+| **[Clock&nbsp;Analog](#clockanalog)** | **[View&nbsp;Clock&nbsp;Analog](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-Clock-Analog.html)** | Clean minimalist analog clock web application. | |
+| **[Basic&nbsp;Calculator](#basiccalculator)** | **[View&nbsp;Basic&nbsp;Calculator](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-CalculatorBasic.html)** | Basic calculator utility with text output. |
+| **[Scientific&nbsp;Calculator](#scientificcalculator)** | **[View&nbsp;Scientific&nbsp;Calculator](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-CalculatorScientific.html)** | Scientific calculator utility with formula text output. |
+
+
+
+
+
+
+
+
+
+- Analog Clock
+- Basic Calculator
+Browser
+Browser Info -
+csvTable -
+Gemini Model
+Google Mapping
+Help Search
+infoTrace -
+ipGeo -
+Map Plotting
+Quick Search
+Resource Data
+- Scientific Calculator
+Scratch Pad
+Source Explore
+Speculus
+Split & Copy
+Split Panel
+String Escape
+TMC Edit
+Text Tools
+
 
 [↑ Back to Contents](#contents)
 
@@ -69,3 +110,4 @@ rwebi Module Source Roster:</h3><a id="moduleroster"></a>
 
 
 [↑ Back to Contents](#contents)
+
