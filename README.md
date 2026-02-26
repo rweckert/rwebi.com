@@ -149,6 +149,20 @@ rwebi Module Source Roster:</h3><a id="moduleroster"></a>
 
 <b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
 
+<h3> <img src="_ico/sourceexplore.png" width="18px"> Source Explore:</h3><a id="sourceexplore"></a>
+<b>rwebi Source Explorer in support of transparency, user trust, and open software. </b>
+A intuitive web-based environment for exploring and navigating rwebi source code. Created to support full transparency, absolute user privacy, and a shared open source. Source Explore features a clean, tree-structured file directory that allows users to seamlessly toggle between different scripts and assets of the rwebi ecosystem. By streamlining the process of code visualization, the result helps everyone quickly understand the architecture and trust of rwebi.<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-SourceExplore.html](Modules/rwebiModule-SourceExplore.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-SourceExplore-c61.js](_jss/rwebiModule-SourceExplore-c61.js)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-SourceExplore.html](Help/rwebiHelp-SourceExplore.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-SourceExplore.html](Help/rwebiAbout-SourceExplore.html)** <br>
+
+<b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
+
+
 <h3> <img src="_ico/texttools.png" width="18px"> Text Tools:</h3><a id="texttools"></a>
 <b>Text editor utility of remove, replace and common tools. </b>Providing a full featured text utilty with options that set Text Tools aside from other conventional text editors. All basic features and options for text editing and document navigation are included, adding to that text and numeric sorting and extraction, remove and replace, wrapping, and other text and line manipulation features.<br><br>
 
