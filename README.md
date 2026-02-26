@@ -77,7 +77,7 @@ rwebi Module List:</h3><a id="modulelist"></a>
 | **[Map&nbsp;Plotting](#mapplotting)** | **[View&nbsp;Map&nbsp;Plotting](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-MapPlotting.html)** | Mapping and plotting utility of locations and group imports. |
 | **[Help&nbsp;Search](#helpsearch)** | **[View&nbsp;Help&nbsp;Listing](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-Help-Listing.html)** | Documentation and searchable help content. |
 | **[Resources](#resources)** | **[View&nbsp;Resources](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiMenu-Resources.html)** | Providing a collection of reference information. |
-| **[Gemini&nbsp;Model](#modelgemini)** | **[View&nbsp;Gemini&nbsp;Model](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-Gemini-Model.html)** | A rwebi Gemini AI interface prompt model. |
+| **[Gemini&nbsp;Model](#geminimodel)** | **[View&nbsp;Gemini&nbsp;Model](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-Gemini-Model.html)** | A rwebi Gemini AI interface prompt model. |
 | **[Speculus](#speculus)** | **[View Speculus](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-Speculus.html)** | Speculus (Latin 'to look at') is a rwebi search entry rid# lookup utility. |
 | **[String&nbsp;Escape](#stringescape)** | **[View&nbsp;String&nbsp;Escape](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-StringEscape.html)** | HTML string escape editor and utility. |
 
@@ -245,8 +245,7 @@ rwebi Module Source Roster:</h3><a id="moduleroster"></a>
 
 <b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
 
-
-<h3> <img src="_ico/csvtable.png" width="18px"> Browser Info:</h3><a id="csvtable"></a>
+<h3> <img src="_ico/csvtable.png" width="18px"> csvTable:</h3><a id="csvtable"></a>
 <b>CSV delimited data to table converter. </b>Provides a streamlined, browser-based interface for transforming raw CSV data into interactive, tables without requiring complex software installations. Quickly upload and convert datasets to leverage creating table data sets with ease. By bridging the gap between static spreadsheets and a functional table list, it serves as a lightweight yet powerful tool for instant analysis and presentation.<br><br>
 
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-csvTable.html](Modules/rwebiModule-csvTable.html)** <br>
