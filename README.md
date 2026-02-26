@@ -100,7 +100,7 @@ A toolset panel utility of rwebi modules and resources. <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-ToolPanel.html](Help/rwebiAbout-ToolPanel.html)** <br>
 
 <h3> <img src="_ico/favicon.png" width="18px"> rwebi Desktop: </h3><a id="desktop"></a>
-<b>The rwebi Desktop collection of apps and modules.</b> The entire desktop environment is built using pure JavaScript code, ensuring a lightweight and responsive workspace without relying on heavy external frameworks.<br><br>
+<b>The rwebi Desktop collection of apps and modules.</b> Offering a desktop interface to access various productivity and system tools across the rwebi escosystem. Features a clean, responsive layout designed to manage web-based applications, including specialized functions like horizontal and vertical screen splitting. The rwebi desktop environment is built using pure JavaScript code, ensuring a lightweight and responsive workspace without relying on heavy external frameworks.<br><br>
 
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiApp-Desktop-c61.html](Apps/rwebiApp-Desktop-c61.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiApp-Desktop-c61.js](_jss/rwebiApp-Desktop-c61.js)** <br>
