@@ -294,7 +294,8 @@ rwebi Module Source Roster:</h3><a id="moduleroster"></a>
 <b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
 
 <h3> <img src="_ico/clock-analog.png" width="18px"> Clock Analog:</h3><a id="clockanalog"></a>
-<b>Clean minimalist analog clock web application. </b>Clean analog clock interface that displays the current local time using a traditional circular watch face with moving hands. It serves as a simple, visual timekeeping component that can be easily embedded into websites for a classic aesthetic.<br><br>
+<b>Clean minimalist analog clock web application. </b>Clean analog clock interface that displays the current local time using a traditional yet scalable circular watch face with moving hands. It serves as a simple, visual timekeeping component that can be easily embedded into a Panel or the rwebi Desktop for a classic aesthetic.<br><br>
+
 
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-Clock-Analog.html](Modules/rwebiModule-Clock-Analog.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-Clock-Analog.js](_jss/rwebiModule-Clock-Analog.js)** <br>
