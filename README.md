@@ -136,7 +136,8 @@ rwebi Application Source Roster:</h3><a id="approster"></a>
 rwebi Module Source Roster:</h3><a id="moduleroster"></a>
 
 <h3> <img src="_ico/scratchpad.png" width="18px"> Scratch Pad:</h3><a id="scratchpad"></a>
-<b>Versatile digital scratch of paper and text utility. </b>A text utility that allows users to instantly draft, format, and execute text-based documents directly from within the browser. While pleasing to the eye, features include opening files, saving and restoring text locally, download, export, copy, cut, paste, clear. Options include toggle spell checking, document editing, and word wrapping.<br>
+<b>Versatile digital scratch of paper and text utility. </b>A text utility that allows users to instantly draft, format, and execute text-based documents directly from within the browser. While pleasing to the eye, features include opening files, saving and restoring text locally, download, export, copy, cut, paste, clear. Options include toggle spell checking, document editing, and word wrapping.<br><br>
+
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-ScratchPad.html](Modules/rwebiModule-ScratchPad.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-ScratchPad-c61.js](_jss/rwebiModule-ScratchPad-c61.js)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
@@ -145,3 +146,28 @@ rwebi Module Source Roster:</h3><a id="moduleroster"></a>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-ScratchPad.html](Help/rwebiAbout-ScratchPad.html)** <br>
 
 <b>Navigate: </b>[← Modules List](#moduleslist)  |  [↑ Table of Contents](#contents)
+
+<h3> <img src="_ico/texttools.png" width="18px"> Text Tools:</h3><a id="texttools"></a>
+<b>Text editor utility of remove, replace and common tools. </b>Providing a full featured text utilty with options that set Text Tools aside from other conventional text editors. All basic features and options for text editing and document navigation are included, adding to that text and numeric sorting and extraction, remove and replace, wrapping, and other text and line manipulation features.<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-TextTools.html](Modules/rwebiModule-TextTools.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-TextTools.js](_jss/rwebiModule-TextTools.js)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-TextTools.html](Help/rwebiHelp-TextTools.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-TextTools.html](Help/rwebiAbout-TextTools.html)** <br>
+
+<b>Navigate: </b>[← Modules List](#moduleslist)  |  [↑ Table of Contents](#contents)
+
+<h3> <img src="_ico/tmcedit.png" width="18px"> Text Tools:</h3><a id="tmcedit"></a>
+<b>HTML visual editor utility with syntax generation. </b>This module is a rich text editor based on the TinyMCE framework, providing a word-processor-style interface directly within the browser. It allows users to format text, insert media, and create structured content using familiar toolbar buttons while generating the underlying HTML code automatically. This tool is perfect for users who need to draft formatted web content without writing manual code. Be able to open files and convert as needed, full edit features with full screen editing.<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-TMCEdit.html](Modules/rwebiModule-TMCEdit.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-TMCEdit.js](_jss/rwebiModule-TMCEdit.js)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-TMCEdit.html](Help/rwebiHelp-TMCEdit.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-TMCEdit.html](Help/rwebiAbout-TMCEdit.html)** <br>
+
+<b>Navigate: </b>[← Modules List](#moduleslist)  |  [↑ Table of Contents](#contents)
+
