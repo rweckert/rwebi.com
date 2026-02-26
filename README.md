@@ -8,15 +8,18 @@ Reference Web Information. A comprehensive, open-source web ecosystem designed f
 <h3><p align="center"><img src="Assets/hr-orange.png" width="98%"></p>
 Table of Contents:</h3><a id="contents"></a>
 
-&nbsp;&nbsp;&nbsp;&nbsp; [Project Status](#status) <br>
-&nbsp;&nbsp;&nbsp;&nbsp; [Source Structure List](#sourcestructure) <br>
-&nbsp;&nbsp;&nbsp;&nbsp; [Application List](#applist) <br>
-&nbsp;&nbsp;&nbsp;&nbsp; [Module List](#modulelist) <br>
-&nbsp;&nbsp;&nbsp;&nbsp; [Application Source Roster](#approster) <br>
-&nbsp;&nbsp;&nbsp;&nbsp; [Module Source Roster](#moduleroster) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- [Project Status](#status) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- [Source Structure List](#sourcestructure) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- [Application List](#applist) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- [Module List](#modulelist) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- [Application Source Roster](#approster) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- [Module Source Roster](#moduleroster) <br>
 
 <h3><p align="center"><img src="Assets/hr-blue.png" width="98%"></p>
-rwebi Project Status:</h3><a id="contents"></a>
+rwebi Project Status:</h3><a id="status"></a>
+
+<b>🟢 Active Beta Status:</b> Version Eucalyptus c61<br>
+rwebi has officially transitioned out of Alpha. We are currently in the final stages of UI/UX refinement and documentation expansion.
 
 <h3><p align="center"><img src="Assets/hr-orange.png" width="98%"></p>
 Source Structure:</h3><a id="sourcestructure"></a>
