@@ -86,37 +86,37 @@ rwebi Application Source Roster:</h3><a id="approster"></a>
 
 <h3> <img src="_ico/favicon.png" width="18px"> Search Panel: </h3><a id="searchpanel"></a>
 <b>Search panel tool utility combining search and tools.</b> Provides a high-performance, integrated search interface designed specifically for dual search with options to export results or edit with rwebi module utilities. Search Panel seamlessly integrates search as a text tool in a modular layout, offering a dedicated space to query tools and text utilities across both horizontal and vertical panel configurations.<br>
-
+<br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiApp-SearchPanel-c61.html](Apps/rwebiApp-SearchPanel-c61.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiApp-SearchPanel-c61.js](_jss/rwebiApp-SearchPanel-c61.js)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-SearchPanel.html](Help/rwebiHelp-SearchPanel.html)** <br>
-&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-SearchPanel.html](Help/rwebiAbout-SearchPanel.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-SearchPanel.html](Help/rwebiAbout-SearchPanel.html)**
 
 <h3> <img src="_ico/favicon.png" width="18px"> Tool Panel: </h3><a id="toolpanel"></a>
 <b>A toolset panel utility of rwebi modules and resources.</b> This specialized ToolPanel for the rWebi environment provides panel (split windows) segments that can independently host a variety of utility tools across rwebi. The ToolPanel optimizes multitasking by organizing these essential utilities into a compact, responsive container that enhances any device experience that can be docked alongside your existing workspace for instant productivity.<br>
-
+<br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiApp-ToolPanel-c61.html](Apps/rwebiApp-ToolPanel-c61.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiApp-ToolPanel-c61.js](_jss/rwebiApp-ToolPanel-c61.js)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-ToolPanel.html](Help/rwebiHelp-ToolPanel.html)** <br>
-&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-ToolPanel.html](Help/rwebiAbout-ToolPanel.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-ToolPanel.html](Help/rwebiAbout-ToolPanel.html)**
 
 <h3> <img src="_ico/favicon.png" width="18px"> rwebi Desktop: </h3><a id="desktop"></a>
-<b>The rwebi Desktop collection of apps and modules.</b> Offering a desktop interface to access various productivity and utility tools across the rwebi escosystem. Features a clean, responsive layout designed to manage web-based applications, including specialized functions like horizontal and vertical screen splitting. The rwebi desktop environment is built using pure JavaScript code, ensuring a lightweight and responsive workspace without relying on heavy external frameworks.<br><br>
-
+<b>The rwebi Desktop collection of apps and modules.</b> Offering a desktop interface to access various productivity and utility tools across the rwebi escosystem. Features a clean, responsive layout designed to manage web-based applications, including specialized functions like horizontal and vertical screen splitting. The rwebi desktop environment is built using pure JavaScript code, ensuring a lightweight and responsive workspace without relying on heavy external frameworks.<br>
+<br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiApp-Desktop-c61.html](Apps/rwebiApp-Desktop-c61.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiApp-Desktop-c61.js](_jss/rwebiApp-Desktop-c61.js)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-Desktop.html](Help/rwebiHelp-Desktop.html)** <br>
-&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-Desktop.html](Help/rwebiAbout-Desktop.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-Desktop.html](Help/rwebiAbout-Desktop.html)**
 
 <h3> <img src="_ico/favicon.png" width="18px"> Grid Stack: </h3><a id="gridstack"></a>
 <b>Hypertext stack editing utility and visual grid.</b> GridStack module functions as a robust hypertext editor, allowing for real-time manipulation of HTML, CSS, and JavaScript within fully resizable workspace panels. Its advanced wireframe grid provides precision development tools, including a pixel ruler and live mouse coordinate tracking for pixel-perfect element positioning. Users can dynamically toggle between different display size types, ensuring that the resulting syntax is perfectly responsive and accurately measured across various viewport scales.<br>
-
+<br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiApp-GridStack-c61.html](Apps/rwebiApp-GridStack-c61.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiApp-GridStack-c61.js](_jss/rwebiApp-GridStack-c61.js)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
