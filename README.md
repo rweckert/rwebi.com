@@ -173,3 +173,38 @@ rwebi Module Source Roster:</h3><a id="moduleroster"></a>
 
 <b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
 
+<h3> <img src="_ico/infoTrace.png" width="18px"> infoTrace:</h3><a id="infotrace"></a>
+<b>Trace back utility for connection specifics and location. <b>IP and network information tool that allows users to trace and retrieve technical data regarding their current connection or a specific host. It displays essential details such as IP addresses, location data, and network provider information in a simplified dashboard format. This module is particularly useful for troubleshooting connectivity or identifying geographic details associated with a network entry.<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-infoTrace.html](Modules/rwebiModule-infoTrace.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-infoTrace.js](_jss/rwebiModule-infoTrace.js)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-infoTrace.html](Help/rwebiHelp-infoTrace.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-infoTrace.html](Help/rwebiAbout-infoTrace.html)** <br>
+
+<b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
+
+<h3> <img src="_ico/ipgeo.png" width="18px"> ipGeo:</h3><a id="ipgeo"></a>
+<b>Trace back utility for connection specifics and location. </b>A dedicated IP geolocation tool that identifies the physical location and network origin of a specific IP address. It presents geographic data—such as country, region, and city—alongside coordinate mapping to visualize the user's or host's position. This module is designed for quick identification of network locations and digital footprints.<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-ipGeo.html](Modules/rwebiModule-ipGeo.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-ipGeo.js](_jss/rwebiModule-ipGeo.js)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-ipGeo.html](Help/rwebiHelp-ipGeo.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-ipGeo.html](Help/rwebiAbout-ipGeo.html)** <br>
+
+<b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
+
+<h3> <img src="_ico/googlemapping.png" width="18px"> Google Mapping:</h3><a id="googlemapping"></a>
+<b>Google Mapping assistant and utility. </b>Provides an integrated Google Maps interface that allows users to interact with geographic data and location services directly within a web module. It features tools for navigation, searching addresses, and toggling between different map views to provide a comprehensive spatial experience. This module is ideal for projects requiring a streamlined, embeddable mapping solution with familiar Google Maps functionality. Full view and options to save mapping links with export features are available.<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-GoogleMapping.html](Modules/rwebiModule-GoogleMapping.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-GoogleMapping.js](_jss/rwebiModule-GoogleMapping.js)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-GoogleMapping.html](Help/rwebiHelp-GoogleMapping.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-GoogleMapping.html](Help/rwebiAbout-GoogleMapping.html)** <br>
+
+<b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
