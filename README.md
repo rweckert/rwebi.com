@@ -8,7 +8,7 @@ Reference Web Information. A comprehensive, open-source web ecosystem designed f
 <h3><p align="center"><img src="Assets/hr-orange.png" width="98%"></p>
 Table of Contents:</h3><a id="contents"></a>
 
-Navigate the options below for grouped source items based on project folder or title. Live demos are available for each.<br><br>
+Navigate the options below for grouped source items based on project folder or title. Live demos are available for each.<br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;- [Project Status](#status) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;- [Source Structure List](#sourcestructure) <br>
