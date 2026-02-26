@@ -174,7 +174,7 @@ rwebi Module Source Roster:</h3><a id="moduleroster"></a>
 <b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
 
 <h3> <img src="_ico/infoTrace.png" width="18px"> infoTrace:</h3><a id="infotrace"></a>
-<b>Trace back utility for connection specifics and location. <b>IP and network information tool that allows users to trace and retrieve technical data regarding their current connection or a specific host. It displays essential details such as IP addresses, location data, and network provider information in a simplified dashboard format. This module is particularly useful for troubleshooting connectivity or identifying geographic details associated with a network entry.<br><br>
+<b>Trace back utility for connection specifics and location. </b>IP and network information tool that allows users to trace and retrieve technical data regarding their current connection or a specific host. It displays essential details such as IP addresses, location data, and network provider information in a simplified dashboard format. This module is particularly useful for troubleshooting connectivity or identifying geographic details associated with a network entry.<br><br>
 
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-infoTrace.html](Modules/rwebiModule-infoTrace.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-infoTrace.js](_jss/rwebiModule-infoTrace.js)** <br>
@@ -208,3 +208,4 @@ rwebi Module Source Roster:</h3><a id="moduleroster"></a>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-GoogleMapping.html](Help/rwebiAbout-GoogleMapping.html)** <br>
 
 <b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
+
