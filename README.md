@@ -341,6 +341,39 @@ rwebi Module Source Roster:</h3><a id="moduleroster"></a>
 
 <b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
 
+<h3> <img src="_ico/clock-analog.png" width="18px"> Resource Data:</h3><a id="clockanalog"></a>
+<b>Providing a collection of reference information. </b>A collection of documents providing data sets that are as used every day reference and resource. Each resource available can be searched, locally saved, downloaded and exported.<br><br>
 
+&nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiMenu-Resources.html](Modules/rwebiMenu-Resources.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiMenu-Resources.js](_jss/rwebiMenu-Resources.js)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-Resources.html](Help/rwebiHelp-Resources.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-Resources.html](Help/rwebiAbout-Resources.html)** <br>
 
+<b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
+
+<h3> <img src="_ico/calc-basic.png" width="18px"> Calculator Basic:</h3><a id="calcbasic"></a>
+<b>Basic calculator utility with text output. </b>A lightweight, web-based tool designed to provide standard and basic arithmetic functionality within a browser environment. Features a clean, user-friendly interface for performing fundamental calculations like addition, subtraction, multiplication, division, and provides formula as you go text output. This specific module is often used as a standalone component or integrated into other areas of rwebi to offer a quick mathematical utility.<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-CalculatorBasic.html](Modules/rwebiModule-CalculatorBasic.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-CalculatorBasic.js](_jss/rwebiModule-CalculatorBasic.js)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-CalculatorBasic.html](Help/rwebiHelp-CalculatorBasic.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-CalculatorBasic.html](Help/rwebiAbout-CalculatorBasic.html)** <br>
+
+<b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
+
+<h3> <img src="_ico/calc-scientific.png" width="18px"> Calculator Scientific:</h3><a id="calcsci"></a>
+<b>Scientific calculator utility with formula text output. </b>A simple scientific calculator that expands on basic arithmetic with advanced functions like trigonometry, logarithms, and powers. It is designed with a responsive, button-heavy interface to handle complex mathematical operations directly in the browser. This module serves as a portable and comprehensive tool for users needing more than just a standard calculator for technical tasks. Provides formula text output as you perform calculations.<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-CalculatorScientific.html](Modules/rwebiModule-CalculatorScientific.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-CalculatorScientific.js](_jss/rwebiModule-CalculatorScientific.js)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-CalculatorScientific.html](Help/rwebiHelp-CalculatorScientific.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-CalculatorScientific.html](Help/rwebiAbout-CalculatorScientific.html)** <br>
+
+<b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
 
