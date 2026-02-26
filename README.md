@@ -142,7 +142,7 @@ rwebi.com Module Source Roster:</h2><a id="moduleroster"></a>
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-TextTools.html](Help/rwebiHelp-TextTools.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-TextTools.html](Help/rwebiAbout-TextTools.html)** <br>
 
-<h3> <img src="_ico/texttools.png" width="18px"> Text Tools:</h3><a id="texttools"></a>
+<h3> <img src="_ico/tmcedit.png" width="18px"> Text Tools:</h3><a id="tmcedit"></a>
 <b>HTML visual editor utility with syntax generation. </b>This module is a rich text editor based on the TinyMCE framework, providing a word-processor-style interface directly within the browser. It allows users to format text, insert media, and create structured content using familiar toolbar buttons while generating the underlying HTML code automatically. This tool is perfect for users who need to draft formatted web content without writing manual code. Be able to open files and convert as needed, full edit features with full screen editing..<br>
 
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-TMCEdit.html](Modules/rwebiModule-TMCEdit.html)** <br>
