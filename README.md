@@ -9,10 +9,10 @@ Reference Web Information. A comprehensive, open-source web ecosystem designed f
 - Export search results to text, and manipulate using rwebi utilities and tools.<br>
 - Features for "Local Save" and "Local Restore" allow edited data be transfered between rwebi utilities easily.<br>
 - Designed as a fluent, consistent, and intuitive graphic interface for easy use and navigation across entire ecosystem.<br>
+- Panel design is for multi-tasking with cell phones and tablets and shares all modules and tools with the rwebi Desktop.<br>
 - No advertising, no user data collections, open source and using full screen real estate.
 
-Essentially, one can use the web for reference and information, rwebi.com<br>
-- Robert William Eckert
+Essentially, one can use the web for reference and information as a tool, rwebi.com - Robert William Eckert
 
 <h3><p align="center"><img src="Assets/hr-orange.png" width="98%"></p>
 Table of Contents:</h3><a id="contents"></a>
