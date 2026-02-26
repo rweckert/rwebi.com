@@ -90,7 +90,7 @@ Search panel tool utility combining search and tools.<br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-SearchPanel.html](Help/rwebiAbout-SearchPanel.html)** <br>
 
 <h3> <img src="_ico/favicon.png" width="18px"> Tool Panel: </h3><a id="toolpanel"></a>
-A toolset panel utility of rwebi modules and resources.<br>
+A toolset panel utility of rwebi modules and resources. <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiApp-ToolPanel-c61.html](Apps/rwebiApp-ToolPanel-c61.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiApp-ToolPanel-c61.js](_jss/rwebiApp-ToolPanel-c61.js)** <br>
@@ -100,7 +100,7 @@ A toolset panel utility of rwebi modules and resources.<br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-ToolPanel.html](Help/rwebiAbout-ToolPanel.html)** <br>
 
 <h3> <img src="_ico/favicon.png" width="18px"> rwebi Desktop: </h3><a id="desktop"></a>
-The rwebi Desktop collection of apps and modules.<br>
+<b>The rwebi Desktop collection of apps and modules.</b> The entire desktop environment is built using pure JavaScript code, ensuring a lightweight and responsive workspace without relying on heavy external frameworks.<br>
 
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiApp-Desktop-c61.html](Apps/rwebiApp-Desktop-c61.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiApp-Desktop-c61.js](_jss/rwebiApp-Desktop-c61.js)** <br>
