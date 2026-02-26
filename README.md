@@ -25,6 +25,21 @@ rwebi has officially transitioned out of Alpha. We are currently in the final st
 <h3><p align="center"><img src="Assets/hr-orange.png" width="98%"></p>
 Source Structure:</h3><a id="sourcestructure"></a>
 
+| Project&nbsp;Structure | Description |
+| :--- | :--- |
+| 📁 **[_/css](_css)** | Cascading style sheets that define the visual design and layout of rwebi |
+| 📁 **[_/jss](_jss)** | JavaScript source files that manage rwebi interactive features and dynamic logic. |
+| 📁 **[_/php](_php)** | PHP server-side scripts that handle rwebi back-end logic, database interactions, and dynamic content generation |
+| 📁 **[_/ico](_ico)** | Graphical icon assets for the rwebi visual interface and navigation. |
+| 📁 **[_/ict](_ict)** | Graphical assets and icons represent hierarchical data and folder structures within rwebi ecosystem. |
+| 📁 **[_/img](_img)** | Visual media and static image assets that provide the primary graphical rwebi content. |
+| 📁 **[_/bkg](_bkg)** | Visual media and static image assets that provide the primary graphical rwebi content. |
+| 📁 **[Help](Help)** | Documentation and informational files that provide users with essential guidance and background details for the various rwebi applications and modules. |
+| 📁 **[Apps](Apps)** | Contains all background image options for the rwebi desktop application. |
+| 📁 **[Modules](Modules)** | Modular utility scripts and helper functions that provide common logic and support services across the rwebi ecosystem. |
+
+[↑ Back to Top](#contents)
+
 <h3><p align="center"><img src="Assets/hr-blue.png" width="98%"></p>
 Application List:</h3><a id="applist"></a>
 
