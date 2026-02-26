@@ -57,44 +57,43 @@ rwebi Module List:</h3><a id="modulelist"></a>
 
 | Module&nbsp;Source&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | rwebi Link | Description |
 | :--- | :--- | :--- |
-| **[Browser&nbsp;Info](#browserinfo)** | **[View&nbsp;Browser&nbsp;Info](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-BrowserInfo.html)** | Browser information and rwebi storage utility. |
+| **[TMC&nbsp;Edit](#tmcedit)** | **[View TMC&nbsp;Edit](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-TMCEdit.html)** | HTML visual editor utility with syntax generation. |
+| **[Scratch&nbsp;Pad](#scratchpad)** | **[View ScratchPad](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-ScratchPad.html)** | Versatile digital scratch of paper and text utility. |
+| **[Text&nbsp;Tools](#texttools)** | **[View Text&nbsp;Tools](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-TextTools.html)** | Text editor utility of remove, replace and common tools. |
+| **[Browser](#browser)** | **[View&nbsp;Browser](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-Browser.html)** | Browser information and rwebi storage utility. |
 | **[ipGeo](#ipGeo)** | **[View&nbsp;ipGeo](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-ipGeo.html)** | Simple IP address geo location mapping utility. |
 | **[infoTrace](#infoTrace)** | **[View&nbsp;infoTrace](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-infoTrace.html)** | Trace back utility for connection specifics and location. |
+| **[Browser&nbsp;Info](#browserinfo)** | **[View&nbsp;Browser&nbsp;Info](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-BrowserInfo.html)** | Browser information and rwebi storage utility. |
 | **[csvTable](#csvtable)** | **[View&nbsp;csvTable](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-csvTable.html)** | Delimited data to table conversion utility. |
 | **[Clock&nbsp;Analog](#clockanalog)** | **[View&nbsp;Clock&nbsp;Analog](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-Clock-Analog.html)** | Clean minimalist analog clock web application. | |
 | **[Basic&nbsp;Calculator](#basiccalculator)** | **[View&nbsp;Basic&nbsp;Calculator](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-CalculatorBasic.html)** | Basic calculator utility with text output. |
 | **[Scientific&nbsp;Calculator](#scientificcalculator)** | **[View&nbsp;Scientific&nbsp;Calculator](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-CalculatorScientific.html)** | Scientific calculator utility with formula text output. |
+| **[Quick&nbsp;Search](#quicksearch)** | **[View&nbsp;Quick&nbsp;Search](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-QuickSearch.html)** | Stripped down rwebi web search application. |
+| **[Google&nbsp;Mapping](#googlemapping)** | **[View&nbsp;Google&nbsp;Mapping](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-GoogleMapping.html)** | Google Mapping assistant and utility. |
+| **[Map&nbsp;Plotting](#mapplotting)** | **[View&nbsp;Map&nbsp;Plotting](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-MapPlotting.html)** | Mapping and plotting utility of locations and group imports. |
 
-
-
-
-
-
-
-
-
-- Analog Clock
-- Basic Calculator
-Browser
+Analog Clock -
+Basic Calculator -
+Browser -
 Browser Info -
 csvTable -
 Gemini Model
-Google Mapping
+Google Mapping -
 Help Search
 infoTrace -
 ipGeo -
-Map Plotting
-Quick Search
+Map Plotting -
+Quick Search -
 Resource Data
-- Scientific Calculator
-Scratch Pad
+Scientific Calculator -
+Scratch Pad -
 Source Explore
 Speculus
 Split & Copy
 Split Panel
 String Escape
-TMC Edit
-Text Tools
+TMC Edit -
+Text Tools -
 
 
 [↑ Back to Contents](#contents)
