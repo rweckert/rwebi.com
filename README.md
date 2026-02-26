@@ -119,14 +119,11 @@ rwebi.com Application Source Roster:</h3><a id="approster"></a>
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-GridStack.html](Help/rwebiHelp-GridStack.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-GridStack.html](Help/rwebiAbout-GridStack.html)** <br>
 
-<h3><p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
-rwebi.com Module Source Roster:</h3><a id="moduleroster"></a>
-
-## 📦 rwebi.com Module Source Roster:
+<h2><p align="center"><img src="Assets/hr-blue.png" width="85%"></p>
+rwebi.com Module Source Roster:</h2><a id="moduleroster"></a>
 
 <h3> <img src="_ico/scratchpad.png" width="18px"> Scratch Pad:</h3><a id="scratchpad"></a>
-<b>Versatile digital scratch of paper and text utility. </b><br>
-A versatile digital piece of paper and text utility that allows users to instantly draft, format, and execute text-based documents directly from within the browser. While pleasing to the eye, features include opening files, saving and restoring text locally, download, export, copy, cut, paste, clear. Options include toggle spell checking, document editing, and word wrapping.
+<b>Versatile digital scratch of paper and text utility. </b>A text utility that allows users to instantly draft, format, and execute text-based documents directly from within the browser. While pleasing to the eye, features include opening files, saving and restoring text locally, download, export, copy, cut, paste, clear. Options include toggle spell checking, document editing, and word wrapping.<br>
 
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-ScratchPad.html](Modules/rwebiModule-ScratchPad.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-ScratchPad-c61.js](_jss/rwebiModule-ScratchPad-c61.js)** <br>
@@ -135,10 +132,8 @@ A versatile digital piece of paper and text utility that allows users to instant
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-GridStack.html](Help/rwebiHelp-ScratchPad.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-GridStack.html](Help/rwebiAbout-ScratchPad.html)** <br>
 
-<a name="texttools"></a>🔳 **Text Tools**<br>
-Text editor utility of remove, replace and common tools.
-
-Providing a full featured text utilty with options that set Text Tools aside from other conventional text editors. All basic features and options for text editing and document navigation are included, adding to that text and numeric sorting and extraction, remove and replace, wrapping, and other text and line manipulation features.
+<h3> <img src="_ico/texttools.png" width="18px"> Text Tools:</h3><a id="texttools"></a>
+<b>Text editor utility of remove, replace and common tools. </b>Providing a full featured text utilty with options that set Text Tools aside from other conventional text editors. All basic features and options for text editing and document navigation are included, adding to that text and numeric sorting and extraction, remove and replace, wrapping, and other text and line manipulation features.
 
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-TextTools.html](Modules/rwebiModule-TextTools.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-TextTools.js](_jss/rwebiModule-TextTools.js)** <br>
