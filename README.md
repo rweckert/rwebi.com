@@ -157,9 +157,9 @@ rwebi Module Source Roster:</h3><a id="moduleroster"></a>
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-TextTools.html](Help/rwebiHelp-TextTools.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-TextTools.html](Help/rwebiAbout-TextTools.html)** <br>
 
-<b>Navigate: </b>[← Modules List](#moduleslist)  |  [↑ Table of Contents](#contents)
+<b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#moduleslist)&nbsp;&nbsp;&nbsp;[↑ Table of Contents](#contents)
 
-<h3> <img src="_ico/tmcedit.png" width="18px"> Text Tools:</h3><a id="tmcedit"></a>
+<h3> <img src="_ico/tmcedit.png" width="18px"> TMC Edit:</h3><a id="tmcedit"></a>
 <b>HTML visual editor utility with syntax generation. </b>This module is a rich text editor based on the TinyMCE framework, providing a word-processor-style interface directly within the browser. It allows users to format text, insert media, and create structured content using familiar toolbar buttons while generating the underlying HTML code automatically. This tool is perfect for users who need to draft formatted web content without writing manual code. Be able to open files and convert as needed, full edit features with full screen editing.<br><br>
 
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-TMCEdit.html](Modules/rwebiModule-TMCEdit.html)** <br>
@@ -169,5 +169,5 @@ rwebi Module Source Roster:</h3><a id="moduleroster"></a>
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-TMCEdit.html](Help/rwebiHelp-TMCEdit.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-TMCEdit.html](Help/rwebiAbout-TMCEdit.html)** <br>
 
-<b>Navigate: </b>[← Modules List](#moduleslist)  |  [↑ Table of Contents](#contents)
+<b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#moduleslist)&nbsp;&nbsp;&nbsp;[↑ Table of Contents](#contents)
 
