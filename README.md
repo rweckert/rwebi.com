@@ -233,7 +233,7 @@ rwebi Module Source Roster:</h3><a id="moduleroster"></a>
 
 <b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
 
-<h3> <img src="_ico/splitpanel.png" width="18px"> Split Panel:</h3><a id="splitpanel"></a>
+<h3> <img src="_ico/panelsplit.png" width="18px"> Split Panel:</h3><a id="splitpanel"></a>
 <b>Split existing panels horizontal or vertical. </b>SplitPanel module provides a dynamic interface for bisecting a single workspace into dual panes, allowing users to choose between a horizontal or vertical split. Can be used as an essential component of the rWebi ecosystem, enabling the fluid reorganization of tools like TextTools, ipInfo, MapPlotting and Browser into a 4 panel split.<br><br>
 
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-SplitPanel.html](Modules/rwebiModule-SplitPanel.html)** <br>
@@ -341,7 +341,7 @@ rwebi Module Source Roster:</h3><a id="moduleroster"></a>
 
 <b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
 
-<h3> <img src="_ico/clock-analog.png" width="18px"> Resource Data:</h3><a id="clockanalog"></a>
+<h3> <img src="_ico/resources.png" width="18px"> Resource Data:</h3><a id="clockanalog"></a>
 <b>Providing a collection of reference information. </b>A collection of documents providing data sets that are as used every day reference and resource. Each resource available can be searched, locally saved, downloaded and exported.<br><br>
 
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiMenu-Resources.html](Modules/rwebiMenu-Resources.html)** <br>
