@@ -66,35 +66,18 @@ rwebi Module List:</h3><a id="modulelist"></a>
 | **[Browser&nbsp;Info](#browserinfo)** | **[View&nbsp;Browser&nbsp;Info](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-BrowserInfo.html)** | Browser information and rwebi storage utility. |
 | **[csvTable](#csvtable)** | **[View&nbsp;csvTable](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-csvTable.html)** | Delimited data to table conversion utility. |
 | **[Clock&nbsp;Analog](#clockanalog)** | **[View&nbsp;Clock&nbsp;Analog](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-Clock-Analog.html)** | Clean minimalist analog clock web application. | |
+| **[Split&nbsp;n&nbsp;Copy](#splitncopy)** | **[View Split & Copy](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-SplitnCopy.html)** | Text splitting and copying tool. |
+| **[Source&nbsp;Explore](#sourceexplore)** | **[View&nbsp;Source&nbsp;Explore](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-SourceExplore.html)** | Review rwebi source for open transparency. |
 | **[Basic&nbsp;Calculator](#basiccalculator)** | **[View&nbsp;Basic&nbsp;Calculator](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-CalculatorBasic.html)** | Basic calculator utility with text output. |
 | **[Scientific&nbsp;Calculator](#scientificcalculator)** | **[View&nbsp;Scientific&nbsp;Calculator](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-CalculatorScientific.html)** | Scientific calculator utility with formula text output. |
 | **[Quick&nbsp;Search](#quicksearch)** | **[View&nbsp;Quick&nbsp;Search](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-QuickSearch.html)** | Stripped down rwebi web search application. |
 | **[Google&nbsp;Mapping](#googlemapping)** | **[View&nbsp;Google&nbsp;Mapping](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-GoogleMapping.html)** | Google Mapping assistant and utility. |
 | **[Map&nbsp;Plotting](#mapplotting)** | **[View&nbsp;Map&nbsp;Plotting](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-MapPlotting.html)** | Mapping and plotting utility of locations and group imports. |
-
-Analog Clock -
-Basic Calculator -
-Browser -
-Browser Info -
-csvTable -
-Gemini Model
-Google Mapping -
-Help Search
-infoTrace -
-ipGeo -
-Map Plotting -
-Quick Search -
-Resource Data
-Scientific Calculator -
-Scratch Pad -
-Source Explore
-Speculus
-Split & Copy
-Split Panel
-String Escape
-TMC Edit -
-Text Tools -
-
+| **[Help&nbsp;Search](#helpsearch)** | **[View&nbsp;Help&nbsp;Listing](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-Help-Listing.html)** | Documentation and searchable help content. |
+| **[Resources](#resources)** | **[View&nbsp;Resources](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiMenu-Resources.html)** | Providing a collection of reference information. |
+| **[Gemini&nbsp;Model](#modelgemini)** | **[View&nbsp;Gemini&nbsp;Model](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-Gemini-Model.html)** | A rwebi Gemini AI interface prompt model. |
+| **[Speculus](#speculus)** | **[View Speculus](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-Speculus.html)** | Speculus (Latin 'to look at') is a rwebi search entry rid# lookup utility. |
+| **[String&nbsp;Escape](#stringescape)** | **[View&nbsp;String&nbsp;Escape](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-StringEscape.html)** | HTML string escape editor and utility. |
 
 [↑ Back to Contents](#contents)
 
