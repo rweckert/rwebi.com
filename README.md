@@ -80,7 +80,7 @@ rwebi.com Module List:</h3><a id="modulelist"></a>
 rwebi.com Application Source Roster:</h3><a id="approster"></a>
 
 <h3> <img src="_ico/favicon.png" width="18px"> Search Panel: </h3><a id="searchpanel"></a>
-Search panel tool utility combining search and tools.<br>
+<b>Search panel tool utility combining search and tools.</b> Provides a high-performance, integrated search interface designed specifically for dual search with options to export results or edit with rwebi module utilities. Search Panel seamlessly integrates search as a text tool in a modular layout, offering a dedicated space to query tools and text utilities across both horizontal and vertical panel configurations.<br>
 
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiApp-SearchPanel-c61.html](Apps/rwebiApp-SearchPanel-c61.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiApp-SearchPanel-c61.js](_jss/rwebiApp-SearchPanel-c61.js)** <br>
@@ -90,7 +90,7 @@ Search panel tool utility combining search and tools.<br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-SearchPanel.html](Help/rwebiAbout-SearchPanel.html)** <br>
 
 <h3> <img src="_ico/favicon.png" width="18px"> Tool Panel: </h3><a id="toolpanel"></a>
-A toolset panel utility of rwebi modules and resources. <br>
+<b>A toolset panel utility of rwebi modules and resources.</b> This specialized ToolPanel for the rWebi environment provides panel (split windows) segments that can independently host a variety of utility tools across rwebi. The ToolPanel optimizes multitasking by organizing these essential utilities into a compact, responsive container that enhances any device experience that can be docked alongside your existing workspace for instant productivity.<br>
 
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiApp-ToolPanel-c61.html](Apps/rwebiApp-ToolPanel-c61.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiApp-ToolPanel-c61.js](_jss/rwebiApp-ToolPanel-c61.js)** <br>
@@ -100,7 +100,7 @@ A toolset panel utility of rwebi modules and resources. <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-ToolPanel.html](Help/rwebiAbout-ToolPanel.html)** <br>
 
 <h3> <img src="_ico/favicon.png" width="18px"> rwebi Desktop: </h3><a id="desktop"></a>
-<b>The rwebi Desktop collection of apps and modules.</b> Offering a desktop interface to access various productivity and system tools across the rwebi escosystem. Features a clean, responsive layout designed to manage web-based applications, including specialized functions like horizontal and vertical screen splitting. The rwebi desktop environment is built using pure JavaScript code, ensuring a lightweight and responsive workspace without relying on heavy external frameworks.<br><br>
+<b>The rwebi Desktop collection of apps and modules.</b> Offering a desktop interface to access various productivity and utility tools across the rwebi escosystem. Features a clean, responsive layout designed to manage web-based applications, including specialized functions like horizontal and vertical screen splitting. The rwebi desktop environment is built using pure JavaScript code, ensuring a lightweight and responsive workspace without relying on heavy external frameworks.<br><br>
 
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiApp-Desktop-c61.html](Apps/rwebiApp-Desktop-c61.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiApp-Desktop-c61.js](_jss/rwebiApp-Desktop-c61.js)** <br>
@@ -110,7 +110,7 @@ A toolset panel utility of rwebi modules and resources. <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-Desktop.html](Help/rwebiAbout-Desktop.html)** <br>
 
 <h3> <img src="_ico/favicon.png" width="18px"> Grid Stack: </h3><a id="gridstack"></a>
-Hypertext stack editing utility and visual grid.<br>
+<b>Hypertext stack editing utility and visual grid.</b> GridStack module functions as a robust hypertext editor, allowing for real-time manipulation of HTML, CSS, and JavaScript within fully resizable workspace panels. Its advanced wireframe grid provides precision development tools, including a pixel ruler and live mouse coordinate tracking for pixel-perfect element positioning. Users can dynamically toggle between different display size types, ensuring that the resulting syntax is perfectly responsive and accurately measured across various viewport scales.<br>
 
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiApp-GridStack-c61.html](Apps/rwebiApp-GridStack-c61.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiApp-GridStack-c61.js](_jss/rwebiApp-GridStack-c61.js)** <br>
@@ -124,7 +124,10 @@ rwebi.com Module Source Roster:</h3><a id="moduleroster"></a>
 
 ## 📦 rwebi.com Module Source Roster:
 
-<a name="scratchpad"></a>🔳 **Scratch Pad**<br>
+<h3> <img src="_ico/scratchpad.png" width="18px"> Scratch Pad:</h3><a id="scratchpad"></a>
+<b>Versatile digital scratch of paper and text utility. </b><br>
+A versatile digital piece of paper and text utility that allows users to instantly draft, format, and execute text-based documents directly from within the browser. While pleasing to the eye, features include opening files, saving and restoring text locally, download, export, copy, cut, paste, clear. Options include toggle spell checking, document editing, and word wrapping.
+
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-ScratchPad.html](Modules/rwebiModule-ScratchPad.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-ScratchPad-c61.js](_jss/rwebiModule-ScratchPad-c61.js)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
@@ -133,6 +136,10 @@ rwebi.com Module Source Roster:</h3><a id="moduleroster"></a>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-GridStack.html](Help/rwebiAbout-ScratchPad.html)** <br>
 
 <a name="texttools"></a>🔳 **Text Tools**<br>
+Text editor utility of remove, replace and common tools.
+
+Providing a full featured text utilty with options that set Text Tools aside from other conventional text editors. All basic features and options for text editing and document navigation are included, adding to that text and numeric sorting and extraction, remove and replace, wrapping, and other text and line manipulation features.
+
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-TextTools.html](Modules/rwebiModule-TextTools.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-TextTools.js](_jss/rwebiModule-TextTools.js)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
@@ -141,6 +148,10 @@ rwebi.com Module Source Roster:</h3><a id="moduleroster"></a>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-TextTools.html](Help/rwebiAbout-TextTools.html)** <br>
 
 <a name="tmcedit"></a>🔳 **TMC Edit**<br>
+HTML visual editor utility with syntax generation.
+
+This module is a rich text editor based on the TinyMCE framework, providing a word-processor-style interface directly within the browser. It allows users to format text, insert media, and create structured content using familiar toolbar buttons while generating the underlying HTML code automatically. This tool is perfect for users who need to draft formatted web content without writing manual code. Be able to open files and convert as needed, full edit features with full screen editing.
+
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-TMCEdit.html](Modules/rwebiModule-TMCEdit.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-TMCEdit.js](_jss/rwebiModule-TMCEdit.js)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
@@ -149,6 +160,10 @@ rwebi.com Module Source Roster:</h3><a id="moduleroster"></a>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-TMCEdit.html](Help/rwebiAbout-TMCEdit.html)** <br>
 
 <a name="browser"></a>🔳 **Browser**<br>
+A small rwebi platform browsing utility.
+
+This web application is an integrated browsing module that allows users to access and interact with external web content directly within the rwebi workspace, facilitating seamless data cross-referencing and research without leaving the platform's ecosystem.
+
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-Browser.html](Modules/rwebiModule-Browser.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-Browser.js](_jss/rwebiModule-Browser.js)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
@@ -157,6 +172,10 @@ rwebi.com Module Source Roster:</h3><a id="moduleroster"></a>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-Browser.html](Help/rwebiAbout-Browser.html)** <br>
 
 <a name="browserinfo"></a>🔳 **Browser Info**<br>
+Browser information and rwebi storage utility.
+
+This module is a local diagnostic tool that captures and displays real-time metadata about your web environment such as browser version, screen resolution, system capabilities, and local rwebi storage to ensure your specialized workspace is perfectly optimized for data processing.
+
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-BrowserInfo.html](Modules/rwebiModule-BrowserInfo.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-BrowserInfo.js](_jss/rwebiModule-BrowserInfo.js)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
@@ -165,6 +184,10 @@ rwebi.com Module Source Roster:</h3><a id="moduleroster"></a>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-BrowserInfo.html](Help/rwebiAbout-BrowserInfo.html)** <br>
 
 <a name="googlemapping"></a>🔳 **Google Mapping**<br>
+Google Mapping assistant and utility.
+
+Provides an integrated Google Maps interface that allows users to interact with geographic data and location services directly within a web module. It features tools for navigation, searching addresses, and toggling between different map views to provide a comprehensive spatial experience. This module is ideal for projects requiring a streamlined, embeddable mapping solution with familiar Google Maps functionality. Full view and options to save mapping links with export features are available.
+
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-GoogleMapping.html](Modules/rwebiModule-GoogleMapping.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-GoogleMapping.js](_jss/rwebiModule-GoogleMapping.js)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
