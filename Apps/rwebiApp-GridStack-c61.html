@@ -16,13 +16,10 @@
 </head><body onload="mStart();" onresize="mResize();" style="overflow-x:hidden;overflow-y:scroll;">
 
 <!-- Module Header: -->
-<div id="mHeader" class="sh0" style="width:100%;min-width:320px;">
-<span onclick="appRefresh();" title="Refresh Application"><img src="../_ico/favicon.png" class="nibtn" style="margin-left:6px;"></span>
-<span onclick="pLoad('../index.html');" title="Help / About / Settings"><img src="../_ico/mclose.png" class="ibtn" style="float:right;margin-right:3px;"></span>
-<span onclick="eToggle('oView');" title="Close Application"><img src="../_ico/mopt.png" class="ibtn" style="float:right;margin-right:3px;"></span><div class="mTitle" onclick="eHid('mMenu');">Grid Stack</div>
+<div id="mHeader" class="sh0" style="width:100%;height:35px;min-width:320px;white-space:nowrap;"><div style="position:absolute;z-Index:999;top:3px;left:6px;"><span title=""><img src="../_ico/favicon.png" class="nibtn">&nbsp;</span><div class="mTitle">Grid Stack</div></div><span onclick="pLoad('../index.html');" title="Close Application"><img src="../_ico/mclose.png" class="ibtn" style="float:right;margin-right:3px;"></span><span onclick="eToggle('oView');" title="Close Application"><img src="../_ico/mopt.png" class="ibtn" style="float:right;margin-right:3px;"></span></div>
 
 <!-- Source Menu: -->
-<div id="sMenu" class="sh0" style="min-width:360px;">
+<div id="sMenu" class="sh9" style="min-width:360px;margin-left:3px;">
 <!-- Source Menu: Main -->
 <select id="soFile" onChange="FileOpt();" onclick="eHid('mMenu');" class="yopt" title="File Menu" style="width:50px;height:33px;">
 <option value="default">File</option>
@@ -76,7 +73,7 @@
 <!-- Source Menu End: -->
 
 <!-- Source Containor: -->
-<div style="width:100%;max-height:170px;max-width:360px;margin-top:3px;">
+<div style="width:100%;max-height:170px;max-width:360px;margin-top:3px;margin-left:3px;">
 
 <!-- hbox: Source -->
 <div id="hbox" style="display:inline;float:left;width:31.8%;min-width:90px;border-radius:3px;background-color:#ffffb3;">

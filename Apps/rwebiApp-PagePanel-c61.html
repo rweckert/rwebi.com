@@ -46,7 +46,7 @@ body, html {height:100dvh;width:100vw;margin:0;padding:0;overflow:hidden;}
 <div id="PanelContainer" class="container horizontal">
 
 <!-- Panel 1 -------------------------->
-<div id="pc1" class="panel vertical" style="border: 1px solid #03A0FF;border-radius:4px;" onclick="PanelSelect('1');dHid('po2');">
+<div id="pc1" class="panel vertical" style="border: 1px solid #03A0FF;border-radius:4px;min-width:140px;" onclick="PanelSelect('1');dHid('po2');">
 <!-- Panel 1: Header -->
 <div id="ph1" class="panel-header" style="background-color:#00BFFF;">
 <div style="display:inline-block;">
@@ -58,7 +58,7 @@ body, html {height:100dvh;width:100vw;margin:0;padding:0;overflow:hidden;}
 <span onclick="Panel1Opt();" style="float:right;margin-right:3px;margin-bottom:3px;margin-left:3px;" title="Panel Options"><img class="bbtn" src="../_ico/tcog.png"></span></div></div>
 <!-- Panel 1: Frame -->
 <div class="panel-content">
-<iframe id="pf1" name="pf1" src="../Modules/rwebiMenu-Modules.html" scrolling="yes" style="width:100%;height:100%;border:none;"></iframe></div></div>
+<iframe id="pf1" name="pf1" src="../Modules/rwebiModule-Blank.html" scrolling="yes" style="width:100%;height:100%;border:none;"></iframe></div></div>
 <!-- Panel 1: Options -->
 <div id="po1" style="position:absolute;width:155px;height:auto;padding:6px;background-color:#CCEBFF;border-radius:9px;display:none;" class="fb" onclick="PanelSelect('1');dHid('po1');">
 <span onclick="PanelFull(1)" style="margin-left:0px;" title="Maximize Panel"><img class="ibtn" src="../_ico/pmax-off.png"></span>
@@ -71,7 +71,7 @@ body, html {height:100dvh;width:100vw;margin:0;padding:0;overflow:hidden;}
 <span onclick="eToggle('PanelStats');ElementDetails('pc1');eHid('oView');"><img src="../_ico/stats-panel.png" class="vibtn" title="Panel Details"></span></div>
 
 <!-- Panel 2 -------------------------->
-<div id="pc2" class="panel" style="border: 1px solid #FF8C00;border-radius:4px;" onclick="PanelSelect('2');dHid('po1');">
+<div id="pc2" class="panel" style="border: 1px solid #FF8C00;border-radius:4px;min-width:140px;" onclick="PanelSelect('2');dHid('po1');">
 <!-- Panel 2: Header -->
 <div id="ph2" class="panel-header" style="background-color:#ffddb3;">
 <div style="display:inline-block;">
@@ -84,7 +84,7 @@ body, html {height:100dvh;width:100vw;margin:0;padding:0;overflow:hidden;}
 </div></div>
 <!-- Panel 2: Frame -->
 <div class="panel-content">
-<iframe id="pf2" name="pf2" src="../Modules/rwebiMenu-Modules-Listing.html" scrolling="yes" style="width:100%;height:100%;border:none;"></iframe></div></div>
+<iframe id="pf2" name="pf2" src="../Modules/rwebiModule-Blank.html" scrolling="yes" style="width:100%;height:100%;border:none;"></iframe></div></div>
 <!-- Panel 2: Options -->
 <div id="po2" style="position:absolute;width:155px;height:auto;padding:6px;background-color:#ffddb3;border-radius:9px;display:none;" class="fb" onclick="PanelSelect('2');dHid('po2');">
 <span onclick="PanelFull(2)" style="margin-left:0px;" title="Maximize Panel"><img class="ibtn" src="../_ico/pmax-off.png"></span>
