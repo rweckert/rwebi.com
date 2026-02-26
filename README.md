@@ -20,7 +20,7 @@ rwebi Project Status:</h3><a id="status"></a>
 
 <b>🟢 Active Beta Status:</b> Version Eucalyptus c61<br>
 <br>
-rwebi has officially transitioned out of Alpha. We are currently in the final stages of UI/UX refinement and documentation expansion. Please refer to this project and the rwebi module Source Explore for updated information.
+rwebi has officially transitioned out of Alpha. We are currently in the final stages of UI/UX refinement and documentation expansion. Please refer to this **[https://github.com/rweckert/rwebi.com](project)** and the rwebi module **[View&nbsp;Source&nbsp;Explore](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-SourceExplore.html)** for updated information.
 
 <h3><p align="center"><img src="Assets/hr-orange.png" width="98%"></p>
 Source Structure:</h3><a id="sourcestructure"></a>
@@ -38,7 +38,7 @@ Source Structure:</h3><a id="sourcestructure"></a>
 | 📁 **[Apps](Apps)** | Contains all background image options for the rwebi desktop application. |
 | 📁 **[Modules](Modules)** | Modular utility scripts and helper functions that provide common logic and support services across the rwebi ecosystem. |
 
-[↑ Back to Top](#contents)
+[↑ Back to Contents](#contents)
 
 <h3><p align="center"><img src="Assets/hr-blue.png" width="98%"></p>
 Application List:</h3><a id="applist"></a>
@@ -51,5 +51,4 @@ Application Source Roster:</h3><a id="approster"></a>
 
 <h3><p align="center"><img src="Assets/hr-orange.png" width="98%"></p>
 Module Source Roster:</h3><a id="moduleroster"></a>
-
 
