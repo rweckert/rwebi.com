@@ -227,13 +227,13 @@ Add the following text to the end of each line:
 <div id="sView" class="hView" style="top:60px;left:20px;width:60%;min-width:260px;max-width:500px;height:auto;visibility:hidden;"><div class="hvLeft"><span class="hvTitle" style="color:#ffffff;">Save Download</span></div><div class="hvRight"><span onclick="eHid('sView')"><img src="../_ico/mclose.png" class="ibtn"></span></div><div class="clearArea"></div><div class="p6"><label for="sf" class="wc em12">Filename</label><input type='text' id='sf' class='wb' style="width:90%;font-size:1.15em;height:27px;" value="" onfocus="this.select();"><p><span class="gbtn" onclick="aceDownload('editor');eHid('sView');" title="Download / Save">Save</span>&nbsp;&nbsp;<span class="rbtn" onclick="eHid('sView');" title="Cancel Download">Cancel</span></p></div></div>
 
 <!-- Options View: -->
-<div id="oView" class="oView" style="position:absolute;z-Index:999;top:43px;width:140px;height:auto;padding:6px;border-radius:3px;display:none;font-weight:bold;">
+<div id="oView" class="oView" style="position:absolute;z-Index:999;top:43px;width:150px;height:auto;padding:6px;border-radius:3px;display:none;font-weight:bold;">
 <span class="mso" onclick="dHid('oView');LinkModule();"><img src="../_ico/link.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Share Link</span>
 <span class="mso" onclick="selTheme('l');"><img src="../_ico/ltheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Light Theme</span>
 <span class="mso" onclick="selTheme('d');"><img src="../_ico/dtheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Dark Theme</span>
 <span class="mso" onclick="eToggle('hView');dHid('oView');obLoad('hDisplay','../Help/rwebiAbout-TextTools.html');"><img src="../_ico/mhelp.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Information</span>
-<span class="mso" onclick="modRefresh();"><img src="../_ico/refresh.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Refresh</span>
-<span class="mso" onclick="pLoad('rwebiMenu-Modules.html');"><img src="../_ico/mclose.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Close</span></div>
+<span class="mso" onclick="modRefresh();"><img src="../_ico/refresh.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Refresh Module</span>
+<span class="mso" onclick="pLoad('rwebiMenu-Modules.html');"><img src="../_ico/mclose.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Close Module</span></div>
 
 <!-- View Settings: -->
 <div id="vSettings" style="position:absolute;top:50px;right:6px;width:230px;height:60%;background-color:#2e2e2e;color:#ffffff;float:right;border:1px solid #505050;border-radius:3px;padding:3px;overflow-y:none;z-index:99;visibility:hidden;">
@@ -265,7 +265,8 @@ Add the following text to the end of each line:
 <option value="mysql">MySql</option>
 <option value="css">CSS</option>
 <option value="json">JSON</option>
-<option value="csv">CSV</option></select></td></tr>
+<option value="csv">CSV</option>
+<option value="markdown">Markdown</option></select></td></tr>
 <tr><td>Ace Theme</td><td>
 <select id="soAceTheme" onChange="aceSetTheme('editor');" class="wopt" title="Theme Options" style="width:93px;height:24px;">
 <option value="chrome">Chrome</option>

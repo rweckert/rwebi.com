@@ -117,13 +117,13 @@
 <span class="wc fb em11">Import "Location", Longitude, Latitude:</span><br>
 
 <div style="width:40px;display:inline-block;float:left;margin-top:3px;">
-<span onclick="PlotGroup();" title=""><img src="../_ico/openstreetmap.png" class="ibtn"></span>
-<span onclick="" title=""><img src="../_ico/copy.png" class="ibtn"></span>
-<span onclick="" title=""><img src="../_ico/paste.png" class="ibtn"></span>
-<span onclick="" title=""><img src="../_ico/save-local.png" class="ibtn"></span>
-<span onclick="" title=""><img src="../_ico/save-restore.png" class="ibtn"></span>
+<span onclick="PlotGroup();eHid('vImport');" title=""><img src="../_ico/openstreetmap.png" class="ibtn"></span>
+<span onclick="eCopy('v','gll');" title=""><img src="../_ico/copy.png" class="ibtn"></span>
+<span onclick="ePaste('gll');" title=""><img src="../_ico/paste.png" class="ibtn"></span>
+<span onclick="lSave('v','gll');" title=""><img src="../_ico/save-local.png" class="ibtn"></span>
+<span onclick="lRestore('v','gll');" title=""><img src="../_ico/save-restore.png" class="ibtn"></span>
 <span onclick="" title=""><img src="../_ico/save-as.png" class="ibtn"></span>
-<span onclick="" title=""><img src="../_ico/clear.png" class="ibtn"></span></div>
+<span onclick="iClear('v','gll');" title=""><img src="../_ico/clear.png" class="ibtn"></span></div>
 <div style="width:80%;height:90%;display:inline-block;float:left;margin-top:5px;">
 <textarea id='gll' name='gll' style="width:99%;height:90%;margin-left:2px;resize:none;">"Encinitas",33.03699,-117.29198
 "Escondido",33.11921,-117.08642
@@ -134,13 +134,14 @@
 "Carlsbad",33.15809,-117.35059</textarea></div></div>
 
 <!-- Paste Coordinates: -->
-<div id="PasteCoords" class="hView" style="position:absolute;top:45px;left:9px;width:70%;min-width:180px;height:auto;padding-bottom:9px;visibility:hidden;"><span onclick="eHid('PasteCoords')"><img src="../_ico/mclose.png" class="ibtn" style="float:right;"></span>
+<div id="PasteCoords" class="hView" style="position:absolute;z-Index:9999;top:65px;left:15px;width:50%;min-width:300px;height:auto;padding-bottom:9px;visibility:hidden;"><span onclick="eHid('PasteCoords')"><img src="../_ico/mclose.png" class="ibtn" style="float:right;"></span>
 <label for="pCoord" class="em9 fb wc" style="display:block;">Paste Cordinates:</label>
-<input type="text" id="pCoord" style="width:60%;font-size:1.13em;height:28px;margin-top:3px;" onfocus="this.select();" title=""><br>
+<input type="text" id="pCoord" style="width:250px;font-size:1.13em;height:28px;margin-top:3px;" onfocus="this.select();" title=""><br>
+<span onclick="ePaste('pCoord');"><img src="../_ico/paste.png" class="ibtn" title="Plot Cordinates"></span>
 <span onclick="PlotCoord();"><img src="../_ico/openstreetmap.png" class="ibtn" title="Plot Cordinates"></span>
 <span onclick="CoordCleanup();"><img src="../_ico/cleanup.png" class="ibtn" title="Cleanup Coordinates"></span>
-<span onclick=""><img src="../_ico/copy.png" class="ibtn" title="Copy Coordinates"></span>
-<span onclick=""><img src="../_ico/clear.png" class="ibtn" title="Copy Coordinates"></span></div>
+<span onclick="eCopy('pCoord');"><img src="../_ico/copy.png" class="ibtn" title="Copy Coordinates"></span>
+<span onclick="iClear('v','pCoord');"><img src="../_ico/clear.png" class="ibtn" title="Copy Coordinates"></span></div>
 
 <!-- Save View: -->
 <div id="sView" class="hView" style="top:60px;left:20px;width:60%;min-width:320px;max-width:500px;height:auto;">
@@ -149,13 +150,13 @@
 <p><span class="mlng" title="Download / Save" onclick="sFile('v','cv','sf');eHid('sView');">Save</span>&nbsp;&nbsp;<span class="mlnr" title="Cancel Download" onclick="eHid('sView');">Cancel</span></p></div></div>
 
 <!-- Options View: -->
-<div id="oView" class="oView" style="position:absolute;z-Index:9999;top:43px;width:140px;height:auto;padding:6px;border-radius:3px;display:none;font-weight:bold;">
+<div id="oView" class="oView" style="position:absolute;z-Index:9999;top:43px;width:150px;height:auto;padding:6px;border-radius:3px;display:none;font-weight:bold;">
 <span class="mso" onclick="dHid('oView');LinkModule();"><img src="../_ico/link.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Share Link</span>
 <span class="mso" onclick="selTheme('l');"><img src="../_ico/ltheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Light Theme</span>
 <span class="mso" onclick="selTheme('d');"><img src="../_ico/dtheme.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Dark Theme</span>
 <span class="mso" onclick="eToggle('hView');dHid('oView');obLoad('hDisplay','../Help/rwebiAbout-MapPlotting.html');"><img src="../_ico/mhelp.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Information</span>
-<span class="mso" onclick="modRefresh();"><img src="../_ico/refresh.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Refresh</span>
-<span class="mso" onclick="pLoad('rwebiMenu-Modules.html');"><img src="../_ico/mclose.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Close</span></div>
+<span class="mso" onclick="modRefresh();"><img src="../_ico/refresh.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Refresh Module</span>
+<span class="mso" onclick="pLoad('rwebiMenu-Modules.html');"><img src="../_ico/mclose.png" style="width:18px;vertical-align:bottom;margin-right:3px;">Close Module</span></div>
 
 <!-- Full View Button: -->
 <div id="fvButton" onmouseover="sFlex('f','editor','0','0','0');" style="position:absolute;top:6px;left:6px;width:auto;height:45px;z-index:99;visibility:hidden;padding-top:0px;">
