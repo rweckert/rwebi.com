@@ -243,6 +243,21 @@ rwebi Module Source Roster:</h3><a id="moduleroster"></a>
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-SplitPanel.html](Help/rwebiHelp-SplitPanel.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-SplitPanel.html](Help/rwebiAbout-SplitPanel.html)** <br>
 
+<b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
+
+
+<h3> <img src="_ico/csvtable.png" width="18px"> Browser Info:</h3><a id="csvtable"></a>
+<b>CSV delimited data to table converter. </b>Provides a streamlined, browser-based interface for transforming raw CSV data into interactive, tables without requiring complex software installations. Quickly upload and convert datasets to leverage creating table data sets with ease. By bridging the gap between static spreadsheets and a functional table list, it serves as a lightweight yet powerful tool for instant analysis and presentation.<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-csvTable.html](Modules/rwebiModule-csvTable.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-csvTable.js](_jss/rwebiModule-csvTable.js)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-csvTable.html](Help/rwebiHelp-csvTable.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-csvTable.html](Help/rwebiAbout-csvTable.html)** <br>
+
+<b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
+
 <h3> <img src="_ico/browserinfo.png" width="18px"> Browser Info:</h3><a id="browserinfo"></a>
 <b>Browser information and rwebi storage utility. </b>This module is a local diagnostic tool that captures and displays real-time metadata about your web environment such as browser version, screen resolution, system capabilities, and local rwebi storage to ensure your specialized workspace is perfectly optimized for data processing.<br><br>
 
