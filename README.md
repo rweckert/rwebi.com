@@ -20,7 +20,7 @@ rwebi Project Status:</h3><a id="status"></a>
 
 <b>🟢 Active Beta Status:</b> Version Eucalyptus c61<br>
 <br>
-rwebi has officially transitioned out of Alpha. We are currently in the final stages of UI/UX refinement and documentation expansion. Please refer to this **[project](https://github.com/rweckert/rwebi.com)** and the rwebi module **[View&nbsp;Update&nbsp;Blog](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Documents/rwebiDocument-UpdateBlog.html)** for updated information.
+rwebi has officially transitioned out of Alpha. We are currently in the final stages of UI/UX refinement and documentation expansion. Please refer to this **[project](https://github.com/rweckert/rwebi.com)** and the rwebi module **[Update&nbsp;Blog](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Documents/rwebiDocument-UpdateBlog.html)** for updated information.
 
 <h3><p align="center"><img src="Assets/hr-orange.png" width="98%"></p>
 Source Structure:</h3><a id="sourcestructure"></a>
