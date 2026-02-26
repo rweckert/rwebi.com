@@ -132,3 +132,12 @@ rwebi Module Source Roster:</h3><a id="moduleroster"></a>
 
 [↑ Back to Contents](#contents)
 
+<h3> <img src="_ico/scratchpad.png" width="18px"> Scratch Pad:</h3><a id="scratchpad"></a>
+<b>Versatile digital scratch of paper and text utility. </b>A text utility that allows users to instantly draft, format, and execute text-based documents directly from within the browser. While pleasing to the eye, features include opening files, saving and restoring text locally, download, export, copy, cut, paste, clear. Options include toggle spell checking, document editing, and word wrapping.<br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-ScratchPad.html](Modules/rwebiModule-ScratchPad.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-ScratchPad-c61.js](_jss/rwebiModule-ScratchPad-c61.js)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-ScratchPad.html](Help/rwebiHelp-ScratchPad.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-ScratchPad.html](Help/rwebiAbout-ScratchPad.html)** <br>
+
