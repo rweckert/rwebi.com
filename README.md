@@ -38,7 +38,7 @@ Source Structure:</h3><a id="sourcestructure"></a>
 | 📁 **[Apps](Apps)** | Contains all background image options for the rwebi desktop application. |
 | 📁 **[Modules](Modules)** | Modular utility scripts and helper functions that provide common logic and support services across the rwebi ecosystem. |
 
-[↑ Back to Contents](#contents)
+[↑ Table of Contents](#contents)
 
 <h3><p align="center"><img src="Assets/hr-blue.png" width="98%"></p>
 rwebi Application List:</h3><a id="applist"></a>
@@ -50,7 +50,7 @@ rwebi Application List:</h3><a id="applist"></a>
 | **[Grid Stack](#gridstack)** | **[View&nbsp;Grid&nbsp;Stack](https://rwebi.com/Apps/rwebiApp-GridStack-c61.html)** | Hypertext stack editing utility and visual ruler grid. |
 | **[rwebi Desktop](#desktop)** | **[View&nbsp;rwebi&nbsp;Desktop](https://rwebi.com/Apps/rwebiApp-Desktop-c61.html)** | The rwebi Desktop collection of apps and modules. |
 
-[↑ Back to Contents](#contents)
+[↑ Table of Contents](#contents)
 
 <h3><p align="center"><img src="Assets/hr-orange.png" width="98%"></p>
 rwebi Module List:</h3><a id="modulelist"></a>
@@ -79,7 +79,7 @@ rwebi Module List:</h3><a id="modulelist"></a>
 | **[Speculus](#speculus)** | **[View Speculus](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-Speculus.html)** | Speculus (Latin 'to look at') is a rwebi search entry rid# lookup utility. |
 | **[String&nbsp;Escape](#stringescape)** | **[View&nbsp;String&nbsp;Escape](https://rwebi.com/Apps/rwebiApp-PagePanel-c61.html?data=../Modules/rwebiModule-StringEscape.html)** | HTML string escape editor and utility. |
 
-[↑ Back to Contents](#contents)
+[↑ Table of Contents](#contents)
 
 <h3><p align="center"><img src="Assets/hr-blue.png" width="98%"></p>
 rwebi Application Source Roster:</h3><a id="approster"></a>
