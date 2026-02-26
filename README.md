@@ -221,6 +221,28 @@ rwebi Module Source Roster:</h3><a id="moduleroster"></a>
 
 <b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
 
+<h3> <img src="_ico/mapplotting.png" width="18px"> Map Plotting:</h3><a id="mapplotting"></a>
+<b>Mapping and plotting utility of locations and group imports using OpenStreetMap. </b>Map coordinate-based plotting tool that allows users to visualize specific geographic points by entering latitude and longitude data. It maps these coordinates onto an interactive display, making it easy to see the spatial relationship between multiple custom locations. This module is perfect for users who need to manually plot and track specific geographic markers without complex GIS software.<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-MapPlotting.html](Modules/rwebiModule-MapPlotting.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-MapPlotting.js](_jss/rwebiModule-MapPlotting.js)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-MapPlotting.html](Help/rwebiHelp-MapPlotting.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-MapPlotting.html](Help/rwebiAbout-MapPlotting.html)** <br>
+
+<b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
+
+<h3> <img src="_ico/splitpanel.png" width="18px"> Split Panel:</h3><a id="splitpanel"></a>
+<b>Split existing panels horizontal or vertical. </b>SplitPanel module provides a dynamic interface for bisecting a single workspace into dual panes, allowing users to choose between a horizontal or vertical split. Can be used as an essential component of the rWebi ecosystem, enabling the fluid reorganization of tools like TextTools, ipInfo, MapPlotting and Browser into a 4 panel split.<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-SplitPanel.html](Modules/rwebiModule-SplitPanel.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-SplitPanel.js](_jss/rwebiModule-SplitPanel.js)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-SplitPanel.html](Help/rwebiHelp-SplitPanel.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-SplitPanel.html](Help/rwebiAbout-SplitPanel.html)** <br>
+
 <h3> <img src="_ico/browserinfo.png" width="18px"> Browser Info:</h3><a id="browserinfo"></a>
 <b>Browser information and rwebi storage utility. </b>This module is a local diagnostic tool that captures and displays real-time metadata about your web environment such as browser version, screen resolution, system capabilities, and local rwebi storage to ensure your specialized workspace is perfectly optimized for data processing.<br><br>
 
@@ -269,7 +291,7 @@ rwebi Module Source Roster:</h3><a id="moduleroster"></a>
 
 <b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
 
-<h3> <img src="_ico/speculus.png" width="18px"> Split & Copy:</h3><a id="speculus"></a>
+<h3> <img src="_ico/speculus.png" width="18px"> Speculus:</h3><a id="speculus"></a>
 <b>Speculus (Latin 'to look at') is a rwebi search entry rid# lookup utility. </b>Speculus is a specialized viewing module for exploring rwebi search entries in detail. While a standard search provides a list of results, Speculus lets you review in detail any specific search entry. It breaks down complex data into readable fields—such as titles, addresses, and internal IDs—making it an essential tool for entry verification when adding new entries.<br>
 
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-Speculus.html](Modules/rwebiModule-Speculus.html)** <br>
@@ -295,7 +317,6 @@ rwebi Module Source Roster:</h3><a id="moduleroster"></a>
 
 <h3> <img src="_ico/clock-analog.png" width="18px"> Clock Analog:</h3><a id="clockanalog"></a>
 <b>Clean minimalist analog clock web application. </b>Clean analog clock interface that displays the current local time using a traditional yet scalable circular watch face with moving hands. It serves as a simple, visual timekeeping component that can be easily embedded into a Panel or the rwebi Desktop for a classic aesthetic.<br><br>
-
 
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-Clock-Analog.html](Modules/rwebiModule-Clock-Analog.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-Clock-Analog.js](_jss/rwebiModule-Clock-Analog.js)** <br>
