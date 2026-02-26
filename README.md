@@ -99,7 +99,9 @@ A toolset panel utility of rwebi modules and resources.<br>
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-ToolPanel.html](Help/rwebiHelp-ToolPanel.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-ToolPanel.html](Help/rwebiAbout-ToolPanel.html)** <br>
 
-<b> 📦 rwebi Desktop: The rwebi Desktop collection of apps and modules.<br><a id="desktop"></a>
+<h3> <img src="_ico/favicon.png" width="18px"> rwebi Desktop: </h3><a id="desktop"></a>
+The rwebi Desktop collection of apps and modules.<br>
+
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiApp-Desktop-c61.html](Apps/rwebiApp-Desktop-c61.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiApp-Desktop-c61.js](_jss/rwebiApp-Desktop-c61.js)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
@@ -107,7 +109,9 @@ A toolset panel utility of rwebi modules and resources.<br>
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-Desktop.html](Help/rwebiHelp-Desktop.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-Desktop.html](Help/rwebiAbout-Desktop.html)** <br>
 
-<b> 📦 Grid Stack: Hypertext stack editing utility and visual grid.<br><a id="gridstack"></a>
+<h3> <img src="_ico/favicon.png" width="18px"> Grid Stack: </h3><a id="gridstack"></a>
+Hypertext stack editing utility and visual grid.<br>
+
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiApp-GridStack-c61.html](Apps/rwebiApp-GridStack-c61.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiApp-GridStack-c61.js](_jss/rwebiApp-GridStack-c61.js)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
