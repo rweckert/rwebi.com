@@ -89,7 +89,9 @@ Search panel tool utility combining search and tools.<br>
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-SearchPanel.html](Help/rwebiHelp-SearchPanel.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-SearchPanel.html](Help/rwebiAbout-SearchPanel.html)** <br>
 
-<b> 📦 Tool Panel: A toolset panel utility of rwebi modules and resources.<br><a id="toolpanel"></a>
+<h3> <img src="_ico/favicon.png" width="18px"> Tool Panel: </h3><a id="toolpanel"></a>
+A toolset panel utility of rwebi modules and resources.<br>
+
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiApp-ToolPanel-c61.html](Apps/rwebiApp-ToolPanel-c61.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiApp-ToolPanel-c61.js](_jss/rwebiApp-ToolPanel-c61.js)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
