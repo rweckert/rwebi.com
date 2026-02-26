@@ -19,7 +19,8 @@ Table of Contents:</h3><a id="contents"></a>
 rwebi Project Status:</h3><a id="status"></a>
 
 <b>🟢 Active Beta Status:</b> Version Eucalyptus c61<br>
-rwebi has officially transitioned out of Alpha. We are currently in the final stages of UI/UX refinement and documentation expansion.
+<br>
+rwebi has officially transitioned out of Alpha. We are currently in the final stages of UI/UX refinement and documentation expansion. Please refer to this project and the rwebi module Source Explore for updated information.
 
 <h3><p align="center"><img src="Assets/hr-orange.png" width="98%"></p>
 Source Structure:</h3><a id="sourcestructure"></a>
