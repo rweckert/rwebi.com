@@ -4,7 +4,6 @@
 <p><sub>Screenshot preview of rwebi.com showing landing search page, Tool Panel with Text Tools example, Search Result example, and the rwebi Desktop</p></sub>
 
 Reference Web Information. A comprehensive, open-source web ecosystem designed for high-speed information retrieval and modular utility management. rwebi transitions out of its alpha phase and into the beta as a robust alternative to bloated, ad-heavy environments. Built entirely with JavaScript, rwebi prioritizes performance, privacy, and maximum screen real estate.
-
 <h3><p align="center"><img src="Assets/hr-orange.png" width="98%"></p>
 Table of Contents:</h3><a id="contents"></a>
 
