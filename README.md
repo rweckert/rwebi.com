@@ -173,7 +173,19 @@ rwebi Module Source Roster:</h3><a id="moduleroster"></a>
 
 <b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
 
-<h3> <img src="_ico/infoTrace.png" width="18px"> infoTrace:</h3><a id="infotrace"></a>
+<h3> <img src="_ico/browser.png" width="18px"> Browser:</h3><a id="browser"></a>
+<b>A small rwebi platform browsing utility. </b>This web application is an integrated browsing module that allows users to access and interact with external web content directly within the rwebi workspace, facilitating seamless data cross-referencing and research without leaving the platform's ecosystem.<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-Browser.html](Modules/rwebiModule-Browser.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-Browser.js](_jss/rwebiModule-Browser.js)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-Browser.html](Help/rwebiHelp-Browser.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-Browser.html](Help/rwebiAbout-Browser.html)** <br>
+
+<b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
+
+<h3> <img src="_ico/infotrace.png" width="18px"> infoTrace:</h3><a id="infotrace"></a>
 <b>Trace back utility for connection specifics and location. </b>IP and network information tool that allows users to trace and retrieve technical data regarding their current connection or a specific host. It displays essential details such as IP addresses, location data, and network provider information in a simplified dashboard format. This module is particularly useful for troubleshooting connectivity or identifying geographic details associated with a network entry.<br><br>
 
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-infoTrace.html](Modules/rwebiModule-infoTrace.html)** <br>
@@ -208,4 +220,89 @@ rwebi Module Source Roster:</h3><a id="moduleroster"></a>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-GoogleMapping.html](Help/rwebiAbout-GoogleMapping.html)** <br>
 
 <b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
+
+<h3> <img src="_ico/browserinfo.png" width="18px"> Browser Info:</h3><a id="browserinfo"></a>
+<b>Browser information and rwebi storage utility. </b>This module is a local diagnostic tool that captures and displays real-time metadata about your web environment such as browser version, screen resolution, system capabilities, and local rwebi storage to ensure your specialized workspace is perfectly optimized for data processing.<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-BrowserInfo.html](Modules/rwebiModule-BrowserInfo.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-BrowserInfo.js](_jss/rwebiModule-BrowserInfo.js)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-BrowserInfo.html](Help/rwebiHelp-BrowserInfo.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-BrowserInfo.html](Help/rwebiAbout-BrowserInfo.html)** <br>
+
+<b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
+
+<h3> <img src="_ico/stringescape.png" width="18px"> String Escape</h3><a id="stringescape"></a>
+<b>HTML string escape editor and utility. </b>A character encoding utility designed to convert text into "escaped" formats suitable for programming and web development. It allows users to transform special characters into safe strings for languages like HTML, JavaScript, or JSON, preventing syntax errors or security vulnerabilities. This tool is essential for developers who need to clean up data before embedding it into source code. Allows converted strings to be formated as variabels or setup for script evaulation.<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-StringEscape.html](Modules/rwebiModule-StringEscape.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-StringEscape.js](_jss/rwebiModule-StringEscape.js)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-StringEscape.html](Help/rwebiHelp-StringEscape.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-StringEscape.html](Help/rwebiAbout-StringEscape.html)** <br>
+
+<b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
+
+<h3> <img src="_ico/quicksearch.png" width="18px"> Quick Search:</h3><a id="quicksearch"></a>
+<b>Stripped down rwebi web search application. </b>Allowing the features of rwebi search to be used as a panel window within the rwebi set of applications but also utilized for licensed vendors. All rwebi search features are available, such as saving or exporting search to text, as well as full screen viewing and access to adding links to rwebi search.<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-QuickSearch.html](Modules/rwebiModule-QuickSearch.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-QuickSearch.js](_jss/rwebiModule-QuickSearch.js)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-QuickSearch.html](Help/rwebiHelp-QuickSearch.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-QuickSearch.html](Help/rwebiAbout-QuickSearch.html)** <br>
+
+<b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
+
+<h3> <img src="_ico/splitncopy.png" width="18px"> Split & Copy:</h3><a id="splitncopy"></a>
+<b>Text splitting and copying tool. </b>This module is a text processing tool designed to split blocks of content into smaller, manageable segments for easier copying and pasting. It allows users to define specific character or line limits, automatically breaking down the text into chunks that fit within external input constraints. This module is highly effective for coying ans pasting information on a module device or testing character limits for different mediums.<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-SplitnCopy.html](Modules/rwebiModule-SplitnCopy.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-SplitnCopy.js](_jss/rwebiModule-SplitnCopy.js)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-SplitnCopy.html](Help/rwebiHelp-SplitnCopy.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-SplitnCopy.html](Help/rwebiAbout-SplitnCopy.html)** <br>
+
+<b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
+
+<h3> <img src="_ico/speculus.png" width="18px"> Split & Copy:</h3><a id="speculus"></a>
+<b>Speculus (Latin 'to look at') is a rwebi search entry rid# lookup utility. </b>Speculus is a specialized viewing module for exploring rwebi search entries in detail. While a standard search provides a list of results, Speculus lets you review in detail any specific search entry. It breaks down complex data into readable fields—such as titles, addresses, and internal IDs—making it an essential tool for entry verification when adding new entries.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-Speculus.html](Modules/rwebiModule-Speculus.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-Speculus.js](_jss/rwebiModule-Speculus.js)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-Speculus.html](Help/rwebiHelp-Speculus.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-Speculus.html](Help/rwebiAbout-Speculus.html)** <br>
+
+<b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
+
+<h3> <img src="_ico/gemini-model.png" width="18px"> Gemini-Model:</h3><a id="geminimodel"></a>
+<b>A rwebi Gemini AI interface prompt model. </b>A custom, 'Bring Your Own Key' (BYOK) interface for Gemini that provides a lightweight, session-managed environment for generating, exporting, and locally storing AI interactions.<br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-Gemini-Model.html](Modules/rwebiModule-Gemini-Model.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-Gemini-Model.js](_jss/rwebiModule-Gemini-Model.js)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-Gemini-Model.html](Help/rwebiHelp-Gemini-Model.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-Gemini-Model.html](Help/rwebiAbout-Gemini-Model.html)** <br>
+
+<b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
+
+<h3> <img src="_ico/clock-analog.png" width="18px"> Clock Analog:</h3><a id="clockanalog"></a>
+<b>Clean minimalist analog clock web application. </b>Clean analog clock interface that displays the current local time using a traditional circular watch face with moving hands. It serves as a simple, visual timekeeping component that can be easily embedded into websites for a classic aesthetic.<br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-Clock-Analog.html](Modules/rwebiModule-Clock-Analog.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-Clock-Analog.js](_jss/rwebiModule-Clock-Analog.js)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Light-c61.css](_css/rwebiStyle-Light-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📑 **[rwebiStyle-Dark-c61.css](_css/rwebiStyle-Dark-c61.css)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-Clock-Analog.html](Help/rwebiHelp-Clock-Analog.html)** <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-Clock-Analog.html](Help/rwebiAbout-Clock-Analog.html)** <br>
+
+<b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
+
+
+
 
