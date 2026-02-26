@@ -5,6 +5,15 @@
 
 Reference Web Information. A comprehensive, open-source web ecosystem designed for high-speed information retrieval and modular utility management. rwebi transitions out of its alpha phase and into the beta as a robust alternative to bloated, ad-heavy environments. Built entirely with JavaScript, rwebi prioritizes performance, privacy, and maximum screen real estate.
 
+- Perform two different searches and compare, each search result populating a different panel.<br>
+- Export search results to text, and manipulate using rwebi utilities and tools.<br>
+- Features for "Local Save" and "Local Restore" allow edited data be transfered between rwebi utilities easily.<br>
+- Designed as a fluent, consistent, and intuitive graphic interface for easy use and navigation across entire ecosystem.<br>
+- No advertising, no user data collections, open source and using full screen real estate.
+
+Essentially, one can use the web for reference and information, rwebi.com<br>
+- Robert William Eckert
+
 <h3><p align="center"><img src="Assets/hr-orange.png" width="98%"></p>
 Table of Contents:</h3><a id="contents"></a>
 
