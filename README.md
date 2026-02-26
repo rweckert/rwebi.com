@@ -94,7 +94,7 @@ rwebi Application Source Roster:</h3><a id="approster"></a>
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-SearchPanel.html](Help/rwebiHelp-SearchPanel.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-SearchPanel.html](Help/rwebiAbout-SearchPanel.html)**
 
-[↑ Application List](#applist) [↑ Table of Contents](#contents)
+<b>Navigate: </b>[← Application List](#applist)  |  [↑ Table of Contents](#contents)
 
 <h3> <img src="_ico/favicon.png" width="18px"> Tool Panel: </h3><a id="toolpanel"></a>
 <b>A toolset panel utility of rwebi modules and resources.</b> This specialized ToolPanel for the rWebi environment provides panel (split windows) segments that can independently host a variety of utility tools across rwebi. The ToolPanel optimizes multitasking by organizing these essential utilities into a compact, responsive container that enhances any device experience that can be docked alongside your existing workspace for instant productivity.<br><br>
@@ -106,7 +106,7 @@ rwebi Application Source Roster:</h3><a id="approster"></a>
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-ToolPanel.html](Help/rwebiHelp-ToolPanel.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-ToolPanel.html](Help/rwebiAbout-ToolPanel.html)**
 
-[↑ Application List](#applist) [↑ Table of Contents](#contents)
+<b>Navigate: </b>[← Application List](#applist)  |  [↑ Table of Contents](#contents)
 
 <h3> <img src="_ico/favicon.png" width="18px"> rwebi Desktop: </h3><a id="desktop"></a>
 <b>The rwebi Desktop collection of apps and modules.</b> Offering a desktop interface to access various productivity and utility tools across the rwebi escosystem. Features a clean, responsive layout designed to manage web-based applications, including specialized functions like horizontal and vertical screen splitting. The rwebi desktop environment is built using pure JavaScript code, ensuring a lightweight and responsive workspace without relying on heavy external frameworks.<br><br>
@@ -118,7 +118,7 @@ rwebi Application Source Roster:</h3><a id="approster"></a>
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-Desktop.html](Help/rwebiHelp-Desktop.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-Desktop.html](Help/rwebiAbout-Desktop.html)**
 
-[↑ Application List](#applist) [↑ Table of Contents](#contents)
+<b>Navigate: </b>[← Application List](#applist)  |  [↑ Table of Contents](#contents)
 
 <h3> <img src="_ico/favicon.png" width="18px"> Grid Stack: </h3><a id="gridstack"></a>
 <b>Hypertext stack editing utility and visual grid.</b> GridStack module functions as a robust hypertext editor, allowing for real-time manipulation of HTML, CSS, and JavaScript within fully resizable workspace panels. Its advanced wireframe grid provides precision development tools, including a pixel ruler and live mouse coordinate tracking for pixel-perfect element positioning. Users can dynamically toggle between different display size types, ensuring that the resulting syntax is perfectly responsive and accurately measured across various viewport scales.<br><br>
@@ -130,7 +130,7 @@ rwebi Application Source Roster:</h3><a id="approster"></a>
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-GridStack.html](Help/rwebiHelp-GridStack.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-GridStack.html](Help/rwebiAbout-GridStack.html)**
 
-[↑ Application List](#applist) [↑ Table of Contents](#contents)
+<b>Navigate: </b>[← Application List](#applist)  |  [↑ Table of Contents](#contents)
 
 <h3><p align="center"><img src="Assets/hr-orange.png" width="98%"></p>
 rwebi Module Source Roster:</h3><a id="moduleroster"></a>
@@ -144,4 +144,4 @@ rwebi Module Source Roster:</h3><a id="moduleroster"></a>
 &nbsp;&nbsp;&nbsp;&nbsp; ℹ️ **[rwebiHelp-ScratchPad.html](Help/rwebiHelp-ScratchPad.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; ⭐ **[rwebiAbout-ScratchPad.html](Help/rwebiAbout-ScratchPad.html)** <br>
 
-[↑ Modules List](#moduleslist) [↑ Table of Contents](#contents)
+<b>Navigate: </b>[← Modules List](#moduleslist)  |  [↑ Table of Contents](#contents)
