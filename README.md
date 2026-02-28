@@ -7,7 +7,7 @@ Reference Web Information. A comprehensive, open-source web ecosystem designed f
 
 - Perform two different searches and compare, each search result populating a different panel.<br>
 - Export search results to text, and manipulate using rwebi utilities and tools.<br>
-- Features for "Local Save" and "Local Restore" allow edited data be transfered between rwebi utilities easily.<br>
+- Features for "Local Save" and "Local Restore" allow edited data be transferred between rwebi utilities easily.<br>
 - Designed as a fluent, consistent, and intuitive graphic interface for easy use and navigation across entire ecosystem.<br>
 - Panel design is for multi-tasking with cell phones and tablets and shares all modules and tools with the rwebi Desktop.<br>
 - No advertising, no user data collections, open source and using full screen real estate.
@@ -120,7 +120,7 @@ rwebi Application Source Roster:</h3><a id="approster"></a>
 <b>Navigate:&nbsp;&nbsp;</b>[← Application List](#applist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
 
 <h3> <img src="_ico/favicon.png" width="18px"> rwebi Desktop: </h3><a id="desktop"></a>
-<b>The rwebi Desktop collection of apps and modules.</b> Offering a desktop interface to access various productivity and utility tools across the rwebi escosystem. Features a clean, responsive layout designed to manage web-based applications, including specialized functions like horizontal and vertical screen splitting. The rwebi desktop environment is built using pure JavaScript code, ensuring a lightweight and responsive workspace without relying on heavy external frameworks.<br><br>
+<b>The rwebi Desktop collection of apps and modules.</b> Offering a desktop interface to access various productivity and utility tools across the rwebi ecosystem Features a clean, responsive layout designed to manage web-based applications, including specialized functions like horizontal and vertical screen splitting. The rwebi desktop environment is built using pure JavaScript code, ensuring a lightweight and responsive workspace without relying on heavy external frameworks.<br><br>
 
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiApp-Desktop-c61.html](Apps/rwebiApp-Desktop-c61.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiApp-Desktop-c61.js](_jss/rwebiApp-Desktop-c61.js)** <br>
@@ -132,7 +132,7 @@ rwebi Application Source Roster:</h3><a id="approster"></a>
 <b>Navigate: </b>[← Application List](#applist)  |  [↑ Table of Contents](#contents)
 
 <h3> <img src="_ico/favicon.png" width="18px"> Grid Stack: </h3><a id="gridstack"></a>
-<b>Hypertext stack editing utility and visual grid.</b> GridStack module functions as a robust hypertext editor, allowing for real-time manipulation of HTML, CSS, and JavaScript within fully resizable workspace panels. Its advanced wireframe grid provides precision development tools, including a pixel ruler and live mouse coordinate tracking for pixel-perfect element positioning. Users can dynamically toggle between different display size types, ensuring that the resulting syntax is perfectly responsive and accurately measured across various viewport scales.<br><br>
+<b>Hypertext stack editing utility and visual grid.</b> GridStack module functions as a robust hypertext editor, allowing for real-time manipulation of HTML, CSS, and JavaScript within fully re-sizable workspace panels. Its advanced wire-frame grid provides precision development tools, including a pixel ruler and live mouse coordinate tracking for pixel-perfect element positioning. Users can dynamically toggle between different display size types, ensuring that the resulting syntax is perfectly responsive and accurately measured across various view-port scales.<br><br>
 
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiApp-GridStack-c61.html](Apps/rwebiApp-GridStack-c61.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiApp-GridStack-c61.js](_jss/rwebiApp-GridStack-c61.js)** <br>
@@ -233,7 +233,7 @@ A intuitive web-based environment for exploring and navigating rwebi source code
 <b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
 
 <h3> <img src="_ico/googlemapping.png" width="18px"> Google Mapping:</h3><a id="googlemapping"></a>
-<b>Google Mapping assistant and utility. </b>Provides an integrated Google Maps interface that allows users to interact with geographic data and location services directly within a web module. It features tools for navigation, searching addresses, and toggling between different map views to provide a comprehensive spatial experience. This module is ideal for projects requiring a streamlined, embeddable mapping solution with familiar Google Maps functionality. Full view and options to save mapping links with export features are available.<br><br>
+<b>Google Mapping assistant and utility. </b>Provides an integrated Google Maps interface that allows users to interact with geographic data and location services directly within a web module. It features tools for navigation, searching addresses, and toggling between different map views to provide a comprehensive spatial experience. This module is ideal for projects requiring a streamlined, embedded mapping solution with familiar Google Maps functionality. Full view and options to save mapping links with export features are available.<br><br>
 
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-GoogleMapping.html](Modules/rwebiModule-GoogleMapping.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-GoogleMapping.js](_jss/rwebiModule-GoogleMapping.js)** <br>
@@ -257,7 +257,7 @@ A intuitive web-based environment for exploring and navigating rwebi source code
 <b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
 
 <h3> <img src="_ico/panelsplit.png" width="18px"> Split Panel:</h3><a id="splitpanel"></a>
-<b>Split existing panels horizontal or vertical. </b>SplitPanel module provides a dynamic interface for bisecting a single workspace into dual panes, allowing users to choose between a horizontal or vertical split. Can be used as an essential component of the rWebi ecosystem, enabling the fluid reorganization of tools like TextTools, ipInfo, MapPlotting and Browser into a 4 panel split.<br><br>
+<b>Split existing panels horizontal or vertical. </b>SplitPanel module provides a dynamic interface for bisecting a single workspace into dual panes, allowing users to choose between a horizontal or vertical split. Can be used as an essential component of the rwebi ecosystem, enabling the fluid reorganization of tools like TextTools, ipInfo, MapPlotting and Browser into a 4 panel split.<br><br>
 
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-SplitPanel.html](Modules/rwebiModule-SplitPanel.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-SplitPanel.js](_jss/rwebiModule-SplitPanel.js)** <br>
@@ -293,7 +293,7 @@ A intuitive web-based environment for exploring and navigating rwebi source code
 <b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
 
 <h3> <img src="_ico/stringescape.png" width="18px"> String Escape</h3><a id="stringescape"></a>
-<b>HTML string escape editor and utility. </b>A character encoding utility designed to convert text into "escaped" formats suitable for programming and web development. It allows users to transform special characters into safe strings for languages like HTML, JavaScript, or JSON, preventing syntax errors or security vulnerabilities. This tool is essential for developers who need to clean up data before embedding it into source code. Allows converted strings to be formated as variabels or setup for script evaulation.<br><br>
+<b>HTML string escape editor and utility. </b>A character encoding utility designed to convert text into "escaped" formats suitable for programming and web development. It allows users to transform special characters into safe strings for languages like HTML, JavaScript, or JSON, preventing syntax errors or security vulnerabilities. This tool is essential for developers who need to clean up data before embedding it into source code. Allows converted strings to be formatted as variables or setup for script evaluation.<br><br>
 
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-StringEscape.html](Modules/rwebiModule-StringEscape.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-StringEscape.js](_jss/rwebiModule-StringEscape.js)** <br>
@@ -317,7 +317,7 @@ A intuitive web-based environment for exploring and navigating rwebi source code
 <b>Navigate:&nbsp;&nbsp;</b>[← Modules List](#modulelist)&nbsp;&nbsp;|&nbsp;&nbsp;[↑ Table of Contents](#contents)
 
 <h3> <img src="_ico/splitncopy.png" width="18px"> Split & Copy:</h3><a id="splitncopy"></a>
-<b>Text splitting and copying tool. </b>This module is a text processing tool designed to split blocks of content into smaller, manageable segments for easier copying and pasting. It allows users to define specific character or line limits, automatically breaking down the text into chunks that fit within external input constraints. This module is highly effective for coying ans pasting information on a module device or testing character limits for different mediums.<br><br>
+<b>Text splitting and copying tool. </b>This module is a text processing tool designed to split blocks of content into smaller, manageable segments for easier copying and pasting. It allows users to define specific character or line limits, automatically breaking down the text into chunks that fit within external input constraints. This module is highly effective for copying and pasting information on a module device or testing character limits for different mediums.<br><br>
 
 &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ **[rwebiModule-SplitnCopy.html](Modules/rwebiModule-SplitnCopy.html)** <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 📜 **[rwebiModule-SplitnCopy.js](_jss/rwebiModule-SplitnCopy.js)** <br>
